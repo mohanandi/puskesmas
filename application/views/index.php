@@ -6,26 +6,24 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link
-		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/icomoon/style.css">
 
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/jquery-ui.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery-ui.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.theme.default.min.css">
 
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery.fancybox.min.css">
 
-	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap-datepicker.css">
 
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
 
-	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
 
 </head>
 
@@ -58,20 +56,18 @@
 
 				<div class="row align-items-center">
 
-					<div> <img src="images/logo.png" style=" height: 20px; width:20px;"></div>
+					<div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
 
 					<div class="col-3 col-xl-1">
 
-						<div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html"
-								class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a
-									style="color: #16b3ac;">Percontohan</a> </a></div>
+						<div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
 					</div>
 
 					<div class="col-13 col-md-10 d-none d-xl-block">
 						<nav class="site-navigation position-relative text-right" role="navigation">
 
 							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="index.html" class="nav-link">Home</a></li>
+								<li><a href="#" class="nav-link">Home</a></li>
 								<li class="has-children">
 									<a href="services.html" class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
@@ -102,9 +98,7 @@
 					</div>
 
 
-					<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a
-							href="#" class="site-menu-toggle js-menu-toggle float-right"><span
-								class="icon-menu h3 text-black"></span></a></div>
+					<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
 
 				</div>
 			</div>
@@ -116,7 +110,7 @@
 
 
 
-		<div class="slide-item overlay" style="background-image: url('images/hero_1.jpg')">
+		<div class="slide-item overlay" style="background-image: url('<?= base_url('assets/') ?>images/hero_1.jpg')">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 align-self-center">
@@ -201,20 +195,20 @@
 
 	</div> <!-- .site-wrap -->
 
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery-ui.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.countdown.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery-3.3.1.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery-ui.js"></script>
+	<script src="<?= base_url('assets/') ?>js/popper.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/bootstrap.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/owl.carousel.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery.countdown.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery.easing.1.3.js"></script>
+	<script src="<?= base_url('assets/') ?>js/aos.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery.fancybox.min.js"></script>
+	<script src="<?= base_url('assets/') ?>js/jquery.sticky.js"></script>
+	<script src="<?= base_url('assets/') ?>js/isotope.pkgd.min.js"></script>
 
 
-	<script src="js/main.js"></script>
+	<script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 
 </body>
