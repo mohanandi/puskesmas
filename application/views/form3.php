@@ -1,5 +1,4 @@
-<!-- MAIN -->
-    <div class="site-section" id = "menu">
+<div class="site-section" id = "menu">
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-7 mx-auto text-center">
@@ -516,8 +515,7 @@
     </select>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1"><strong>Ketersediaan ruang Kantor 
-</strong></label> <br>
+    <label for="exampleFormControlInput1"><strong>Angka Bebas Jentik 100%</strong></label> <br>
     <label for="exampleFormControlInput1">a. Ruang Administrasi</label>
    <select class="form-control">
     <option selected>Pilih ...</option>
@@ -549,444 +547,147 @@
       <option value="2">Tidak</option>
     </select>
   </div>
-  <hr class="solid">
-<div class="form-group">
-    <label for="exampleFormControlInput1"><strong>Ketersediaan ruang pelayanan
-</strong></label> <br>
-    <label for="exampleFormControlInput1">Ruang  Pendaftaran  dan Rekam Medis</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Pemeriksaan Umum</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Tindakan dan Gawat Darurat</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang KIA, KB dan Imunisasi</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Pemeriksaan Khusus</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Kesehatan Gigi dan Mulut</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Ruangan Komunikasi Informasi dan Edukasi (KIE)</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Farmasi</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1"><strong>Ruang Farmasi meliputi sarana sebagai berikut:</strong></label>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">a.  Ruang penerimaan resep</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">b.  Ruang pelayanan resep dan peracikan</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">c.  Ruang penyerahan obat</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-
-<div class="form-group">
-    <label for="exampleFormControlInput1">d.  Ruang konseling</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-
-<div class="form-group">
-    <label for="exampleFormControlInput1">e.  Ruang penyimpanan obat dan BMHP</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-
-<div class="form-group">
-    <label for="exampleFormControlInput1">f.  Ruang arsip</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <hr>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Persalinan </label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Rawat Pasca Persalinan </label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Laboratorium</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <hr>
-  <div class="form-group">
-    <label for="exampleFormControlInput1"><strong>Unit Rawat Inap ditambah dengan:</strong></label> <br>
-    <label for="exampleFormControlInput1">Ruang KIA KB dan Imunisasi menjadi 2 ruang:</label><br>
-    <label for="exampleFormControlInput1">a.  Ruang Kesehatan Ibu dan KB</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ada</option>
-      <option value="2">Tidak Ada</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">b.  Ruang Kesehatan Anak dan Imunisasi</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ada</option>
-      <option value="2">Tidak Ada</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Rawat Inap</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ada</option>
-      <option value="2">Tidak Ada</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Kamar mandi/WC ((terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ada</option>
-      <option value="2">Tidak Ada</option>
-    </select>
-  </div>
-  <hr class="solid">
-  <div class="form-group">
-    <label for="exampleFormControlInput1"><strong>Ketersediaan Ruang Penunjang</strong></label>
-  </div>
-   <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Tunggu</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">Ruang ASI</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Sterilisasi</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Cuci Linen</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Penyelenggaraan makanan (dapur/pantry)</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-  <label for="exampleFormControlInput1">Unit Rawat Inap ditambah dengan</label><br>
-    <label for="exampleFormControlInput1">a.  Ruang Jaga Petugas</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Gudang Umum</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Kamar mandi/WC Pasien/pengunjung (terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Rumah dinas tenaga kesehatan</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Parkir kendaraan roda 2</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Parkir Kendaraan Roda 4</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Garasi Ambulans/Pusling</label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Area khusus penyimpanan Tabung O2 </label>
-   <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-  </div>
-<div class="form-group">
-    <label for="exampleFormControlInput1">Ruang Lainnya (selain yang tertulis diatas)</label>
-    <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="">
-    </div>
-    <div class="col">
-      <select class="form-control">
-    <option selected>Pilih ...</option>
-      <option value="1">Ya</option>
-      <option value="2">Tidak</option>
-    </select>
-    </div>
-   
-  </div>
-  <br>
-
   <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
 </form></br>
       </span>
     </div>
      <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id4'>
       <span class='sidebar' id='sidebartab3' preferred='yes'>
-        <p>Isi konten widget tab 3
-          </br>
-          </br>
-      Memek lah.</br>
+        <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kategori Puskesmas</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Status Akreditasi</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+</form>
+<br>
       </span>
     </div>
      <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id5'>
       <span class='sidebar' id='sidebartab3' preferred='yes'>
-        <p>Isi konten widget tab 3
+       <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kategori Puskesmas</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Status Akreditasi</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+</form>
           </br>
           </br>
-           <table id="example" class="table table-striped table-bordered" style="width:100%;  text-align: center; 
-    vertical-align: middle;">
-        <thead>
-            <tr>
-                <th>No</th>
-                <th></th>
-                <th></th>
-                <th>Edit</th>
-                <th>Hapus</th>
-                <th>Verifikasi</th>
-            </tr>
-        </thead>
-        <tbody>
-          <tr>
-                <td>1</td>
-                <td>Nama Puskesmas</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#' style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>No. Register</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Tanggal Pendirian</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Alamat</td>
-                <td> - </td>
-              <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Kecamatan</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Kabupaten/Kota</td>
-                <td> - </td>
-               <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Provinsi</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>No. Telepon Puskesmas dan Whatsapp</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>No. Telpon Ruang Gadar</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>No. Faksimile</td>
-                <td> - </td>
-               <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>Alamat e-mail dan website</td>
-                <td> - </td>
-                <td> <a href='#'><i class="fa fa-pencil-square-o"></i></a></td>
-                <td><a href='#'style="color: red;"><i class="fa fa-trash-o"></i></a></td>
-                <td><input type='checkbox'></td>
-            </tr>
-  
-           
-        </tbody>
-    </table></br>
+           </br>
       </span>
     </div>
      <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id6'>
       <span class='sidebar' id='sidebartab3' preferred='yes'>
-        <p>Isi konten widget tab 3
-          </br>
-          </br>
-          Bisa sobat isi dengan widget apa saja, misal widget popular post, label, arsip, dll.</br>
+        <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kategori Puskesmas</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Status Akreditasi</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+</form>
+      </span>
+    </div>
+    <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id7'>
+      <span class='sidebar' id='sidebartab3' preferred='yes'>
+        <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kategori Puskesmas</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Status Akreditasi</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+</form>
+      </span>
+    </div>
+    <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id8'>
+      <span class='sidebar' id='sidebartab3' preferred='yes'>
+        <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+    <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Kategori Puskesmas</label>
+    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Status Akreditasi</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+</form>
       </span>
     </div>
   </div>
@@ -994,3 +695,6 @@
        
       </div>
     </div> 
+  </div>
+</div>
+    </div>
