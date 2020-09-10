@@ -1434,7 +1434,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Kepala Puskesmas</label>
+                <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Dokter Umum</option>
@@ -1443,7 +1443,430 @@
                   <option value="2">Lain-lain</option> <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Lain-lain">
                 </select>
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+              <!-- Tenaga dan Status Kepegawaian -->
+              <label for="exampleFormControlInput1"><strong>Tenaga dan Status Kepegawaian</strong></label><br>
+
+              <section class="form-group" id="form-group">
+                <div class="form-group">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Dokter</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Dokter Layanan Primer (DLP)</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Dokter Gigi</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Perawat</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Bidan</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga promosi kesehatan dan ilmu perilaku</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga sanitasi lingkungan</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Nutrisionis</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga Apoteker </label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga teknis kefarmasian</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Ahli teknologi laboratorium medik</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga sistem informasi kesehatan </label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga administrasi keuangan</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Tenaga ketatausahaan</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Pekarya</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">Lain-lain Sebutkan:</label>
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">a. Tenaga Kesehatan Tradisional</label>
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                      <div class="col-md-12">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="b.  .........">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PNS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PPPK">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PTT DAERAH">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="LAIN-LAIN">
+                      </div>
+                      <div class="col-md-2">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="PENSIUN TAHUN DEPAN">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="exampleFormControlInput1">TOTAL</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </section>
+              <a class=" btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form>
           </span>
         </div>
