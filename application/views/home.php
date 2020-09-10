@@ -67,15 +67,15 @@
 						<nav class="site-navigation position-relative text-right" role="navigation">
 
 							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="#" class="nav-link">Home</a></li>
+								<li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
 								<li class="has-children">
-									<a href="services.html" class="nav-link">Menu Cepat</a>
+									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
-										<li><a href="#" class="nav-link">Bab 1</a></li>
-										<li><a href="#" class="nav-link">Bab 2</a></li>
-										<li><a href="#" class="nav-link">Bab 3</a></li>
-										<li><a href="#" class="nav-link">Bab 4</a></li>
-										<li><a href="#" class="nav-link">Bab 5</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
 										<li class="has-children">
 											<a href="#">Bab 6</a>
 											<ul class="dropdown">
