@@ -64,9 +64,13 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 </div>
 </div>
+
   <div class="col-md-9"> 
+
+
     <form>
   <div class="form-group">
+
     <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <span data-tooltip="Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
      <select class="form-control">
        <option selected>Pilih ...</option>

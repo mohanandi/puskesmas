@@ -88,7 +88,11 @@
           </div>
       </div>
       <div class="col-md-9">
+
         <form>
+
+		
+
           <div class="form-group">
             <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <span data-tooltip="Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
             <select class="form-control">
@@ -98,6 +102,7 @@
               <option value="3">≤ 60%</option>
             </select>
           </div>
+		
           <div class="form-group">
             <label for="exampleFormControlInput1">Pemenuhan standar prasarana <span data-tooltip="Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
             <select class="form-control">
@@ -174,3 +179,4 @@
 </div>
 
 <script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
+
