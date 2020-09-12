@@ -1,6 +1,5 @@
 {
   "ExpandedNodes": [
-    "",
     "\\application",
     "\\application\\controllers",
     "\\application\\views",
@@ -8,8 +7,8 @@
     "\\application\\views\\templates\\form_table",
     "\\assets",
     "\\assets\\css",
-    "\\assets\\images"
+    "\\assets\\images",
+    "\\assets\\js"
   ],
-  "SelectedNode": "\\assets\\css\\util.css",
   "PreviewInSolutionExplorer": false
 }
