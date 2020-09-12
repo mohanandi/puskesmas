@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\application",
+    "\\application\\controllers",
+    "\\application\\views",
+    "\\application\\views\\templates",
+    "\\application\\views\\templates\\form_table",
+    "\\assets",
+    "\\assets\\css",
+    "\\assets\\images"
+  ],
+  "SelectedNode": "\\assets\\css\\util.css",
+  "PreviewInSolutionExplorer": false
+}
