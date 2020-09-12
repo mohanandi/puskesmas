@@ -77,9 +77,11 @@
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                                 <li><a href="<?= base_url('home'); ?>" class="nav-link" style="color: #000000 !important;">Home</a></li>
                                 <li class="has-children">
-                                    <a href="services.html" class="nav-link" style="color: #000000 !important;">Menu Cepat</a>
+                                    <a href="#" class="nav-link" style="color: #000000 !important;">Menu Cepat</a>
                                     <ul class="dropdown">
                                         <li><a href="<?= base_url('dinas'); ?>" class="nav-link">Dinas</a></li>
+                                        <li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
+                                        <li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
                                         <li><a href="<?= base_url('form'); ?>" class="nav-link">Form</a></li>
                                         <li><a href="<?= base_url('form2'); ?>" class="nav-link">Form 2</a></li>
                                         <li><a href="<?= base_url('form3'); ?>" class="nav-link">Form 3</a></li>

@@ -72,6 +72,8 @@
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
 										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
+										<li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
+										<li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
 										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
 										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
 										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
