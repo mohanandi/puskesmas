@@ -25,4 +25,17 @@ class Dinas extends CI_Controller
         $this->load->view('dinas');
         $this->load->view('templates/form_table/foot');
     }
+
+    public function dinas2()
+    {
+        $this->load->view('templates/form_table/head');
+        $this->load->view('dinas2');
+        $this->load->view('templates/form_table/foot');
+    }
+    public function dinas3()
+    {
+        $this->load->view('templates/form_table/head');
+        $this->load->view('dinas3');
+        $this->load->view('templates/form_table/foot');
+    }
 }
