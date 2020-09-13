@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Login Puskesmas Percontohan</title>
 	<meta charset="UTF-8">
@@ -8,8 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/login.css">
 
 </head>
+
 <body>
-	
+
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -17,23 +19,25 @@
 					<span class="login100-form-title-1">
 						PUSKESMAS <span style="color: #16b3ac;"> PERCONTOHAN </span>
 					</span>
-						<span class="login100-form-title-1">
+					<span class="login100-form-title-1">
 						LOGIN
 					</span>
 				</div>
-
-				<form class="login100-form validate-form">
+				<?= $this->session->flashdata('message'); ?>
+				<form class="login100-form validate-form" method="post" action="<?= base_url('auth'); ?>">
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
-						<span class="label-input100">Username</span>
-						<input class="input100" type="text" name="username" placeholder="Masukan username">
+						<span class="label-input100">Kode</span>
+						<input class="input100" type="text" name="kode" placeholder="Masukan Kode">
 						<span class="focus-input100"></span>
 					</div>
+					<?= form_error('kode'); ?>
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+					<div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="pass" placeholder="Masukan password">
+						<input class="input100" type="password" name="password" placeholder="Masukan password">
 						<span class="focus-input100"></span>
 					</div>
+					<?= form_error('kode'); ?>
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
@@ -51,7 +55,7 @@
 					</div>
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" type="submit">
 							Login
 						</button>
 					</div>
@@ -59,7 +63,8 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 </body>
+
 </html>
