@@ -88,7 +88,11 @@
           </div>
       </div>
       <div class="col-md-9">
+
         <form>
+
+		
+
           <div class="form-group">
             <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <span data-tooltip="Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
             <select class="form-control">
@@ -98,6 +102,7 @@
               <option value="3">≤ 60%</option>
             </select>
           </div>
+		
           <div class="form-group">
             <label for="exampleFormControlInput1">Pemenuhan standar prasarana <span data-tooltip="Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
             <select class="form-control">
@@ -124,7 +129,7 @@
               <option value="2">80% - < 100% obat di RKO tersedia di Puskesmas </option> <option value="3">
                   < 80 % obat di RKO tersedia di Puskesmas </option> </select> </div> <div class="form-group">
                     <label for="exampleFormControlInput1">Pengendalian Ketersediaan Obat <span data-tooltip="Terdapat upaya yang dilakukan untuk mencegah/mengatasi kekosongan atau kekurangan obat di puskesmas, meliputi tersedianya 3 dokumen : 
-1. SOP Pengendalian Ketersediaan
+                      1. SOP Pengendalian Ketersediaan
 2. Dokumen Perencanaan Kebutuhan Obat
 3. Dokumen mutasi obat/distribusi obat" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </span> </label>
                     <select class="form-control">
@@ -174,3 +179,4 @@
 </div>
 
 <script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
+

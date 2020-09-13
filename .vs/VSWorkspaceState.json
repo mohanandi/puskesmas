@@ -1,5 +1,6 @@
 {
   "ExpandedNodes": [
+    "",
     "\\application",
     "\\application\\controllers",
     "\\application\\views",
@@ -10,5 +11,6 @@
     "\\assets\\images",
     "\\assets\\js"
   ],
+  "SelectedNode": "\\application\\views\\dinas2.php",
   "PreviewInSolutionExplorer": false
 }
