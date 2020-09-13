@@ -1,13 +1,15 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
+
 <div class="site-section" id="menu">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-7 mx-auto text-center">
-                <span class="subheading">Form Menu</span>
-                <h2 class="heading"><strong class="text-primary">Identitas Umum</strong> Puskesmas Percontohan</h2>
-            </div>
-        </div>
-	<div class="row">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 mx-auto text-center">
+        <span class="subheading">VII</span>
+        <h2 class="heading" style="font-size:25px;"><strong class="text-primary">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menular Potensial KLB / Wabah</strong></h2>
+      </div>
+    </div>
+
+    <div class="row">
       <div class="col-md-3">
         </head>
 
@@ -85,61 +87,58 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           </div>
       </div>
+
       <div class="col-md-9">
 
-        <form style="height:350px; overflow-y:auto; padding:20px;">
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Nama Puskesmas</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">No. Register</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Tanggal Pendirian</label>
-                <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Alamat</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Kecamatan</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Kabupaten/Kota</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Provinsi</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">No. Telepon Puskesmas dan No Telepon Whatsapp</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">No. Telepon Ruang Gadar</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">No. Faksimile</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Alamat email dan website</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
-            </div>
-          
-        </form>
 
+        <form style="height:350px; overflow-y:auto; padding:20px;">
+<div class="form-group">
+            <label for="exampleFormControlInput1">Kelengkapan laporan SKDR <a href="#" onclick="toggle_visibility('foo25');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+            <br>
+            <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+            <select class="form-control">
+              <option selected>Pilih ...</option>
+              <option value="1">Kelengkapan ≥ 80%, nilai 10</option>
+              <option value="2">Kelengkapan antara 61% - 79%, nilai 5</option>
+              <option value="3">Kelengkapan ≤ 60%, nilai 0</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Ketepatan Laporan SKDR <a href="#" onclick="toggle_visibility('foo26');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+            <br>
+            <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+            <select class="form-control">
+              <option selected>Pilih ...</option>
+              <option value="1">Kelengkapan ≥ 80%, nilai 10</option>
+              <option value="2">Kelengkapan antara 61% - 79%, nilai 5</option>
+              <option value="3">Kelengkapan ≤ 60%, nilai 0</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Analisa Trend Mingguan Penyakit Potensial KLB <a href="#" onclick="toggle_visibility('foo27');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+            <br>
+            <p id="foo27" style="display:none; font-size:12px; margin-left:20px;">Grafik trend mingguan beberapa penyakit potensial KLB di Puskesmas </p>
+            <select class="form-control">
+              <option selected>Pilih ...</option>
+              <option value="1">Ada (diberi skor 10)</option>
+              <option value="2">Tidak ada (diberi skor 0)</option>
+
+            </select>
+          </div>
+</form>
 		<a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
 		<a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
 
+      </div>
+		
     </div>
-</div>
-<script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
 
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
 <script src="<?= base_url('assets/') ?>js/para.js"></script>
