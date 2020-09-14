@@ -88,25 +88,25 @@
       </div>
 
       <div class="col-md-9" style="">
-	   <div class='multitab-section'>
-            <ul class='multitab-widget multitab-widget-content-tabs-id'>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id1' style="font-size:10px;">Organisasi Manajemen</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id2' style="font-size:10px;">Lokasi Puskesmas</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id3' style="font-size:10px;">Bangunan Puskesmas</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id4' style="font-size:10px;">Prasarana Puskesmas</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id5' style="font-size:10px;">Peralatan Puskesmas</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id6' style="font-size:10px;">Pengisian Aspak</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id7' style="font-size:10px; width:120px;">Sumber Daya Manusia</a></li>
-              <li class='multitab-tab'><a href='#multicolumn-widget-id8' style="font-size:10px; width:120px; margin-left:16px;">Penilaian Kinerja Puskesmas</a></li>
-            </ul>
+        <div class='multitab-section'>
+          <ul class='multitab-widget multitab-widget-content-tabs-id'>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id1' style="font-size:10px;">Organisasi Manajemen</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id2' style="font-size:10px;">Lokasi Puskesmas</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id3' style="font-size:10px;">Bangunan Puskesmas</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id4' style="font-size:10px;">Prasarana Puskesmas</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id5' style="font-size:10px;">Peralatan Puskesmas</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id6' style="font-size:10px;">Pengisian Aspak</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id7' style="font-size:10px; width:120px;">Sumber Daya Manusia</a></li>
+            <li class='multitab-tab'><a href='#multicolumn-widget-id8' style="font-size:10px; width:120px; margin-left:16px;">Penilaian Kinerja Puskesmas</a></li>
+          </ul>
 
 
-        <div class="container1" style="height:350px; margin-bottom:-200px !important; overflow-y:auto; padding:10px;">
-         
+          <div class="container1" style="height:350px; margin-bottom:-200px !important; overflow-y:auto; padding:10px;">
+
 
             <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
               <span class='sidebar' id='sidebartab1' preferred='yes'>
-                <form>
+                <form method="POST" action="<?= base_url('Organisasi_Manajemen/tambah'); ?>">
                   <div class="form-group">
                     <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
@@ -127,7 +127,7 @@
                     <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
                   </div>
-                  <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+                  <button class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
                 </form></br>
               </span>
             </div>
@@ -273,373 +273,371 @@
               </span>
             </div>
             <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id3'>
-				<span class='sidebar' id='sidebartab3' preferred='yes'>
-				
-				<form>
-					<div class="form-group">
-					
-						<label for="exampleFormControlInput1">Koefisien Dasar Bangunan (KDB) Puskesmas maksimal 60%</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					 </div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Koefisien lantai bangunan (KLB) Puskesmas maksimal 1,8</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-							<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Puskesmas Tidak di tepi lereng</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							 </select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Koefisien daerah hijau (KDH) Puskesmas minimal 15%</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Tata letak ruang pelayanan pada bangunan puskesmas diatur berdasarkan zona privasi kegiatan dan zona infeksius atau zona non infeksius serta zona pelayanan.</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Pencahayaan dan penghawaan Puskesmas nyaman dan aman di semua bagian.</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					 </div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Lebar koridor puskesmas minimal 2,4 meter, rapi dan bersih</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Tinggi langit-langit puskesmas minimal 2,8 meter, rapi dan bersih</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7o.</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Bangunan Puskesmas permanen, rapi, bersih tidak pengap dan tidak berbau</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					<div class="form-group">
-						<label for="exampleFormControlInput1">Lambang Puskesmas sesuai dengan PMK 43 tahun 2019 dalam kondisi baik, rapi dan bersih</label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					</div>
-					 <div class="form-group">
-						<label for="exampleFormControlInput1">Lambang Puskesmas diletakkan di depan bangunan yang mudah terlihat dari jarak jauh </label>
-							<select class="form-control">
-								<option selected>Pilih ...</option>
-								<option value="1">Ya</option>
-								<option value="2">Tidak</option>
-							</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Papan nama Puskesmas dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Posisi bangunan terpisah dari bangunan lain</label>
-						<select class="form-control">
-						  <option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-  
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Atap Puskesmas kuat, tidak bocor, tahan lama dalam kondisi baik, rapi dan bersih
-						</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Langit-langit Puskesmas kuat, berwarna terang dan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Material dinding Puskesmas keras, rata, tidak berpori, tidak menyebabkan silau, kedap air, dan dalam kondisi baik, rapi dan bersih.</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Dinding KM/WC Puskesmas kedap air, dilapisi keramik minimal setinggi 150 cm dan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Dinding laboratorium Puskesmas tahan bahan kimia, tidak berpori dan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Material lantai Puskesmas kuat, kedap air, permukaan rata, tidak licin, bewarna terang, dan dalam kondisi baik, rapi dan bersih.</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Lantai KM/WC Puskesmas dari bahan yang tidak licin, air buangan tidak menggenang dan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Lebar bukaan pintu utama Puskesmas minimal 120 cm dan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Pintu KM/WC pasien terbuka keluar dan lebar daun pintu minimal 90 cm serta mudah untuk di buka dan ditutup serta dalam kondisi baik, rapi, bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Material pintu untuk KM/WC kedap air</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Mempunyai KM/WC untuk penyandang disabilitas dilengkapi dengan handrail yang memiliki posisi dan ketinggian disesuaikan dengan pengguna kursi roda dan penyandang disabilitas lain dan simbol penyandang disabilitas dalam kondisi baik, rapi dan bersih.</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Halaman Puskesmas tidak banjir/tergenang air saat hujan dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Tersedia drainase yang baik sehingga tidak membuat banjir saat hujan turun.</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Kursi ruang tunggu cukup/memadai untuk jumlah pasien yang datang, tidak sempit dan tidak menganggu alur pelayanan/koridor serta rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Meubelair Puskesmas dalam kondisi baik, rapi dan bersih</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Terdapat tempat poster penyuluhan yang tertata rapi dan bersih di bangunan Puskesmas</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Terdapat tempat khusus pemasangan spanduk edukasi kesehatan yang rapi dan di halaman Puskesmas</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Terdapat taman obat yang tertata rapi di area Puskesmas
+              <span class='sidebar' id='sidebartab3' preferred='yes'>
 
-					</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Puskesmas bebas dari asap rokok
+                <form>
+                  <div class="form-group">
 
-					</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan kecoa</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan tikus</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari kucing</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Angka Bebas Jentik 100%</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Angka rata-rata populasi lalat < 2 ekor</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Angka rata-rata populasi kecoa < 2 ekor</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">Terdapat KIR (kartu inventaris ruangan) pada setiap ruangan puskesmas yang telah diisi lengkap</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1"><strong>Angka Bebas Jentik 100%</strong></label> <br>
-						<label for="exampleFormControlInput1">a. Ruang Administrasi</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">b. Ruang Kantor untuk Karyawan </label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">c. Ruang Kepala Puskesmas </label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					  <div class="form-group">
-						<label for="exampleFormControlInput1">d. Ruang Rapat/Diskusi</label>
-					   <select class="form-control">
-						<option selected>Pilih ...</option>
-						  <option value="1">Ya</option>
-						  <option value="2">Tidak</option>
-						</select>
-					  </div>
-					<a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
-				</form></br>
-					</span>
-			</div>
+                    <label for="exampleFormControlInput1">Koefisien Dasar Bangunan (KDB) Puskesmas maksimal 60%</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Koefisien lantai bangunan (KLB) Puskesmas maksimal 1,8</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Puskesmas Tidak di tepi lereng</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Koefisien daerah hijau (KDH) Puskesmas minimal 15%</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Tata letak ruang pelayanan pada bangunan puskesmas diatur berdasarkan zona privasi kegiatan dan zona infeksius atau zona non infeksius serta zona pelayanan.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Pencahayaan dan penghawaan Puskesmas nyaman dan aman di semua bagian.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Lebar koridor puskesmas minimal 2,4 meter, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Tinggi langit-langit puskesmas minimal 2,8 meter, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7o.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Bangunan Puskesmas permanen, rapi, bersih tidak pengap dan tidak berbau</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Lambang Puskesmas sesuai dengan PMK 43 tahun 2019 dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Lambang Puskesmas diletakkan di depan bangunan yang mudah terlihat dari jarak jauh </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Papan nama Puskesmas dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Posisi bangunan terpisah dari bangunan lain</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Atap Puskesmas kuat, tidak bocor, tahan lama dalam kondisi baik, rapi dan bersih
+                    </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Langit-langit Puskesmas kuat, berwarna terang dan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Material dinding Puskesmas keras, rata, tidak berpori, tidak menyebabkan silau, kedap air, dan dalam kondisi baik, rapi dan bersih.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Dinding KM/WC Puskesmas kedap air, dilapisi keramik minimal setinggi 150 cm dan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Dinding laboratorium Puskesmas tahan bahan kimia, tidak berpori dan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Material lantai Puskesmas kuat, kedap air, permukaan rata, tidak licin, bewarna terang, dan dalam kondisi baik, rapi dan bersih.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Lantai KM/WC Puskesmas dari bahan yang tidak licin, air buangan tidak menggenang dan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Lebar bukaan pintu utama Puskesmas minimal 120 cm dan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Pintu KM/WC pasien terbuka keluar dan lebar daun pintu minimal 90 cm serta mudah untuk di buka dan ditutup serta dalam kondisi baik, rapi, bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Material pintu untuk KM/WC kedap air</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Mempunyai KM/WC untuk penyandang disabilitas dilengkapi dengan handrail yang memiliki posisi dan ketinggian disesuaikan dengan pengguna kursi roda dan penyandang disabilitas lain dan simbol penyandang disabilitas dalam kondisi baik, rapi dan bersih.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Halaman Puskesmas tidak banjir/tergenang air saat hujan dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Tersedia drainase yang baik sehingga tidak membuat banjir saat hujan turun.</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Kursi ruang tunggu cukup/memadai untuk jumlah pasien yang datang, tidak sempit dan tidak menganggu alur pelayanan/koridor serta rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Meubelair Puskesmas dalam kondisi baik, rapi dan bersih</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Terdapat tempat poster penyuluhan yang tertata rapi dan bersih di bangunan Puskesmas</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Terdapat tempat khusus pemasangan spanduk edukasi kesehatan yang rapi dan di halaman Puskesmas</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Terdapat taman obat yang tertata rapi di area Puskesmas
+
+                    </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Puskesmas bebas dari asap rokok
+
+                    </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan kecoa</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan tikus</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari kucing</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Angka Bebas Jentik 100%</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Angka rata-rata populasi lalat < 2 ekor</label> <select class="form-control">
+                        <option selected>Pilih ...</option>
+                        <option value="1">Ya</option>
+                        <option value="2">Tidak</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Angka rata-rata populasi kecoa < 2 ekor</label> <select class="form-control">
+                        <option selected>Pilih ...</option>
+                        <option value="1">Ya</option>
+                        <option value="2">Tidak</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">Terdapat KIR (kartu inventaris ruangan) pada setiap ruangan puskesmas yang telah diisi lengkap</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1"><strong>Angka Bebas Jentik 100%</strong></label> <br>
+                    <label for="exampleFormControlInput1">a. Ruang Administrasi</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">b. Ruang Kantor untuk Karyawan </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">c. Ruang Kepala Puskesmas </label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlInput1">d. Ruang Rapat/Diskusi</label>
+                    <select class="form-control">
+                      <option selected>Pilih ...</option>
+                      <option value="1">Ya</option>
+                      <option value="2">Tidak</option>
+                    </select>
+                  </div>
+                  <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+                </form></br>
+              </span>
+            </div>
             <div class='-content multitab-widget-content-widget-id' id='multicolumn-widget-id4'>
               <span class='sidebar' id='sidebartab4' preferred='yes'>
                 <form>
@@ -1209,9 +1207,9 @@
               <span class='sidebar' id='sidebartab5' preferred='yes'>
                 <form>
                   <div class="form-group">
-                      <option selected>Pilih ...</option>
-                      <option value="1">Lengkap</option>
-                      <option value="2">Tidak Lengkap</option>
+                    <option selected>Pilih ...</option>
+                    <option value="1">Lengkap</option>
+                    <option value="2">Tidak Lengkap</option>
                     </select>
                   </div>
                   <div class="form-group">
