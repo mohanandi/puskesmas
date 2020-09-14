@@ -2,15 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\application",
+    "\\application\\controllers",
     "\\application\\views",
+    "\\application\\views\\kab_kota",
     "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
-    "\\application\\views\\templates\\puskesmas",
-    "\\assets",
-    "\\assets\\js",
+    "\\application\\views\\templates\\kab_kota",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\views\\puskesmas\\data_umum4.php",
+  "SelectedNode": "\\application\\controllers\\Dinas.php",
   "PreviewInSolutionExplorer": false
 }

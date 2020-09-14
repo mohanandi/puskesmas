@@ -28,40 +28,40 @@
                   <label for="exampleFormControlInput1"><strong> Inovasi MANAJEMEN </strong></label>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukm1" id="upayaukm1">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukm1" id="upayaukm1" value="" readonly>
                 </div>
                 <div class=" col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukp1" id="upayaukp1">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukp1" id="upayaukp1" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayamanajemen1" id="upayamanajemen1">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayamanajemen1" id="upayamanajemen1" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukm2" id="upayaukm2">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukm2" id="upayaukm2" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukp2" id="upayaukp2">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukp2" id="upayaukp2" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayamanajemen2" id="upayamanajemen2">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayamanajemen2" id="upayamanajemen2" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukm3" id="upayaukm3">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukm3" id="upayaukm3" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukp3" id="upayaukp3">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukp3" id="upayaukp3" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayamanajemen3" id="upayamanajemen3">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayamanajemen3" id="upayamanajemen3"value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukm4" id="upayaukm4">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukm4" id="upayaukm4" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukp4" id="upayaukp4">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukp4" id="upayaukp4" value="" readonly>
                 </div>
                 <div class="col-md-4">
-                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayamanajemen4" id="upayamanajemen4">
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayamanajemen4" id="upayamanajemen4"value="" readonly>
                 </div>
               </div>
             </div>
