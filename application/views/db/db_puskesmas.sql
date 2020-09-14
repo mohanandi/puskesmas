@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Sep 2020 pada 14.25
+-- Waktu pembuatan: 14 Sep 2020 pada 16.14
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_puskesmas1`
+-- Database: `db_puskesmas`
 --
 
 -- --------------------------------------------------------
@@ -436,12 +436,13 @@ CREATE TABLE `sumber_daya_manusia` (
   `tradisional4` varchar(5) NOT NULL,
   `tradisional5` varchar(5) NOT NULL,
   `tradisional6` varchar(5) NOT NULL,
-  `titik1` varchar(5) NOT NULL,
+  `titik1` varchar(255) NOT NULL,
   `titik2` varchar(5) NOT NULL,
   `titik3` varchar(5) NOT NULL,
   `titik4` varchar(5) NOT NULL,
   `titik5` varchar(5) NOT NULL,
-  `titik6` varchar(5) NOT NULL
+  `titik6` varchar(5) NOT NULL,
+  `titik7` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
