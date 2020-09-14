@@ -13,6 +13,16 @@ class Home extends CI_Controller
     public function index()
     {
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $this->load->view('home', $data);
+        if ($this->session->userdata['role_id'] == 3) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/home', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else if ($this->session->userdata['role_id'] == 2) {
+            $this->load->view('kab_kota/home', $data);
+        } else if ($this->session->userdata['role_id'] == 1) {
+            $this->load->view('provinsi/home', $data);
+        } else {
+            $this->load->view('pusat/home', $data);
+        }
     }
 }

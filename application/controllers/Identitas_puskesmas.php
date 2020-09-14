@@ -32,12 +32,6 @@ class Identitas_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('telp_gadar', 'No. Faksimile', 'required');
         $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
 
-        if ($this->form_validation->run() == false) {
-            $this->index();
-        } else {
-            $this->Mahasiswa_model->tambahDataMahasiswa();
-            $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('mahasiswa');
-        }
+        echo $this->session->userdata('role_id');
     }
 }
