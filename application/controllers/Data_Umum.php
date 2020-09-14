@@ -11,7 +11,7 @@ class Data_Umum extends CI_Controller
     public function index()
     {
         $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/data_umum');
+        $this->load->view('puskesmas/data_umum_hasil');
         $this->load->view('templates/puskesmas/foot');
     }
 }
