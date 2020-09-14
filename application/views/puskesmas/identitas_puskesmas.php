@@ -131,6 +131,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1">Alamat email dan website</label>
             <input type="email" class="form-control" id="email" name="email" placeholder="">
+            <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
           </div>
           <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
         </form>
