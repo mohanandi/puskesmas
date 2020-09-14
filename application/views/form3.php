@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/dinas.css">
 <div class="site-section" id="menu">
   <div class="container">
     <div class="row mb-5">
@@ -6,23 +8,105 @@
         <h2 class="heading"><strong class="text-primary">Data Umum</strong> Puskesmas Percontohan</h2>
       </div>
     </div>
-    <div class="container1">
+	<div class="row">
+      <div class="col-md-3">
+        </head>
+
+        <body>
+          <a id="button"></a>
+          <button type="button active" class="collapsible">Profil Puskesmas</button>
+          <div class="content">
+            <br>
+            <img src="<?= base_url('assets/') ?>images/person_3.jpg" alt="Avatar" style="width:150px; border-radius: 50%; margin-left: 15%;">
+            <br>
+            <br>
+            <p style="text-align: center;">Nama Puskesmas <span><strong>Puskesmas Jakarta</strong></span></p>
+            <p style="text-align: center;">Lokasi<br> <span><strong>Pondok Labu, Jakarta Selatan No. 17</strong></span></p>
+            <p style="text-align: center;">Tanggal Peresmian<br> <span><strong>20 Juni 2011</strong></span></p>
+            <p style="text-align: center;">Status Akreditasi<br><span><strong>Paripurna</strong></span></p>
+            <p style="text-align: center;">Motto<br> <span><strong>Jaya Selalu Puskesmas</strong></span></p>
+          </div>
+          <br>
+
+          <p style="text-align: center;">Menu Cepat</p>
+          <button type="button" class="collapsible">Penilaian Puskesmas</button>
+          <div class="content">
+            <br>
+            <a href="#">
+              <p style="text-align: center;">Pemenuhan Sumber Daya Puskesmas</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Perencanaan Puskesmas</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Penggerakan dan Pelaksanaan Sumber Daya Puskesmas</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Peningkatan Mutu Puskesmas</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Pencegahan dan Pengendalian Infkesi dan Kesehatan Lingkungan</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menular Potensial KLB/Wabah</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Cakupan Indikator Program</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Upaya Inovasi</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Rekapitulasi Skor</p>
+            </a>
+            <hr>
+            <a href="#">
+              <p style="text-align: center;">Rencana Tidak Lanjut</p>
+            </a>
+
+          </div>
+          <button type="button" class="collapsible">Menu 2</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+          <button type="button" class="collapsible">Menu 3</button>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+      </div>
+      <div class="col-md-9" style="top:-110px;">
+
+        
+    <div class="container1" style="height:350px; margin-bottom:300px; overflow-y:auto; overflow-x:hidden; padding:10px;">
       <div class='multitab-section'>
-        <ul class='multitab-widget multitab-widget-content-tabs-id'>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id1'>Organisasi Manajemen</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id2'>Lokasi Puskesmas</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id3'>Bangunan Puskesmas</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id4'>Prasarana Puskesmas</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id5'>Peralatan Puskesmas</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id6'>Pengisian Aspak</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id7'>Sumber Daya Manusia</a></li>
-          <li class='multitab-tab'><a href='#multicolumn-widget-id8'>Penilaian Kinerja Puskesmas</a></li>
+        <ul class='multitab-widget multitab-widget-content-tabs-id' >
+          <li class='multitab-tab'><a href='#multicolumn-widget-id1' style="font-size:10px;">Organisasi Manajemen</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id2' style="font-size:10px;">Lokasi Puskesmas</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id3' style="font-size:10px;">Bangunan Puskesmas</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id4' style="font-size:10px;">Prasarana Puskesmas</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id5' style="font-size:10px;">Peralatan Puskesmas</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id6' style="font-size:10px;">Pengisian Aspak</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id7' style="font-size:10px; width:120px;">Sumber Daya Manusia</a></li>
+          <li class='multitab-tab'><a href='#multicolumn-widget-id8' style="font-size:10px; width:120px; margin-left:20px;">Penilaian Kinerja Puskesmas</a></li>
         </ul>
+		<br>
         <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1'>
           <span class='sidebar' id='sidebartab1' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+                <label for="exampleFormControlInput1"><br>Nomor izin operasional Puskesmas</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
               </div>
               <div class="form-group">
@@ -41,7 +125,6 @@
                 <label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form></br>
           </span>
         </div>
@@ -49,7 +132,7 @@
           <span class='sidebar' id='sidebartab2' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Puskesmas mempunyai sertifikat tanah</label>
+                <label for="exampleFormControlInput1"><br>Puskesmas mempunyai sertifikat tanah</label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Ya</option>
@@ -178,7 +261,6 @@
                   <option value="2">Tidak</option>
                 </select>
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form>
 
             <BR>
@@ -188,7 +270,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Koefisien Dasar Bangunan (KDB) Puskesmas maksimal 60%</label>
+                <label for="exampleFormControlInput1"><br>Koefisien Dasar Bangunan (KDB) Puskesmas maksimal 60%</label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Ya</option>
@@ -545,7 +627,6 @@
                   <option value="2">Tidak</option>
                 </select>
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form></br>
           </span>
         </div>
@@ -553,7 +634,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
+                <label for="exampleFormControlInput1"><strong><br>1. PENGHAWAAN (VENTILASI)</strong></label><br>
                 <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
@@ -1110,7 +1191,6 @@
                 </select>
               </div>
 
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form>
             <br>
           </span>
@@ -1119,7 +1199,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Set Pemeriksaan Umum</label>
+                <label for="exampleFormControlInput1"><br>Set Pemeriksaan Umum</label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Lengkap</option>
@@ -1398,7 +1478,6 @@
                   <option value="2">Tidak Lengkap</option>
                 </select>
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form>
             </br>
             </br>
@@ -1409,7 +1488,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
+                <label for="exampleFormControlInput1"><br>Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Ya</option>
@@ -1426,7 +1505,6 @@
                   <option value="4">≤ 60%</option>
                 </select>
               </div>
-              <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
             </form>
           </span>
         </div>
@@ -1434,7 +1512,7 @@
           <span class='sidebar' id='sidebartab3' preferred='yes'>
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
+                <label for="exampleFormControlInput1"><br><strong>Kepala Puskesmas </strong></label>
                 <select class="form-control">
                   <option selected>Pilih ...</option>
                   <option value="1">Dokter Umum</option>
@@ -1866,7 +1944,7 @@
                 </div>
 
               </section>
-              <a class=" btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+             
             </form>
           </span>
         </div>
@@ -1957,13 +2035,20 @@
                   <option selected>Pilih ...</option>
                   <option value="1"> >0,800</option>
                   <option value="2"> 0,500-0,800</option>
-                  <option value="3">
-                    <0,500 </option> </select> </div> <a class="btn" href="table.html" style="background-color: #16b3ac; color: white;">Submit</a>
+                  <option value="3"> <0,500 
+				  </option> </select> </div> 
             </form>
+
           </span>
         </div>
       </div>
+		<a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+		<a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
     </div>
 
   </div>
 </div>
+
+<script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
+
+<script src="<?= base_url('assets/') ?>js/para.js"></script>
