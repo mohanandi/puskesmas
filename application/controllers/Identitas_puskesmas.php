@@ -41,7 +41,6 @@ class Identitas_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('faks', 'No. Faksimile', 'required');
         $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
 
-        $this->IdentitasPuskesmas_Model->tambahData();
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {

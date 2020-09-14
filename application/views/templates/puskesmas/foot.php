@@ -1,4 +1,7 @@
 </div>
+</div>
+</div>
+</div>
 </body>
 <script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
 <script src="<?= base_url('assets/') ?>js/para.js"></script>

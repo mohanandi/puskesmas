@@ -9,7 +9,7 @@ class IdentitasPuskesmas_Model extends CI_Model
             "kode" => $this->session->userdata('kode'),
             "nama" => $this->input->post('nama', true),
             "no_reg" => $this->input->post('no_reg', true),
-            "tgl_pendirian" => $this->input->post('tgl_diri', true),
+            "tgl_pendirian" => strtotime($this->input->post('tgl_diri', true)),
             "alamat" => $this->input->post('alamat', true),
             "kecamatan" => $this->input->post('kecamatan', true),
             "kab_kota" => $this->input->post('kab_kota', true),
