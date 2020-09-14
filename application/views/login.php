@@ -37,7 +37,7 @@
 						<input class="input100" type="password" name="password" placeholder="Masukan password">
 						<span class="focus-input100"></span>
 					</div>
-					<?= form_error('kode'); ?>
+					<?= form_error('password'); ?>
 
 					<div class="flex-sb-m w-full p-b-30">
 						<div class="contact100-form-checkbox">
