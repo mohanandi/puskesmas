@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Lokasi_Puskesmas extends CI_Controller
+class Prasarana_Puskesmas extends CI_Controller
 {
     public function index()
     {

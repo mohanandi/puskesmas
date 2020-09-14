@@ -133,7 +133,7 @@
             </div>
             <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id2'>
               <span class='sidebar' id='sidebartab2' preferred='yes'>
-                <form method="POST">
+                <form method="POST" action="<?= base_url('Lokasi_Puskesmas/tambah'); ?>">
                   <div class="form-group">
                     <label for="exampleFormControlInput1">Puskesmas mempunyai sertifikat tanah</label>
                     <select class="form-control" name="lokasi1" id="lokasi1">
