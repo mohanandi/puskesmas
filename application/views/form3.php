@@ -131,7 +131,7 @@
             </div>
             <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id2'>
               <span class='sidebar' id='sidebartab2' preferred='yes'>
-                <form>
+                <form method="POST">
                   <div class="form-group">
                     <label for="exampleFormControlInput1"><br>Puskesmas mempunyai sertifikat tanah</label>
                     <select class="form-control" name="lokasi1" id="lokasi1">
@@ -262,7 +262,9 @@
                       <option value="2">Tidak</option>
                     </select>
                   </div>
-                  <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+                  <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">
+                    masukkan
+                  </button>
                 </form>
 
                 <BR>
