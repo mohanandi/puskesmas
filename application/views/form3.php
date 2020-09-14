@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
-<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/dinas.css">
+<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/dinas1.css">
 <div class="site-section" id="menu">
   <div class="container">
     <div class="row mb-5">
