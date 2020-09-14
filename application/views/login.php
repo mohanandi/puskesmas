@@ -7,6 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/login.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
+	
 
 </head>
 
@@ -25,6 +27,9 @@
 				</div>
 				<?= $this->session->flashdata('message'); ?>
 				<form class="login100-form validate-form" method="post" action="<?= base_url('auth'); ?>">
+				<div class="alert alert-danger" role="alert">
+					Password Salah !
+				</div>
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Kode</span>
 						<input class="input100" type="text" name="kode" placeholder="Masukan Kode">

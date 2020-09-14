@@ -2,15 +2,13 @@
   "ExpandedNodes": [
     "",
     "\\application",
-    "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\kab_kota",
-    "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
-    "\\application\\views\\templates\\kab_kota",
+    "\\assets",
+    "\\assets\\css",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\controllers\\Dinas.php",
+  "SelectedNode": "\\assets\\css\\bootstrap.min.css",
   "PreviewInSolutionExplorer": false
 }
