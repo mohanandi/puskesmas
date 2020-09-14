@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Sep 2020 pada 09.32
+-- Waktu pembuatan: 14 Sep 2020 pada 13.26
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -20,6 +20,96 @@ SET time_zone = "+00:00";
 --
 -- Database: `db_puskesmas`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `bangunan_puskesmas`
+--
+
+CREATE TABLE `bangunan_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `kdb` varchar(5) NOT NULL,
+  `klb` varchar(5) NOT NULL,
+  `kdh` varchar(5) NOT NULL,
+  `tataletak` varchar(5) NOT NULL,
+  `pencahayaan` varchar(5) NOT NULL,
+  `lebar_koridor` varchar(5) NOT NULL,
+  `tingi_langit` varchar(5) NOT NULL,
+  `bila_antar` varchar(5) NOT NULL,
+  `bangunan_puskesmas` varchar(5) NOT NULL,
+  `lambang_puskesmas` varchar(5) NOT NULL,
+  `lambang_jauh` varchar(5) NOT NULL,
+  `papannama` varchar(5) NOT NULL,
+  `posisi_bangunan` varchar(5) NOT NULL,
+  `atap_puskesmas` varchar(5) NOT NULL,
+  `langit_langit` varchar(5) NOT NULL,
+  `material_dinding` varchar(5) NOT NULL,
+  `dinding_wc` varchar(5) NOT NULL,
+  `dinding_lab` varchar(5) NOT NULL,
+  `material_lantai` varchar(5) NOT NULL,
+  `lantai_wc` varchar(5) NOT NULL,
+  `lebar_bukaan` varchar(5) NOT NULL,
+  `lebar_pintu` varchar(5) NOT NULL,
+  `pintu_wc` varchar(5) NOT NULL,
+  `material_pintu` varchar(5) NOT NULL,
+  `wc_disabilitas` varchar(5) NOT NULL,
+  `halaman_puskesmas` varchar(5) NOT NULL,
+  `drainase` varchar(5) NOT NULL,
+  `kursi_tunggu` varchar(5) NOT NULL,
+  `meubelair` varchar(5) NOT NULL,
+  `tmpt_poster` varchar(5) NOT NULL,
+  `tmpt_spanduk` varchar(5) NOT NULL,
+  `taman_obat` varchar(5) NOT NULL,
+  `bebas_rokok` varchar(5) NOT NULL,
+  `bebas_kecoa` varchar(5) NOT NULL,
+  `bebas_tikus` varchar(5) NOT NULL,
+  `bebas_kucing` varchar(5) NOT NULL,
+  `bebas_jentik` varchar(5) NOT NULL,
+  `populasi_lalat` varchar(5) NOT NULL,
+  `populasi_kecoa` varchar(5) NOT NULL,
+  `kir` varchar(5) NOT NULL,
+  `ruang_admin` varchar(5) NOT NULL,
+  `ruang_karyawan` varchar(5) NOT NULL,
+  `ruang_kepala` varchar(5) NOT NULL,
+  `ruang_rapat` varchar(5) NOT NULL,
+  `ruang_pendaftaran` varchar(5) NOT NULL,
+  `ruang_pemeriksaaan` varchar(5) NOT NULL,
+  `ruang_tindakan` varchar(5) NOT NULL,
+  `ruang_kia` varchar(5) NOT NULL,
+  `ruang_khusus` varchar(5) NOT NULL,
+  `ruang_gigi` varchar(5) NOT NULL,
+  `ruang_kie` varchar(5) NOT NULL,
+  `ruang_farmasi` varchar(5) NOT NULL,
+  `ruang_resep` varchar(5) NOT NULL,
+  `ruang_racik` varchar(5) NOT NULL,
+  `ruang_obat` varchar(5) NOT NULL,
+  `ruang_konseling` varchar(5) NOT NULL,
+  `ruang_bmhp` varchar(5) NOT NULL,
+  `ruang_arsip` varchar(5) NOT NULL,
+  `ruang_persalinan` varchar(5) NOT NULL,
+  `ruang_pasca` varchar(5) NOT NULL,
+  `ruang_lab` varchar(5) NOT NULL,
+  `ruang_kb` varchar(5) NOT NULL,
+  `ruang_anak` varchar(5) NOT NULL,
+  `ruang_inap` varchar(5) NOT NULL,
+  `wc` varchar(5) NOT NULL,
+  `ruang_tunggu` varchar(5) NOT NULL,
+  `ruang_asi` varchar(5) NOT NULL,
+  `ruang_steril` varchar(5) NOT NULL,
+  `ruang_linen` varchar(5) NOT NULL,
+  `ruang_dapur` varchar(5) NOT NULL,
+  `ruang_jaga` varchar(5) NOT NULL,
+  `gudang_umum` varchar(5) NOT NULL,
+  `wc_pasien` varchar(5) NOT NULL,
+  `rumah_dinas` varchar(5) NOT NULL,
+  `roda_2` varchar(5) NOT NULL,
+  `roda_4` varchar(5) NOT NULL,
+  `garasi_ambulan` varchar(5) NOT NULL,
+  `area_tabung` varchar(5) NOT NULL,
+  `selain_diatas` varchar(255) NOT NULL,
+  `ruang_lain` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -41,6 +131,317 @@ CREATE TABLE `identitas_puskesmas` (
   `no_telp_gadar` varchar(20) NOT NULL,
   `no_faksimile` varchar(20) NOT NULL,
   `email` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `lokasi_puskesmas`
+--
+
+CREATE TABLE `lokasi_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `puskesmas_tanah` varchar(5) NOT NULL,
+  `slf` varchar(5) NOT NULL,
+  `puskesmas_lereng` varchar(5) NOT NULL,
+  `puskesmas_longsor` varchar(5) NOT NULL,
+  `puskesmas_pondasi` varchar(5) NOT NULL,
+  `puskesmas_aktif` varchar(5) NOT NULL,
+  `puskesmas_tsunami` varchar(5) NOT NULL,
+  `puskesmas_banjir` varchar(5) NOT NULL,
+  `puskesmas_topan` varchar(5) NOT NULL,
+  `puskesmas_badai` varchar(5) NOT NULL,
+  `puskesmas_masyarakat` varchar(5) NOT NULL,
+  `puskesmas_transportasi` varchar(5) NOT NULL,
+  `puskesmas_bersih` varchar(5) NOT NULL,
+  `fasilitas_bersih` varchar(5) NOT NULL,
+  `tersedia_bersih` varchar(5) NOT NULL,
+  `sutet` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `organisasi_manajemen`
+--
+
+CREATE TABLE `organisasi_manajemen` (
+  `kode` varchar(20) NOT NULL,
+  `niop` varchar(255) NOT NULL,
+  `tgl_izin` int(11) NOT NULL,
+  `kategori` varchar(255) NOT NULL,
+  `status` varchar(255) NOT NULL,
+  `pplh` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengisian_aspak`
+--
+
+CREATE TABLE `pengisian_aspak` (
+  `kode` varchar(20) NOT NULL,
+  `aspak` varchar(5) NOT NULL,
+  `aspak_pmk` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `penilaian_kinerja_puskesmas`
+--
+
+CREATE TABLE `penilaian_kinerja_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `self` varchar(5) NOT NULL,
+  `n2_pelayanan` varchar(5) NOT NULL,
+  `n2_manajemen` varchar(5) NOT NULL,
+  `n1_pelayanan` varchar(5) NOT NULL,
+  `n1_manajemen` varchar(5) NOT NULL,
+  `uji_petik` varchar(5) NOT NULL,
+  `inovasi` varchar(5) NOT NULL,
+  `rumusan` varchar(5) NOT NULL,
+  `tahun_akreditasi` varchar(5) NOT NULL,
+  `status_akreditas` varchar(5) NOT NULL,
+  `tahun_iks` varchar(5) NOT NULL,
+  `status_iks` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `peralatan_puskesmas`
+--
+
+CREATE TABLE `peralatan_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `set_umum` varchar(5) NOT NULL,
+  `set_tindakan` varchar(5) NOT NULL,
+  `set_ibu` varchar(5) NOT NULL,
+  `set_anak` varchar(5) NOT NULL,
+  `set_kb` varchar(5) NOT NULL,
+  `set_imun` varchar(5) NOT NULL,
+  `set_obstetri` varchar(5) NOT NULL,
+  `set_akdr` varchar(5) NOT NULL,
+  `set_bayi` varchar(5) NOT NULL,
+  `set_maternal` varchar(5) NOT NULL,
+  `set_pasca` varchar(5) NOT NULL,
+  `set_khusus` varchar(5) NOT NULL,
+  `set_gigi` varchar(5) NOT NULL,
+  `set_kie` varchar(5) NOT NULL,
+  `set_asi` varchar(5) NOT NULL,
+  `set_lab` varchar(5) NOT NULL,
+  `set_farmasi` varchar(5) NOT NULL,
+  `set_inap` varchar(5) NOT NULL,
+  `set_steril` varchar(5) NOT NULL,
+  `set_alat` varchar(5) NOT NULL,
+  `set_kel` varchar(5) NOT NULL,
+  `kit_kkm` varchar(5) NOT NULL,
+  `kit_imun` varchar(5) NOT NULL,
+  `kit_uks` varchar(5) NOT NULL,
+  `kit_ukgs` varchar(5) NOT NULL,
+  `kit_bidan` varchar(5) NOT NULL,
+  `kit_posyandu` varchar(5) NOT NULL,
+  `kit_sanitarian` varchar(5) NOT NULL,
+  `kit_ptm` varchar(5) NOT NULL,
+  `kit_sdidtk` varchar(5) NOT NULL,
+  `puskesmas_hg` varchar(5) NOT NULL,
+  `kalibrasi` varchar(5) NOT NULL,
+  `ijin_edar` varchar(5) NOT NULL,
+  `pd_tempatnya` varchar(5) NOT NULL,
+  `dlm_negri` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `prasarana_puskesmas`
+--
+
+CREATE TABLE `prasarana_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `ventilasi_alami` varchar(5) NOT NULL,
+  `ac_farmasi` varchar(5) NOT NULL,
+  `ac_tindakan` varchar(5) NOT NULL,
+  `ac_persalinan` varchar(5) NOT NULL,
+  `ac_lab` varchar(5) NOT NULL,
+  `lab_ac` varchar(5) NOT NULL,
+  `ventilasi_tunggu` varchar(5) NOT NULL,
+  `udara_puskesmas` varchar(5) NOT NULL,
+  `udara_berbau` varchar(5) NOT NULL,
+  `kelembapan` varchar(5) NOT NULL,
+  `laju_ventilasi` varchar(5) NOT NULL,
+  `pencahayaan` varchar(5) NOT NULL,
+  `pemeriksaan` varchar(5) NOT NULL,
+  `duaratus` varchar(5) NOT NULL,
+  `tigaratus` varchar(5) NOT NULL,
+  `seratus` varchar(5) NOT NULL,
+  `hygiene` varchar(5) NOT NULL,
+  `limabelas` varchar(5) NOT NULL,
+  `empatpuluh` varchar(5) NOT NULL,
+  `hygiene_seratus` varchar(5) NOT NULL,
+  `sumber_air` varchar(5) NOT NULL,
+  `saluran_air` varchar(5) NOT NULL,
+  `ipal` varchar(5) NOT NULL,
+  `sampah_dua` varchar(5) NOT NULL,
+  `pemilihan` varchar(5) NOT NULL,
+  `tps` varchar(5) NOT NULL,
+  `westafel` varchar(5) NOT NULL,
+  `serbet` varchar(5) NOT NULL,
+  `handrub` varchar(5) NOT NULL,
+  `septik_tank` varchar(5) NOT NULL,
+  `listrik_puskesmas` varchar(5) NOT NULL,
+  `daya_listrik` varchar(5) NOT NULL,
+  `listrik_cadangan` varchar(5) NOT NULL,
+  `kekuatan_cadangan` varchar(5) NOT NULL,
+  `listrik_sehari` varchar(5) NOT NULL,
+  `listrik_mencukupi` varchar(5) NOT NULL,
+  `listrik_minimal` varchar(5) NOT NULL,
+  `peletakan_kabel` varchar(5) NOT NULL,
+  `saluran_tlp` varchar(5) NOT NULL,
+  `saluran_seluler` varchar(5) NOT NULL,
+  `tlp_gadar` varchar(5) NOT NULL,
+  `internet` varchar(5) NOT NULL,
+  `pemanggilan_jelas` varchar(5) NOT NULL,
+  `sistem_antrian` varchar(5) NOT NULL,
+  `mesin_nomor` varchar(5) NOT NULL,
+  `tv_urut` varchar(5) NOT NULL,
+  `perkiraan_waktu` varchar(5) NOT NULL,
+  `gas_putih` varchar(5) NOT NULL,
+  `gas_aman` varchar(5) NOT NULL,
+  `gas_tutup` varchar(5) NOT NULL,
+  `proteksi` varchar(5) NOT NULL,
+  `apar` varchar(5) NOT NULL,
+  `apar_dua` varchar(5) NOT NULL,
+  `apar_dinding` varchar(5) NOT NULL,
+  `apar_co` varchar(5) NOT NULL,
+  `kebisingan_luar` varchar(5) NOT NULL,
+  `kebisingan_dlm` varchar(5) NOT NULL,
+  `bila_tangga` varchar(5) NOT NULL,
+  `bila_ram` varchar(5) NOT NULL,
+  `keliling_unit` varchar(255) NOT NULL,
+  `kendaraan_ada` varchar(5) NOT NULL,
+  `ambulan_unit` varchar(255) NOT NULL,
+  `ambulan_ada` varchar(5) NOT NULL,
+  `roda_unit` varchar(255) NOT NULL,
+  `roda_ada` varchar(5) NOT NULL,
+  `puskesmas_keliling` varchar(5) NOT NULL,
+  `ambulan_baik` varchar(5) NOT NULL,
+  `rujukan` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `sumber_daya_manusia`
+--
+
+CREATE TABLE `sumber_daya_manusia` (
+  `kode` varchar(20) NOT NULL,
+  `kepala` varchar(5) NOT NULL,
+  `dokter1` varchar(5) NOT NULL,
+  `dokter2` varchar(5) NOT NULL,
+  `dokter3` varchar(5) NOT NULL,
+  `dokter4` varchar(5) NOT NULL,
+  `dokter5` varchar(5) NOT NULL,
+  `dokter6` varchar(5) NOT NULL,
+  `dlp1` varchar(5) NOT NULL,
+  `dlp2` varchar(5) NOT NULL,
+  `dlp3` varchar(5) NOT NULL,
+  `dlp4` varchar(5) NOT NULL,
+  `dlp5` varchar(5) NOT NULL,
+  `dlp6` varchar(5) NOT NULL,
+  `gigi1` varchar(5) NOT NULL,
+  `gigi2` varchar(5) NOT NULL,
+  `gigi3` varchar(5) NOT NULL,
+  `gigi4` varchar(5) NOT NULL,
+  `gigi5` varchar(5) NOT NULL,
+  `gigi6` varchar(5) NOT NULL,
+  `perawat1` varchar(5) NOT NULL,
+  `perawat2` varchar(5) NOT NULL,
+  `perawat3` varchar(5) NOT NULL,
+  `perawat4` varchar(5) NOT NULL,
+  `perawat5` varchar(5) NOT NULL,
+  `perawat6` varchar(5) NOT NULL,
+  `bidan1` varchar(5) NOT NULL,
+  `bidan2` varchar(5) NOT NULL,
+  `bidan3` varchar(5) NOT NULL,
+  `bidan4` varchar(5) NOT NULL,
+  `bidan5` varchar(5) NOT NULL,
+  `bidan6` varchar(5) NOT NULL,
+  `promosi1` varchar(5) NOT NULL,
+  `promosi2` varchar(5) NOT NULL,
+  `promosi3` varchar(5) NOT NULL,
+  `promosi4` varchar(5) NOT NULL,
+  `promosi5` varchar(5) NOT NULL,
+  `promosi6` varchar(5) NOT NULL,
+  `sanitasi1` varchar(5) NOT NULL,
+  `sanitasi2` varchar(5) NOT NULL,
+  `sanitasi3` varchar(5) NOT NULL,
+  `sanitasi4` varchar(5) NOT NULL,
+  `sanitasi5` varchar(5) NOT NULL,
+  `sanitasi6` varchar(5) NOT NULL,
+  `nutrisionis1` varchar(5) NOT NULL,
+  `nutrisionis2` varchar(5) NOT NULL,
+  `nutrisionis3` varchar(5) NOT NULL,
+  `nutrisionis4` varchar(5) NOT NULL,
+  `nutrisionis5` varchar(5) NOT NULL,
+  `nutrisionis6` varchar(5) NOT NULL,
+  `apoteker1` varchar(5) NOT NULL,
+  `apoteker2` varchar(5) NOT NULL,
+  `apoteker3` varchar(5) NOT NULL,
+  `apoteker4` varchar(5) NOT NULL,
+  `apoteker5` varchar(5) NOT NULL,
+  `apoteker6` varchar(5) NOT NULL,
+  `kefarmasian1` varchar(5) NOT NULL,
+  `kefarmasian2` varchar(5) NOT NULL,
+  `kefarmasian3` varchar(5) NOT NULL,
+  `kefarmasian4` varchar(5) NOT NULL,
+  `kefarmasian5` varchar(5) NOT NULL,
+  `kefarmasian6` varchar(5) NOT NULL,
+  `ahli1` varchar(5) NOT NULL,
+  `ahli2` varchar(5) NOT NULL,
+  `ahli3` varchar(5) NOT NULL,
+  `ahli4` varchar(5) NOT NULL,
+  `ahli5` varchar(5) NOT NULL,
+  `ahli6` varchar(5) NOT NULL,
+  `kesehatan1` varchar(5) NOT NULL,
+  `kesehatan2` varchar(5) NOT NULL,
+  `kesehatan3` varchar(5) NOT NULL,
+  `kesehatan4` varchar(5) NOT NULL,
+  `kesehatan5` varchar(5) NOT NULL,
+  `kesehatan6` varchar(5) NOT NULL,
+  `keuangan1` varchar(5) NOT NULL,
+  `keuangan2` varchar(5) NOT NULL,
+  `keuangan3` varchar(5) NOT NULL,
+  `keuangan4` varchar(5) NOT NULL,
+  `keuangan5` varchar(5) NOT NULL,
+  `keuangan6` varchar(5) NOT NULL,
+  `tatausaha1` varchar(5) NOT NULL,
+  `tatausaha2` varchar(5) NOT NULL,
+  `tatausaha3` varchar(5) NOT NULL,
+  `tatausaha4` varchar(5) NOT NULL,
+  `tatausaha5` varchar(5) NOT NULL,
+  `tatausaha6` varchar(5) NOT NULL,
+  `pekarya1` varchar(5) NOT NULL,
+  `pekarya2` varchar(5) NOT NULL,
+  `pekarya3` varchar(5) NOT NULL,
+  `pekarya4` varchar(5) NOT NULL,
+  `pekarya5` varchar(5) NOT NULL,
+  `pekarya6` varchar(5) NOT NULL,
+  `tradisional1` varchar(5) NOT NULL,
+  `tradisional2` varchar(5) NOT NULL,
+  `tradisional3` varchar(5) NOT NULL,
+  `tradisional4` varchar(5) NOT NULL,
+  `tradisional5` varchar(5) NOT NULL,
+  `tradisional6` varchar(5) NOT NULL,
+  `titik1` varchar(5) NOT NULL,
+  `titik2` varchar(5) NOT NULL,
+  `titik3` varchar(5) NOT NULL,
+  `titik4` varchar(5) NOT NULL,
+  `titik5` varchar(5) NOT NULL,
+  `titik6` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -1123,10 +1524,58 @@ INSERT INTO `user` (`no`, `kode`, `nama`, `role_id`, `password`, `kab_kota`, `pr
 --
 
 --
+-- Indeks untuk tabel `bangunan_puskesmas`
+--
+ALTER TABLE `bangunan_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
 -- Indeks untuk tabel `identitas_puskesmas`
 --
 ALTER TABLE `identitas_puskesmas`
   ADD PRIMARY KEY (`no`);
+
+--
+-- Indeks untuk tabel `lokasi_puskesmas`
+--
+ALTER TABLE `lokasi_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `organisasi_manajemen`
+--
+ALTER TABLE `organisasi_manajemen`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `pengisian_aspak`
+--
+ALTER TABLE `pengisian_aspak`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `penilaian_kinerja_puskesmas`
+--
+ALTER TABLE `penilaian_kinerja_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `peralatan_puskesmas`
+--
+ALTER TABLE `peralatan_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `prasarana_puskesmas`
+--
+ALTER TABLE `prasarana_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `sumber_daya_manusia`
+--
+ALTER TABLE `sumber_daya_manusia`
+  ADD PRIMARY KEY (`kode`);
 
 --
 -- Indeks untuk tabel `user`
