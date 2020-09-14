@@ -4,6 +4,13 @@
 
 				 <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
 			<form>
+			<div class="alert alert-success" role="alert">
+							Data Berhasil dimasukan !
+						</div>
+							<div class="form-group">
+							 <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+							  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
+							</div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
                   <select class="form-control" name="sdm1" id="sdm1">

@@ -4,6 +4,13 @@
 				 <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
 
 			<form>
+			<div class="alert alert-success" role="alert">
+							Data Berhasil dimasukan !
+						</div>
+							<div class="form-group">
+							 <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+							  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
+							</div>
                 <div class="form-group">
                   <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
                   <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>
