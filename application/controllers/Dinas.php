@@ -22,76 +22,76 @@ class Dinas extends CI_Controller
     public function index()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
     public function dinas2()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas2');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
     public function dinas3()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas3');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas4()
+    public function dinas4()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas4');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas5()
+    public function dinas5()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas5');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas6()
+    public function dinas6()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas6');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas7()
+    public function dinas7()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas7');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas8()
+    public function dinas8()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas8');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas9()
+    public function dinas9()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas9');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas10()
+    public function dinas10()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas10');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 
-	public function dinas11()
+    public function dinas11()
     {
         $this->load->view('templates/form_table/head');
-        $this->load->view('dinas11');
+        $this->load->view('kab_kota/dinas');
         $this->load->view('templates/form_table/foot');
     }
 }

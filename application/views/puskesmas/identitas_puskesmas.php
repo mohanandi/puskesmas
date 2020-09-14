@@ -1,15 +1,13 @@
 <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
-
 <div class="site-section" id="menu">
     <div class="container">
         <div class="row mb-5">
             <div class="col-lg-7 mx-auto text-center">
                 <span class="subheading">Form Menu</span>
-                <h2 class="heading"><strong class="text-primary">Tim Pembina Terpadu</strong> Puskesmas Percontohan</h2>
+                <h2 class="heading"><strong class="text-primary">Identitas Umum</strong> Puskesmas Percontohan</h2>
             </div>
         </div>
-
-		<div class="row">
+	<div class="row">
       <div class="col-md-3">
         </head>
 
@@ -91,42 +89,53 @@
 
         <form style="height:350px; overflow-y:auto; padding:20px;">
             <div class="form-group">
-                <label for="exampleFormControlInput1">Nama Pembina dan No. Telepon</label>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nama Pembina 1">
-                    </div>
-                    <div class="col">
-                        <input type="number" class="form-control" placeholder="No. Telepon">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nama Pembina 2">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="No. Telepon">
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Nama Pembina 3">
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="No. Telepon">
-                    </div>
-                </div>
+                <label for="exampleFormControlInput1">Nama Puskesmas</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Tanggal Pembinaan</label>
+                <label for="exampleFormControlInput1">No. Register</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Tanggal Pendirian</label>
                 <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-         
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Alamat</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Kecamatan</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Kabupaten/Kota</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Provinsi</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">No. Telepon Puskesmas dan No Telepon Whatsapp</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">No. Telepon Ruang Gadar</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">No. Faksimile</label>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Alamat email dan website</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+          
         </form>
 
-   <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+		<a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
 		<a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
 
     </div>
