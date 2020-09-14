@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 14 Sep 2020 pada 13.26
+-- Waktu pembuatan: 14 Sep 2020 pada 14.25
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_puskesmas`
+-- Database: `db_puskesmas1`
 --
 
 -- --------------------------------------------------------
@@ -1517,7 +1517,11 @@ INSERT INTO `user` (`no`, `kode`, `nama`, `role_id`, `password`, `kab_kota`, `pr
 (1045, 'Pr10042', 'Maluku', 1, '$2y$10$TmJb2Rylrx4wmKyhoxWcW.cbU0LU1zV8EH/zxziOyxPXyOb/VCZ.u', '-', 'Maluku', 1599978968, 1599978968),
 (1046, 'Pr10043', 'Papua Barat', 1, '$2y$10$XCR6NN.pxys4zrUTEKcb/uIi./ZA1HxXRD7obYFfQX8G2I5Y714iG', '-', 'Papua Barat', 1599978968, 1599978968),
 (1047, 'Pr10044', 'Papua', 1, '$2y$10$eZISdgKIk8fb.S8DoCpQs.6aR4EZvdMqBq0.C0XrYeMdb2uei7egK', '-', 'Papua', 1599978968, 1599978968),
-(1048, 'pusat1234', 'Pusat', 0, '$2y$10$8GX4H75bhSTyKTw.Hp6PTeK6c2qOy/L4xs7HTn.1iJfDYHQDu/LSa', '-', '-', 0, 0);
+(1048, 'pusat1234', 'Pusat', 0, '$2y$10$8GX4H75bhSTyKTw.Hp6PTeK6c2qOy/L4xs7HTn.1iJfDYHQDu/LSa', '-', '-', 0, 0),
+(1049, 'puskesmas', 'Puskesmas Contoh', 3, '$2y$10$YnM5CXIPYuPbPA9RNOnikulhJnlSfuH7WwpMvn5IeoUe7Z4nlSXRC', '-', '-', 1599978968, 1599978968),
+(1050, 'kabupaten_kota', 'kabupaten kota Contoh', 2, '$2y$10$8Wt2Ek8T34RRxVCI3LXvI.PNNj58EPIVTAXJD6JVJa5uvM9AWR7bG', '-', '-', 1599978968, 1599978968),
+(1051, 'provinsi', 'Provinsi Contoh', 1, '$2y$10$5xlP/7HGdQHf4ZVERZBCYOwaBYu/coDXsEpymuE6mTsQa3EFShqyu', '-', '-', 1599978968, 1599978968),
+(1052, 'pusat', 'Pusat Contoh', 0, '$2y$10$GEcS3Ho4SzPkZKdtOeX1LOERIECJXcNpsH2eDsr/zzWRyzVPl8gle', '-', '-', 1599978968, 1599978968);
 
 --
 -- Indexes for dumped tables
@@ -1598,7 +1602,7 @@ ALTER TABLE `identitas_puskesmas`
 -- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `no` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1049;
+  MODIFY `no` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1053;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
