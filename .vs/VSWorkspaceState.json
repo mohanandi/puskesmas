@@ -3,14 +3,14 @@
     "",
     "\\application",
     "\\application\\views",
+    "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
-    "\\application\\views\\templates\\form_table",
+    "\\application\\views\\templates\\puskesmas",
     "\\assets",
-    "\\assets\\css",
-    "\\assets\\images",
+    "\\assets\\js",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\views",
+  "SelectedNode": "\\application\\views\\puskesmas\\data_umum4.php",
   "PreviewInSolutionExplorer": false
 }
