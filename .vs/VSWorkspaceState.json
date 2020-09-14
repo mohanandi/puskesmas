@@ -4,13 +4,13 @@
     "\\application",
     "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\templates",
-    "\\application\\views\\templates\\form_table",
     "\\assets",
     "\\assets\\css",
     "\\assets\\images",
-    "\\assets\\js"
+    "\\assets\\js",
+    "\\system",
+    "\\system\\database"
   ],
-  "SelectedNode": "\\assets\\js\\para.js",
+  "SelectedNode": "\\application\\views\\dinas11.php",
   "PreviewInSolutionExplorer": false
 }
