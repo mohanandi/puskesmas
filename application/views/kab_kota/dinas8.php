@@ -91,13 +91,13 @@
       <div class="col-md-9">
 
 
-        <form style="height:350px; overflow-y:auto; padding:20px;"> 
-<div class="form-group">
+        <form style="height:350px; overflow-y:auto; padding:20px;">
+          <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.A. KIA</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Ibu hamil mendapatkan pelayanan antenatal sesuai standar DO:</strong><br> Pelayanan antenatal sesuai standar yaitu ibu hamil yang mendapatkan pelayanan paling sedikit 4 kali selama kehamilannya dengan distribusi waktu yaitu 1 kali pada trimester ke-1, 1 kali pada trimester ke-2, dan 2 kali pada trimester ke-3 <a href="#" onclick="toggle_visibility('foo28');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
             <br>
             <p id="foo28" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pelayanan antenatal (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) <br>| Ya=25% Tidak=0 <br> c. Persentase ibu hamil yang mendapatkan pelayanan sesuai standar. (Jumlah ibu hamil yang mendapatkan pelayanan antenatal sesuai standar dibagi dengan jumlah ibu hamil yang ada di wilayah kerja Puskesmas, dikali 100%)<br> | % ibu hamil mendapatkan pelayanan antenatal sesuai standar dikali 50%</p>
-            <select class="form-control">
+            <select class="form-control" name="cakupan1a" id="cakupan1a">
               <option selected>Pilih ...</option>
               <option value="1">Tercapai ≥ 80% nilainya 10 </option>
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
@@ -109,7 +109,7 @@
               <a href="#" onclick="toggle_visibility('foo29');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
             <br>
             <p id="foo29" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pelayanan bayi baru lahir (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut)<br> | Ya=25% Tidak=0 <br> c. Persentase bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar. (Jumlah bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar dibagi dengan jumlah bayi baru lahir yang ada di wilayah kerja Puskesmas, dikali 100%) <br>| % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50% </p>
-            <select class="form-control">
+            <select class="form-control" name="cakupan2a" id="cakupan2a">
               <option selected>Pilih ...</option>
               <option value="1">Tercapai ≥ 80% nilainya 10 </option>
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
@@ -126,20 +126,22 @@
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
               <option value="3">Tercapai ≤ 60% nilainya 0</option>
             </select>
-          </div><hr>
+          </div>
+          <hr>
           <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.B. Imunisasi</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Bayi mendapatkan imunisasi dasar lengkap DO:</strong><br>• Jumlah bayi yang mendapatkan imunisasi dasar lengkap adalah jumlah bayi yang telah berusia 9-11 bulan di wilayah kerja Puskesmas dalam waktu 1 tahun telah mendapatkan imunisasi dasar lengkap meliputi:<br>1) Hb0 1 kali<br>2) BCG 1 kali<br>3) Polio tetes 4 kali<br>4) DPT-HB-HIB 3 kali<br>5) Campak 1 kali<br>6) Rubella 1 kali<br>• Perhitungan pencatatan pemberian imunisasi berdasarkan jenis antigen pada kohort bayi dan atau buku KIA di setiap tempat pelayanan imunisasi (Posyandu, Poskesdes, Pustu, Puskesmas, dll).
               <a href="#" onclick="toggle_visibility('foo31');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
             <br>
             <p id="foo31" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program imunisasi dasar lengkap (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0<br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) <br>| Ya=25% Tidak=0 <br> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%) | % bayi mendapatkan imunisasi dasar lengkap dikali 50%</p>
-            <select class="form-control">
+            <select class="form-control" name="cakupan3a" id="cakupan3a">
               <option selected>Pilih ...</option>
               <option value="1">Tercapai ≥ 80% nilainya 10 </option>
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
               <option value="3">Tercapai ≤ 60% nilainya 0</option>
             </select>
-          </div><hr>
+          </div>
+          <hr>
           <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.C. Gizi</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Balita gizi buruk yang mendapatkan penanganan sesuai standar di Puskesmas DO:</strong><br>Tata laksana anak balita dengan BB/TB< -3 SD dan atau dengan gejala klinis yang dirawat inap maupun rawat jalan di fasilitas pelayanan kesehatan atau masyarakat sesuai dengan standar Tata Laksana Gizi Buruk (TAGB) <a href="#" onclick="toggle_visibility('foo32');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -151,7 +153,8 @@
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
               <option value="3">Tercapai ≤ 60% nilainya 0</option>
             </select>
-          </div><hr>
+          </div>
+          <hr>
           <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.D. Pencegahan dan Pengendalian Penyakit</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Orang terduga TBC mendapatkan pelayanan kesehatan sesuai standar DO:</strong><br>• Orang terduga TBC adalah orang yang kontak erat dengan penderita TBC dan atau yang menunjukkan gejala batuk ≥ 2 minggu diserta dengan gejala lainnya.<br>• Pelayanan orang terduga TBC sesuai standar meliputi:<br>1) Pemeriksaan klinis meliputi pemeriksaan gejala dan tanda<br>2) Pemeriksaan penunjang adalah pemeriksaan dahak dan/atau bakteriologis dan/atau radiologis<br>3) Edukasi perilaku berisiko dan pencegahan penularan.
@@ -247,7 +250,8 @@
               <option value="2">Tercapai 61% - 79% nilainya 5</option>
               <option value="3">Tercapai ≤ 60% nilainya 0</option>
             </select>
-          </div><hr>
+          </div>
+          <hr>
           <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.E. Progam Indonesia Sehat dengan Pendekatan Keluarga (PIS-PK)</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Keluarga yang telah dikunjungi dan intervensi awal DO:</strong><br>Keluarga yang telah dikunjungi dan diintervensi awal adalah keluarga yang telah mendapatkan kunjungan Tim Pembina Keluarga yang memantau kondisi kesehatan keluarga berdasarkan 12 indikator keluarga sehat dan dilakukan intervensi awal.
@@ -285,12 +289,12 @@
               <option value="3">Tercapai ≤ 60% nilainya 0</option>
             </select>
           </div>
-		    </form>
-		<a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
-		<a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
+        </form>
+        <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+        <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
 
       </div>
-		
+
     </div>
 
 
