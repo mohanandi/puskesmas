@@ -42,11 +42,10 @@ function is_terisi($data, $name)
     $ci = get_instance();
     $database = $data;
     if ($data) :
-        echo "<option value='$database'> $database </option>";
         if ($name) :
             echo '<option value="' . $name . '">' . $name . '</option>';
         else :
-            echo "<option selected>Pilih ...</option>";
+            echo "<option value='$database'> $database </option>";
         endif;
     else :
         if ($name) :
