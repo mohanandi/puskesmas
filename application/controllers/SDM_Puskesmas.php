@@ -52,7 +52,7 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmpromosi3', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmpromosi4', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmpromosi5', '', 'trim|in_list[Ya,Tidak]');
-		$this->form_validation->set_rules('sdmpromosi6', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmpromosi6', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmsanitasi1', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmsanitasi2', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmsanitasi3', '', 'trim|in_list[Ya,Tidak]');
@@ -87,7 +87,7 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmkesehatan2', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmkesehatan3', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmkesehatan4', '', 'trim|in_list[Ya,Tidak]');
-		$this->form_validation->set_rules('sdmkesehatan5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmkesehatan5', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmkesehatan6', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmkeuangan1', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmkeuangan2', '', 'trim|in_list[Ya,Tidak]');
@@ -113,7 +113,14 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmtradisional4', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmtradisional5', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('sdmtradisional6', '', 'trim|in_list[Ya,Tidak]');
-     
+        $this->form_validation->set_rules('sdmtitik1', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik2', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik3', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik4', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik6', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('sdmtitik7', '', 'trim|in_list[Ya,Tidak]');
+
 
         if ($this->form_validation->run() == false) {
             $this->index();
