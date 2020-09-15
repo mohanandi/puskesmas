@@ -168,31 +168,31 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Halaman Puskesmas tidak banjir/tergenang air saat hujan dalam kondisi baik, rapi dan bersih</label>
           <select class="form-control" name="bangunan26" id="bangunan26" disabled>
-            <option value="<?= $data['wc_disabilitas']; ?>" selected><?= $data['wc_disabilitas']; ?></option>
+            <option value="<?= $data['halaman_puskesmas']; ?>" selected><?= $data['halaman_puskesmas']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Tersedia drainase yang baik sehingga tidak membuat banjir saat hujan turun.</label>
           <select class="form-control" name="bangunan27" id="bangunan27" disabled>
-            <option value="<?= $data['halaman_puskesmas']; ?>" selected><?= $data['halaman_puskesmas']; ?></option>
+            <option value="<?= $data['drainase']; ?>" selected><?= $data['drainase']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kursi ruang tunggu cukup/memadai untuk jumlah pasien yang datang, tidak sempit dan tidak menganggu alur pelayanan/koridor serta rapi dan bersih</label>
           <select class="form-control" name="bangunan28" id="bangunan28" disabled>
-            <option value="<?= $data['drainase']; ?>" selected><?= $data['drainase']; ?></option>
+            <option value="<?= $data['kursi_tunggu']; ?>" selected><?= $data['kursi_tunggu']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Meubelair Puskesmas dalam kondisi baik, rapi dan bersih</label>
           <select class="form-control" name="bangunan29" id="bangunan29" disabled>
-            <option value="<?= $data['kursi_tunggu']; ?>" selected><?= $data['kursi_tunggu']; ?></option>
+            <option value="<?= $data['meubelair']; ?>" selected><?= $data['meubelair']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Terdapat tempat poster penyuluhan yang tertata rapi dan bersih di bangunan Puskesmas</label>
           <select class="form-control" name="bangunan30" id="bangunan30" disabled>
-            <option value="<?= $data['meu']; ?>" selected><?= $data['meu']; ?></option>
+            <option value="<?= $data['tmpt_poster']; ?>" selected><?= $data['tmpt_poster']; ?></option>
           </select>
         </div>
         <div class="form-group">
