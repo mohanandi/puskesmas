@@ -445,99 +445,99 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Saat tabung tidak digunakan tabung harus menggunakan tutup pelindung/katup yang dipasang erat dan dirantai</label>
-          <select class="form-control" name="prasarana6.3" id="prasarana6.3">
-            <?php is_terisi($data['gas_tutup'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana6_3" id="prasarana6_3">
+            <?php is_terisi($data['gas_tutup'], set_value('prasarana6_3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana6_3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>7. SISTEM PROTEKSI PETIR</strong></label><br>
           <label for="exampleFormControlInput1">Puskesmas mempunyai sistem proteksi petir terstandar</label>
-          <select class="form-control" name="prasarana7.1" id="prasarana7.1">
-            <?php is_terisi($data['proteksi'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana7_1" id="prasarana7_1">
+            <?php is_terisi($data['proteksi'], set_value('prasarana7_1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana7_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>8. SISTEM PROTEKSI KEBAKARAN</strong></label><br>
           <label for="exampleFormControlInput1">Puskesmas mempunyai APAR (alat pemadam api ringan) dalam kondisi baik, rapi dan bersih</label>
-          <select class="form-control" name="prasarana8.1" id="prasarana8.1">
-            <?php is_terisi($data['apar'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana8_1" id="prasarana8_1">
+            <?php is_terisi($data['apar'], set_value('prasarana8_1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana8_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">APAR berkapsitas 2 Kg, terpasang minimal satu buah untuk setiap 15 m2 dalam kondisi baik, rapi dan bersih</label>
-          <select class="form-control" name="prasarana8.2" id="prasarana8.2">
-            <?php is_terisi($data['apar_dua'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana8_2" id="prasarana8_2">
+            <?php is_terisi($data['apar_dua'], set_value('prasarana8_2')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana8_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">APAR diletakan pada dinding dengan ketinggian antara 15 - 120 cm dalam kondisi baik, rapi dan bersih</label>
-          <select class="form-control" name="prasarana8.3" id="prasarana8.3">
-            <?php is_terisi($data['apar_dinding'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana8_3" id="prasarana8_3">
+            <?php is_terisi($data['apar_dinding'], set_value('prasarana8_3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana8_3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Di Ruang Genset tersedia APAR CO2</label>
-          <select class="form-control" name="prasarana8.4" id="prasarana8.4">
-            <?php is_terisi($data['apar_co'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana8_4" id="prasarana8_4">
+            <?php is_terisi($data['apar_co'], set_value('prasarana8_4')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana8_4', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>9. SISTEM PENGENDALIAN KEBISINGAN</strong></label><br>
           <label for="exampleFormControlInput1">Intensitas kebisingan equivalen di luar bangunan puskesmas tidak lebih dari 55 dBA</label>
-          <select class="form-control" name="prasarana9.1" id="prasarana9.1">
-            <?php is_terisi($data['kebisingan_luar'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana9_1" id="prasarana9_1">
+            <?php is_terisi($data['kebisingan_luar'], set_value('prasarana9_1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana9_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Intensitas kebisingan equivalen di dalam bangunan puskesmas tidak lebih dari 45 dBA</label>
-          <select class="form-control" name="prasarana9.2" id="prasarana9.2">
-            <?php is_terisi($data['kebisingan_dlm'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana9_2" id="prasarana9_2">
+            <?php is_terisi($data['kebisingan_dlm'], set_value('prasarana9_2')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana9_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>10. SISTEM TRANSPORTASI VERTIKAL DALAM PUSKESMAS</strong></label><br>
           <label for="exampleFormControlInput1">a. Bila Tangga, maka:</label><br>
           <label for="exampleFormControlInput1">Ukuran Tinggi Pijakan (15-17) cm; Kemiring-an<600, Lebar Pijakan≥120 cm; Tinggi Hand-rail (65-80) cm; dan Panjang Handrail>30 cm dari batas tangga, ujung berbelok sesuai ketentuan</label>
-          <select class="form-control" name="prasarana10.a" id="prasarana10.a">
-            <?php is_terisi($data['bila_tangga'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana10_a" id="prasarana10_a">
+            <?php is_terisi($data['bila_tangga'], set_value('prasarana10_a')); ?>
             <option value="1">Sesuai</option>
             <option value="2">Tidak Sesuai</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana10_a', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Bila Ram, Apakah itu:</label><br>
           <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
-          <select class="form-control" name="prasarana10.b" id="prasarana10.b">
-            <?php is_terisi($data['bila_ram'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana10_b" id="prasarana10_b">
+            <?php is_terisi($data['bila_ram'], set_value('prasarana10_b')); ?>
             <option value="1">Sesuai</option>
             <option value="2">Tidak Sesuai</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana10_b', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>11. PUSKESMAS KELILING DAN AMBULAN</strong></label><br>
@@ -551,12 +551,12 @@
               <label>Unit</label>
             </div>
             <div class="col">
-              <select class="form-control" name="prasarana11.a2" id="prasarana11.a2">
-                <?php is_terisi($data['kendaraan_ada'], set_value('prasarana')); ?>
+              <select class="form-control" name="prasarana11_a2" id="prasarana11_a2">
+                <?php is_terisi($data['kendaraan_ada'], set_value('prasarana11_a2')); ?>
                 <option value="1">Ada</option>
                 <option value="2">Tidak Ada</option>
               </select>
-              <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+              <?= form_error('prasarana11_a2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
           </div>
         </div>
@@ -571,12 +571,12 @@
               <label>Unit</label>
             </div>
             <div class="col">
-              <select class="form-control" name="prasarana11.b2" id="prasarana11.b2">
-                <?php is_terisi($data['ambulan_ada'], set_value('prasarana')); ?>
+              <select class="form-control" name="prasarana11_b2" id="prasarana11_b2">
+                <?php is_terisi($data['ambulan_ada'], set_value('prasarana11_b2')); ?>
                 <option value="1">Ada</option>
                 <option value="2">Tidak Ada</option>
               </select>
-              <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+              <?= form_error('prasarana11_b2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
           </div>
         </div>
@@ -591,41 +591,41 @@
               <label>Unit</label>
             </div>
             <div class="col">
-              <select class="form-control" name="prasarana11.c2" id="prasarana11.c2">
-                <?php is_terisi($data['roda_ada'], set_value('prasarana')); ?>
+              <select class="form-control" name="prasarana11_c2" id="prasarana11_c2">
+                <?php is_terisi($data['roda_ada'], set_value('prasarana11_c2')); ?>
                 <option value="1">Ada</option>
                 <option value="2">Tidak Ada</option>
               </select>
-              <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+              <?= form_error('prasarana11_c2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
           </div>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">d. Puskesmas keliling dalam kondisi baik, bersih dan berfungsi serta mempunyai perlengkapan/alat yang lengkap sebagai puskesmas keliling</label>
-          <select class="form-control" name="prasarana11.d" id="prasarana11.d">
-            <?php is_terisi($data['puskesmas_keliling'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana11_d" id="prasarana11_d">
+            <?php is_terisi($data['puskesmas_keliling'], set_value('prasarana11_d')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana11_d', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">e. Ambulan Puskesmas dalam kondisi baik, bersih dan berfungsi serta mempunyai alat kesehatan yang lengkap sebagai ambulan</label>
-          <select class="form-control" name="prasarana11.e" id="prasarana11.e">
-            <?php is_terisi($data['ambulan_baik'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana11_e" id="prasarana11_e">
+            <?php is_terisi($data['ambulan_baik'], set_value('prasarana11_e')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana11_e', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">f. Puskesmas mempunyai daftar rujukan RS yang jelas dan sesuai dengan kebutuhan pasien</label>
-          <select class="form-control" name="prasarana11.f" id="prasarana11.f">
-            <?php is_terisi($data['rujukan'], set_value('prasarana')); ?>
+          <select class="form-control" name="prasarana11_f" id="prasarana11_f">
+            <?php is_terisi($data['rujukan'], set_value('prasarana11_f')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('prasarana', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('prasarana11_f', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
       </form>
