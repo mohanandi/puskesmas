@@ -89,7 +89,7 @@ class BangunanPuskesmas_Model extends CI_Model
             "ruang_lain" => $this->input->post('bangunan43.15', true),
 
         ];
-        $this->db->insert('identitas_puskesmas', $data);
+        $this->db->insert('bangunan_puskesmas', $data);
     }
     public function check()
     {
