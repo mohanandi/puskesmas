@@ -71,6 +71,23 @@
                                 <li class="has-children">
                                     <a href="#" class="nav-link" style="color: #000000 !important;">Menu Cepat</a>
                                     <ul class="dropdown">
+                                        <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+                                        <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
+                                        <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
+                                        <li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
+                                        <li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
+                                        <li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
+                                        <li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
+                                        <li class="has-children">
+                                            <a href="#">Bab 6</a>
+                                            <ul class="dropdown">
+                                                <li><a href="#">Bab 6.1</a></li>
+                                                <li><a href="#">Bab 6.2</a></li>
+                                                <li><a href="#">Bab 6.3</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="dropdown">
                                         <li class="has-children">
                                             <a href="#">Puskesmas</a>
                                             <ul class="dropdown">
