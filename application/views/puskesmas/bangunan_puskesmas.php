@@ -348,16 +348,16 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Angka rata-rata populasi lalat < 2 ekor</label> <select class="form-control" name="bangunan39" id="bangunan39">
               <?php is_terisi($data['populasi_lalat'], set_value('bangunan39')); ?>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="Ya">Ya</option>
+              <option value="Tidak">Tidak</option>
               </select>
               <?= form_error('bangunan39', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Angka rata-rata populasi kecoa < 2 ekor</label> <select class="form-control" name="bangunan40" id="bangunan40">
               <?php is_terisi($data['populasi_kecoa'], set_value('bangunan40')); ?>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="Ya">Ya</option>
+              <option value="Tidak">Tidak</option>
               </select>
               <?= form_error('bangunan40', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
@@ -653,7 +653,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan43_3"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Cuci Linen</label>
@@ -681,13 +681,12 @@
           <label for="exampleFormControlInput1">Unit Rawat Inap ditambah dengan</label><br>
           <label for="exampleFormControlInput1">a. Ruang Jaga Petugas</label>
           <select class="form-control" name="bangunan43_6a" id="bangunan43_6a">
-
             <?php is_terisi($data['ruang_jaga'], set_value('bangunan43_6a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
 
           </select>
-          <?= form_error('bangunan43_6a"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_6a', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Gudang Umum</label>
@@ -708,7 +707,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan43_8"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_8', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Rumah dinas tenaga kesehatan</label>
