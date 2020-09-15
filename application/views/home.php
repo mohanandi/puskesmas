@@ -66,8 +66,8 @@
 					<div class="col-13 col-md-10 d-none d-xl-block">
 						<nav class="site-navigation position-relative text-right" role="navigation">
 
-							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
+							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block" >
+								<li><a href="<?= base_url('home') ?>" class="nav-link" >Home</a></li>
 								<li class="has-children">
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
