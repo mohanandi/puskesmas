@@ -132,54 +132,41 @@
                             <p style="text-align: center;">Status Akreditasi<br><span><strong>Paripurna</strong></span></p>
                             <p style="text-align: center;">Motto<br> <span><strong>Jaya Selalu Puskesmas</strong></span></p>
                         </div>
-                        <br>
 
-                        <p style="text-align: center;">Menu Cepat</p>
-                        <button type="button" class="collapsible">Penilaian Puskesmas</button>
-                        <div class="content">
+                        <hr>
+                        <button type="button" class="collapsible">Menu Cepat</button>
+                        <div class="content" style="overflow-y:scroll; height:200px;">
                             <br>
                             <a href="#">
-                                <p style="text-align: center;">Pemenuhan Sumber Daya Puskesmas</p>
+                                <p style="text-align: center;">Identitas Umum</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Perencanaan Puskesmas</p>
+                                <p style="text-align: center;">Pembina Terpadu</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Penggerakan dan Pelaksanaan Sumber Daya Puskesmas</p>
+                                <p style="text-align: center;">Organisasi Manajemen</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</p>
+                                <p style="text-align: center;">Lokasi Puskesmas</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Peningkatan Mutu Puskesmas</p>
+                                <p style="text-align: center;">Bangunan Puskesmas</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Pencegahan dan Pengendalian Infkesi dan Kesehatan Lingkungan</p>
+                                <p style="text-align: center;">Prasarana Puskesmas</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menular Potensial KLB/Wabah</p>
+                                <p style="text-align: center;">Peralatan Puskesmas</p>
                             </a>
                             <hr>
                             <a href="#">
-                                <p style="text-align: center;">Cakupan Indikator Program</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Upaya Inovasi</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Rekapitulasi Skor</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Rencana Tidak Lanjut</p>
+                                <p style="text-align: center;">Pengisian Aspak</p>
                             </a>
 
                         </div>
