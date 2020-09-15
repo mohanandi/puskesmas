@@ -38,10 +38,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas Tidak di tepi lereng</label>
           <select class="form-control" name="lokasi3" id="lokasi3">
-            <?php if (set_value('lokasi3')) : ?>
-              <option value="<?= set_value('lokasi3'); ?>"><?= set_value('lokasi3'); ?></option>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
+            <?php if ($data) : ?>
+              <option value="<?= $data['puskesmas_lereng']; ?>"><?= $data['puskesmas_lereng']; ?></option>
+              <?php if (set_value('lokasi3')) : ?>
+                <option value="<?= set_value('lokasi3'); ?>"><?= set_value('lokasi3'); ?></option>
+              <?php else : ?>
+                <option selected>Pilih ...</option>
+              <?php endif; ?>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
@@ -51,10 +54,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas Tidak dekat kaki gunung yang rawan terhadap tanah longsor</label>
           <select class="form-control" name="lokasi4" id="lokasi4">
-            <?php if (set_value('lokasi4')) : ?>
-              <option value="<?= set_value('lokasi4'); ?>"><?= set_value('lokasi4'); ?></option>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
+            <?php if ($data) : ?>
+              <option value="<?= $data['puskesmas_longsor']; ?>"><?= $data['puskesmas_longsor']; ?></option>
+              <?php if (set_value('lokasi4')) : ?>
+                <option value="<?= set_value('lokasi4'); ?>"><?= set_value('lokasi4'); ?></option>
+              <?php else : ?>
+                <option selected>Pilih ...</option>
+              <?php endif; ?>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
@@ -64,10 +70,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas Tidak dekat anak sungai, sungai atau badan air yang dapat mengikis pondasi)</label>
           <select class="form-control" name="lokasi5" id="lokasi5">
-            <?php if (set_value('lokasi5')) : ?>
-              <option value="<?= set_value('lokasi5'); ?>"><?= set_value('lokasi5'); ?></option>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
+            <?php if ($data) : ?>
+              <option value="<?= $data['puskesmas_pondasi']; ?>"><?= $data['puskesmas_pondasi']; ?></option>
+              <?php if (set_value('lokasi5')) : ?>
+                <option value="<?= set_value('lokasi5'); ?>"><?= set_value('lokasi5'); ?></option>
+              <?php else : ?>
+                <option selected>Pilih ...</option>
+              <?php endif; ?>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
