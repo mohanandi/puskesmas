@@ -10,13 +10,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai sertifikat tanah</label>
           <select class="form-control" name="lokasi1" id="lokasi1" disabled>
-            <option value="<?= $data['puskesmas_tanah'] ?>" selected><?= $data['puskesmas_tanah'] ?></option>
+            <option value="<?= $data['puskesmas_tanah'] ?>" selected><?= $data['puskesmas_tanah']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai SLF (Sertifikat Laik Fungsi) yang dikeluarkan oleh Dinas PU</label>
           <select class="form-control" name="lokasi2" id="lokasi2" disabled>
-            <option value="<?= $data['slf'] ?>" selected><?= $data['slf'] ?></option>
+            <option value="<?= $data['slf'] ?>" selected><?= $data['slf']; ?></option>
           </select>
         </div>
         <div class="form-group">
