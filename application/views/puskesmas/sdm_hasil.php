@@ -11,12 +11,12 @@
         <?php endif; ?>
         <div class="form-group">
           <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="<?= $data['nama_field_ddatabase']; ?>" readonly>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
           <select class="form-control" name="sdm1" id="sdm1">
-            <option selected>Pilih ...</option>
+            <option value="<?= $data['nama_field_database']; ?>" selected><?= $data['nama_field_database']; ?></option>
             <option value="1">Dokter Umum</option>
             <option value="2">Dokter Gigi</option>
             <option value="2">Sarjana Kesehatan Masyarakat (SKM)</option>
