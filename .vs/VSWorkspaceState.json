@@ -4,11 +4,13 @@
     "\\application",
     "\\application\\views",
     "\\application\\views\\templates",
+    "\\application\\views\\templates\\provinsi",
+    "\\application\\views\\templates\\puskesmas",
     "\\assets",
-    "\\assets\\css",
+    "\\assets\\js",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\assets\\css\\bootstrap.min.css",
+  "SelectedNode": "\\application\\views\\templates\\provinsi\\head.php",
   "PreviewInSolutionExplorer": false
 }
