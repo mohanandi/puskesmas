@@ -3,14 +3,14 @@
     "",
     "\\application",
     "\\application\\views",
+    "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
-    "\\application\\views\\templates\\provinsi",
     "\\application\\views\\templates\\puskesmas",
     "\\assets",
     "\\assets\\js",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\views\\templates\\provinsi\\head.php",
+  "SelectedNode": "\\application\\views\\puskesmas\\sdm.php",
   "PreviewInSolutionExplorer": false
 }
