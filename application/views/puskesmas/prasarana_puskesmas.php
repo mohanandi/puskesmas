@@ -2,7 +2,7 @@
   <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
 
     <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-      <form>
+      <form method="POST" action="<?= base_url('Prasarana_Puskesmas/tambah') ?>">
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
           <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>
@@ -627,7 +627,7 @@
           </select>
           <?= form_error('prasarana11_f', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
-        <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+        <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
       </form>
     </div>
   </div>
