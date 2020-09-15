@@ -22,10 +22,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai SLF (Sertifikat Laik Fungsi) yang dikeluarkan oleh Dinas PU</label>
           <select class="form-control" name="lokasi2" id="lokasi2">
-            <?php if (set_value('lokasi2')) : ?>
-              <option value="<?= set_value('lokasi2'); ?>"><?= set_value('lokasi2'); ?></option>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
+            <?php if ($data) : ?>
+              <option value="<?= $data['slf']; ?>"><?= $data['slf']; ?></option>
+              <?php if (set_value('lokasi2')) : ?>
+                <option value="<?= set_value('lokasi2'); ?>"><?= set_value('lokasi2'); ?></option>
+              <?php else : ?>
+                <option selected>Pilih ...</option>
+              <?php endif; ?>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
