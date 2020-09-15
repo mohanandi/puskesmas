@@ -429,7 +429,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Tindakan dan Gawat Darurat</label>
           <select class="form-control" name="bangunan42_3" id="bangunan42_3">
-            <?php is_terisi($data['ruang_tindakan'], set_value('bangunan42_3"')); ?>
+            <?php is_terisi($data['ruang_tindakan'], set_value('bangunan42_3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -516,7 +516,7 @@
           <label for="exampleFormControlInput1">d. Ruang konseling</label>
           <select class="form-control" name="bangunan42_9d" id="bangunan42_9d">
 
-            <?php is_terisi($data['ruang_konseling'], set_value('bangunan42_9d"')); ?>
+            <?php is_terisi($data['ruang_konseling'], set_value('bangunan42_9d')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
 
@@ -538,7 +538,7 @@
           <label for="exampleFormControlInput1">f. Ruang arsip</label>
           <select class="form-control" name="bangunan42_9f" id="bangunan42_9f">
 
-            <?php is_terisi($data['ruang_arsip'], set_value('bangunan42_9f"')); ?>
+            <?php is_terisi($data['ruang_arsip'], set_value('bangunan42_9f')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
 
@@ -560,7 +560,7 @@
           <label for="exampleFormControlInput1">Ruang Rawat Pasca Persalinan </label>
           <select class="form-control" name="bangunan42_11" id="bangunan42_11">
 
-            <?php is_terisi($data['ruang_pasca'], set_value('bangunan42_11"')); ?>
+            <?php is_terisi($data['ruang_pasca'], set_value('bangunan42_11')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
 
@@ -571,7 +571,7 @@
           <label for="exampleFormControlInput1">Ruang Laboratorium</label>
           <select class="form-control" name="bangunan42_12" id="bangunan42_12">
 
-            <?php is_terisi($data['ruang_lab'], set_value('bangunan42_12"')); ?>
+            <?php is_terisi($data['ruang_lab'], set_value('bangunan42_12')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
 
@@ -639,7 +639,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang ASI</label>
           <select class="form-control" name="bangunan43_2" id="bangunan43_2">
-            <?php is_terisi($data['ruang_asi'], set_value('bangunan43_2"')); ?>
+            <?php is_terisi($data['ruang_asi'], set_value('bangunan43_2')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>

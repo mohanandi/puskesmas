@@ -106,7 +106,6 @@ class Bangunan_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('bangunan43_13', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('bangunan43_14', '', 'trim|required');
         $this->form_validation->set_rules('bangunan43_15', '', 'trim|in_list[Ya,Tidak]');
-        var_dump($this->input->post());
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
