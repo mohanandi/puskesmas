@@ -1,7 +1,4 @@
 <div class="col-md-9">
-  <?php if ($this->session->flashdata('flash')) : ?>
-    <?= $this->session->flashdata('flash'); ?>
-  <?php endif; ?>
   <form style="height:350px; overflow-y:auto; padding:20px;" method="POST" action="<?= base_url('Identitas_Puskesmas/tambah'); ?>">
     <div class="form-group">
       <label for="exampleFormControlInput1">Nama Puskesmas</label>

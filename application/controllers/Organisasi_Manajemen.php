@@ -3,11 +3,25 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Organisasi_Manajemen extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('OrganisasiManajemen_Model');
+        is_logged_in();
+    }
     public function index()
     {
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/organisasi_manajemen');
-        $this->load->view('templates/puskesmas/foot');
+        $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $data['data'] = $this->OrganisasiManajemen_Model->check();
+        if ($data['data'] == NULL) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/organisasi_manajemen', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/organisasi_manajemen_hasil', $data);
+            $this->load->view('templates/puskesmas/foot');
+        }
     }
     public function tambah()
     {
@@ -15,15 +29,14 @@ class Organisasi_Manajemen extends CI_Controller
         $this->form_validation->set_rules('organisasi2', '', 'required');
         $this->form_validation->set_rules('organisasi3', '', 'required');
         $this->form_validation->set_rules('organisasi4', '', 'required');
-        $this->form_validation->set_rules('organisasi5', '', 'required');
-        $this->form_validation->set_rules('organisasi6', '', 'required');
+        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
 
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
-            $this->Mahasiswa_model->tambahDataMahasiswa();
+            $this->OrganisasiManajemen_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('mahasiswa');
+            redirect('Organisasi_Manajemen');
         }
     }
     public function ubah()

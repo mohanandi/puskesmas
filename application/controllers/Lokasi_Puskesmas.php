@@ -3,11 +3,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Lokasi_Puskesmas extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('LokasiPuskesmas_Model');
+        is_logged_in();
+    }
     public function index()
     {
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/lokasi_puskesmas');
-        $this->load->view('templates/puskesmas/foot');
+        $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $check = $this->LokasiPuskesmas_Model->check();
+        if ($check == NULL) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/lokasi_puskesmas', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $data['data'] = $this->LokasiPuskesmas_Model->check();
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/lokasi_puskesmas_hasil', $data);
+            $this->load->view('templates/puskesmas/foot');
+        }
     }
     public function tambah()
     {
@@ -31,7 +46,9 @@ class Lokasi_Puskesmas extends CI_Controller
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
-            var_dump($this->input->post());
+            $this->LokasiPuskesmas_Model->tambahData();
+            $this->session->set_flashdata('flash', 'Ditambahkan');
+            redirect('Lokasi_Puskesmas');
         }
     }
 }

@@ -56,3 +56,8 @@ function is_terisi($data, $name)
         endif;
     endif;
 }
+
+function is_terisi_input($data, $name)
+{
+    $ci = get_instance();
+}
