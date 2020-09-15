@@ -7,10 +7,11 @@
           <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
           <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>
           <select class="form-control" name="prasarana1.1" id="prasarana1.1">
-            <option selected>Pilih ...</option>
+            <?php is_terisi($data['puskesmas_tanah'], set_value('lokasi1')); ?>
             <option value="1">Ya</option>
             <option value="2">Tidak</option>
           </select>
+          <?= form_error('lokasi1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Terdapat pendingin ruangan/AC pada ruang farmasi yang terawat dan bersih</label>
