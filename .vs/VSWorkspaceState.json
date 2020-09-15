@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\application",
+    "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
     "\\application\\views\\templates\\puskesmas",
     "\\assets",
@@ -11,6 +11,6 @@
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\views\\puskesmas\\sdm.php",
+  "SelectedNode": "\\application\\controllers\\Data_Umum.php",
   "PreviewInSolutionExplorer": false
 }

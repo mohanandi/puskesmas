@@ -524,8 +524,8 @@
           <label for="exampleFormControlInput1">Ukuran Tinggi Pijakan (15-17) cm; Kemiring-an<600, Lebar Pijakan≥120 cm; Tinggi Hand-rail (65-80) cm; dan Panjang Handrail>30 cm dari batas tangga, ujung berbelok sesuai ketentuan</label>
           <select class="form-control" name="prasarana10_a" id="prasarana10_a">
             <?php is_terisi($data['bila_tangga'], set_value('prasarana10_a')); ?>
-            <option value="1">Sesuai</option>
-            <option value="2">Tidak Sesuai</option>
+            <option value="Ya">Sesuai</option>
+            <option value="Tidak">Tidak Sesuai</option>
           </select>
           <?= form_error('prasarana10_a', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
@@ -534,8 +534,8 @@
           <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
           <select class="form-control" name="prasarana10_b" id="prasarana10_b">
             <?php is_terisi($data['bila_ram'], set_value('prasarana10_b')); ?>
-            <option value="1">Sesuai</option>
-            <option value="2">Tidak Sesuai</option>
+            <option value="Ya">Sesuai</option>
+            <option value="Tidak">Tidak Sesuai</option>
           </select>
           <?= form_error('prasarana10_b', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
@@ -553,8 +553,8 @@
             <div class="col">
               <select class="form-control" name="prasarana11_a2" id="prasarana11_a2">
                 <?php is_terisi($data['kendaraan_ada'], set_value('prasarana11_a2')); ?>
-                <option value="1">Ada</option>
-                <option value="2">Tidak Ada</option>
+                <option value="Ya">Ada</option>
+                <option value="Tidak">Tidak Ada</option>
               </select>
               <?= form_error('prasarana11_a2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -573,8 +573,8 @@
             <div class="col">
               <select class="form-control" name="prasarana11_b2" id="prasarana11_b2">
                 <?php is_terisi($data['ambulan_ada'], set_value('prasarana11_b2')); ?>
-                <option value="1">Ada</option>
-                <option value="2">Tidak Ada</option>
+                <option value="Ya">Ada</option>
+                <option value="Tidak">Tidak Ada</option>
               </select>
               <?= form_error('prasarana11_b2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -593,8 +593,8 @@
             <div class="col">
               <select class="form-control" name="prasarana11_c2" id="prasarana11_c2">
                 <?php is_terisi($data['roda_ada'], set_value('prasarana11_c2')); ?>
-                <option value="1">Ada</option>
-                <option value="2">Tidak Ada</option>
+                <option value="Ya">Ada</option>
+                <option value="Tidak">Tidak Ada</option>
               </select>
               <?= form_error('prasarana11_c2', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
