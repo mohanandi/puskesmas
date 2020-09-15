@@ -142,10 +142,9 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Lebar bukaan pintu ruang gawat darurat Puskesmas minimal 120 cm dan dalam kondisi baik, rapi dan bersih</label>
           <select class="form-control" name="bangunan23" id="bangunan23" disabled>
-            <?php is_terisi($data['lebar_pintu'], set_value('bangunan23')); ?>
             <option value="<?= $data['lebar_pintu']; ?>" selected><?= $data['lebar_pintu']; ?></option>
           </select>
-          <?= form_error('bangunan23', '<small class="text-danger pl-3">', '</small>'); ?>
+
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Pintu KM/WC pasien terbuka keluar dan lebar daun pintu minimal 90 cm serta mudah untuk di buka dan ditutup serta dalam kondisi baik, rapi, bersih</label>
@@ -198,7 +197,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Terdapat tempat khusus pemasangan spanduk edukasi kesehatan yang rapi dan di halaman Puskesmas</label>
           <select class="form-control" name="bangunan31" id="bangunan31" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['tmpt_spanduk']; ?>" selected><?= $data['tmpt_spanduk']; ?></option>
           </select>
         </div>
         <div class="form-group">
@@ -206,7 +205,7 @@
 
           </label>
           <select class="form-control" name="bangunan32" id="bangunan32" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['taman_obat']; ?>" selected><?= $data['taman_obat']; ?></option>
           </select>
         </div>
         <div class="form-group">
@@ -214,180 +213,176 @@
 
           </label>
           <select class="form-control" name="bangunan33" id="bangunan33" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['bebas_rokok']; ?>" selected><?= $data['bebas_rokok']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan kecoa</label>
           <select class="form-control" name="bangunan34" id="bangunan34" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['bebas_kecoa']; ?>" selected><?= $data['bebas_kecoa']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari tanda keberadaan tikus</label>
           <select class="form-control" name="bangunan35" id="bangunan35" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['bebas_tikus']; ?>" selected><?= $data['bebas_tikus']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Semua ruang Puskesmas harus bebas dari kucing</label>
           <select class="form-control" name="bangunan36" id="bangunan36" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['bebas_kucing']; ?>" selected><?= $data['bebas_kucing']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Angka Bebas Jentik 100%</label>
           <select class="form-control" name="bangunan37" id="bangunan37" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['bebas_jentik']; ?>" selected><?= $data['bebas_jentik']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Angka rata-rata populasi lalat < 2 ekor</label> <select class="form-control" name="bangunan38" id="bangunan38" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['populasi_lalat']; ?>" selected><?= $data['populasi_lalat']; ?></option>
               </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Angka rata-rata populasi kecoa < 2 ekor</label> <select class="form-control" name="bangunan39" id="bangunan39" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['populasi_kecoa']; ?>" selected><?= $data['populasi_kecoa']; ?></option>
               </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Terdapat KIR (kartu inventaris ruangan) pada setiap ruangan puskesmas yang telah diisi lengkap</label>
           <select class="form-control" name="bangunan40" id="bangunan40" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['kir']; ?>" selected><?= $data['kir']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>Ketersediaan ruang kantor</strong></label> <br>
           <label for="exampleFormControlInput1">a. Ruang Administrasi</label>
           <select class="form-control" name="bangunan41a" id="bangunan41a" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_admin']; ?>" selected><?= $data['ruang_admin']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang Kantor untuk Karyawan </label>
           <select class="form-control" name="bangunan41b" id="bangunan41b" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_karyawan']; ?>" selected><?= $data['ruang_karyawan']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">c. Ruang Kepala Puskesmas </label>
           <select class="form-control" name="bangunan41c" id="bangunan41c" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_kepala']; ?>" selected><?= $data['ruang_kepala']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">d. Ruang Rapat/Diskusi</label>
           <select class="form-control" name="bangunan41d" id="bangunan41d" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_rapat']; ?>" selected><?= $data['ruang_rapat']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>Ketersediaan ruang pelayanan</strong></label> <br>
           <label for="exampleFormControlInput1">Ruang Pendaftaran dan Rekam Medis</label>
           <select class="form-control" name="bangunan42.1" id="bangunan42.1" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_pendaftaran']; ?>" selected><?= $data['ruang_pendaftaran']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Pemeriksaan Umum</label>
           <select class="form-control" name="bangunan42.2" id="bangunan42.2" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_pemeriksaaan']; ?>" selected><?= $data['ruang_pemeriksaaan']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Tindakan dan Gawat Darurat</label>
           <select class="form-control" name="bangunan42.3" id="bangunan42.3 " disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_tindakan']; ?>" selected><?= $data['ruang_tindakan']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang KIA, KB dan Imunisasi</label>
           <select class="form-control" name="bangunan42.4" id="bangunan42.4" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_kia']; ?>" selected><?= $data['ruang_kia']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Pemeriksaan Khusus</label>
           <select class="form-control" name="bangunan42.5" id="bangunan42.5" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_khusus']; ?>" selected><?= $data['ruang_khusus']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Kesehatan Gigi dan Mulut</label>
           <select class="form-control" name="bangunan42.6" id="bangunan42.6" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_gigi']; ?>" selected><?= $data['ruang_gigi']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruangan Komunikasi Informasi dan Edukasi (KIE)</label>
           <select class="form-control" name="bangunan42.7" id="bangunan42.7" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_kie']; ?>" selected><?= $data['ruang_kie']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Farmasi</label>
           <select class="form-control" name="bangunan42.8" id="bangunan42.8" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_farmasi']; ?>" selected><?= $data['ruang_farmasi']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Farmasi meliputi sarana sebagai berikut:</label><br>
           <label for="exampleFormControlInput1">a. Ruang penerimaan resep</label>
           <select class="form-control" name="bangunan42.9a" id="bangunan42.9a" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_resep']; ?>" selected><?= $data['ruang_resep']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang pelayanan resep dan peracikan</label>
           <select class="form-control" name="bangunan42.9b" id="bangunan42.9b" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_racik']; ?>" selected><?= $data['ruang_racik']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">c. Ruang penyerahan obat</label>
           <select class="form-control" name="bangunan42.9c" id="bangunan42.9c" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_obat']; ?>" selected><?= $data['ruang_obat']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">d. Ruang konseling</label>
           <select class="form-control" name="bangunan42.9d" id="bangunan42.9d" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_konseling']; ?>" selected><?= $data['ruang_konseling']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">e. Ruang penyimpanan obat dan BMHP</label>
           <select class="form-control" name="bangunan42.9e" id="bangunan42.9e" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_bmhp']; ?>" selected><?= $data['ruang_bmhp']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">f. Ruang arsip</label>
           <select class="form-control" name="bangunan42.9f" id="bangunan42.9f" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_arsip']; ?>" selected><?= $data['ruang_arsip']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Persalinan </label>
           <select class="form-control" name="bangunan42.10" id="bangunan42.10" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_persalinan']; ?>" selected><?= $data['ruang_persalinan']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Rawat Pasca Persalinan </label>
           <select class="form-control" name="bangunan42.11" id="bangunan42.11" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_pasca']; ?>" selected><?= $data['ruang_pasca']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Laboratorium</label>
           <select class="form-control" name="bangunan42.12" id="bangunan42.12" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_lab']; ?>" selected><?= $data['ruang_lab']; ?></option>
           </select>
         </div>
         <div class="form-group">
@@ -395,143 +390,111 @@
           <label for="exampleFormControlInput1">Ruang KIA KB dan Imunisasi menjadi 2 ruang:</label><br>
           <label for="exampleFormControlInput1">a. Ruang Kesehatan Ibu dan KB</label>
           <select class="form-control" name="bangunan42.13a" id="bangunan42.13a" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_kb']; ?>" selected><?= $data['ruang_kb']; ?></option>
           </select>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang Kesehatan Anak dan Imunisasi</label>
           <select class="form-control" name="bangunan42.13b" id="bangunan42.13b" disabled>
-            <option value="<?= $data['kdb']; ?>" selected><?= $data['kdb']; ?></option>
+            <option value="<?= $data['ruang_anak']; ?>" selected><?= $data['ruang_anak']; ?></option>
           </select>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang Rawat Inap</label>
             <select class="form-control" name="bangunan42.14" id="bangunan42.14" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_inap']; ?>" selected><?= $data['ruang_inap']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Kamar mandi/WC ((terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
             <select class="form-control" name="bangunan42.15" id="bangunan42.15" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['wc']; ?>" selected><?= $data['wc']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1"><strong>Ketersediaan Ruang Penunjang</strong></label><br>
             <label for="exampleFormControlInput1">Ruang Tunggu</label>
             <select class="form-control" name="bangunan43.1" id="bangunan43.1" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_tunggu']; ?>" selected><?= $data['ruang_tunggu']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang ASI</label>
             <select class="form-control" name="bangunan43.2" id="bangunan43.2" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_asi']; ?>" selected><?= $data['ruang_asi']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang Sterilisasi</label>
             <select class="form-control" name="bangunan43.3" id="bangunan43.3" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_steril']; ?>" selected><?= $data['ruang_steril']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang Cuci Linen</label>
             <select class="form-control" name="bangunan43.4" id="bangunan43.4" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_linen']; ?>" selected><?= $data['ruang_linen']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang Penyelenggaraan makanan (dapur/pantry)</label>
             <select class="form-control" name="bangunan43.5" id="bangunan43.5" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_dapur']; ?>" selected><?= $data['ruang_dapur']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Unit Rawat Inap ditambah dengan</label><br>
             <label for="exampleFormControlInput1">a. Ruang Jaga Petugas</label>
             <select class="form-control" name="bangunan43.6a" id="bangunan43.6a" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_jaga']; ?>" selected><?= $data['ruang_jaga']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Gudang Umum</label>
             <select class="form-control" name="bangunan43.7" id="bangunan43.7" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['gudang_umum']; ?>" selected><?= $data['gudang_umum']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Kamar mandi/WC Pasien/pengunjung (terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
             <select class="form-control" name="bangunan43.8" id="bangunan43.8" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['wc_pasien']; ?>" selected><?= $data['wc_pasien']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Rumah dinas tenaga kesehatan</label>
             <select class="form-control" name="bangunan43.9" id="bangunan43.9" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['rumah_dinas']; ?>" selected><?= $data['rumah_dinas']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Parkir kendaraan roda 2</label>
             <select class="form-control" name="bangunan43.10" id="bangunan43.10" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['roda_2']; ?>" selected><?= $data['roda_2']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Parkir Kendaraan Roda 4</label>
             <select class="form-control" name="bangunan43.11" id="bangunan43.11" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['roda_4']; ?>" selected><?= $data['roda_4']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Garasi Ambulans/Pusling</label>
             <select class="form-control" name="bangunan43.12" id="bangunan43.12" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['garasi_ambulan']; ?>" selected><?= $data['garasi_ambulan']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Area khusus penyimpanan Tabung O2 </label>
             <select class="form-control" name="bangunan43.13" id="bangunan43.13" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['area_tabung']; ?>" selected><?= $data['area_tabung']; ?></option>
             </select>
           </div>
           <div class="form-group">
             <label for="exampleFormControlInput1">Ruang Lainnya …………………………… (selain yang tertulis diatas) </label>
-            <input type="text" class="form-control" placeholder="ruang lainnya" name="bangunan43.14" id="bangunan43.14">
+            <input type="text" class="form-control" value="<?= $data['selain_diatas']; ?>" placeholder="ruang lainnya" name="bangunan43.14" id="bangunan43.14">
             <select class="form-control" name="bangunan43.15" id="bangunan43.15" disabled>
-              <option selected>Pilih ...</option>
-              <option value="1">Ya</option>
-              <option value="2">Tidak</option>
+              <option value="<?= $data['ruang_lain']; ?>" selected><?= $data['ruang_lain']; ?></option>
             </select>
           </div>
 
