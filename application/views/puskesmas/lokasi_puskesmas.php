@@ -13,6 +13,8 @@
               <?php else : ?>
                 <option selected>Pilih ...</option>
               <?php endif; ?>
+            <?php else : ?>
+              <option selected>Pilih ...</option>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
