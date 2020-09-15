@@ -1,15 +1,11 @@
 <div class="col-md-9">
   <?php if ($this->session->flashdata('flash')) : ?>
-    <?= $this->session->flashdata('flash'); ?>
+    <div class="alert alert-success" role="alert">
+      Data Telah Berhasil
+      <?= $this->session->flashdata('flash'); ?>
+    </div>
   <?php endif; ?>
   <form style="height:350px; overflow-y:auto; padding:20px;">
-  <div class="alert alert-success" role="alert">
-							Data Berhasil dimasukan !
-						</div>
-							<div class="form-group">
-							 <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
-							  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
-							</div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Nama Puskesmas</label>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['nama']; ?>" readonly>
