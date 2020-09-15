@@ -8,12 +8,11 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/login.css">
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
-	
+
 
 </head>
 
 <body>
-
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
@@ -25,11 +24,12 @@
 						LOGIN
 					</span>
 				</div>
-				<?= $this->session->flashdata('message'); ?>
 				<form class="login100-form validate-form" method="post" action="<?= base_url('auth'); ?>">
-				<div class="alert alert-danger" role="alert">
-					Password Salah !
-				</div>
+					<?php if ($this->session->flashdata('flash')) : ?>
+						<div class="alert alert-danger" role="alert">
+							<?= $this->session->flashdata('message'); ?>
+						</div>
+					<?php endif; ?>
 					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
 						<span class="label-input100">Kode</span>
 						<input class="input100" type="text" name="kode" placeholder="Masukan Kode">
