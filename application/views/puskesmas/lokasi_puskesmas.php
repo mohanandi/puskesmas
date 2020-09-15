@@ -6,10 +6,13 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai sertifikat tanah</label>
           <select class="form-control" name="lokasi1" id="lokasi1">
-            <?php if (set_value('lokasi1')) : ?>
-              <option value="<?= set_value('lokasi1'); ?>"><?= set_value('lokasi1'); ?></option>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
+            <?php if ($data) : ?>
+              <option value="<?= $data['puskesmas_tanah']; ?>"><?= $data['puskesmas_tanah']; ?></option>
+              <?php if (set_value('lokasi1')) : ?>
+                <option value="<?= set_value('lokasi1'); ?>"><?= set_value('lokasi1'); ?></option>
+              <?php else : ?>
+                <option selected>Pilih ...</option>
+              <?php endif; ?>
             <?php endif; ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
