@@ -6,20 +6,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai sertifikat tanah</label>
           <select class="form-control" name="lokasi1" id="lokasi1">
-            <?php if ($data) : ?>
-              <option value="<?= $data['puskesmas_tanah']; ?>"><?= $data['puskesmas_tanah']; ?></option>
-              <?php if (set_value('lokasi1')) : ?>
-                <option value="<?= set_value('lokasi1'); ?>"><?= set_value('lokasi1'); ?></option>
-              <?php else : ?>
-                <option selected>Pilih ...</option>
-              <?php endif; ?>
-            <?php else : ?>
-              <?php if (set_value('lokasi1')) : ?>
-                <option value="<?= set_value('lokasi1'); ?>"><?= set_value('lokasi1'); ?></option>
-              <?php else : ?>
-                <option selected>Pilih ...</option>
-              <?php endif; ?>
-            <?php endif; ?>
+            <?php is_terisi($data['puskesmas_tanah'], set_value('lokasi1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -28,16 +15,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas mempunyai SLF (Sertifikat Laik Fungsi) yang dikeluarkan oleh Dinas PU</label>
           <select class="form-control" name="lokasi2" id="lokasi2">
-            <?php if ($data) : ?>
-              <option value="<?= $data['slf']; ?>"><?= $data['slf']; ?></option>
-              <?php if (set_value('lokasi2')) : ?>
-                <option value="<?= set_value('lokasi2'); ?>"><?= set_value('lokasi2'); ?></option>
-              <?php else : ?>
-                <option selected>Pilih ...</option>
-              <?php endif; ?>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
-            <?php endif; ?>
+            <?php is_terisi($data['slf'], set_value('lokasi2')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -46,16 +24,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Puskesmas Tidak di tepi lereng</label>
           <select class="form-control" name="lokasi3" id="lokasi3">
-            <?php if ($data) : ?>
-              <option value="<?= $data['puskesmas_lereng']; ?>"><?= $data['puskesmas_lereng']; ?></option>
-              <?php if (set_value('lokasi3')) : ?>
-                <option value="<?= set_value('lokasi3'); ?>"><?= set_value('lokasi3'); ?></option>
-              <?php else : ?>
-                <option selected>Pilih ...</option>
-              <?php endif; ?>
-            <?php else : ?>
-              <option selected>Pilih ...</option>
-            <?php endif; ?>
+            <?php is_terisi($data['puskesmas_lereng'], set_value('lokasi3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
