@@ -374,7 +374,7 @@
           <label for="exampleFormControlInput1"><strong>Ketersediaan ruang kantor</strong></label> <br>
           <label for="exampleFormControlInput1">a. Ruang Administrasi</label>
           <select class="form-control" name="bangunan41a" id="bangunan41a">
-            <?php is_terisi($data['ruang_admin'], set_value('bangunan')); ?>
+            <?php is_terisi($data['ruang_admin'], set_value('bangunan41a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -383,7 +383,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang Kantor untuk Karyawan </label>
           <select class="form-control" name="bangunan41b" id="bangunan41b">
-            <?php is_terisi($data['ruang_karyawan'], set_value('bangunan')); ?>
+            <?php is_terisi($data['ruang_karyawan'], set_value('bangunan41b')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -392,7 +392,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">c. Ruang Kepala Puskesmas </label>
           <select class="form-control" name="bangunan41c" id="bangunan41c">
-            <?php is_terisi($data['ruang_kepala'], set_value('bangunan')); ?>
+            <?php is_terisi($data['ruang_kepala'], set_value('bangunan41c')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -401,7 +401,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">d. Ruang Rapat/Diskusi</label>
           <select class="form-control" name="bangunan41d" id="bangunan41d">
-            <?php is_terisi($data['ruang_rapat'], set_value('bangunan')); ?>
+            <?php is_terisi($data['ruang_rapat'], set_value('bangunan41d')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -410,492 +410,371 @@
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>Ketersediaan ruang pelayanan</strong></label> <br>
           <label for="exampleFormControlInput1">Ruang Pendaftaran dan Rekam Medis</label>
-          <select class="form-control" name="bangunan42.1" id="bangunan42.1">
-            <?php is_terisi($data['ruang_pendaftaran'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_1" id="bangunan42_1">
+            <?php is_terisi($data['ruang_pendaftaran'], set_value('bangunan42_1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Pemeriksaan Umum</label>
-          <select class="form-control" name="bangunan42.2" id="bangunan42.2">
-            <?php is_terisi($data['ruang_pemeriksaaan'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_2" id="bangunan42_2">
+            <?php is_terisi($data['ruang_pemeriksaaan'], set_value('bangunan42_2')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.2', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Tindakan dan Gawat Darurat</label>
-          <select class="form-control" name="bangunan42.3" id="bangunan42.3">
-            <?php is_terisi($data['ruang_tindakan'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_3" id="bangunan42_3">
+            <?php is_terisi($data['ruang_tindakan'], set_value('bangunan42_3"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.3', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang KIA, KB dan Imunisasi</label>
-          <select class="form-control" name="bangunan42.4" id="bangunan42.4">
-            <?php is_terisi($data['ruang_kia'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_4" id="bangunan42_4">
+            <?php is_terisi($data['ruang_kia'], set_value('bangunan42_4')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.4', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_4', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Pemeriksaan Khusus</label>
-          <select class="form-control" name="bangunan42.5" id="bangunan42.5">
-            <?php is_terisi($data['ruang_khusus'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_5" id="bangunan42_5">
+            <?php is_terisi($data['ruang_khusus'], set_value('bangunan42_5')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.5', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_5', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Kesehatan Gigi dan Mulut</label>
-          <select class="form-control" name="bangunan42.6" id="bangunan42.6">
-            <?php is_terisi($data['ruang_gigi'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_6" id="bangunan42_6">
+            <?php is_terisi($data['ruang_gigi'], set_value('bangunan42_6')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.6', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_6', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruangan Komunikasi Informasi dan Edukasi (KIE)</label>
-          <select class="form-control" name="bangunan42.7" id="bangunan42.7">
-            <?php is_terisi($data['ruang_kie'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_7" id="bangunan42_7">
+            <?php is_terisi($data['ruang_kie'], set_value('bangunan42_7')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('bangunan42.7', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_7', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Farmasi</label>
-          <select class="form-control" name="bangunan42.8" id="bangunan42.8">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_farmasi'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_8" id="bangunan42_8">
+
+            <?php is_terisi($data['ruang_farmasi'], set_value('bangunan42_8')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_farmasi'], set_value('bangunan42.8')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.8', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_8', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Farmasi meliputi sarana sebagai berikut:</label><br>
           <label for="exampleFormControlInput1">a. Ruang penerimaan resep</label>
-          <select class="form-control" name="bangunan42.9a" id="bangunan42.9a">
-            <?php is_terisi($data['ruang_resep'], set_value('bangunan42.9a')); ?>
-<<<<<<< HEAD
+          <select class="form-control" name="bangunan42_9a" id="bangunan42_9a">
+            <?php is_terisi($data['ruang_resep'], set_value('bangunan42_9a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan42.9a', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9a', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang pelayanan resep dan peracikan</label>
-          <select class="form-control" name="bangunan42.9b" id="bangunan42.9b">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_racik'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_9b" id="bangunan42_9b">
+            <?php is_terisi($data['ruang_racik'], set_value('bangunan42_9b')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_racik'], set_value('bangunan42.9b')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.9b', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9b', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">c. Ruang penyerahan obat</label>
-          <select class="form-control" name="bangunan42.9c" id="bangunan42.9c">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_obat'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_9c" id="bangunan42_9c">
+
+            <?php is_terisi($data['ruang_obat'], set_value('bangunan42_9c')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_obat'], set_value('bangunan42.9c')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan42.9c', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9c', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">d. Ruang konseling</label>
-          <select class="form-control" name="bangunan42.9d" id="bangunan42.9d">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_konseling'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_9d" id="bangunan42_9d">
+
+            <?php is_terisi($data['ruang_konseling'], set_value('bangunan42_9d"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_konseling'], set_value('bangunan42.9d"')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.9d', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9d', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">e. Ruang penyimpanan obat dan BMHP</label>
-          <select class="form-control" name="bangunan42.9e" id="bangunan42.9e">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_bmhp'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_9e" id="bangunan42_9e">
+
+            <?php is_terisi($data['ruang_bmhp'], set_value('bangunan42_9e')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_bmhp'], set_value('bangunan42.9e')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.9e', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9e', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">f. Ruang arsip</label>
-          <select class="form-control" name="bangunan42.9f" id="bangunan42.9f">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_arsip'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_9f" id="bangunan42_9f">
+
+            <?php is_terisi($data['ruang_arsip'], set_value('bangunan42_9f"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_arsip'], set_value('bangunan42.9f"')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.9f', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_9f', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Persalinan </label>
-          <select class="form-control" name="bangunan42.10" id="bangunan42.10">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_persalinan'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_10" id="bangunan42_10">
+
+            <?php is_terisi($data['ruang_persalinan'], set_value('bangunan42_10')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_persalinan'], set_value('bangunan42.10')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.10', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_10', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Rawat Pasca Persalinan </label>
-          <select class="form-control" name="bangunan42.11" id="bangunan42.11">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_pasca'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_11" id="bangunan42_11">
+
+            <?php is_terisi($data['ruang_pasca'], set_value('bangunan42_11"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_pasca'], set_value('bangunan42.11"')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.11', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_11', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Laboratorium</label>
-          <select class="form-control" name="bangunan42.12" id="bangunan42.12">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_lab'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_12" id="bangunan42_12">
+
+            <?php is_terisi($data['ruang_lab'], set_value('bangunan42_12"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_lab'], set_value('bangunan42.12"')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.12', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_12', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Unit Rawat Inap ditambah dengan:</label><br>
           <label for="exampleFormControlInput1">Ruang KIA KB dan Imunisasi menjadi 2 ruang:</label><br>
           <label for="exampleFormControlInput1">a. Ruang Kesehatan Ibu dan KB</label>
-          <select class="form-control" name="bangunan42.13a" id="bangunan42.13a">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_kb'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_13a" id="bangunan42_13a">
+
+            <?php is_terisi($data['ruang_kb'], set_value('bangunan42_13a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_kb'], set_value('bangunan42.13a')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.13a', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_13a', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">b. Ruang Kesehatan Anak dan Imunisasi</label>
-          <select class="form-control" name="bangunan42.13b" id="bangunan42.13b">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_anak'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_13b" id="bangunan42_13b">
+
+            <?php is_terisi($data['ruang_anak'], set_value('bangunan42_13b')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_anak'], set_value('bangunan42.13b')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.13b', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_13b', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Rawat Inap</label>
-          <select class="form-control" name="bangunan42.14" id="bangunan42.14">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_inap'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_14" id="bangunan42_14">
+
+            <?php is_terisi($data['ruang_inap'], set_value('bangunan42_14')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_inap'], set_value('bangunan42.14')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.14"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_14"', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kamar mandi/WC ((terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
-          <select class="form-control" name="bangunan42.15" id="bangunan42.15">
-<<<<<<< HEAD
-            <?php is_terisi($data['wc'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan42_15" id="bangunan42_15">
+
+            <?php is_terisi($data['wc'], set_value('bangunan42_15')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['wc'], set_value('bangunan42.15')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan42.15', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan42_15', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>Ketersediaan Ruang Penunjang</strong></label><br>
           <label for="exampleFormControlInput1">Ruang Tunggu</label>
-          <select class="form-control" name="bangunan43.1" id="bangunan43.1">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_tunggu'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_1" id="bangunan43_1">
+
+            <?php is_terisi($data['ruang_tunggu'], set_value('bangunan43_1')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_tunggu'], set_value('bangunan43.1')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
+
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang ASI</label>
-          <select class="form-control" name="bangunan43.2" id="bangunan43.2">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_asi'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_2" id="bangunan43_2">
+            <?php is_terisi($data['ruang_asi'], set_value('bangunan43_2"')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_asi'], set_value('bangunan43.2"')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.2', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
+
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Sterilisasi</label>
-          <select class="form-control" name="bangunan43.3" id="bangunan43.3">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_steril'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_3" id="bangunan43_3">
+            <?php is_terisi($data['ruang_steril'], set_value('bangunan43_3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_steril'], set_value('bangunan43.3')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.3"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_3"', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Cuci Linen</label>
-          <select class="form-control" name="bangunan43.4" id="bangunan43.4">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_linen'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_4" id="bangunan43_4">
+
+            <?php is_terisi($data['ruang_linen'], set_value('bangunan43_4')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_linen'], set_value('bangunan43.4')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.4', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_4', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Penyelenggaraan makanan (dapur/pantry)</label>
-          <select class="form-control" name="bangunan43.5" id="bangunan43.5">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_dapur'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_5" id="bangunan43_5">
+
+            <?php is_terisi($data['ruang_dapur'], set_value('bangunan43_5')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_dapur'], set_value('bangunan43.5')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.5', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_5', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Unit Rawat Inap ditambah dengan</label><br>
           <label for="exampleFormControlInput1">a. Ruang Jaga Petugas</label>
-          <select class="form-control" name="bangunan43.6a" id="bangunan43.6a">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_jaga'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_6a" id="bangunan43_6a">
+
+            <?php is_terisi($data['ruang_jaga'], set_value('bangunan43_6a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_jaga'], set_value('bangunan43.6a')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.6a"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_6a"', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Gudang Umum</label>
-          <select class="form-control" name="bangunan43.7" id="bangunan43.7">
-<<<<<<< HEAD
-            <?php is_terisi($data['gudang_umum'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_7" id="bangunan43_7">
+
+            <?php is_terisi($data['gudang_umum'], set_value('bangunan43_7')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['gudang_umum'], set_value('bangunan43.7')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.7', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_7', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kamar mandi/WC Pasien/pengunjung (terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
-          <select class="form-control" name="bangunan43.8" id="bangunan43.8">
-<<<<<<< HEAD
-            <?php is_terisi($data['wc_pasien'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_8" id="bangunan43_8">
+
+            <?php is_terisi($data['wc_pasien'], set_value('bangunan43_8')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['wc_pasien'], set_value('bangunan43.8')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.8"', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_8"', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Rumah dinas tenaga kesehatan</label>
-          <select class="form-control" name="bangunan43.9" id="bangunan43.9">
-<<<<<<< HEAD
-            <?php is_terisi($data['rumah_dinas'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_9" id="bangunan43_9">
+
+            <?php is_terisi($data['rumah_dinas'], set_value('bangunan43_9')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['rumah_dinas'], set_value('bangunan43.9')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.9', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_9', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Parkir kendaraan roda 2</label>
-          <select class="form-control" name="bangunan43.10" id="bangunan43.10">
-<<<<<<< HEAD
-            <?php is_terisi($data['roda_2'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_10" id="bangunan43_10">
+
+            <?php is_terisi($data['roda_2'], set_value('bangunan43_10')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['roda_2'], set_value('bangunan43.10')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.10', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_10', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Parkir Kendaraan Roda 4</label>
-          <select class="form-control" name="bangunan43.11" id="bangunan43.11">
-<<<<<<< HEAD
-            <?php is_terisi($data['roda_4'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_11" id="bangunan43_11">
+
+            <?php is_terisi($data['roda_4'], set_value('bangunan43_11')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['roda_4'], set_value('bangunan43.11')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.11', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_11', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Garasi Ambulans/Pusling</label>
-          <select class="form-control" name="bangunan43.12" id="bangunan43.12">
-<<<<<<< HEAD
-            <?php is_terisi($data['garasi_ambulan'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_12" id="bangunan43_12">
+
+            <?php is_terisi($data['garasi_ambulan'], set_value('bangunan43_12')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['garasi_ambulan'], set_value('bangunan43.12')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.12', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_12', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Area khusus penyimpanan Tabung O2 </label>
-          <select class="form-control" name="bangunan43.13" id="bangunan43.13">
-<<<<<<< HEAD
-            <?php is_terisi($data['area_tabung'], set_value('bangunan')); ?>
+          <select class="form-control" name="bangunan43_13" id="bangunan43_13">
+
+            <?php is_terisi($data['area_tabung'], set_value('bangunan43_13')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['area_tabung'], set_value('bangunan43.13')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
           </select>
-          <?= form_error('bangunan43.13', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_13', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Lainnya …………………………… (selain yang tertulis diatas) </label>
-          <input type="text" class="form-control" value="<?= set_value('bangunan43.14') ?>" placeholder="ruang lainnya" name="bangunan43.14" id="bangunan43.14">
-          <?= form_error('bangunan43.14', '<small class="text-danger pl-3">', '</small>'); ?>
-          <select class="form-control" name="bangunan43.15" id="bangunan43.15">
-<<<<<<< HEAD
-            <?php is_terisi($data['ruang_lain'], set_value('bangunan')); ?>
+          <input type="text" class="form-control" value="<?= set_value('bangunan43_14') ?>" placeholder="ruang lainnya" name="bangunan43_14" id="bangunan43_14">
+          <?= form_error('bangunan43_14', '<small class="text-danger pl-3">', '</small>'); ?>
+          <select class="form-control" name="bangunan43_15" id="bangunan43_15">
+
+            <?php is_terisi($data['ruang_lain'], set_value('bangunan43_15')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
-=======
-            <?php is_terisi($data['ruang_lain'], set_value('bangunan43.15')); ?>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
->>>>>>> 80afe986f393249b6e0e3e6060752b02aab8e0f4
+
           </select>
-          <?= form_error('bangunan43.15', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('bangunan43_15', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
 
         <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
