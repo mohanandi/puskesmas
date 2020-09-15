@@ -26,4 +26,11 @@ class Organisasi_Manajemen extends CI_Controller
             redirect('mahasiswa');
         }
     }
+    public function ubah()
+    {
+        $data['data'] = $this->IdentitasPuskesmas_Model->check();
+        $this->load->view('templates/puskesmas/head');
+        $this->load->view('puskesmas/organoisasi_manajemen', $data);
+        $this->load->view('templates/puskesmas/foot');
+    }
 }
