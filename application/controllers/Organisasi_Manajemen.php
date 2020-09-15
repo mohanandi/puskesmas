@@ -11,17 +11,12 @@ class Organisasi_Manajemen extends CI_Controller
     }
     public function tambah()
     {
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('no_reg', 'No Registrasi', 'required');
-        $this->form_validation->set_rules('tgl_diri', 'Tanggal Pendirian', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
-        $this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required');
-        $this->form_validation->set_rules('kabupaten', 'Kabupaten', 'required');
-        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required');
-        $this->form_validation->set_rules('no_telp', 'No. Telepon Puskesmas dan No Telepon Whatsapp', 'required');
-        $this->form_validation->set_rules('telp_gadar', 'No. Telepon Ruang Gadar', 'required');
-        $this->form_validation->set_rules('telp_gadar', 'No. Faksimile', 'required');
-        $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
+        $this->form_validation->set_rules('organisasi1', '', 'required');
+        $this->form_validation->set_rules('organisasi2', '', 'required');
+        $this->form_validation->set_rules('organisasi3', '', 'required');
+        $this->form_validation->set_rules('organisasi4', '', 'required');
+        $this->form_validation->set_rules('organisasi5', '', 'required');
+        $this->form_validation->set_rules('organisasi6', '', 'required');
 
         if ($this->form_validation->run() == false) {
             $this->index();
