@@ -6,7 +6,7 @@ class Lokasi_Puskesmas extends CI_Controller
     public function index()
     {
         $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/data_umum');
+        $this->load->view('puskesmas/lokasi_puskesmas');
         $this->load->view('templates/puskesmas/foot');
     }
     public function tambah()
