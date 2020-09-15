@@ -7,7 +7,7 @@ class Peralatan_Puskesmas extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('IdentitasPuskesmas_Model');
+        $this->load->model('PeralatanPuskesmas_Model');
         is_logged_in();
     }
 
@@ -44,7 +44,7 @@ class Peralatan_Puskesmas extends CI_Controller
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
-            $this->IdentitasPuskesmas_Model->tambahData();
+            $this->PeralatanPuskesmas_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
             redirect('Identitas_Puskesmas');
         }

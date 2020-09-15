@@ -3,8 +3,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Bangunan_Puskesmas extends CI_Controller
 {
+    public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('BangunanPuskesmas_Model');
+        is_logged_in();
+    }
+
     public function index()
     {
+        $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $data['data'] = $this->OrganisasiManajemen_Model->check();
+        if ($data['data'] == NULL) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/organisasi_manajemen', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/organisasi_manajemen_hasil', $data);
+            $this->load->view('templates/puskesmas/foot');
+        }
         $this->load->view('templates/puskesmas/head');
         $this->load->view('puskesmas/bangunan_puskesmas');
         $this->load->view('templates/puskesmas/foot');
