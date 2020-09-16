@@ -50,7 +50,7 @@
         </div>
 
 
-        <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+         <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
 
             <div class="container">
 
@@ -60,36 +60,62 @@
 
                     <div class="col-3 col-xl-1">
 
-                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
+                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
                     </div>
 
-                    <div class="col-13 col-md-10 d-none d-xl-block">
+                    <div class="col-13 col-md-10 d-none d-xl-block" style="margin-left:-80px;">
                         <nav class="site-navigation position-relative text-right" role="navigation">
 
-                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a href="<?= base_url('home');?>" class="nav-link"">Home</a></li>
-                                <li class="has-children">
-                                    <a href="#" class="nav-link"";">Menu Cepat</a>
-                                    <ul class="dropdown">
-                                        <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
-                                        <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-                                        <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-                                        <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-                                        <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-                                        <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-                                        <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-                                        <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-                                    </ul>
-                                </li>
+							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block" >
+								<li><a href="<?= base_url('home') ?>" class="nav-link" >Home</a></li>
+								<li class="has-children">
+									<a class="nav-link">Input Puskesmas</a>
+									<ul class="dropdown">
+									<br>
+									<div class="row">
+										<h5 class="col-md-6" style="font-size:18px; color="#000;"> Input Puskesmas </h5>
+								
+										<h5 class="col-md-6" style="font-size:18px; color="#000;"> Input Puskesmas </h5>
+									</div>
+										<hr>
+											<div class="row">
+
+												<ul class="col-md-6" style="list-style: none; padding:10px;">
+												 <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+												 <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
+												 <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
+												 <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
+												 <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
+												 <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
+												 <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
+												 <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
+												</ul>	
+
+												
+												<ul class="col-md-6" style="list-style: none; padding:10px;">
+												 <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+												 <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
+												 <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
+												 <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
+												 <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
+												 <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
+												 <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
+												 <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
+												</ul>	
+										
+											</div>
+
+									</ul>
+								</li>
 
 
-                                <li><a href="about.html" class="nav-link"">Info</a></li>
+								<li><a href="about.html" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
 
 
 
 
-                            </ul>
-                        </nav>
+							</ul>
+						</nav>
                     </div>
 
 

@@ -1,8 +1,12 @@
-<div class="col-md-9" style="top:-110px;">
-  <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
-
-    <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-      <form>
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Sumber Daya Manusia</strong></h2>
+          </div>
+        </div>
+      <form style="padding:20px;">
         <?php if ($this->session->flashdata('flash')) : ?>
           <div class="alert alert-success" role="alert">
             Data Telah Berhasil

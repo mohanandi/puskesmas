@@ -1,22 +1,11 @@
-<div class="col-md-9" style="top:-110px;">
-  <div class='multitab-section'>
-    <ul class='multitab-widget multitab-widget-content-tabs-id'>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id1' style="font-size:10px;">Organisasi Manajemen</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id2' style="font-size:10px;">Lokasi Puskesmas</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id3' style="font-size:10px;">Bangunan Puskesmas</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id4' style="font-size:10px;">Prasarana Puskesmas</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id5' style="font-size:10px;">Peralatan Puskesmas</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id6' style="font-size:10px;">Pengisian Aspak</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id7' style="font-size:10px; width:120px;">Sumber Daya Manusia</a></li>
-      <li class='multitab-tab'><a href='#multicolumn-widget-id8' style="font-size:10px; width:120px; margin-left:16px;">Penilaian Kinerja Puskesmas</a></li>
-    </ul>
-
-
-    <div class="container1" style="height:350px; margin-bottom:-200px !important; overflow-y:auto; padding:10px;">
-
-
-      <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
-        <span class='sidebar' id='sidebartab1' preferred='yes'>
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Bangunan Puskesmas</strong></h2>
+          </div>
+        </div>
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>

@@ -1,11 +1,18 @@
-<div class="col-md-9">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Identitas Puskesmas</strong></h2>
+          </div>
+        </div>
   <?php if ($this->session->flashdata('flash')) : ?>
     <div class="alert alert-success" role="alert">
       Data Telah Berhasil
       <?= $this->session->flashdata('flash'); ?>
     </div>
   <?php endif; ?>
-  <form style="height:350px; overflow-y:auto; padding:20px;">
+  <form>
     <div class="form-group">
       <label for="exampleFormControlInput1">Nama Puskesmas</label>
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['nama']; ?>" readonly>

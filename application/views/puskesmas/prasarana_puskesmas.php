@@ -1,8 +1,16 @@
-<div class="col-md-9" style="top:-110px;">
-  <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Prasarana Puskesmas</strong></h2>
+          </div>
+        </div>
 
-    <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-      <form method="POST" action="<?= base_url('Prasarana_Puskesmas/tambah') ?>">
+
+
+  <form  method="POST" action="<?= base_url('Prasarana_Puskesmas/tambah') ?>" style=" padding:20px;">
+     
         <div class="form-group">
           <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
           <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>

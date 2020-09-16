@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
 
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylo.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 
 </head>
@@ -113,13 +113,10 @@
 										</ul>
 									</div>
 
-									</ul>
-								</li>
-
 
 								<li><a href="about.html" class="nav-link" style="color:black !important;">Daftar Puskesmas</a></li>
 
-
+								<li><a href="about.html" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
 
 
 							</ul>
@@ -135,4 +132,4 @@
         </header>
 
        
-                    </div>
+                 
