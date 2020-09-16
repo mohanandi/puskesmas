@@ -5,8 +5,8 @@ class Table extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('templates/puskesmas/head');
+        $this->load->view('templates/kab_kota/head');
         $this->load->view('table');
-        $this->load->view('templates/puskesmas/foot');
+        $this->load->view('templates/kab_kota/foot');
     }
 }
