@@ -49,7 +49,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Tinggi langit-langit puskesmas minimal 2,8 meter, rapi dan bersih</label>
           <select class="form-control" name="bangunan8" id="bangunan8" disabled>
-            <option value="<?= $data['tinggi_langit']; ?>" selected><?= $data['tinggi_langit']; ?></option>
+            <option value="<?= $data['tingi_langit']; ?>" selected><?= $data['tingi_langit']; ?></option>
           </select>
         </div>
         <div class="form-group">

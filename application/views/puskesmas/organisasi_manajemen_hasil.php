@@ -13,11 +13,11 @@
 				</div>
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
-					<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi2" id="organisasi2" value="<?= $data['tgl_izin']; ?>" readonly>
+					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi2" id="organisasi2" value="<?= date('d F Y', $data['tgl_izin']); ?>" readonly>
 				</div>
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Kategori Puskesmas</label>
-					<input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi3" id="organisasi3" value="<?= $data['kategori']; ?>" readonly>
+					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi3" id="organisasi3" value="<?= $data['kategori']; ?>" readonly>
 				</div>
 				<div class="form-group">
 					<label for="exampleFormControlInput1">Status Akreditasi</label>

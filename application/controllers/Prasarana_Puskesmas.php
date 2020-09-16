@@ -45,7 +45,7 @@ class Prasarana_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('prasarana3_2', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_3', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_4', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana3_5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('prasarana3_5', '', 'trim|required');
         $this->form_validation->set_rules('prasarana3_6', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_7', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_8', '', 'trim|in_list[Ya,Tidak]');
@@ -55,10 +55,10 @@ class Prasarana_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('prasarana3_12', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_13', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana3_14', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana4_1', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana4_2', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana4_3', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana4_4', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('prasarana4_1', '', 'trim|required');
+        $this->form_validation->set_rules('prasarana4_2', '', 'trim|required');
+        $this->form_validation->set_rules('prasarana4_3', '', 'trim|required');
+        $this->form_validation->set_rules('prasarana4_4', '', 'trim|required');
         $this->form_validation->set_rules('prasarana4_5', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana4_6', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana4_7', '', 'trim|in_list[Ya,Tidak]');
@@ -84,11 +84,11 @@ class Prasarana_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('prasarana9_2', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana10_a', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana10_b', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana11_a1', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('prasarana11_a1', '', 'trim|required');
         $this->form_validation->set_rules('prasarana11_a2', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana11_b1', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('prasarana11_b1', '', 'trim|required');
         $this->form_validation->set_rules('prasarana11_b2', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('prasarana11_c1', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('prasarana11_c1', '', 'trim|required');
         $this->form_validation->set_rules('prasarana11_c2', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana11_d', '', 'trim|in_list[Ya,Tidak]');
         $this->form_validation->set_rules('prasarana11_e', '', 'trim|in_list[Ya,Tidak]');
@@ -99,10 +99,9 @@ class Prasarana_Puskesmas extends CI_Controller
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
-            var_dump($this->input->post());
             $this->PrasaranaPuskesmas_Model->tambahData();
-            // $this->session->set_flashdata('flash', 'Ditambahkan');
-            // redirect('Peralatan_Puskesmas');
+            $this->session->set_flashdata('flash', 'Ditambahkan');
+            redirect('Prasarana_Puskesmas');
         }
     }
 }

@@ -75,10 +75,7 @@ class PrasaranaPuskesmas_Model extends CI_Model
             "ambulan_baik" => $this->input->post('prasarana11_e', true),
             "rujukan" => $this->input->post('prasarana11_f', true)
         ];
-        var_dump($this->input->post());
-        echo "<br><br>";
-        var_dump($data);
-        // $this->db->insert('prasarana_puskesmas', $data);
+        $this->db->insert('prasarana_puskesmas', $data);
     }
     public function check()
     {

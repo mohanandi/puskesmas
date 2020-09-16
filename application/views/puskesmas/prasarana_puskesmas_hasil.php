@@ -11,10 +11,6 @@
           </div>
         <?php endif; ?>
         <div class="form-group">
-          <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
-        </div>
-        <div class="form-group">
           <label for="exampleFormControlInput1"><strong>1. PENGHAWAAN (VENTILASI)</strong></label><br>
           <label for="exampleFormControlInput1">Bila menggunakan ventilasi alami pada ruangan, minimal 15 % dari luas lantai ruangan tersebut</label>
           <select class="form-control" name="prasarana1.1" id="prasarana1.1" disabled>

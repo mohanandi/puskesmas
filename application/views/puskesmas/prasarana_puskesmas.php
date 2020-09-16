@@ -162,7 +162,7 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Ketersediaan air untuk keperluan hygiene dan sanitasi untuk pasien rawat inap 40-60 liter/orang/hari</label>
           <select class="form-control" name="prasarana3_3" id="prasarana3_3">
-            <?php is_terisi($data['empatpuluh'], set_value('prasarana')); ?>
+            <?php is_terisi($data['empatpuluh'], set_value('prasarana3_3')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -180,13 +180,17 @@
         <div class="form-group">
           <label for="exampleFormControlInput1">Sumber Air Bersih</label>
           <select class="form-control" name="prasarana3_5" id="prasarana3_5">
-            <?php is_terisi($data['sumber_air'], set_value('prasarana')); ?>
-            <option value="1">PDAM</option>
-            <option value="2">Sumur Pompa Listrik/SPT</option>
-            <option value="3">Sumur Gali</option>
-            <option value="4">Tadah Hujan</option>
-            <option value="5">Air Permukaan</option>
-            <option value="6">Lainnya</option>
+            <?php if ($data['sumber_air']) : ?>
+              <option value="<?= $data['sumber_air'] ?>"><?= $data['sumber_air'] ?></option>
+            <?php else : ?>
+              <option value="<?= set_value('prasarana3_5'); ?>"><?= set_value('prasarana3_5'); ?></option>
+            <?php endif; ?>
+            <option value="PDAM">PDAM</option>
+            <option value="Sumur Pompa Listrik/SPT">Sumur Pompa Listrik/SPT</option>
+            <option value="Sumur Gali">Sumur Gali</option>
+            <option value="Tadah Hujan">Tadah Hujan</option>
+            <option value="Air Permukaan">Air Permukaan</option>
+            <option value="Lainnya">Lainnya</option>
           </select>
           <?= form_error('prasarana3_5', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
@@ -275,36 +279,51 @@
           <label for="exampleFormControlInput1"><strong>4. SISTEM KELISTRIKAN</strong></label><br>
           <label for="exampleFormControlInput1">Sumber daya listrik utama Puskesmas</label>
           <select class="form-control" name="prasarana4_1" id="prasarana4_1">
-            <?php is_terisi($data['listrik_puskesmas'], set_value('prasarana4_1')); ?>
-            <option value="1">PLN</option>
-            <option value="2">Tenaga Surya/Solarsel</option>
-            <option value="3">Genset</option>
-            <option value="4">Tenaga Angin/Bayu</option>
-            <option value="5">Lainnya</option>
+            <?php if ($data['tgl_izin']) : ?>
+              <option value="<?= $data['listrik_puskesmas'] ?>"><?= $data['listrik_puskesmas'] ?></option>
+            <?php else : ?>
+              <option value="<?= set_value('prasarana4_1'); ?>"><?= set_value('prasarana4_1'); ?></option>
+            <?php endif; ?>
+            <option value="PLN">PLN</option>
+            <option value="Tenaga Surya/Solarsel">Tenaga Surya/Solarsel</option>
+            <option value="Genset">Genset</option>
+            <option value="Tenaga Angin/Bayu">Tenaga Angin/Bayu</option>
+            <option value="Lainnya">Lainnya</option>
           </select>
           <?= form_error('prasarana4_1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kekuatan Daya Listrik PLN</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_2') ?>" placeholder="VA belom disamping" name="prasarana4_2" id="prasarana4_2">
+          <?php if ($data['daya_listrik']) : ?>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana4_2" id="prasarana4_2" value="<?= $data['daya_listrik']; ?>">
+          <?php else : ?>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana4_2" id="prasarana4_2" value="<?= set_value('prasarana4_2'); ?>">
+          <?php endif; ?>
           <?= form_error('prasarana4_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Sumber daya listrik cadangan/darurat</label>
           <select class="form-control" name="prasarana4_3" id="prasarana4_3">
-            <?php is_terisi($data['listrik_cadangan'], set_value('prasarana4_3')); ?>
-            <option value="1">Genset</option>
-            <option value="2">Tenaga Surya/Solarsel</option>
-            <option value="3">Tenaga Angin</option>
-            <option value="4">Tenaga Air</option>
-            <option value="5">Lainnya</option>
+            <?php if ($data['listrik_cadangan']) : ?>
+              <option value="<?= $data['listrik_cadangan']; ?>"><?= $data['listrik_cadangan']; ?></option>
+            <?php else : ?>
+              <option value="<?= set_value('prasarana4_3') ?>"><?= set_value('prasarana4_3') ?></option>
+            <?php endif; ?>
+            <option value="Genset">Genset</option>
+            <option value="Tenaga Surya/Solarsel">Tenaga Surya/Solarsel</option>
+            <option value="Tenaga Angin">Tenaga Angin</option>
+            <option value="Tenaga Air">Tenaga Air</option>
+            <option value="Lainnya">Lainnya</option>
           </select>
           <?= form_error('prasarana4_3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kekuatan daya listrik cadangan</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_4') ?>" placeholder=" VA belom disamping" name="prasarana4_4" id="prasarana4_4">
-          <?= form_error('prasarana4_4', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?php if ($data['kekuatan_cadangan']) : ?>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana4_4" id="prasarana4_4" value="<?= $data['kekuatan_cadangan']; ?>">
+          <?php else : ?>
+            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana4_4" id="prasarana4_4" value="<?= set_value('prasarana4_4'); ?>">
+          <?php endif; ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Listrik tersedia 24 jam dalam sehari</label>
@@ -346,7 +365,7 @@
           <label for="exampleFormControlInput1"><strong>5. SISTEM KOMUNIKASI</strong></label><br>
           <label for="exampleFormControlInput1">a. Tersedia saluran telefon kabel Puskesmas</label>
           <select class="form-control" name="prasarana5_a" id="prasarana5_a">
-            <?php is_terisi($data['saluran_tlp'], set_value('prasarana5_a"')); ?>
+            <?php is_terisi($data['saluran_tlp'], set_value('prasarana5_a')); ?>
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
@@ -544,7 +563,11 @@
           <label for="exampleFormControlInput1">a. Kendaraan Puskesmas Keliling (Roda 4/4WD/Perahu Bermotor / Lainnya); Jumlah:</label>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" value="<?= set_value('prasarana11_a1') ?>" placeholder="..." name="prasarana11_a1" id="prasarana11_a1">
+              <?php if ($data['keliling_unit']) : ?>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_a1" id="prasarana11_a1" value="<?= $data['keliling_unit']; ?>">
+              <?php else : ?>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_a1" id="prasarana11_a1" value="<?= set_value('prasarana11_a1'); ?>">
+              <?php endif; ?>
               <?= form_error('prasarana11_a1', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="col">
@@ -564,7 +587,11 @@
           <label for="exampleFormControlInput1">b. Kendaraan Ambulans(Roda 4 / 4WD / Perahu Bermotor / Lainnya:</label>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" value="<?= set_value('prasarana11_b1') ?>" placeholder="..." name="prasarana11_b1" id="prasarana11_b1">
+              <?php if ($data['ambulan_unit']) : ?>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_b1" id="prasarana11_b1" value="<?= $data['ambulan_unit']; ?>">
+              <?php else : ?>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_b1" id="prasarana11_b1" value="<?= set_value('prasarana11_b1'); ?>">
+              <?php endif; ?>
               <?= form_error('prasarana11_b1', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="col">
@@ -584,7 +611,11 @@
           <label for="exampleFormControlInput1">c. Roda-2: Standar/Trail:</label>
           <div class="row">
             <div class="col">
-              <input type="text" class="form-control" value="<?= set_value('prasarana11_c1') ?>" placeholder="..." name="prasarana11_c1" id="prasarana11_c1">
+              <?php if ($data['roda_unit']) : ?>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_c1" id="prasarana11_c1" value="<?= $data['roda_unit']; ?>">
+              <?php else : ?>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana11_c1" id="prasarana11_c1" value="<?= set_value('prasarana11_c1'); ?>">
+              <?php endif; ?>
               <?= form_error('prasarana11_c1', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="col">
