@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Sep 2020 pada 11.58
+-- Waktu pembuatan: 16 Sep 2020 pada 19.38
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -611,6 +611,29 @@ CREATE TABLE `sumber_daya_manusia` (
   `titik5` varchar(5) NOT NULL,
   `titik6` varchar(5) NOT NULL,
   `titik7` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `upaya_inovasi`
+--
+
+CREATE TABLE `upaya_inovasi` (
+  `kode` varchar(20) NOT NULL,
+  `ukm1` varchar(255) NOT NULL,
+  `ukm2` varchar(255) NOT NULL,
+  `ukm3` varchar(255) NOT NULL,
+  `ukm4` varchar(255) NOT NULL,
+  `ukp1` varchar(255) NOT NULL,
+  `ukp2` varchar(255) NOT NULL,
+  `ukp3` varchar(255) NOT NULL,
+  `ukp4` varchar(255) NOT NULL,
+  `manajemen1` varchar(255) NOT NULL,
+  `manajemen2` varchar(255) NOT NULL,
+  `manajemen3` varchar(255) NOT NULL,
+  `manajemen4` varchar(255) NOT NULL,
+  `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -1790,6 +1813,12 @@ ALTER TABLE `prasarana_puskesmas`
 -- Indeks untuk tabel `sumber_daya_manusia`
 --
 ALTER TABLE `sumber_daya_manusia`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `upaya_inovasi`
+--
+ALTER TABLE `upaya_inovasi`
   ADD PRIMARY KEY (`kode`);
 
 --
