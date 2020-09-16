@@ -11,9 +11,17 @@ class SDM_Puskesmas extends CI_Controller
     }
     public function index()
     {
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/sdm');
-        $this->load->view('templates/puskesmas/foot');
+        $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $data['data'] = $this->SDM_Model->check();
+        if ($data['data'] == NULL) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/sdm', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/sdm_hasil', $data);
+            $this->load->view('templates/puskesmas/foot');
+        }
     }
     public function tambah()
     {
