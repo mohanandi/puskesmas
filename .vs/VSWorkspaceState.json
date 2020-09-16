@@ -2,15 +2,16 @@
   "ExpandedNodes": [
     "",
     "\\application",
-    "\\application\\models",
+    "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\puskesmas",
+    "\\application\\views\\kab_kota",
     "\\application\\views\\templates",
+    "\\application\\views\\templates\\kab_kota",
     "\\assets",
-    "\\assets\\js",
+    "\\assets\\css",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\application\\views\\puskesmas\\prasarana_puskesmas.php",
+  "SelectedNode": "\\assets\\js\\main.js",
   "PreviewInSolutionExplorer": false
 }
