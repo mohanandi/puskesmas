@@ -9,19 +9,12 @@
 
 
 
-<<<<<<< HEAD
-    <form style="height:380px; overflow-y:auto; padding:20px;" method="POST" action="<?= base_url('Pemenuhan_SD/tambah'); ?>">
-      <div class="form-group">
-        <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-        <br>
-        <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-=======
   <form style="padding:20px;">
     <div class="form-group">
       <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
->>>>>>> 98a0b9ded3b0f276315490f1171fea4472033b53
+
 
         <select class="form-control" name="pemenuhan1" id="pemenuhan1">
           <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
