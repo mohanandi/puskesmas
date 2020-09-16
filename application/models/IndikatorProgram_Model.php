@@ -7,22 +7,22 @@ class IndikatorProgram_Model extends CI_Model
     {
         $data = [
             "kode" => $this->session->userdata('kode'),
-            "puskesmas_tanah" => $this->input->post('lokasi1', true),
-            "slf" => $this->input->post('lokasi2', true),
-            "puskesmas_lereng" => $this->input->post('lokasi3', true),
-            "puskesmas_longsor" => $this->input->post('lokasi4', true),
-            "puskesmas_pondasi" => $this->input->post('lokasi5', true),
-            "puskesmas_aktif" => $this->input->post('lokasi6', true),
-            "puskesmas_tsunami" => $this->input->post('lokasi7', true),
-            "puskesmas_banjir" => $this->input->post('lokasi8', true),
-            "puskesmas_topan" => $this->input->post('lokasi9', true),
-            "puskesmas_badai" => $this->input->post('lokasi10', true),
-            "puskesmas_masyarakat" => $this->input->post('lokasi11', true),
-            "puskesmas_transportasi" => $this->input->post('lokasi12'),
-            "puskesmas_bersih" => $this->input->post('lokasi13', true),
-            "fasilitas_bersih" => $this->input->post('lokasi14', true),
-            "tersedia_bersih" => $this->input->post('lokasi15', true),
-            "sutet" => $this->input->post('lokasi16', true)
+            "kia1" => $this->input->post('cakupan1a', true),
+            "kia2" => $this->input->post('cakupan2a', true),
+            "kia3" => $this->input->post('cakupan3a', true),
+            "imunisasi1" => $this->input->post('cakupan1b', true),
+            "gizi1" => $this->input->post('cakupan1c', true),
+            "pencegahan1" => $this->input->post('cakupan1d', true),
+            "pencegahan2" => $this->input->post('cakupan2d', true),
+            "pencegahan3" => $this->input->post('cakupan3d', true),
+            "pencegahan4" => $this->input->post('cakupan4d', true),
+            "pencegahan5" => $this->input->post('cakupan5d', true),
+            "pencegahan6" => $this->input->post('cakupan6d', true),
+            "pencegahan7" => $this->input->post('cakupan7d'),
+            "pencegahan8" => $this->input->post('cakupan8d', true),
+            "pispk1" => $this->input->post('cakupan1e', true),
+            "pispk2" => $this->input->post('cakupan2e', true),
+            "pispk3" => $this->input->post('cakupan3e', true)
         ];
         $this->db->insert('lokasi_puskesmas', $data);
     }
