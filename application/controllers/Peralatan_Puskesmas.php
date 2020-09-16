@@ -13,7 +13,7 @@ class Peralatan_Puskesmas extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = 'PERALATAN PUSKESMAS';
+        $data['judul'] = 'Peralatan Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->PeralatanPuskesmas_Model->check();
         $this->load->view('templates/puskesmas/head', $data);

@@ -1,5 +1,15 @@
-<div class="col-md-9">
-  <form style="height:350px; overflow-y:auto; padding:20px;">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Perencanaan </strong> Puskesmas</h2>
+          </div>
+        </div>
+
+
+
+  <form style="height:380px; overflow-y:auto; padding:20px;">
     <div class="form-group">
       <label for="exampleFormControlInput1"><strong>1. Perencanaan Puskesmas berdasarkan analisis masalah kesehatan untuk memenuhi kebutuhan & harapan masyarakat:</strong> </label><br>
       <label for="exampleFormControlInput1" style="font-size:14px;">KRITERIA:</label><br>

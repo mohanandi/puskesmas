@@ -11,7 +11,7 @@ class Lokasi_Puskesmas extends CI_Controller
     }
     public function index()
     {
-        $data['judul'] = 'LOKASI PUSKESMAS';
+        $data['judul'] = 'Lokasi Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $check = $this->LokasiPuskesmas_Model->check();
         $this->load->view('templates/puskesmas/head', $data);

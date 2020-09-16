@@ -12,7 +12,7 @@ class Prasarana_Puskesmas extends CI_Controller
 
     public function index()
     {
-        $data['judul'] = 'PRASARANA PUSKESMAS';
+        $data['judul'] = 'Prasarana Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->PrasaranaPuskesmas_Model->check();
         $this->load->view('templates/puskesmas/head', $data);

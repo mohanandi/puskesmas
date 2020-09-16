@@ -1,5 +1,11 @@
-<div class="col-md-9">
-  <form style="height:350px; overflow-y:auto; padding:20px;">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</strong></h2>
+          </div>
+        </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Kelengkapan laporan SKDR <a href="#" onclick="toggle_visibility('foo25');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>

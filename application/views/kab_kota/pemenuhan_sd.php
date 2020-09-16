@@ -1,6 +1,15 @@
-<div class="col-md-9">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Pemenuhan Sumber Daya </strong> Puskesmas</h2>
+          </div>
+        </div>
 
-  <form style="height:350px; overflow-y:auto; padding:20px;">
+
+
+  <form style="height:380px; overflow-y:auto; padding:20px;">
     <div class="form-group">
       <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>

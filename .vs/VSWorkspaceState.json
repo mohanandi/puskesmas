@@ -8,10 +8,9 @@
     "\\application\\views\\templates",
     "\\application\\views\\templates\\kab_kota",
     "\\assets",
-    "\\assets\\css",
     "\\system",
     "\\system\\database"
   ],
-  "SelectedNode": "\\assets\\js\\main.js",
+  "SelectedNode": "\\application\\index.html",
   "PreviewInSolutionExplorer": false
 }

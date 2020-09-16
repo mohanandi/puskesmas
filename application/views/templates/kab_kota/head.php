@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
 
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/styl.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylo.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 
 </head>
@@ -82,18 +82,36 @@
 									<a class="nav-link" style="color:black !important;">Penilaian Puskesmas</a>
 									<ul class="dropdown">
 									<br>
-									<h5> Penilaian Puskesmas </h5>
+									<div class="row">
+									<h5 class="col-md-6" style="font-size:18px; color="#000;"> Penilaian Puskesmas </h5>
+								
+									<h5 class="col-md-6" style="font-size:18px; color="#000;"> Penilaian Puskesmas </h5>
+									</div>
 									<hr>
-									
-												<li ><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
-												<li><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
-												<li><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
-												<li><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
-												<li><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
-												<li><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
-												<li><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
-												<li><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
-											
+									<div class="row">
+
+									<ul class="col-md-6" style="list-style: none; padding:10px;">
+												<li id="mm"><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
+												<li id="mm"><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
+												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
+												<li id="mm"><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
+										</ul>	
+
+										<ul class="col-md-6" style="list-style: none; padding:10px;">
+												<li id="mm"><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
+												<li id="mm"><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
+												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
+												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
+												<li id="mm"><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
+										</ul>
+									</div>
 
 									</ul>
 								</li>
@@ -116,144 +134,5 @@
 
         </header>
 
-        <div class="site-section" id="menu">
-            <div class="container">
-                <div class="row mb-5">
-                    <div class="col-lg-7 mx-auto text-center">
-                        <span class="subheading">Form Menu</span>
-                        <h2 class="heading"><strong class="text-primary">Identitas Umum</strong> Puskesmas Percontohan</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <a id="button"></a>
-                        <button type="button active" class="collapsible">Profil Puskesmas</button>
-                        <div class="content">
-                            <br>
-                            <img src="<?= base_url('assets/') ?>images/person_3.jpg" alt="Avatar" style="width:150px; border-radius: 50%; margin-left: 15%;">
-                            <br>
-                            <br>
-                            <p style="text-align: center;">Nama Puskesmas <span><strong>Puskesmas Jakarta</strong></span></p>
-                            <p style="text-align: center;">Lokasi<br> <span><strong>Pondok Labu, Jakarta Selatan No. 17</strong></span></p>
-                            <p style="text-align: center;">Tanggal Peresmian<br> <span><strong>20 Juni 2011</strong></span></p>
-                            <p style="text-align: center;">Status Akreditasi<br><span><strong>Paripurna</strong></span></p>
-                            <p style="text-align: center;">Motto<br> <span><strong>Jaya Selalu Puskesmas</strong></span></p>
-                        </div>
-                       <hr>
-                        <button type="button" class="collapsible">Menu Cepat</button>
-                        <div class="content" style="overflow-y:scroll; height:200px;">
-                            <br>
-                            <a href="#">
-                                <p style="text-align: center;">Pemenuhan Sumber Daya Puskesmas</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Perencanaan Puskesmas</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Penggerakan dan Pelaksanaan Sumber Daya Puskesmas</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Peningkatan Mutu Puskesmas</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Pencegahan dan Pengendalian Infkesi dan Kesehatan Lingkungan</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menular Potensial KLB/Wabah</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Cakupan Indikator Program</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Upaya Inovasi</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Rekapitulasi Skor</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Rencana Tidak Lanjut</p>
-                            </a>
-
-                        </div>
-                        <button type="button" class="collapsible">Daftar Puskesmas</button>
-                        <div class="content" style="overflow-y:scroll; height:200px;">
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-                            <hr>
-                            <a href="#">
-                                <p style="text-align: center;">Puskesmas Jakarta</p>
-                            </a>
-
-
-                        </div>
-                        <button type="button" class="collapsible">Menu 3</button>
-                        <div class="content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
+       
                     </div>
