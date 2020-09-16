@@ -17,11 +17,11 @@ class Mutu extends CI_Controller
     }
     public function tambah()
     {
-        $this->form_validation->set_rules('organisasi1', '', 'required');
-        $this->form_validation->set_rules('organisasi2', '', 'required');
-        $this->form_validation->set_rules('organisasi3', '', 'required');
-        $this->form_validation->set_rules('organisasi4', '', 'required');
-        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peningkatan1', '', 'trim|required');
+        $this->form_validation->set_rules('peningkatan2', '', 'trim|required');
+        $this->form_validation->set_rules('peningkatan3', '', 'trim|required');
+        $this->form_validation->set_rules('peningkatan4', '', 'trim|required');
+        $this->form_validation->set_rules('peningkatan5', '', 'trim|required');
 
         if ($this->form_validation->run() == false) {
             $this->index();

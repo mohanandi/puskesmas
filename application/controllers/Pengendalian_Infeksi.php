@@ -17,11 +17,19 @@ class Pengendalian_Infeksi extends CI_Controller
     }
     public function tambah()
     {
-        $this->form_validation->set_rules('organisasi1', '', 'required');
-        $this->form_validation->set_rules('organisasi2', '', 'required');
-        $this->form_validation->set_rules('organisasi3', '', 'required');
-        $this->form_validation->set_rules('organisasi4', '', 'required');
-        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('pencegahan1a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan2a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan3a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan4a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan5a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan6a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan7a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan8a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan9a', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan1b', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan2b', '', 'trim|required');
+        $this->form_validation->set_rules('pencegahan3b', '', 'trim|required');
+
 
         if ($this->form_validation->run() == false) {
             $this->index();

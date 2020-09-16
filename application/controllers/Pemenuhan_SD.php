@@ -17,11 +17,17 @@ class Pemenuhan_SD extends CI_Controller
     }
     public function tambah()
     {
-        $this->form_validation->set_rules('organisasi1', '', 'required');
-        $this->form_validation->set_rules('organisasi2', '', 'required');
-        $this->form_validation->set_rules('organisasi3', '', 'required');
-        $this->form_validation->set_rules('organisasi4', '', 'required');
-        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
+
+        $this->form_validation->set_rules('pemenuhan1', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan2', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan3', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan4', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan5', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan6', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan7', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan8', '', 'trim|required');
+
+
 
         if ($this->form_validation->run() == false) {
             $this->index();

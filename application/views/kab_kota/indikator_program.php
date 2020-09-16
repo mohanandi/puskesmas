@@ -75,7 +75,7 @@
             <br>
             <p id="foo33" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program TBC (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut)<br> | Ya=25% Tidak=0<br> c. Persentase orang terduga TBC mendapatkan pelayanan kesehatan sesuai standar. (Jumlah orang terduga TBC yang dilakukan pemeriksaan penunjang dibagi jumlah orang terduga TBC dalam kurun waktu satu tahun di wilayah kerja Puskesmas, dikali 100%) | % orang terduga TBC mendapatkan pelayanan sesuai standar dikali 50%</p>
             <select class="form-control" name="cakupan1d" id="cakupan1d">
-                <?php is_terisi($data['pencegahan1'], set_value('pelaksanaan1')); ?>
+                <?php is_terisi($data['pencegahan1'], set_value('cakupan1d')); ?>
                 <option value="1">Tercapai ≥ 80% nilainya 10 </option>
                 <option value="2">Tercapai 61% - 79% nilainya 5</option>
                 <option value="3">Tercapai ≤ 60% nilainya 0</option>

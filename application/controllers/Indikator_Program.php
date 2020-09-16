@@ -17,11 +17,26 @@ class Indikator_Program extends CI_Controller
     }
     public function tambah()
     {
-        $this->form_validation->set_rules('organisasi1', '', 'required');
-        $this->form_validation->set_rules('organisasi2', '', 'required');
-        $this->form_validation->set_rules('organisasi3', '', 'required');
-        $this->form_validation->set_rules('organisasi4', '', 'required');
-        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('cakupan1a', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan2a', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan3a', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan1b', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan2b', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan1c', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan1d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan2d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan3d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan4d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan5d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan6d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan7d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan8d', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan1e', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan2e', '', 'trim|required');
+        $this->form_validation->set_rules('cakupan3e', '', 'trim|required');
+
+
+
 
         if ($this->form_validation->run() == false) {
             $this->index();
