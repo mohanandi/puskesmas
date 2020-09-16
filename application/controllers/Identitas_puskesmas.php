@@ -22,7 +22,6 @@ class Identitas_Puskesmas extends CI_Controller
         }
         $this->load->view('templates/puskesmas/foot');
     }
-
     public function tambah()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required');

@@ -70,8 +70,8 @@
 									<ul class="dropdown" style="padding:10px;">
 										<br>
 										<div class="row">
-											<h5 class="col-md-6" style="font-size:18px; color=" #000;"> Penilaian Puskesmas </h5>
-											<h5 class="col-md-6" style="font-size:18px; color=" #000;"> Penilaian Puskesmas </h5>
+											<h5 class="col-md-6" style="font-size:18px; color: #000;"> Penilaian Puskesmas </h5>
+											<h5 class="col-md-6" style="font-size:18px; color: #000;"> Penilaian Puskesmas </h5>
 										</div>
 										<hr>
 										<div class="row">

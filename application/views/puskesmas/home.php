@@ -73,9 +73,9 @@
                                     <ul class="dropdown">
                                         <br>
                                         <div class="row">
-                                            <h5 class="col-md-6" style="font-size:18px; color=" #000;"> Input Puskesmas </h5>
+                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
 
-                                            <h5 class="col-md-6" style="font-size:18px; color=" #000;"> Input Puskesmas </h5>
+                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
                                         </div>
                                         <hr>
                                         <div class="row">
