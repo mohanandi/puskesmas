@@ -3,24 +3,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Identitas_Puskesmas extends CI_Controller
 {
-
     public function __construct()
     {
         parent::__construct();
         $this->load->model('IdentitasPuskesmas_Model');
         is_logged_in();
     }
-
     public function index()
     {
         $data['judul'] = 'Identitas Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $check = $this->IdentitasPuskesmas_Model->check();
+        $data['data'] = $this->IdentitasPuskesmas_Model->check();
         $this->load->view('templates/puskesmas/head', $data);
-        if ($check == NULL) {
+        if ($data['data'] == NULL) {
             $this->load->view('puskesmas/identitas_puskesmas', $data);
         } else {
-            $data['data'] = $this->IdentitasPuskesmas_Model->check();
             $this->load->view('puskesmas/identitas_puskesmas_hasil', $data);
         }
         $this->load->view('templates/puskesmas/foot');
