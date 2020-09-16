@@ -4,20 +4,14 @@
     <div class="alert alert-success" role="alert">
       Data Berhasil dimasukan !
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
-    </div>
+
     <div class="form-group">
       <label for="exampleFormControlInput1"><strong>VIII.A. KIA</strong></label><br>
       <label for="exampleFormControlInput1"><strong>1. Ibu hamil mendapatkan pelayanan antenatal sesuai standar DO:</strong><br> Pelayanan antenatal sesuai standar yaitu ibu hamil yang mendapatkan pelayanan paling sedikit 4 kali selama kehamilannya dengan distribusi waktu yaitu 1 kali pada trimester ke-1, 1 kali pada trimester ke-2, dan 2 kali pada trimester ke-3 <a href="#" onclick="toggle_visibility('foo28');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <p id="foo28" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pelayanan antenatal (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) <br>| Ya=25% Tidak=0 <br> c. Persentase ibu hamil yang mendapatkan pelayanan sesuai standar. (Jumlah ibu hamil yang mendapatkan pelayanan antenatal sesuai standar dibagi dengan jumlah ibu hamil yang ada di wilayah kerja Puskesmas, dikali 100%)<br> | % ibu hamil mendapatkan pelayanan antenatal sesuai standar dikali 50%</p>
       <select class="form-control" name="cakupan1a" id="cakupan1a" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['kia1']; ?>" selected><?= $data['kia1']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -26,10 +20,7 @@
       <br>
       <p id="foo29" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pelayanan bayi baru lahir (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut)<br> | Ya=25% Tidak=0 <br> c. Persentase bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar. (Jumlah bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar dibagi dengan jumlah bayi baru lahir yang ada di wilayah kerja Puskesmas, dikali 100%) <br>| % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50% </p>
       <select class="form-control" name="cakupan2a" id="cakupan2a" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['kia2']; ?>" selected><?= $data['kia2']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -37,10 +28,7 @@
         <a href="#" onclick="toggle_visibility('foo30');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label><br>
       <p id="foo30" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pelayanan bayi baru lahir (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut)<br> | Ya=25% Tidak=0 <br> c. Persentase bayi baru lahir yang mendapatkan pelayanan sesuai standar. (Jumlah bayi baru lahir yang mendapatkan pelayanan sesuai standar dibagi dengan jumlah bayi baru lahir yang ada di wilayah kerja Puskesmas, dikali 100%) | % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50% </p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['kia3']; ?>" selected><?= $data['kia3']; ?></option>
       </select>
     </div>
     <hr>
@@ -51,10 +39,7 @@
       <br>
       <p id="foo31" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program imunisasi dasar lengkap (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0<br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) <br>| Ya=25% Tidak=0 <br> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%) | % bayi mendapatkan imunisasi dasar lengkap dikali 50%</p>
       <select class="form-control" name="cakupan3a" id="cakupan3a" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['imunisasi1']; ?>" selected><?= $data['imunisasi1']; ?></option>
       </select>
     </div>
     <hr>
@@ -64,10 +49,7 @@
       <br>
       <p id="foo32" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program penanganan balita gizi buruk (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut)<br>| Ya=25% Tidak=0 <br> c. Persentase balita gizi buruk yang mendapatkan penanganan sesuai standar. (Jumlah kasus balita gizi buruk yang mendapatkan penanganan sesuai standar di wilayah kerja Puskesmas dibagi jumlah kasus balita gizi buruk yang ditemukan dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%) | % balita gizi buruk yang mendapatkan penanganan sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['gizi1']; ?>" selected><?= $data['gizi1']; ?></option>
       </select>
     </div>
     <hr>
@@ -78,10 +60,7 @@
       <br>
       <p id="foo33" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program TBC (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut)<br> | Ya=25% Tidak=0<br> c. Persentase orang terduga TBC mendapatkan pelayanan kesehatan sesuai standar. (Jumlah orang terduga TBC yang dilakukan pemeriksaan penunjang dibagi jumlah orang terduga TBC dalam kurun waktu satu tahun di wilayah kerja Puskesmas, dikali 100%) | % orang terduga TBC mendapatkan pelayanan sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan1']; ?>" selected><?= $data['pencegahan1']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -90,10 +69,7 @@
       <br>
       <p id="foo34" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program HIV (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut)<br>| Ya=25% Tidak=0 <br> c. Persentase orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar (Jumlah orang dengan risiko terinfeksi HIV yang mendapatkan pelayanan sesuai standar dibagi jumlah orang dengan risiko terinfeksi HIV dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%) | % orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar dikali 50% </p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan2']; ?>" selected><?= $data['pencegahan2']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -102,10 +78,7 @@
       <br>
       <p id="foo35" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program pemeriksaan Hepatitis B pada ibu hamil (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut) | Ya=25% Tidak=0 <br> c. Persentase ibu hamil yang dilakukan pemeriksaan Hepatitis B. (Jumlah Ibu Hamil yang mendapatkan pemeriksaan Hepatitis B sesuai standar dibagi jumlah Ibu Hamil dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%) | % ibu hamil yang dilakukan pemeriksaan Hepatitis B dikali 50% </p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan3']; ?>" selected><?= $data['pencegahan3']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -114,10 +87,7 @@
       <br>
       <p id="foo36" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program ODGJ Berat (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) | Ya=25% Tidak=0 <br> c. Persentase ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar. (Jumlah ODGJ berat di wilayah kerja kab/kota yang mendapatkan pelayanan kesehatan jiwa sesuai standar dalam kurun waktu satu tahun dibagi jumlah ODGJ berat dalam 1 tahun di wilayah kerja Puskesmas, dikali 100) | % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan4']; ?>" selected><?= $data['pencegahan4']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -126,10 +96,7 @@
       <br>
       <p id="foo37" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program PANDU PTM (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut) | Ya=25% Tidak=0 <br> c. Persentase orang usia ≥ 15 tahun, yang mendapatkan pelayanan terpadu (PANDU) di Puskesmas. (Jumlah orang usia ≥ 15 tahun yang mendapatkan pelayanan terpadu (PANDU) di Puskesmas dibagi jumlah orang usia ≥ 15 tahun di wilayah kerja Puskesmas, dikali 100%). | % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan5']; ?>" selected><?= $data['pencegahan5']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -137,10 +104,7 @@
       <br>
       <p id="foo38" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0<br> b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) | Ya=25% Tidak=0<br> c. Persentase wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS. (Jumlah wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dibagi jumlah wanita usia 30 – 50 tahun di wilayah kerja Puskesmas, dikali 100%. | % wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan6']; ?>" selected><?= $data['pencegahan6']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -149,10 +113,7 @@
       <br>
       <p id="foo39" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program DM (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br>b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut) | Ya=25% Tidak=0 <br> c. Persentase penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar (Jumlah penderita DM usia ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dibagi jumlah penderita DM usia ≥ 15 tahun dalam 1 tahun di wilayah kerja Puskesmas dikali 100%) | % penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan7']; ?>" selected><?= $data['pencegahan7']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -161,10 +122,7 @@
       <br>
       <p id="foo40" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal program Hipertensi (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br>b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) | Ya=25% Tidak=0 <br> c. Persentase penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar (Jumlah penderita hipertensi usia ≥ 15 tahun yang mendapakan pelayanan kesehatan sesuai standar dibagi jumlah penderita hipertensi dalam 1 tahun di wilayah kerja Puskesmas, dikali 100% | % penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pencegahan8']; ?>" selected><?= $data['pencegahan8']; ?></option>
       </select>
     </div>
     <hr>
@@ -175,10 +133,7 @@
       <br>
       <p id="foo41" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal PIS-PK terkait kunjungan keluarga dan intervensi awal (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0<br>b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) | Ya=25% Tidak=0 <br> c. Persentase keluarga yang telah dikunjungi dan diintervensi awal (Jumlah keluarga yang telah dikunjungi dan diintervensi awal dibagi jumlah seluruh keluarga di wilayah kerja Puskesmas, dikali 100%) | % keluarga yang telah dikunjungi dan intervensi awal dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pispk1']; ?>" selected><?= $data['pispk1']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -187,10 +142,7 @@
       <br>
       <p id="foo42" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal PIS-PK terkait intervensi lanjut (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0<br>b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindak lanjut) | Ya=25% Tidak=0<br> c. Persentase keluarga yang telah dikunjungi dan dilakukan intervensi lanjut (jumlah keluarga yang dilakukan intervensi lanjut dibagi jumlah seluruh keluarga yang direncanakan untuk dilakukan intervensi lanjut di wilayah kerja Puskesmas, dikali 100% Keluarga) | % keluarga yang telah dikunjungi dan dilakukan intervensi lanjut dikali 50%</p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pispk2']; ?>" selected><?= $data['pispk2']; ?></option>
       </select>
     </div>
     <div class="form-group">
@@ -199,10 +151,7 @@
       <br>
       <p id="foo43" style="display:none; font-size:12px; margin-left:20px;">a. Tersedia regulasi internal PIS-PK terkait peningkatan IKS (SK, SOP, Pedoman, Panduan) | Ya=25% Tidak=0 <br>b. Pelaksanaan program sesuai manajemen Puskesmas (dasar pengusulan-penjadwalan-pelaksanaan-monitoring-evaluasi-tindaklanjut) | Ya=25% Tidak=0 <br> c. Persentase peningkatan IKS (Nilai IKS pada saat monitoring evaluasi Puskesmas dibagi dengan nilai IKS pada awal tahun berjalan, dikali 100%) | % peningkatan IKS dikali 50% </p>
       <select class="form-control" disabled>
-        <option selected>Pilih ...</option>
-        <option value="1">Tercapai ≥ 80% nilainya 10 </option>
-        <option value="2">Tercapai 61% - 79% nilainya 5</option>
-        <option value="3">Tercapai ≤ 60% nilainya 0</option>
+        <option value="<?= $data['pispk3']; ?>" selected><?= $data['pispk3']; ?></option>
       </select>
     </div>
   </form>
