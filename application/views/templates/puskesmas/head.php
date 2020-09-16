@@ -115,7 +115,7 @@
                 <div class="row mb-5">
                     <div class="col-lg-7 mx-auto text-center">
                         <span class="subheading">Form Menu</span>
-                        <h2 class="heading"><strong class="text-primary">Identitas Umum</strong> Puskesmas Percontohan</h2>
+                        <h2 class="heading"><strong class="text-primary"><?= $judul; ?></strong> Puskesmas Percontohan</h2>
                     </div>
                 </div>
                 <div class="row">

@@ -7,7 +7,7 @@ class Pengisian_Aspak extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('IdentitasPuskesmas_Model');
+        $this->load->model('PengisianAspak_Model');
         is_logged_in();
     }
 
@@ -15,39 +15,27 @@ class Pengisian_Aspak extends CI_Controller
     {
         $data['judul'] = 'PENGISIAN ASPAK';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $data['data'] = $this->PengisianAspak_Model->check();
         $this->load->view('templates/puskesmas/head', $data);
-        $this->load->view('puskesmas/pengisian_aspak', $data);
+        if ($data['data'] == NULL) {
+            $this->load->view('puskesmas/pengisian_aspak', $data);
+        } else {
+            $this->load->view('puskesmas/pengisian_aspak_hasil', $data);
+        }
         $this->load->view('templates/puskesmas/foot');
-        $check = $this->IdentitasPuskesmas_Model->check();
-        // if ($check == NULL) {
-        // } else {
-        //     $data['data'] = $this->IdentitasPuskesmas_Model->check();
-        //     $this->load->view('templates/puskesmas/head');
-        //     $this->load->view('puskesmas/identitas_puskesmas_hasil', $data);
-        //     $this->load->view('templates/puskesmas/foot');
-        // }
     }
 
     public function tambah()
     {
-        $this->form_validation->set_rules('nama', 'Nama', 'required');
-        $this->form_validation->set_rules('no_reg', 'No Registrasi', 'required');
-        $this->form_validation->set_rules('tgl_diri', 'Tanggal Pendirian', 'required');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
-        $this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required');
-        $this->form_validation->set_rules('kab_kota', 'Kabupaten', 'required');
-        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required');
-        $this->form_validation->set_rules('no_telp', 'No. Telepon Puskesmas dan No Telepon Whatsapp', 'required');
-        $this->form_validation->set_rules('telp_gadar', 'No. Telepon Ruang Gadar', 'required');
-        $this->form_validation->set_rules('faks', 'No. Faksimile', 'required');
-        $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
+        $this->form_validation->set_rules('aspak1', 'Nama', 'trim|required|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('aspak2', 'Nama', 'trim|required');
 
         if ($this->form_validation->run() == false) {
             $this->index();
         } else {
-            $this->IdentitasPuskesmas_Model->tambahData();
+            $this->PengisianAspak_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('Identitas_Puskesmas');
+            redirect('Pengisian_Aspak');
         }
     }
 }

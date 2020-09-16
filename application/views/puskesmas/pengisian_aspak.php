@@ -1,26 +1,32 @@
 <div class="col-md-9" style="top:-110px;">
   <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
     <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-      <form>
+      <form method="POST" action="<?= base_url('Pengisian_Aspak/tambah'); ?>">
         <div class="form-group">
           <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
           <select class="form-control" name="aspak1" id="aspak1">
-            <option selected>Pilih ...</option>
-            <option value="1">Ya</option>
-            <option value="2">Tidak</option>
+            <?php is_terisi($data['aspak'], set_value('aspak1')); ?>
+            <option value="Ya">Ya</option>
+            <option value="Tidak">Tidak</option>
           </select>
+          <?= form_error('aspak1', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
           <select class="form-control" name="aspak2" id="aspak2">
-            <option selected>Pilih ...</option>
+            <?php if ($data['aspak_pmk']) : ?>
+              <option value="<?= $data['aspak_pmk']; ?>"><?= $data['aspak_pmk']; ?></option>
+            <?php else : ?>
+              <option value="<?= set_value('aspak2'); ?>"><?= set_value('aspak2'); ?></option>
+            <?php endif; ?>
             <option value="1">≥ 80%</option>
             <option value="2">70 - 79%</option>
             <option value="3">61 – 69%</option>
             <option value="4">≤ 60%</option>
           </select>
+          <?= form_error('aspak2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
-        <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+        <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
       </form>
     </div>
   </div>
