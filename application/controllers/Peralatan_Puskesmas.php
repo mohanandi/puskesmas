@@ -14,17 +14,16 @@ class Peralatan_Puskesmas extends CI_Controller
     public function index()
     {
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/peralatan_puskesmas', $data);
-        $this->load->view('templates/puskesmas/foot');
-        // $check = $this->IdentitasPuskesmas_Model->check();
-        // if ($check == NULL) {
-        // } else {
-        //     // $data['data'] = $this->IdentitasPuskesmas_Model->check();
-        //     $this->load->view('templates/puskesmas/head');
-        //     $this->load->view('puskesmas/peralatan_puskesmas_hasil', $data);
-        //     $this->load->view('templates/puskesmas/foot');
-        // }
+        $data['data'] = $this->PeralatanPuskesmas_Model->check();
+        if ($data['data'] == NULL) {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/peralatan_puskesmas', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->load->view('templates/puskesmas/head');
+            $this->load->view('puskesmas/peralatan_puskesmas_hasil', $data);
+            $this->load->view('templates/puskesmas/foot');
+        }
     }
 
     public function tambah()
@@ -70,7 +69,7 @@ class Peralatan_Puskesmas extends CI_Controller
         } else {
             $this->PeralatanPuskesmas_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('Identitas_Puskesmas');
+            redirect('Peralatan_Puskesmas');
         }
     }
 }

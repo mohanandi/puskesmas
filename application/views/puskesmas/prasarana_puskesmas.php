@@ -286,7 +286,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kekuatan Daya Listrik PLN</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_2') ?> placeholder=" VA belom disamping" name="prasarana4_2" id="prasarana4_2">
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_2') ?>" placeholder="VA belom disamping" name="prasarana4_2" id="prasarana4_2">
           <?= form_error('prasarana4_2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
@@ -303,7 +303,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Kekuatan daya listrik cadangan</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_4') ?> placeholder=" VA belom disamping" name="prasarana4_4" id="prasarana4_4">
+          <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= set_value('prasarana4_4') ?>" placeholder=" VA belom disamping" name="prasarana4_4" id="prasarana4_4">
           <?= form_error('prasarana4_4', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">

@@ -2,7 +2,7 @@
   <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
 
     <div class="container1" style="height:350px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-      <form methode="POST" action="<?= base_url('Peralatan_Puskesmas/tambah'); ?>">
+      <form method="POST" action="<?= base_url('Peralatan_Puskesmas/tambah'); ?>">
         <div class="form-group">
           <label for="exampleFormControlInput1">1. Set Pemeriksaan Umum</label>
           <select class="form-control" name="peralatan1" id="peralatan1">
@@ -19,7 +19,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan2', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">3. Set Pemeriksaan Kesehatan Ibu</label>
@@ -28,7 +28,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan3', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">4. Set Pemeriksaan Kesehatan Anak</label>
@@ -37,7 +37,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan4', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">5. Set Pelayanan KB</label>
@@ -46,7 +46,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan5', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">6. Set Imunisasi </label>
@@ -55,7 +55,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan6', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">7. Set Obstetri & Ginekologi</label>
@@ -64,7 +64,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan7', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">8. Set AKDR Pasca Plasenta</label>
@@ -73,7 +73,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan8', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">9. Set Bayi Baru Lahir</label>
@@ -82,7 +82,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan9', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">10. Set Kegawatan Maternal dan Neonatal</label>
@@ -91,7 +91,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan10', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">11. Set Perawatan Pasca Persalinan</label>
@@ -100,7 +100,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan11', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">12. Set Pemeriksaan Khusus</label>
@@ -109,7 +109,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan12', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">13. Set Kesehatan Gigi dan Mulut</label>
@@ -118,7 +118,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan13', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">14. Set Komunikasi, Informasi dan Edukasi (KIE) berbagai kebutuhan</label>
@@ -127,7 +127,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan14', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">15. Set ASI</label>
@@ -136,7 +136,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan15', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">16. Set Laboratorium</label>
@@ -145,7 +145,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan16', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">17. Set Farmasi</label>
@@ -154,7 +154,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan17', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">18. Set Rawat Inap</label>
@@ -163,7 +163,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan18', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">19. Set Sterilisasi</label>
@@ -172,7 +172,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan19', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">20. Set Alat Tambahan untuk Dokter Layanan Primer/Puskesmas sebagai Wahana Pendidikan Dokter Layanan Primer</label>
@@ -181,7 +181,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan20', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">21. Set Puskesmas Keliling</label>
@@ -190,7 +190,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan21', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">22. Kit Keperawatan Kesehatan Masyarakat </label>
@@ -199,7 +199,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan22', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">23. Kit Imunisasi (<i>Vaccine carrier</i>)</label>
@@ -208,7 +208,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan23', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">24. Kit UKS</label>
@@ -217,7 +217,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan24', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">25. Kit UKGS</label>
@@ -226,7 +226,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan25', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">26. Kit Bidan</label>
@@ -235,7 +235,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan26', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">27. Kit Posyandu</label>
@@ -244,7 +244,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan27', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">28. Kit Sanitarian</label>
@@ -253,7 +253,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan28', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">29. Kit Kesehatan Lansia/Kit Posbindu PTM</label>
@@ -262,7 +262,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan29', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">30. Kit Stimulasi Deteksi dan Intervensi Dini Tumbuh Kembang (SDIDTK)</label>
@@ -271,7 +271,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan30', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">31. Puskesmas sudah tidak menggunakan alat kesehatan yang mengandung air raksa (Hg) untuk tensimeter, termometer, amalgam gigi.</label>
@@ -280,7 +280,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan31', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">32. Alat kesehatan Puskesmas terkalibrasi sesuai peraturan satu tahun sekali</label>
@@ -289,7 +289,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan32', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">33. Puskesmas menggunakan alat kesehatan yang mempunyai ijin edar.</label>
@@ -298,7 +298,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan33', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">34. Alat kesehatan Puskesmas yang telah selesai digunakan diletakan pada tempatnya dalam kondisi rapi dan bersih.</label>
@@ -307,7 +307,7 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan34', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">35. Puskesmas telah menggunakan alat kesehatan produk dalam negeri</label>
@@ -316,9 +316,9 @@
             <option value="Ya">Ya</option>
             <option value="Tidak">Tidak</option>
           </select>
-          <?= form_error('peralatan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          <?= form_error('peralatan35', '<small class="text-danger pl-3">', '</small>'); ?>
         </div>
-        <button class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+        <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
       </form>
     </div>
   </div>

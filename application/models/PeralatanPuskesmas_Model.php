@@ -9,7 +9,7 @@ class PeralatanPuskesmas_Model extends CI_Model
             "kode" => $this->session->userdata('kode'),
             "set_umum" => $this->input->post('peralatan1', true),
             "set_tindakan" => $this->input->post('peralatan2', true),
-            "set_ibu" => strtotime($this->input->post('peralatan3', true)),
+            "set_ibu" => $this->input->post('peralatan3', true),
             "set_anak" => $this->input->post('peralatan4', true),
             "set_kb" => $this->input->post('peralatan5', true),
             "set_imun" => $this->input->post('peralatan6', true),
@@ -20,7 +20,7 @@ class PeralatanPuskesmas_Model extends CI_Model
             "set_pasca" => $this->input->post('peralatan11', true),
             "set_khusus" => $this->input->post('peralatan12', true),
             "set_gigi" => $this->input->post('peralatan13', true),
-            "set_kie" => strtotime($this->input->post('peralatan14', true)),
+            "set_kie" => $this->input->post('peralatan14', true),
             "set_asi" => $this->input->post('peralatan15', true),
             "set_lab" => $this->input->post('peralatan16', true),
             "set_farmasi" => $this->input->post('peralatan17', true),
@@ -31,7 +31,7 @@ class PeralatanPuskesmas_Model extends CI_Model
             "kit_kkm" => $this->input->post('peralatan22', true),
             "kit_imun" => $this->input->post('peralatan23', true),
             "kit_uks" => $this->input->post('peralatan24', true),
-            "kit_ukgs" => strtotime($this->input->post('peralatan25', true)),
+            "kit_ukgs" => $this->input->post('peralatan25', true),
             "kit_bidan" => $this->input->post('peralatan26', true),
             "kit_posyandu" => $this->input->post('peralatan27', true),
             "kit_sanitarian" => $this->input->post('peralatan28', true),
@@ -43,10 +43,10 @@ class PeralatanPuskesmas_Model extends CI_Model
             "pd_tempatnya" => $this->input->post('peralatan34', true),
             "dlm_negri" => $this->input->post('peralatan35', true)
         ];
-        $this->db->insert('identitas_puskesmas', $data);
+        $this->db->insert('peralatan_puskesmas', $data);
     }
     public function check()
     {
-        return $this->db->get_where('identitas_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('peralatan_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
     }
 }
