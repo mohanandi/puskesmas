@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Sep 2020 pada 13.55
+-- Waktu pembuatan: 16 Sep 2020 pada 07.32
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -177,6 +177,92 @@ CREATE TABLE `organisasi_manajemen` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `pelaksanaan_sistem_kewaspadaan_dini`
+--
+
+CREATE TABLE `pelaksanaan_sistem_kewaspadaan_dini` (
+  `kode` varchar(20) NOT NULL,
+  `skdr` int(2) NOT NULL,
+  `laporan_skdr` int(2) NOT NULL,
+  `analisa_trend` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pemenuhan_sdm_puskesmas`
+--
+
+CREATE TABLE `pemenuhan_sdm_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `standar_bangunan` int(2) NOT NULL,
+  `standar_prasarana` int(2) NOT NULL,
+  `standar_peralatan` int(2) NOT NULL,
+  `sedia_obat` int(2) NOT NULL,
+  `pengendali_obat` int(2) NOT NULL,
+  `pemenuhan_sdm` int(2) NOT NULL,
+  `sisrute` int(2) NOT NULL,
+  `informasi_puskesmas` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pencegahan_dan_pengendalian_infeksi`
+--
+
+CREATE TABLE `pencegahan_dan_pengendalian_infeksi` (
+  `kode` varchar(20) NOT NULL,
+  `cuci_tangan` int(2) NOT NULL,
+  `apd` int(2) NOT NULL,
+  `dekontaminasi` int(2) NOT NULL,
+  `kesehatan_lingkungan` int(2) NOT NULL,
+  `limbah_medis` int(2) NOT NULL,
+  `perlindungan_petugas` int(2) NOT NULL,
+  `pemisahan_pasien` int(2) NOT NULL,
+  `etika_batuk` int(2) NOT NULL,
+  `praktik_menyuntik` int(2) NOT NULL,
+  `kewaspadaan_kontak` int(2) NOT NULL,
+  `kewaspadaan_droplet` int(2) NOT NULL,
+  `air_borne` int(2) NOT NULL,
+  `input_by` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas`
+--
+
+CREATE TABLE `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `penilaian_kinerja` int(2) NOT NULL,
+  `feedback` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `penggerakan_dan_pelaksanaan_kegiatan_puskesmas`
+--
+
+CREATE TABLE `penggerakan_dan_pelaksanaan_kegiatan_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `dipandu_jelas` int(2) NOT NULL,
+  `jadwal_jelas` int(2) NOT NULL,
+  `lintas_program` int(2) NOT NULL,
+  `dimonitor_kepala` int(2) NOT NULL,
+  `masukan_pelanggan` int(2) NOT NULL,
+  `pelayanan_pelanggan` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `pengisian_aspak`
 --
 
@@ -206,6 +292,22 @@ CREATE TABLE `penilaian_kinerja_puskesmas` (
   `status_akreditas` varchar(5) NOT NULL,
   `tahun_iks` varchar(5) NOT NULL,
   `status_iks` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `peningkatan_mutu`
+--
+
+CREATE TABLE `peningkatan_mutu` (
+  `kode` varchar(20) NOT NULL,
+  `indikator_mutu` int(2) NOT NULL,
+  `audit_internal` int(2) NOT NULL,
+  `rapat_tinjauan` int(2) NOT NULL,
+  `melaksanakan_pps` int(2) NOT NULL,
+  `pelaporan_insiden` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -251,6 +353,46 @@ CREATE TABLE `peralatan_puskesmas` (
   `ijin_edar` varchar(5) NOT NULL,
   `pd_tempatnya` varchar(5) NOT NULL,
   `dlm_negri` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `perencanaan_puskesmas`
+--
+
+CREATE TABLE `perencanaan_puskesmas` (
+  `kode` varchar(20) NOT NULL,
+  `rpk_n` int(2) NOT NULL,
+  `ruk` int(2) NOT NULL,
+  `rpk_rinci` int(2) NOT NULL,
+  `draft_rka` int(2) NOT NULL,
+  `ruk_mendatang` int(2) NOT NULL,
+  `ada_hasil` int(2) NOT NULL,
+  `umpan_balik` int(2) NOT NULL,
+  `tabulasi_wawancara` int(2) NOT NULL,
+  `hasil_smd` int(2) NOT NULL,
+  `penyelarasan_mmd` int(2) NOT NULL,
+  `berita_acara` int(2) NOT NULL,
+  `laporan_penanggung` int(2) NOT NULL,
+  `laporan_lokakarya` int(2) NOT NULL,
+  `lokakarya_mini` int(2) NOT NULL,
+  `hasil_lokakarya` int(2) NOT NULL,
+  `draft_ruk` int(2) NOT NULL,
+  `ruk_dinkes` int(2) NOT NULL,
+  `rankaian_menunjang` int(2) NOT NULL,
+  `upaya_tercapai` int(2) NOT NULL,
+  `pelaksanaan_ukp` int(2) NOT NULL,
+  `formasi_abk` int(2) NOT NULL,
+  `sdm_abk` int(2) NOT NULL,
+  `tindak_lanjut` int(2) NOT NULL,
+  `perencanaan_peralatan` int(2) NOT NULL,
+  `ada_tindak` int(2) NOT NULL,
+  `kondisi_sarana` int(2) NOT NULL,
+  `dokumen_perencanaan` int(2) NOT NULL,
+  `alokasi_kebutuhan` int(2) NOT NULL,
+  `usulan_pengadaan` int(2) NOT NULL,
+  `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -1552,6 +1694,36 @@ ALTER TABLE `organisasi_manajemen`
   ADD PRIMARY KEY (`kode`);
 
 --
+-- Indeks untuk tabel `pelaksanaan_sistem_kewaspadaan_dini`
+--
+ALTER TABLE `pelaksanaan_sistem_kewaspadaan_dini`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `pemenuhan_sdm_puskesmas`
+--
+ALTER TABLE `pemenuhan_sdm_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `pencegahan_dan_pengendalian_infeksi`
+--
+ALTER TABLE `pencegahan_dan_pengendalian_infeksi`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas`
+--
+ALTER TABLE `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `penggerakan_dan_pelaksanaan_kegiatan_puskesmas`
+--
+ALTER TABLE `penggerakan_dan_pelaksanaan_kegiatan_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
 -- Indeks untuk tabel `pengisian_aspak`
 --
 ALTER TABLE `pengisian_aspak`
@@ -1561,6 +1733,12 @@ ALTER TABLE `pengisian_aspak`
 -- Indeks untuk tabel `penilaian_kinerja_puskesmas`
 --
 ALTER TABLE `penilaian_kinerja_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `peningkatan_mutu`
+--
+ALTER TABLE `peningkatan_mutu`
   ADD PRIMARY KEY (`kode`);
 
 --
