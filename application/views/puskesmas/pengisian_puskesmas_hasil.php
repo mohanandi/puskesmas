@@ -30,7 +30,7 @@
 						<option value="4">≤ 60%</option>
 					</select>
 				</div>
-				<a class="btn float-right btn-danger" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Edit</a>
+				<button type="submit" class="btn float-right btn-danger" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Edit</button>
 			</form>
 		</div>
 	</div>

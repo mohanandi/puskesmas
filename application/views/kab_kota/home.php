@@ -71,13 +71,14 @@
 								<li class="has-children">
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
-										<li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
-										<li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
+										<li><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
+										<li><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
+										<li><a href="<?= base_url('Ppkp'); ?>" class="nav-link">PENGGERAKKAN DAN PELAKSANAAN KEGIATAN PUSKESMAS </a></li>
+										<li><a href="<?= base_url('Pppp') ?>" class="nav-link">PENGAWASAN, PENGENDALIAN DAN PENILAIAN KINERJA PUSKESMAS</a></li>
+										<li><a href="<?= base_url('Mutu') ?>" class="nav-link">PENINGKATAN MUTU PUSKESMAS</a></li>
+										<li><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">PENCEGAHAN DAN PENGENDALIAN INFEKSI dan KESEHATAN LINGKUNGAN</a></li>
+										<li><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">PELAKSANAAN SISTEM KEWASPADAAN DINI DAN RESPONS TERHADAP PENYAKIT MENULAR POTENSIAL KLB/ WABAH</a></li>
+										<li><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">CAKUPAN INDIKATOR PROGRAM</a></li>
 										<li class="has-children">
 											<a href="#">Bab 6</a>
 											<ul class="dropdown">

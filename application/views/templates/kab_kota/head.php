@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
 
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 
 </head>
 
@@ -130,7 +131,7 @@
 
         </header>
 
-		<div class="site-section" id="menu">
+        <div class="site-section" id="menu">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-7 mx-auto text-center">
@@ -206,66 +207,66 @@
                         </div>
                         <button type="button" class="collapsible">Daftar Puskesmas</button>
                         <div class="content" style="overflow-y:scroll; height:200px;">
-                           <a href="#">
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							<hr>
-							<a href="#">
+                            <hr>
+                            <a href="#">
                                 <p style="text-align: center;">Puskesmas Jakarta</p>
                             </a>
-							
+
 
                         </div>
                         <button type="button" class="collapsible">Menu 3</button>

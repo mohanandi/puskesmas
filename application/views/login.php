@@ -25,7 +25,7 @@
 					</span>
 				</div>
 				<form class="login100-form validate-form" method="post" action="<?= base_url('auth'); ?>">
-					<?php if ($this->session->flashdata('flash')) : ?>
+					<?php if ($this->session->flashdata('message')) : ?>
 						<div class="alert alert-danger" role="alert">
 							<?= $this->session->flashdata('message'); ?>
 						</div>

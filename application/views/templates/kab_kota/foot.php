@@ -14,8 +14,8 @@
 <script src="<?= base_url('assets/') ?>js/isotope.pkgd.min.js"></script>
 <script src="<?= base_url('assets/') ?>js/pagination.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
-
-
+<script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
+<script src="<?= base_url('assets/') ?>js/para.js"></script>
 <script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 

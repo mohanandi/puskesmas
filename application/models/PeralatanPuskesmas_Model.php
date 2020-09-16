@@ -17,8 +17,8 @@ class PeralatanPuskesmas_Model extends CI_Model
             "set_akdr" => $this->input->post('peralatan8', true),
             "set_bayi" => $this->input->post('peralatan9', true),
             "set_maternal" => $this->input->post('peralatan10', true),
-            "set_pasca" => $this->input->post('peralatan11', true)
-			"set_khusus" => $this->input->post('peralatan12', true),
+            "set_pasca" => $this->input->post('peralatan11', true),
+            "set_khusus" => $this->input->post('peralatan12', true),
             "set_gigi" => $this->input->post('peralatan13', true),
             "set_kie" => strtotime($this->input->post('peralatan14', true)),
             "set_asi" => $this->input->post('peralatan15', true),
@@ -28,8 +28,8 @@ class PeralatanPuskesmas_Model extends CI_Model
             "set_steril" => $this->input->post('peralatan19', true),
             "set_alat" => $this->input->post('peralatan20', true),
             "set_kel" => $this->input->post('peralatan21', true),
-            "kit_kkm" => $this->input->post('peralatan22', true)
-			"kit_imun" => $this->input->post('peralatan23', true),
+            "kit_kkm" => $this->input->post('peralatan22', true),
+            "kit_imun" => $this->input->post('peralatan23', true),
             "kit_uks" => $this->input->post('peralatan24', true),
             "kit_ukgs" => strtotime($this->input->post('peralatan25', true)),
             "kit_bidan" => $this->input->post('peralatan26', true),
@@ -39,9 +39,9 @@ class PeralatanPuskesmas_Model extends CI_Model
             "kit_sdidtk" => $this->input->post('peralatan30', true),
             "puskesmas_hg" => $this->input->post('peralatan31', true),
             "kalibrasi" => $this->input->post('peralatan32', true),
-            "ijin_edar" => $this->input->post('peralatan33', true)
-			"pd_tempatnya" => $this->input->post('peralatan34', true)
-			"dlm_negri" => $this->input->post('peralatan35', true)
+            "ijin_edar" => $this->input->post('peralatan33', true),
+            "pd_tempatnya" => $this->input->post('peralatan34', true),
+            "dlm_negri" => $this->input->post('peralatan35', true)
         ];
         $this->db->insert('identitas_puskesmas', $data);
     }
