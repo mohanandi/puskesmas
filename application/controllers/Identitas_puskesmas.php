@@ -44,4 +44,32 @@ class Identitas_Puskesmas extends CI_Controller
             redirect('Identitas_Puskesmas');
         }
     }
+
+    public function ubah()
+    {
+        $data['judul'] = 'Ubah Identitas Puskesmas';
+        $data['data'] = $this->IdentitasPuskesmas_Model->check();
+
+        $this->form_validation->set_rules('nama', 'Nama', 'required');
+        $this->form_validation->set_rules('no_reg', 'No Registrasi', 'required');
+        $this->form_validation->set_rules('tgl_diri', 'Tanggal Pendirian', 'required');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required');
+        $this->form_validation->set_rules('kecamatan', 'Kecamatan', 'required');
+        $this->form_validation->set_rules('kab_kota', 'Kabupaten', 'required');
+        $this->form_validation->set_rules('provinsi', 'Provinsi', 'required');
+        $this->form_validation->set_rules('no_telp', 'No. Telepon Puskesmas dan No Telepon Whatsapp', 'required');
+        $this->form_validation->set_rules('telp_gadar', 'No. Telepon Ruang Gadar', 'required');
+        $this->form_validation->set_rules('faks', 'No. Faksimile', 'required');
+        $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/puskesmas/head', $data);
+            $this->load->view('puskesmas/identitas_puskesmas', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->IdentitasPuskesmas_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('Identitas_Puskesmas');
+        }
+    }
 }
