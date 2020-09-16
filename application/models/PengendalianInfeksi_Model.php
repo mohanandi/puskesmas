@@ -7,22 +7,18 @@ class PengendalianInfeksi_Model extends CI_Model
     {
         $data = [
             "kode" => $this->session->userdata('kode'),
-            "puskesmas_tanah" => $this->input->post('lokasi1', true),
-            "slf" => $this->input->post('lokasi2', true),
-            "puskesmas_lereng" => $this->input->post('lokasi3', true),
-            "puskesmas_longsor" => $this->input->post('lokasi4', true),
-            "puskesmas_pondasi" => $this->input->post('lokasi5', true),
-            "puskesmas_aktif" => $this->input->post('lokasi6', true),
-            "puskesmas_tsunami" => $this->input->post('lokasi7', true),
-            "puskesmas_banjir" => $this->input->post('lokasi8', true),
-            "puskesmas_topan" => $this->input->post('lokasi9', true),
-            "puskesmas_badai" => $this->input->post('lokasi10', true),
-            "puskesmas_masyarakat" => $this->input->post('lokasi11', true),
-            "puskesmas_transportasi" => $this->input->post('lokasi12'),
-            "puskesmas_bersih" => $this->input->post('lokasi13', true),
-            "fasilitas_bersih" => $this->input->post('lokasi14', true),
-            "tersedia_bersih" => $this->input->post('lokasi15', true),
-            "sutet" => $this->input->post('lokasi16', true)
+            "cuci_tangan" => $this->input->post('lokasi1', true),
+            "apd" => $this->input->post('lokasi2', true),
+            "dekontaminasi" => $this->input->post('lokasi3', true),
+            "kesehatan_lingkungan" => $this->input->post('lokasi4', true),
+            "limbah_medis" => $this->input->post('lokasi5', true),
+            "perlindungan_petugas" => $this->input->post('lokasi6', true),
+            "pemisahan_pasien" => $this->input->post('lokasi7', true),
+            "etika_batuk" => $this->input->post('lokasi8', true),
+            "praktik_menyuntik" => $this->input->post('lokasi9', true),
+            "kewaspadaan_kontak" => $this->input->post('lokasi10', true),
+            "kewaspadaan_droplet" => $this->input->post('lokasi11', true),
+            "air_borne" => $this->input->post('lokasi12')
         ];
         $this->db->insert('lokasi_puskesmas', $data);
     }

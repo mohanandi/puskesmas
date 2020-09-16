@@ -7,22 +7,15 @@ class PemenuhanSD_Model extends CI_Model
     {
         $data = [
             "kode" => $this->session->userdata('kode'),
-            "puskesmas_tanah" => $this->input->post('lokasi1', true),
-            "slf" => $this->input->post('lokasi2', true),
-            "puskesmas_lereng" => $this->input->post('lokasi3', true),
-            "puskesmas_longsor" => $this->input->post('lokasi4', true),
-            "puskesmas_pondasi" => $this->input->post('lokasi5', true),
-            "puskesmas_aktif" => $this->input->post('lokasi6', true),
-            "puskesmas_tsunami" => $this->input->post('lokasi7', true),
-            "puskesmas_banjir" => $this->input->post('lokasi8', true),
-            "puskesmas_topan" => $this->input->post('lokasi9', true),
-            "puskesmas_badai" => $this->input->post('lokasi10', true),
-            "puskesmas_masyarakat" => $this->input->post('lokasi11', true),
-            "puskesmas_transportasi" => $this->input->post('lokasi12'),
-            "puskesmas_bersih" => $this->input->post('lokasi13', true),
-            "fasilitas_bersih" => $this->input->post('lokasi14', true),
-            "tersedia_bersih" => $this->input->post('lokasi15', true),
-            "sutet" => $this->input->post('lokasi16', true)
+            "standar_bangunan" => $this->input->post('pemenuhan1', true),
+            "standar_prasarana" => $this->input->post('pemenuhan2', true),
+            "standar_peralatan" => $this->input->post('pemenuhan3', true),
+            "sedia_obat" => $this->input->post('pemenuhan4', true),
+            "pengendali_obat" => $this->input->post('pemenuhan5', true),
+            "pemenuhan_sdm" => $this->input->post('pemenuhan6', true),
+            "sisrute" => $this->input->post('pemenuhan7', true),
+            "informasi_puskesmas" => $this->input->post('pemenuhan8', true)
+
         ];
         $this->db->insert('lokasi_puskesmas', $data);
     }
