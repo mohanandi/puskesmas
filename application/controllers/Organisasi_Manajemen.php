@@ -11,7 +11,7 @@ class Organisasi_Manajemen extends CI_Controller
     }
     public function index()
     {
-        $data['judul'] = 'ORGANISASI MANAJEMEN';
+        $data['judul'] = 'Organisasi Manajemen';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->OrganisasiManajemen_Model->check();
         $this->load->view('templates/puskesmas/head', $data);
