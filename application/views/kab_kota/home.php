@@ -105,7 +105,7 @@
 									</div>
 
 									</ul>
-								</li>
+								
 
 
 								<li><a href="<?= base_url('table'); ?>" class="nav-link" >Daftar Puskesmas</a></li>
