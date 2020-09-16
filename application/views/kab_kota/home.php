@@ -71,21 +71,21 @@
 								<li class="has-children">
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
-										<li><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
-										<li><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
-										<li><a href="<?= base_url('Ppkp'); ?>" class="nav-link">PENGGERAKKAN DAN PELAKSANAAN KEGIATAN PUSKESMAS </a></li>
-										<li><a href="<?= base_url('Pppp') ?>" class="nav-link">PENGAWASAN, PENGENDALIAN DAN PENILAIAN KINERJA PUSKESMAS</a></li>
-										<li><a href="<?= base_url('Mutu') ?>" class="nav-link">PENINGKATAN MUTU PUSKESMAS</a></li>
-										<li><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">PENCEGAHAN DAN PENGENDALIAN INFEKSI dan KESEHATAN LINGKUNGAN</a></li>
-										<li><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">PELAKSANAAN SISTEM KEWASPADAAN DINI DAN RESPONS TERHADAP PENYAKIT MENULAR POTENSIAL KLB/ WABAH</a></li>
-										<li><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">CAKUPAN INDIKATOR PROGRAM</a></li>
 										<li class="has-children">
-											<a href="#">Bab 6</a>
-											<ul class="dropdown">
-												<li><a href="#">Bab 6.1</a></li>
-												<li><a href="#">Bab 6.2</a></li>
-												<li><a href="#">Bab 6.3</a></li>
+											<a href="#">Penilaian Puskesmas</a>
+											<ul class="dropdown" style="padding:2px; overflow-y:scroll; max-height:500px;">
+												<li ><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
+												<li><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
+												<li><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
+												<li><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
+												<li><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
+												<li><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
+												<li><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
+												<li><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
 											</ul>
+											<li>
+												<li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a></li>
+											</li>
 										</li>
 									</ul>
 								</li>

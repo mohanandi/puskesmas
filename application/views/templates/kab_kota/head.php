@@ -81,33 +81,24 @@
                                 <li class="has-children">
                                     <a href="#" class="nav-link" style="color: #000000 !important;">Menu Cepat</a>
                                     <ul class="dropdown">
+                                        
                                         <li class="has-children">
-                                            <a href="#">Puskesmas</a>
-                                            <ul class="dropdown">
-                                                <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
-                                                <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-                                                <li><a href="<?= base_url('Data_Umum'); ?>" class="nav-link">Data Umum</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children">
-                                            <a href="#">Kabupaten</a>
-                                            <ul class="dropdown">
-                                                <li><a href="<?= base_url('dinas'); ?>" class="nav-link">Bab I</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Bab II</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Bab III</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas4'); ?>" class="nav-link">Bab IV</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas5'); ?>" class="nav-link">Bab V</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas6'); ?>" class="nav-link">Bab VI</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas7'); ?>" class="nav-link">Bab VII</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas8'); ?>" class="nav-link">Bab VIII</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas9'); ?>" class="nav-link">Bab IX</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas10'); ?>" class="nav-link">Bab X</a></li>
-                                                <li><a href="<?= base_url('dinas/dinas11'); ?>" class="nav-link">Bab XI</a></li>
-                                            </ul>
-                                        </li>
+                                           
+                                            <li class="has-children">
+											<a href="#">Penilaian Puskesmas</a>
+											<ul class="dropdown" style="padding:2px; overflow-y:scroll; max-height:500px;">
+												<li ><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
+												<li><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
+												<li><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
+												<li><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
+												<li><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
+												<li><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
+												<li><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
+												<li><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
+											</ul>
 
 
-                                        <li><a href="<?= base_url('table'); ?>" class="nav-link">Table</a></li>
+                                        <li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a></li>
 
 
                                     </ul>
@@ -154,9 +145,7 @@
                             <p style="text-align: center;">Status Akreditasi<br><span><strong>Paripurna</strong></span></p>
                             <p style="text-align: center;">Motto<br> <span><strong>Jaya Selalu Puskesmas</strong></span></p>
                         </div>
-                        <br>
-
-                        <p style="text-align: center;">Menu Cepat</p>
+                       <hr>
                         <button type="button" class="collapsible">Menu Cepat</button>
                         <div class="content" style="overflow-y:scroll; height:200px;">
                             <br>
