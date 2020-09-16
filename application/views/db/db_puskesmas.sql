@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Sep 2020 pada 07.32
+-- Waktu pembuatan: 16 Sep 2020 pada 10.22
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -109,6 +109,65 @@ CREATE TABLE `bangunan_puskesmas` (
   `area_tabung` varchar(5) NOT NULL,
   `selain_diatas` varchar(255) NOT NULL,
   `ruang_lain` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `cakupan_indikator_program`
+--
+
+CREATE TABLE `cakupan_indikator_program` (
+  `kode` varchar(20) NOT NULL,
+  `kia1a` varchar(5) NOT NULL,
+  `kia1b` varchar(5) NOT NULL,
+  `kia1c` varchar(5) NOT NULL,
+  `kia2a` varchar(5) NOT NULL,
+  `kia2b` varchar(5) NOT NULL,
+  `kia2c` varchar(5) NOT NULL,
+  `kia3a` varchar(5) NOT NULL,
+  `kia3b` varchar(5) NOT NULL,
+  `kia3c` varchar(5) NOT NULL,
+  `imunisasi1a` varchar(5) NOT NULL,
+  `imunisasi1b` varchar(5) NOT NULL,
+  `imunisasi1c` varchar(5) NOT NULL,
+  `gizi1a` varchar(5) NOT NULL,
+  `gizi1b` varchar(5) NOT NULL,
+  `gizi1c` varchar(5) NOT NULL,
+  `pencegahan1a` varchar(5) NOT NULL,
+  `pencegahan1b` varchar(5) NOT NULL,
+  `pencegahan1c` varchar(5) NOT NULL,
+  `pencegahan2a` varchar(5) NOT NULL,
+  `pencegahan2b` varchar(5) NOT NULL,
+  `pencegahan2c` varchar(5) NOT NULL,
+  `pencegahan3a` varchar(5) NOT NULL,
+  `pencegahan3b` varchar(5) NOT NULL,
+  `pencegahan3c` varchar(5) NOT NULL,
+  `pencegahan4a` varchar(5) NOT NULL,
+  `pencegahan4b` varchar(5) NOT NULL,
+  `pencegahan4c` varchar(5) NOT NULL,
+  `pencegahan5a` varchar(5) NOT NULL,
+  `pencegahan5b` varchar(5) NOT NULL,
+  `pencegahan5c` varchar(5) NOT NULL,
+  `pencegahan6a` varchar(5) NOT NULL,
+  `pencegahan6b` varchar(5) NOT NULL,
+  `pencegahan6c` varchar(5) NOT NULL,
+  `pencegahan7a` varchar(5) NOT NULL,
+  `pencegahan7b` varchar(5) NOT NULL,
+  `pencegahan7c` varchar(5) NOT NULL,
+  `pencegahan8a` varchar(5) NOT NULL,
+  `pencegahan8b` varchar(5) NOT NULL,
+  `pencegahan8c` varchar(5) NOT NULL,
+  `pispk1a` varchar(5) NOT NULL,
+  `pispk1b` varchar(5) NOT NULL,
+  `pispk1c` varchar(5) NOT NULL,
+  `pispk2a` varchar(5) NOT NULL,
+  `pispk2b` varchar(5) NOT NULL,
+  `pispk2c` varchar(5) NOT NULL,
+  `pispk3a` varchar(5) NOT NULL,
+  `pispk3b` varchar(5) NOT NULL,
+  `pispk3c` varchar(5) NOT NULL,
+  `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -1673,6 +1732,12 @@ INSERT INTO `user` (`no`, `kode`, `nama`, `role_id`, `password`, `kab_kota`, `pr
 -- Indeks untuk tabel `bangunan_puskesmas`
 --
 ALTER TABLE `bangunan_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `cakupan_indikator_program`
+--
+ALTER TABLE `cakupan_indikator_program`
   ADD PRIMARY KEY (`kode`);
 
 --
