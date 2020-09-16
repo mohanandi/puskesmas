@@ -6,7 +6,7 @@
             <h2 class="heading"><strong class="text-primary">Pengawasan, Pengendalian dan Penilaian Kinerja </strong> Puskesmas</h2>
           </div>
         </div>
-  <form style="height:350px; overflow-y:auto; padding:20px;">
+  <form style="; padding:20px;">
     <div class="alert alert-success" role="alert">
       Data Berhasil dimasukan !
     </div>

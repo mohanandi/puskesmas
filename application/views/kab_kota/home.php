@@ -23,7 +23,7 @@
 
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
 
-	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylo.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
 
 </head>
 

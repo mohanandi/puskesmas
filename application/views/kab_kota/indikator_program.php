@@ -9,7 +9,7 @@
 
 
 
-  <form style="height:380px; overflow-y:auto; padding:20px;">
+  <form style=" ; padding:20px;">
         <div class="form-group">
             <label for="exampleFormControlInput1"><strong>VIII.A. KIA</strong></label><br>
             <label for="exampleFormControlInput1"><strong>1. Ibu hamil mendapatkan pelayanan antenatal sesuai standar DO:</strong><br> Pelayanan antenatal sesuai standar yaitu ibu hamil yang mendapatkan pelayanan paling sedikit 4 kali selama kehamilannya dengan distribusi waktu yaitu 1 kali pada trimester ke-1, 1 kali pada trimester ke-2, dan 2 kali pada trimester ke-3 <a href="#" onclick="toggle_visibility('foo28');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>

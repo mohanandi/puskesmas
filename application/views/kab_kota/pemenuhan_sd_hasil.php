@@ -9,7 +9,7 @@
 
 
 
-  <form style="height:380px; overflow-y:auto; padding:20px;">
+  <form style="; ; padding:20px;">
 
     <div class="alert alert-success" role="alert">
       Data Berhasil dimasukan !

@@ -7,7 +7,7 @@
           </div>
         </div>
 		
-  <form style="height:380px; overflow-y:auto; padding:20px;">
+  <form style="padding:20px;">
     <div class="form-group">
       <div class="con">
         <label for="exampleFormControlInput1"><strong> PUSKESMAS MEMPUNYAI UPAYA INOVASI ?</strong></label><br>

@@ -1,5 +1,16 @@
-<div class="col-md-9">
-  <form style="height:350px; overflow-y:auto; padding:20px;" method="POST" action="<?= base_url('Pembina_terpadu/tambah') ?>">
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Pembina Terpadu</strong></h2>
+          </div>
+        </div>
+
+
+
+  <form  method="POST" action="<?= base_url('Pembina_terpadu/tambah') ?>" style=" padding:20px;">
+ 
     <div class="form-group">
       <label for="exampleFormControlInput1">Nama Pembina dan No. Telepon</label>
       <div class="row">

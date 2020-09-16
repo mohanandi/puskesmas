@@ -1,11 +1,11 @@
-<div class="col-md-9" style="top:-110px;">
-  <div class="container1" style="height:350px; margin-bottom:-200px !important; overflow-y:auto; padding:10px;">
-    <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1' style="margin-bottom:-200px;">
-
-      <div class="container1" style="height:350px; margin-bottom:300px; overflow-y:auto; overflow-x:hidden; padding:10px;">
-          <br>
-          <div class='multitab-widget-content multitab-widget-content-widget-id' id='multicolumn-widget-id1'>
-            <span class='sidebar' id='sidebartab1' preferred='yes'>
+<div class="site-section" id = "menu">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-7 mx-auto text-center">
+            <span class="subheading">Form Menu</span>
+            <h2 class="heading"><strong class="text-primary">Bangunan Puskesmas</strong></h2>
+          </div>
+        </div>
               <form>
                 <div class="form-group">
                   <label for="exampleFormControlInput1"><br>Nomor izin operasional Puskesmas</label>

@@ -9,7 +9,7 @@
 
 
 
-  <form style="height:380px; overflow-y:auto; padding:20px;">
+  <form style=" ; padding:20px;">
     <div class="form-group">
       <label for="exampleFormControlInput1">Terlaksananya pengukuran indikator mutu<a href="#" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
