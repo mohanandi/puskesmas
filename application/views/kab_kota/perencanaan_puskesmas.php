@@ -9,7 +9,7 @@
 
 
 
-  <form style="height:380px; overflow-y:auto; padding:20px;">
+  <form style="; padding:20px;">
     <div class="form-group">
       <label for="exampleFormControlInput1"><strong>1. Perencanaan Puskesmas berdasarkan analisis masalah kesehatan untuk memenuhi kebutuhan & harapan masyarakat:</strong> </label><br>
       <label for="exampleFormControlInput1" style="font-size:14px;">KRITERIA:</label><br>
