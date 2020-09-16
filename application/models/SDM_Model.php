@@ -106,7 +106,7 @@ class SDM_Model extends CI_Model
             "titik6" => $this->input->post('sdmtitik6', true),
             "titik7" => $this->input->post('sdmtitik7', true)
         ];
-        $this->db->insert('lokasi_puskesmas', $data);
+        $this->db->insert('sumber_daya_manusia', $data);
     }
     public function check()
     {
