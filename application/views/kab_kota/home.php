@@ -8,23 +8,23 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/icomoon/style.css">
-
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/font-awesome.min.css">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery-ui.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/dinas.css">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.carousel.min.css">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/owl.theme.default.min.css">
-
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery.fancybox.min.css">
-
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap-datepicker.css">
-
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
-
 	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
-
-	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/style.css">
-
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
+	<link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
+	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -53,11 +53,8 @@
 		<header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
 
 			<div class="container">
-
 				<div class="row align-items-center">
-
 					<div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
-
 					<div class="col-3 col-xl-1">
 
 						<div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
@@ -70,18 +67,15 @@
 								<li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
 								<li class="has-children">
 									<a class="nav-link">Penilaian Puskesmas</a>
-									
 									<ul class="dropdown" style="padding:10px;">
-									<br>
-									<div class="row">
-									<h5 class="col-md-6" style="font-size:18px; color="#000;"> Penilaian Puskesmas </h5>
-								
-									<h5 class="col-md-6" style="font-size:18px; color="#000;"> Penilaian Puskesmas </h5>
-									</div>
-									<hr>
-									<div class="row">
-
-									<ul class="col-md-6" style="list-style: none; padding:10px;">
+										<br>
+										<div class="row">
+											<h5 class="col-md-6" style="font-size:18px; color=" #000;"> Penilaian Puskesmas </h5>
+											<h5 class="col-md-6" style="font-size:18px; color=" #000;"> Penilaian Puskesmas </h5>
+										</div>
+										<hr>
+										<div class="row">
+											<ul class="col-md-6" style="list-style: none; padding:10px;">
 												<li id="mm"><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
@@ -90,9 +84,8 @@
 												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
 												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
 												<li id="mm"><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
-										</ul>	
-
-										<ul class="col-md-6" style="list-style: none; padding:10px;">
+											</ul>
+											<ul class="col-md-6" style="list-style: none; padding:10px;">
 												<li id="mm"><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
@@ -101,18 +94,10 @@
 												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
 												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
 												<li id="mm"><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
-										</ul>
-									</div>
-
+											</ul>
+										</div>
 									</ul>
-								
-
-
-								<li><a href="<?= base_url('table'); ?>" class="nav-link" >Daftar Puskesmas</a></li>
-
-
-
-
+								<li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -214,23 +199,20 @@
 
 
 	</div> <!-- .site-wrap -->
-
-	<script src="<?= base_url('assets/') ?>js/jquery-3.3.1.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/jquery-ui.js"></script>
-	<script src="<?= base_url('assets/') ?>js/popper.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/bootstrap.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/owl.carousel.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/jquery.countdown.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/jquery.easing.1.3.js"></script>
-	<script src="<?= base_url('assets/') ?>js/aos.js"></script>
-	<script src="<?= base_url('assets/') ?>js/jquery.fancybox.min.js"></script>
-	<script src="<?= base_url('assets/') ?>js/jquery.sticky.js"></script>
-	<script src="<?= base_url('assets/') ?>js/isotope.pkgd.min.js"></script>
-
-
-	<script src="<?= base_url('assets/') ?>js/main.js"></script>
-
-
 </body>
+<script src="<?= base_url('assets/') ?>js/jquery-3.3.1.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery-ui.js"></script>
+<script src="<?= base_url('assets/') ?>js/popper.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/bootstrap.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/owl.carousel.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.countdown.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.easing.1.3.js"></script>
+<script src="<?= base_url('assets/') ?>js/aos.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.fancybox.min.js"></script>
+<script src="<?= base_url('assets/') ?>js/jquery.sticky.js"></script>
+<script src="<?= base_url('assets/') ?>js/isotope.pkgd.min.js"></script>
+
+
+<script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 </html>
