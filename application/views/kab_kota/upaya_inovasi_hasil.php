@@ -3,10 +3,7 @@
     <div class="alert alert-success" role="alert">
       Data Berhasil dimasukan !
     </div>
-    <div class="form-group">
-      <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
-      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="" readonly>
-    </div>
+
 
     <div class="form-group">
       <div class="con">
@@ -30,40 +27,40 @@
             <label for="exampleFormControlInput1"><strong> Inovasi MANAJEMEN </strong></label>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukm1" id="upayaukm1" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukm1']; ?>" placeholder="1" name="upayaukm1" id="upayaukm1" value="" readonly>
           </div>
           <div class=" col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayaukp1" id="upayaukp1" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukm2']; ?>" placeholder="1" name="upayaukp1" id="upayaukp1" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="1" name="upayamanajemen1" id="upayamanajemen1" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukm3']; ?>" placeholder="1" name="upayamanajemen1" id="upayamanajemen1" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukm2" id="upayaukm2" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukm4']; ?>" placeholder="2" name="upayaukm2" id="upayaukm2" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayaukp2" id="upayaukp2" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukp1']; ?>" placeholder="2" name="upayaukp2" id="upayaukp2" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="2" name="upayamanajemen2" id="upayamanajemen2" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukp2']; ?>" placeholder="2" name="upayamanajemen2" id="upayamanajemen2" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukm3" id="upayaukm3" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukp3']; ?>" placeholder="3" name="upayaukm3" id="upayaukm3" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayaukp3" id="upayaukp3" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['ukp4']; ?>" placeholder="3" name="upayaukp3" id="upayaukp3" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="3" name="upayamanajemen3" id="upayamanajemen3" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['manajemen1']; ?>" placeholder="3" name="upayamanajemen3" id="upayamanajemen3" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukm4" id="upayaukm4" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['manajemen2']; ?>" placeholder="4" name="upayaukm4" id="upayaukm4" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayaukp4" id="upayaukp4" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['manajemen3']; ?>" placeholder="4" name="upayaukp4" id="upayaukp4" value="" readonly>
           </div>
           <div class="col-md-4">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="4" name="upayamanajemen4" id="upayamanajemen4" value="" readonly>
+            <input type="text" class="form-control" id="exampleFormControlInput1" value="<?= $data['manajemen4']; ?>" placeholder="4" name="upayamanajemen4" id="upayamanajemen4" value="" readonly>
           </div>
         </div>
       </div>
