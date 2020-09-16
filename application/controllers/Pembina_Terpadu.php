@@ -5,7 +5,8 @@ class Pembina_Terpadu extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('templates/puskesmas/head');
+        $data['judul'] = 'PEMBINAAN TERPADU';
+        $this->load->view('templates/puskesmas/head', $data);
         $this->load->view('puskesmas/pembina_terpadu');
         $this->load->view('templates/puskesmas/foot');
     }

@@ -13,18 +13,17 @@ class Identitas_Puskesmas extends CI_Controller
 
     public function index()
     {
+        $data['judul'] = 'IDENTITAS PUSKESMAS';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $check = $this->IdentitasPuskesmas_Model->check();
+        $this->load->view('templates/puskesmas/head', $data);
         if ($check == NULL) {
-            $this->load->view('templates/puskesmas/head');
             $this->load->view('puskesmas/identitas_puskesmas', $data);
-            $this->load->view('templates/puskesmas/foot');
         } else {
             $data['data'] = $this->IdentitasPuskesmas_Model->check();
-            $this->load->view('templates/puskesmas/head');
             $this->load->view('puskesmas/identitas_puskesmas_hasil', $data);
-            $this->load->view('templates/puskesmas/foot');
         }
+        $this->load->view('templates/puskesmas/foot');
     }
 
     public function tambah()

@@ -5,11 +5,16 @@
 				<div class="form-group">
 					<label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
 					<select class="form-control" name="sdm1" id="sdm1">
-						<option selected>Pilih ...</option>
-						<option value="1">Dokter Umum</option>
-						<option value="2">Dokter Gigi</option>
-						<option value="2">Sarjana Kesehatan Masyarakat (SKM)</option>
-						<option value="2">Lain-lain</option> <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Lain-lain">
+						<?php if ($data) : ?>
+							<option value="1">Dokter Umum</option>
+						<?php else : ?>
+							<option value="1">Dokter Umum</option>
+						<?php endif; ?>
+						<option value="Dokter Umum">Dokter Umum</option>
+						<option value="Dokter Gigi">Dokter Gigi</option>
+						<option value="Sarjana Kesehatan Masyarakat (SKM)">Sarjana Kesehatan Masyarakat (SKM)</option>
+						<option value="Lain-lain">Lain-lain</option>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Lain-lain">
 					</select>
 				</div>
 				<!-- Tenaga dan Status Kepegawaian -->
@@ -1118,7 +1123,7 @@
 					</div>
 
 				</section>
-				<a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+				<button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
 			</form>
 		</div>
 	</div>
