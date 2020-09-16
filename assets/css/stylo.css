@@ -1323,3 +1323,7 @@ figure figcaption {
 .block-icon-1 .icon {
     font-size: 40px;
 }
+
+#mm:hover {
+	 background-color: #f6f6f6;
+}
