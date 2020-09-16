@@ -13,17 +13,16 @@ class Peralatan_Puskesmas extends CI_Controller
 
     public function index()
     {
+        $data['judul'] = 'PERALATAN PUSKESMAS';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->PeralatanPuskesmas_Model->check();
+        $this->load->view('templates/puskesmas/head', $data);
         if ($data['data'] == NULL) {
-            $this->load->view('templates/puskesmas/head');
             $this->load->view('puskesmas/peralatan_puskesmas', $data);
-            $this->load->view('templates/puskesmas/foot');
         } else {
-            $this->load->view('templates/puskesmas/head');
             $this->load->view('puskesmas/peralatan_puskesmas_hasil', $data);
-            $this->load->view('templates/puskesmas/foot');
         }
+        $this->load->view('templates/puskesmas/foot');
     }
 
     public function tambah()

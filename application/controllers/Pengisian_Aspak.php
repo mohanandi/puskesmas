@@ -13,8 +13,9 @@ class Pengisian_Aspak extends CI_Controller
 
     public function index()
     {
+        $data['judul'] = 'PENGISIAN ASPAK';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $this->load->view('templates/puskesmas/head');
+        $this->load->view('templates/puskesmas/head', $data);
         $this->load->view('puskesmas/pengisian_aspak', $data);
         $this->load->view('templates/puskesmas/foot');
         $check = $this->IdentitasPuskesmas_Model->check();
