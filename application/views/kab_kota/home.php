@@ -97,17 +97,8 @@
 											</ul>
 										</div>
 									</ul>
-<<<<<<< HEAD
-
-
-								<li><a href="<?= base_url('table'); ?>" class="nav-link" >Daftar Puskesmas</a></li>
-
-
-
-
-=======
-								<li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a></li>
->>>>>>> fcc915291370f5e472d5e132718f62af7f972f7d
+								<li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a>
+								</li>
 							</ul>
 						</nav>
 					</div>
