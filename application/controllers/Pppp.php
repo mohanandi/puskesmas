@@ -37,25 +37,40 @@ class Pppp extends CI_Controller
         }
         $this->load->view('templates/kab_kota/foot');
     }
+
     public function tambah()
     {
-        $this->form_validation->set_rules('pengawasan1', '', 'trim|required');
-        $this->form_validation->set_rules('pengawasan2', '', 'trim|required');
+        $this->form_validation->set_rules('kode_puskesmas', '', 'trim|required');
+        $this->form_validation->set_rules('pengawasan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pengawasan2', '', 'trim|in_list[1,2,3]');
 
 
         if ($this->form_validation->run() == false) {
-            $this->index();
+            $this->data($this->input->post('kode_puskesmas'));
         } else {
             $this->Pppp_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('Organisasi_Manajemen');
+            redirect('Pppp');
         }
     }
-    public function ubah()
+    public function ubah($kode)
     {
-        $data['data'] = $this->Pppp_Model->check();
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/organoisasi_manajemen', $data);
-        $this->load->view('templates/puskesmas/foot');
+        $data['judul'] = 'Edit PENGAWASAN, PENGENDALIAN DAN PENILAIAN KINERJA PUSKESMAS';
+        $data['data'] = $this->Pppp_Model->check($kode);
+        $data['kode_puskesmas'] = $kode;
+
+        $this->form_validation->set_rules('kode_puskesmas', '', 'trim|required');
+        $this->form_validation->set_rules('pengawasan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pengawasan2', '', 'trim|in_list[1,2,3]');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/kab_kota/head', $data);
+            $this->load->view('kab_kota/pppp', $data);
+            $this->load->view('templates/kab_kota/foot');
+        } else {
+            $this->Pppp_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('Pppp');
+        }
     }
 }
