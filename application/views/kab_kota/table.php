@@ -30,7 +30,8 @@
                         <?php $data = $this->db->get_where($table, ['kode' => $a['kode']])->row_array(); ?>
                         <?php if ($data) : ?>
                             <td>TERISI</td>
-                            <td>
+                            <?php $nilai = $fungsi($table, $data['kode']); ?>
+                            <td><?= $nilai; ?></td>
                             <td><a href="<?= base_url($link); ?>/data/<?= $a['kode']; ?>">Detail</a></td>
                         <?php else : ?>
                             <td>BELUM TERISI</td>
