@@ -71,4 +71,55 @@ class Peralatan_Puskesmas extends CI_Controller
             redirect('Peralatan_Puskesmas');
         }
     }
+    public function ubah()
+    {
+        $data['judul'] = 'Edit Peralatan Puskesmas';
+        $data['data'] = $this->PeralatanPuskesmas_Model->check();
+
+        $this->form_validation->set_rules('peralatan1', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan2', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan3', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan4', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan5', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan6', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan7', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan8', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan9', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan10', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan11', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan12', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan13', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan14', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan15', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan16', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan17', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan18', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan19', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan20', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan21', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan22', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan23', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan24', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan25', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan26', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan27', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan28', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan29', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan30', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan31', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan32', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan33', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan34', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('peralatan35', '', 'trim|in_list[Ya,Tidak]');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/puskesmas/head', $data);
+            $this->load->view('puskesmas/peralatan_puskesmas', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->PeralatanPuskesmas_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('peralatan_puskesmas');
+        }
+    }
 }

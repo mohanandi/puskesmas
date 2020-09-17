@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Sep 2020 pada 19.38
+-- Waktu pembuatan: 17 Sep 2020 pada 06.05
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -449,7 +449,7 @@ CREATE TABLE `prasarana_puskesmas` (
   `limabelas` varchar(5) NOT NULL,
   `empatpuluh` varchar(5) NOT NULL,
   `hygiene_seratus` varchar(5) NOT NULL,
-  `sumber_air` varchar(5) NOT NULL,
+  `sumber_air` varchar(50) NOT NULL,
   `saluran_air` varchar(5) NOT NULL,
   `ipal` varchar(5) NOT NULL,
   `sampah_dua` varchar(5) NOT NULL,
@@ -459,9 +459,9 @@ CREATE TABLE `prasarana_puskesmas` (
   `serbet` varchar(5) NOT NULL,
   `handrub` varchar(5) NOT NULL,
   `septik_tank` varchar(5) NOT NULL,
-  `listrik_puskesmas` varchar(5) NOT NULL,
+  `listrik_puskesmas` varchar(50) NOT NULL,
   `daya_listrik` varchar(5) NOT NULL,
-  `listrik_cadangan` varchar(5) NOT NULL,
+  `listrik_cadangan` varchar(50) NOT NULL,
   `kekuatan_cadangan` varchar(5) NOT NULL,
   `listrik_sehari` varchar(5) NOT NULL,
   `listrik_mencukupi` varchar(5) NOT NULL,
@@ -611,6 +611,23 @@ CREATE TABLE `sumber_daya_manusia` (
   `titik5` varchar(5) NOT NULL,
   `titik6` varchar(5) NOT NULL,
   `titik7` varchar(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tim_pembina_terpadu`
+--
+
+CREATE TABLE `tim_pembina_terpadu` (
+  `kode` varchar(20) NOT NULL,
+  `pembina1` varchar(255) NOT NULL,
+  `no_pembina1` varchar(20) NOT NULL,
+  `pembina2` varchar(255) NOT NULL,
+  `no_pembina2` varchar(20) NOT NULL,
+  `pembina3` varchar(255) NOT NULL,
+  `no_pembina3` varchar(20) NOT NULL,
+  `tgl_pembinaan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -1816,6 +1833,12 @@ ALTER TABLE `sumber_daya_manusia`
   ADD PRIMARY KEY (`kode`);
 
 --
+-- Indeks untuk tabel `tim_pembina_terpadu`
+--
+ALTER TABLE `tim_pembina_terpadu`
+  ADD PRIMARY KEY (`kode`);
+
+--
 -- Indeks untuk tabel `upaya_inovasi`
 --
 ALTER TABLE `upaya_inovasi`
@@ -1836,7 +1859,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `identitas_puskesmas`
 --
 ALTER TABLE `identitas_puskesmas`
-  MODIFY `no` int(255) NOT NULL AUTO_INCREMENT;
+  MODIFY `no` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `user`
