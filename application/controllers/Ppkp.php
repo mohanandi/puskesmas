@@ -53,11 +53,27 @@ class Ppkp extends CI_Controller
             redirect('Ppkp');
         }
     }
-    public function ubah()
+    public function ubah($kode)
     {
-        $data['data'] = $this->Ppkp_Model->check();
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/organoisasi_manajemen', $data);
-        $this->load->view('templates/puskesmas/foot');
+        $data['judul'] = 'Edit Organisasi Manajemen';
+        $data['data'] = $this->Ppkp_Model->check($kode);
+        $data['kode_puskesmas'] = $kode;
+        $this->form_validation->set_rules('kode_puskesmas', '', 'trim|required');
+        $this->form_validation->set_rules('penggerakkan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penggerakkan2', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penggerakkan3', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penggerakkan4', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penggerakkan5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penggerakkan6', '', 'trim|in_list[1,2,3]');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/kab_kota/head', $data);
+            $this->load->view('kab_kota/ppkp', $data);
+            $this->load->view('templates/kab_kota/foot');
+        } else {
+            $this->Ppkp_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('ppkp');
+        }
     }
 }

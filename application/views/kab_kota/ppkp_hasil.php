@@ -10,9 +10,12 @@
 
 
     <form style="padding:20px;">
-      <div class="alert alert-success" role="alert">
-        Data Berhasil dimasukan !
-      </div>
+      <?php if ($this->session->flashdata('flash')) : ?>
+        <div class="alert alert-success" role="alert">
+          Data Telah Berhasil
+          <?= $this->session->flashdata('flash'); ?>
+        </div>
+      <?php endif; ?>
 
       <div class="form-group">
         <label for="exampleFormControlInput1"> Pelaksanaan Kegiatan di Puskesmas dipandu dengan kebijakan, pe-doman dan prosedur yang jelas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -67,7 +70,6 @@
       </div>
 
     </form>
-    <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
-    <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
+    <a class="btn float-right btn-danger" href="<?= base_url() ?>Ppkp/ubah/<?= $data['kode']; ?>" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
 
   </div>

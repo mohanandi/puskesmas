@@ -10,12 +10,12 @@
       $link = '';
       $button = 'Simpan Edit';
     } else {
-      $link = base_url('Organisasi_Manajemen/tambah');
+      $link = base_url('Ppkp/tambah');
       $button = 'Simpan';
     }
     ?>
 
-    <form style=" padding:20px;" method="POST" action="<?= base_url('Ppkp/tambah') ?>">
+    <form style=" padding:20px;" method="POST" action="<?= $link; ?>">
       <?php if ($kode_puskesmas) : ?>
         <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
       <?php else : ?>
@@ -137,7 +137,7 @@
       </div>
 
 
-      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
 </div>

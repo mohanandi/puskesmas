@@ -64,14 +64,14 @@ function hitung_ppkp($table, $kode)
         $nilai1 = 10;
     } else if ($data['dipandu_jelas'] == 2) {
         $nilai1 = 5;
-    } else if ($data['dipandu_jelas'] == 0) {
+    } else if ($data['dipandu_jelas'] == 3) {
         $nilai1 = 0;
     }
     if ($data['jadwal_jelas'] == 1) {
         $nilai2 = 10;
     } else if ($data['jadwal_jelas'] == 2) {
         $nilai2 = 5;
-    } else if ($data['jadwal_jelas'] == 0) {
+    } else if ($data['jadwal_jelas'] == 3) {
         $nilai2 = 0;
     }
 
