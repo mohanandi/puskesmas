@@ -21,7 +21,7 @@ class Pemenuhan_SD extends CI_Controller
     }
     public function data($kode)
     {
-        $data['judul'] = 'Pemenuhan Sumber Daya Puskesma';
+        $data['judul'] = 'Pemenuhan Sumber Daya Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->PemenuhanSD_Model->check($kode);
         $data['kode_puskesmas'] = $kode;

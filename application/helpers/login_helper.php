@@ -56,7 +56,7 @@ function is_terisi($data, $name)
     endif;
 }
 
-function hitung_ppkp($table, $kode)
+function ppkp($table, $kode)
 {
     $ci = get_instance();
     $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
@@ -74,7 +74,6 @@ function hitung_ppkp($table, $kode)
     } else if ($data['jadwal_jelas'] == 3) {
         $nilai2 = 0;
     }
-
     if ($data['lintas_program'] == 1) {
         $nilai3 = 10;
     } else if ($data['lintas_program'] == 2) {
@@ -96,12 +95,587 @@ function hitung_ppkp($table, $kode)
     } else if ($data['masukan_pelanggan'] == 3) {
         $nilai5 = 0;
     }
-
     if ($data['pelayanan_pelanggan'] == 1) {
         $nilai6 = 10;
     } else if ($data['pelayanan_pelanggan'] == 2) {
         $nilai6 = 5;
     } else if ($data['pelayanan_pelanggan'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function pemenuhan_sd($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['standar_bangunan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['standar_bangunan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['standar_bangunan'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['standar_prasarana'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['standar_prasarana'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['standar_prasarana'] == 3) {
+        $nilai2 = 0;
+    }
+
+    if ($data['standar_peralatan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['standar_peralatan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['standar_peralatan'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['sedia_obat'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['sedia_obat'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['sedia_obat'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['pengendali_obat'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['pengendali_obat'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['pengendali_obat'] == 3) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pemenuhan_sdm'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pemenuhan_sdm'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pemenuhan_sdm'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['sisrute'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['sisrute'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['sisrute'] == 3) {
+        $nilai6 = 0;
+    }
+    if ($data['informasi_puskesmas'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['informasi_puskesmas'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['informasi_puskesmas'] == 3) {
         $nilai6 = 0;
     }
     return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
