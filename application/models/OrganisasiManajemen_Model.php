@@ -19,4 +19,19 @@ class OrganisasiManajemen_Model extends CI_Model
     {
         return $this->db->get_where('organisasi_manajemen', ['kode' => $this->session->userdata('kode')])->row_array();
     }
+
+    public function ubahData()
+    {
+        $data = [
+            "kode" => $this->session->userdata('kode'),
+            "niop" => $this->input->post('organisasi1', true),
+            "tgl_izin" => strtotime($this->input->post('organisasi2', true)),
+            "kategori" => $this->input->post('organisasi3', true),
+            "status" => $this->input->post('organisasi4', true),
+            "pplh" => $this->input->post('organisasi5', true)
+        ];
+
+        $this->db->where('kode', $this->session->userdata('kode'));
+        $this->db->update('organisasi_manajemen', $data);
+    }
 }

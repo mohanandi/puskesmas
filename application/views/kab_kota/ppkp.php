@@ -1,11 +1,12 @@
-<div class="site-section" id = "menu">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-lg-7 mx-auto text-center">
-            <span class="subheading">Form Menu</span>
-            <h2 class="heading"><strong class="text-primary">Penggerakan dan Pelaksanaan Kegiatan</strong> Puskesmas</h2>
-          </div>
-        </div>
+<div class="site-section" id="menu">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 mx-auto text-center">
+        <span class="subheading">Form Menu</span>
+        <h2 class="heading"><strong class="text-primary">Penggerakan dan Pelaksanaan Kegiatan</strong> Puskesmas</h2>
+      </div>
+    </div>
+
 
 
 
@@ -125,8 +126,9 @@
       <?= form_error('penggerakkan6', '<small class="text-danger pl-3">', '</small>'); ?>
     </div>
 
-  </form>
-  <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
-  <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
 
-</div>
+    </form>
+    <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+    <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
+
+  </div>

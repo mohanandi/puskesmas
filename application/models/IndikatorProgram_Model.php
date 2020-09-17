@@ -18,7 +18,7 @@ class IndikatorProgram_Model extends CI_Model
             "pencegahan4" => $this->input->post('cakupan4d', true),
             "pencegahan5" => $this->input->post('cakupan5d', true),
             "pencegahan6" => $this->input->post('cakupan6d', true),
-            "pencegahan7" => $this->input->post('cakupan7d'),
+            "pencegahan7" => $this->input->post('cakupan7d', true),
             "pencegahan8" => $this->input->post('cakupan8d', true),
             "pispk1" => $this->input->post('cakupan1e', true),
             "pispk2" => $this->input->post('cakupan2e', true),
