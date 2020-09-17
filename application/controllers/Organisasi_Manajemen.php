@@ -40,9 +40,23 @@ class Organisasi_Manajemen extends CI_Controller
     }
     public function ubah()
     {
-        $data['data'] = $this->IdentitasPuskesmas_Model->check();
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/organoisasi_manajemen', $data);
-        $this->load->view('templates/puskesmas/foot');
+        $data['judul'] = 'Edit Organisasi Manajemen';
+        $data['data'] = $this->OrganisasiManajemen_Model->check();
+
+        $this->form_validation->set_rules('organisasi1', '', 'required');
+        $this->form_validation->set_rules('organisasi2', '', 'required');
+        $this->form_validation->set_rules('organisasi3', '', 'required');
+        $this->form_validation->set_rules('organisasi4', '', 'required');
+        $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/puskesmas/head', $data);
+            $this->load->view('puskesmas/organisasi_manajemen', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->OrganisasiManajemen_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('Organisasi_Manajemen');
+        }
     }
 }

@@ -58,6 +58,6 @@
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['email']; ?>" readonly>
       </div>
     </form>
-    <a href="<?= base_url(); ?>Identitas_Puskesmas/ubah" class="btn float-right btn-danger" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Ubah</a>
+    <a href="<?= base_url(); ?>Identitas_Puskesmas/ubah" class="btn float-right btn-danger" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
   </div>
 </div>

@@ -8,8 +8,10 @@
     </div>
     <?php if ($data) {
       $link = '';
+      $button = 'Simpan Edit';
     } else {
       $link = base_url('Identitas_Puskesmas/tambah');
+      $button = 'Simpan';
     }
     ?>
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
@@ -112,7 +114,7 @@
         <?php endif; ?>
         <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
-      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+      <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
 </div>

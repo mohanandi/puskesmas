@@ -6,7 +6,15 @@
         <h2 class="heading"><strong class="text-primary">Bangunan Puskesmas</strong></h2>
       </div>
     </div>
-    <form method="POST" action="<?= base_url('Bangunan_Puskesmas/tambah'); ?>" style=" padding:20px;">
+    <?php if ($data) {
+      $link = '';
+      $button = 'Simpan Edit';
+    } else {
+      $link = base_url('Bangunan_Puskesmas/tambah');
+      $button = 'Simpan';
+    }
+    ?>
+    <form method="POST" action="<?= $link; ?>" style="padding:20px;">
       <div class="form-group">
         <label for="exampleFormControlInput1">Koefisien Dasar Bangunan (KDB) Puskesmas maksimal 60%</label>
         <select class="form-control" name="bangunan1" id="bangunan1">
@@ -779,7 +787,7 @@
         <?= form_error('bangunan43_15', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
 
-      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
 </div>
