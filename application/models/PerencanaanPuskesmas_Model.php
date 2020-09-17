@@ -6,7 +6,7 @@ class PerencanaanPuskesmas_Model extends CI_Model
     public function tambahData()
     {
         $data = [
-            "kode" => $this->session->userdata('kode'),
+            "kode" => $this->input->post('kode_puskesmas'),
             "rpk_n" => $this->input->post('perencanaan1_a', true),
             "ruk" => $this->input->post('perencanaan1_b1', true),
             "rpk_rinci" => $this->input->post('perencanaan1_b2', true),
@@ -35,14 +35,18 @@ class PerencanaanPuskesmas_Model extends CI_Model
             "kondisi_sarana" => $this->input->post('perencanaan3c_4', true),
             "dokumen_perencanaan" => $this->input->post('perencanaan3c_5', true),
             "alokasi_kebutuhan" => $this->input->post('perencanaan3c_6', true),
-            "usulan_pengadaan" => $this->input->post('perencanaan3c_7', true)
+            "usulan_pengadaan" => $this->input->post('perencanaan3c_7', true),
+            "input_by" => $this->session->userdata('kode'),
 
         ];
-        $this->db->insert('lokasi_puskesmas', $data);
+        var_dump($data);
+        echo "<br><br>";
+        var_dump($this->input->post());
+        // $this->db->insert('lokasi_puskesmas', $data);
     }
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('lokasi_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('lokasi_puskesmas', ['kode' => $kode])->row_array();
     }
     public function check_puskesmas($kab_kota)
     {
