@@ -6,7 +6,15 @@
         <h2 class="heading"><strong class="text-primary">Perencanaan </strong> Puskesmas</h2>
       </div>
     </div>
-    <form style="padding:20px;">
+    <?php if ($data) {
+      $link = '';
+      $button = 'Simpan Edit';
+    } else {
+      $link = base_url('Perencanaan_Puskesmas/tambah');
+      $button = 'Simpan';
+    }
+    ?>
+    <form style="padding:20px;" action="<?= $link; ?>" method="POST">
       <div class="form-group">
         <label for="exampleFormControlInput1"><strong>1. Perencanaan Puskesmas berdasarkan analisis masalah kesehatan untuk memenuhi kebutuhan & harapan masyarakat:</strong> </label><br>
         <label for="exampleFormControlInput1" style="font-size:14px;">KRITERIA:</label><br>

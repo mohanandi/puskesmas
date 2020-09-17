@@ -9,10 +9,13 @@ class Perencanaan_Puskesmas extends CI_Controller
         $this->load->model('PerencanaanPuskesmas_Model');
         is_logged_in();
     }
+
     public function index()
     {
         $data['judul'] = 'Perencanaan Puskesmas';
         $data['table'] = 'perencanaan_puskesmas';
+        $data['link'] = 'Perencanaan_Puskesmas';
+        $data['fungsi'] = 'perencanaan_puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['puskesmas'] = $this->PerencanaanPuskesmas_Model->check_puskesmas($data['user']['kab_kota']);
         $this->load->view('templates/kab_kota/head');

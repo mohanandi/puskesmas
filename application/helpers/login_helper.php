@@ -56,7 +56,7 @@ function is_terisi($data, $name)
     endif;
 }
 
-function hitung_ppkp($table, $kode)
+function ppkp($table, $kode)
 {
     $ci = get_instance();
     $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();

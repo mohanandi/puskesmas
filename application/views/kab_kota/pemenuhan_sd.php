@@ -5,10 +5,16 @@
         <span class="subheading">Form Menu</span>
         <h2 class="heading"><strong class="text-primary">Pemenuhan Sumber Daya </strong> Puskesmas</h2>
       </div>
-
     </div>
-    <?= $kode_puskesmas; ?>
-    <form style="padding:20px;" method="POST" action="<?= base_url('Pemenuhan_SD/tambah'); ?>">
+    <?php if ($data) {
+      $link = '';
+      $button = 'Simpan Edit';
+    } else {
+      $link = base_url('Pemenuhan_SD/tambah');
+      $button = 'Simpan';
+    }
+    ?>
+    <form style="padding:20px;" method="POST" action="<?= $link; ?>">
       <div class="form-group">
         <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
@@ -159,7 +165,7 @@
           </select>
           <?= form_error('pemenuhan8', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
-      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
 </div>

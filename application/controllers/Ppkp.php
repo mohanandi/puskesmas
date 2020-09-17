@@ -14,6 +14,7 @@ class Ppkp extends CI_Controller
         $data['judul'] = 'Penggerakan dan Pelaksanaan Kegiatan Puskesmas';
         $data['table'] = 'penggerakan_dan_pelaksanaan_kegiatan_puskesmas';
         $data['link'] = 'Ppkp';
+        $data['fungsi'] = 'Ppkp';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['puskesmas'] = $this->Ppkp_Model->check_puskesmas($data['user']['kab_kota']);
         $this->load->view('templates/kab_kota/head');

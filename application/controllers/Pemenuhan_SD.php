@@ -13,6 +13,8 @@ class Pemenuhan_SD extends CI_Controller
     {
         $data['judul'] = 'Pemenuhan Sumber Daya Puskesma';
         $data['table'] = 'pemenuhan_sdm_puskesmas';
+        $data['link'] = 'Pemenuhan_SD';
+        $data['fungsi'] = 'pemenuhan_sd';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['puskesmas'] = $this->PemenuhanSD_Model->check_puskesmas($data['user']['kab_kota']);
         $this->load->view('templates/kab_kota/head');
@@ -36,7 +38,7 @@ class Pemenuhan_SD extends CI_Controller
 
     public function tambah()
     {
-        $this->form_validation->set_rules('kode_puskesmas', '', 'required');
+        $this->form_validation->set_rules('kode_puskesmas', '', 'trim|required');
         $this->form_validation->set_rules('pemenuhan1', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('pemenuhan2', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('pemenuhan3', '', 'trim|in_list[1,2,3]');
@@ -50,15 +52,34 @@ class Pemenuhan_SD extends CI_Controller
             $this->data($this->input->post('kode_puskesmas'));
         } else {
             $this->PemenuhanSD_Model->tambahData();
-            // $this->session->set_flashdata('flash', 'Ditambahkan');
-            // redirect('Pemenuhan_SD');
+            $this->session->set_flashdata('flash', 'Ditambahkan');
+            redirect('Pemenuhan_SD');
         }
     }
-    public function ubah()
+
+    public function ubah($kode)
     {
-        $data['data'] = $this->PemenuhanSD_Model->check();
-        $this->load->view('templates/puskesmas/head');
-        $this->load->view('puskesmas/organoisasi_manajemen', $data);
-        $this->load->view('templates/puskesmas/foot');
+        $data['judul'] = 'Edit Pemenuhan Sumber Daya Puskesmas';
+        $data['data'] = $this->PemenuhanSD_Model->check($kode);
+        $data['kode_puskesmas'] = $kode;
+        $this->form_validation->set_rules('kode_puskesmas', '', 'trim|required');
+        $this->form_validation->set_rules('pemenuhan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan2', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan3', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan4', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan6', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan7', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemenuhan8', '', 'trim|in_list[1,2,3]');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/kab_kota/head', $data);
+            $this->load->view('kab_kota/pemenuhan_sd', $data);
+            $this->load->view('templates/kab_kota/foot');
+        } else {
+            $this->PemenuhanSD_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('Pemenuhan_SD');
+        }
     }
 }
