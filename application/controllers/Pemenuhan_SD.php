@@ -36,6 +36,7 @@ class Pemenuhan_SD extends CI_Controller
 
     public function tambah()
     {
+        $this->form_validation->set_rules('kode_puskesmas', '', 'required');
         $this->form_validation->set_rules('pemenuhan1', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('pemenuhan2', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('pemenuhan3', '', 'trim|in_list[1,2,3]');
