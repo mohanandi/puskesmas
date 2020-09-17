@@ -7,13 +7,17 @@
       </div>
 
     </div>
+    <?= $kode_puskesmas; ?>
     <form style="padding:20px;" method="POST" action="<?= base_url('Pemenuhan_SD/tambah'); ?>">
       <div class="form-group">
         <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-
-        </input type="hidden" value="<?= $kode_puskesmas; ?>" name="kode_puskesmas" id="kode_puskesmas">
+        <?php if ($kode_puskesmas) : ?>
+          <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
+        <?php else : ?>
+          <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
+        <?php endif; ?>
         <select class="form-control" name="pemenuhan1" id="pemenuhan1">
           <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
           <option value="1">≥ 80%</option>
