@@ -101,7 +101,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Status IKS Puskesmas Terakhir, Sebutkan Tahun ...</label>
-        <input type="text" class="form-control" value="<?= set_value('penilaian10') ?>" placeholder="tahun" name="penilaian10" id="penilaian10">
+        <input type="text" class="form-control" value="<?= set_value('penilaian11') ?>" placeholder="tahun" name="penilaian11" id="penilaian11">
         <?= form_error('penilaian10', '<small class="text-danger pl-3">', '</small>'); ?>
         <select class="form-control" name="penilaian12" id="penilaian12">
           <?php is_terisi($data['status_iks'], set_value('penilaian12')); ?>
