@@ -206,11 +206,11 @@ function perencanaan_puskesmas($table, $kode)
     } else if ($data['berita_acara'] == 3) {
         $nilai11 = 0;
     }
-    if ($data[' laporan_penanggung '] == 1) {
+    if ($data['laporan_penanggung'] == 1) {
         $nilai12 = 10;
-    } else if ($data[' laporan_penanggung '] == 2) {
+    } else if ($data['laporan_penanggung'] == 2) {
         $nilai12 = 5;
-    } else if ($data[' laporan_penanggung '] == 3) {
+    } else if ($data['laporan_penanggung'] == 3) {
         $nilai12 = 0;
     }
     if ($data['laporan_lokakarya'] == 1) {

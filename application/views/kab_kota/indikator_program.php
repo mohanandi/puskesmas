@@ -6,10 +6,20 @@
                 <h2 class="heading"><strong class="text-primary">Indikator Program</strong></h2>
             </div>
         </div>
-
-
-
-        <form style=" ; padding:20px;">
+        <?php if ($data) {
+            $link = '';
+            $button = 'Simpan Edit';
+        } else {
+            $link = base_url('Indikator_Program/tambah');
+            $button = 'Simpan';
+        }
+        ?>
+        <form style=" padding:20px;" method="POST" action="<?= $link; ?>">
+            <?php if ($kode_puskesmas) : ?>
+                <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
+            <?php else : ?>
+                <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
+            <?php endif; ?>
             <div class="form-group">
                 <label for="exampleFormControlInput1"><strong>VIII.A. KIA</strong></label><br>
                 <label for="exampleFormControlInput1"><strong>1. Ibu hamil mendapatkan pelayanan antenatal sesuai standar DO:</strong><br> Pelayanan antenatal sesuai standar yaitu ibu hamil yang mendapatkan pelayanan paling sedikit 4 kali selama kehamilannya dengan distribusi waktu yaitu 1 kali pada trimester ke-1, 1 kali pada trimester ke-2, dan 2 kali pada trimester ke-3 <a href="#" onclick="toggle_visibility('foo28');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -319,7 +329,7 @@
                     </select>
                     <?= form_error('cakupan3e', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
+            <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
         </form>
-        <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
-        <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
     </div>
+</div>

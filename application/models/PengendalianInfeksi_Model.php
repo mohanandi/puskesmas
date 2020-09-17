@@ -6,24 +6,52 @@ class PengendalianInfeksi_Model extends CI_Model
     public function tambahData()
     {
         $data = [
-            "kode" => $this->session->userdata('kode'),
-            "cuci_tangan" => $this->input->post('lokasi1', true),
-            "apd" => $this->input->post('lokasi2', true),
-            "dekontaminasi" => $this->input->post('lokasi3', true),
-            "kesehatan_lingkungan" => $this->input->post('lokasi4', true),
-            "limbah_medis" => $this->input->post('lokasi5', true),
-            "perlindungan_petugas" => $this->input->post('lokasi6', true),
-            "pemisahan_pasien" => $this->input->post('lokasi7', true),
-            "etika_batuk" => $this->input->post('lokasi8', true),
-            "praktik_menyuntik" => $this->input->post('lokasi9', true),
-            "kewaspadaan_kontak" => $this->input->post('lokasi10', true),
-            "kewaspadaan_droplet" => $this->input->post('lokasi11', true),
-            "air_borne" => $this->input->post('lokasi12')
+            "kode" => $this->input->post('kode_puskesmas'),
+            "cuci_tangan" => $this->input->post('pencegahan1a', true),
+            "apd" => $this->input->post('pencegahan2a', true),
+            "dekontaminasi" => $this->input->post('pencegahan3a', true),
+            "kesehatan_lingkungan" => $this->input->post('pencegahan4a', true),
+            "limbah_medis" => $this->input->post('pencegahan5a', true),
+            "perlindungan_petugas" => $this->input->post('pencegahan6a', true),
+            "pemisahan_pasien" => $this->input->post('pencegahan7a', true),
+            "etika_batuk" => $this->input->post('pencegahan8a', true),
+            "praktik_menyuntik" => $this->input->post('pencegahan9a', true),
+            "kewaspadaan_kontak" => $this->input->post('pencegahan1b', true),
+            "kewaspadaan_droplet" => $this->input->post('pencegahan2b', true),
+            "air_borne" => $this->input->post('pencegahan3b'),
+            "input_by" => $this->session->userdata('kode')
         ];
-        $this->db->insert('lokasi_puskesmas', $data);
+        $this->db->insert('pencegahan_dan_pengendalian_infeksi', $data);
     }
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('lokasi_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $kode])->row_array();
+    }
+    public function check_puskesmas($kab_kota)
+    {
+        $this->db->where('kab_kota', $kab_kota);
+        $this->db->where('role_id', '3');
+        return $this->db->get('user')->result_array();
+    }
+
+    public function ubahData()
+    {
+        $data = [
+            "cuci_tangan" => $this->input->post('pencegahan1a', true),
+            "apd" => $this->input->post('pencegahan2a', true),
+            "dekontaminasi" => $this->input->post('pencegahan3a', true),
+            "kesehatan_lingkungan" => $this->input->post('pencegahan4a', true),
+            "limbah_medis" => $this->input->post('pencegahan5a', true),
+            "perlindungan_petugas" => $this->input->post('pencegahan6a', true),
+            "pemisahan_pasien" => $this->input->post('pencegahan7a', true),
+            "etika_batuk" => $this->input->post('pencegahan8a', true),
+            "praktik_menyuntik" => $this->input->post('pencegahan9a', true),
+            "kewaspadaan_kontak" => $this->input->post('pencegahan1b', true),
+            "kewaspadaan_droplet" => $this->input->post('pencegahan2b', true),
+            "air_borne" => $this->input->post('pencegahan3b'),
+            "input_by" => $this->session->userdata('kode')
+        ];
+        $this->db->where('kode', $this->input->post('kode_puskesmas'));
+        $this->db->update('pencegahan_dan_pengendalian_infeksi', $data);
     }
 }
