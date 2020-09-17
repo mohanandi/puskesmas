@@ -554,8 +554,6 @@ function kewaspadaan_dini($table, $kode)
     if ($data['analisa_trend'] == 1) {
         $nilai3 = 10;
     } else if ($data['analisa_trend'] == 2) {
-        $nilai3 = 5;
-    } else if ($data['analisa_trend'] == 3) {
         $nilai3 = 0;
     }
 
