@@ -6,14 +6,7 @@
         <h2 class="heading"><strong class="text-primary">Perencanaan </strong> Puskesmas</h2>
       </div>
     </div>
-
-
-
     <form style="padding:20px;">
-      <div class="alert alert-success" role="alert">
-        Data Berhasil dimasukan !
-      </div>
-
       <div class="form-group">
         <label for="exampleFormControlInput1"><strong>1. Perencanaan Puskesmas berdasarkan analisis masalah kesehatan untuk memenuhi kebutuhan & harapan masyarakat:</strong> </label><br>
         <label for="exampleFormControlInput1" style="font-size:14px;">KRITERIA:</label><br>
@@ -182,8 +175,7 @@
           <option value="<?= $data['usulan_pengadaan']; ?>" selected><?= $data['usulan_pengadaan']; ?></option>
         </select>
       </div>
+      <a class="btn float-right btn-danger" href="<?= base_url() ?>Perencanaan_Puskesmas/ubah/<?= $data['kode']; ?>" style="color: white; margin-left:10px; border-radius:5px;">Edit</a>
     </form>
-    <br>
-    <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; border-radius:5px;">Masukan</a>
-    <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; border-radius:5px;">Hapus</a>
   </div>
+</div>

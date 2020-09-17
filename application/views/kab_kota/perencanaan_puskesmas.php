@@ -15,6 +15,11 @@
     }
     ?>
     <form style="padding:20px;" action="<?= $link; ?>" method="POST">
+      <?php if ($kode_puskesmas) : ?>
+        <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
+      <?php else : ?>
+        <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
+      <?php endif; ?>
       <div class="form-group">
         <label for="exampleFormControlInput1"><strong>1. Perencanaan Puskesmas berdasarkan analisis masalah kesehatan untuk memenuhi kebutuhan & harapan masyarakat:</strong> </label><br>
         <label for="exampleFormControlInput1" style="font-size:14px;">KRITERIA:</label><br>

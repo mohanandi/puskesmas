@@ -182,7 +182,7 @@ function pemenuhan_sd($table, $kode)
 //         $nilai8 = 5;
 //     } else if ($data['tabulasi_wawancara'] == 3) {
 //         $nilai8 = 0;
-    
+
 //     if ($data['hasil_smd'] == 1) {
 //         $nilai9 = 10;
 //     } else if ($data['hasil_smd'] == 2) {
@@ -333,54 +333,54 @@ function pemenuhan_sd($table, $kode)
 //     return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6 + $nilai7 + $nilai8 + $nilai9 + $nilai10 + $nilai11 + $nilai12 + $nilai13 + $nilai14 + $nilai15 + $nilai16 + $nilai17 + $nilai18 + $nilai19 + $nilai20 + $nilai21 + $nilai22 + $nilai23 + $nilai24 + $nilai25 + $nilai26 + $nilai27 + $nilai28 + $nilai29;
 // }
 
-// function ppkp($table, $kode)
-// {
-//     $ci = get_instance();
-//     $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
-//     if ($data['dipandu_jelas'] == 1) {
-//         $nilai1 = 10;
-//     } else if ($data['dipandu_jelas'] == 2) {
-//         $nilai1 = 5;
-//     } else if ($data['dipandu_jelas'] == 3) {
-//         $nilai1 = 0;
-//     }
-//     if ($data['jadwal_jelas'] == 1) {
-//         $nilai2 = 10;
-//     } else if ($data['jadwal_jelas'] == 2) {
-//         $nilai2 = 5;
-//     } else if ($data['jadwal_jelas'] == 3) {
-//         $nilai2 = 0;
-//     }
-//     if ($data['lintas_program'] == 1) {
-//         $nilai3 = 10;
-//     } else if ($data['lintas_program'] == 2) {
-//         $nilai3 = 5;
-//     } else if ($data['lintas_program'] == 3) {
-//         $nilai3 = 0;
-//     }
-//     if ($data['dimonitor_kepala'] == 1) {
-//         $nilai4 = 10;
-//     } else if ($data['dimonitor_kepala'] == 2) {
-//         $nilai4 = 5;
-//     } else if ($data['dimonitor_kepala'] == 3) {
-//         $nilai4 = 0;
-//     }
-//     if ($data['masukan_pelanggan'] == 1) {
-//         $nilai5 = 10;
-//     } else if ($data['masukan_pelanggan'] == 2) {
-//         $nilai5 = 5;
-//     } else if ($data['masukan_pelanggan'] == 3) {
-//         $nilai5 = 0;
-//     }
-//     if ($data['pelayanan_pelanggan'] == 1) {
-//         $nilai6 = 10;
-//     } else if ($data['pelayanan_pelanggan'] == 2) {
-//         $nilai6 = 5;
-//     } else if ($data['pelayanan_pelanggan'] == 3) {
-//         $nilai6 = 0;
-//     }
-//     return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
-// }
+function ppkp($table, $kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
+    if ($data['dipandu_jelas'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['dipandu_jelas'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['dipandu_jelas'] == 3) {
+        $nilai1 = 0;
+    }
+    if ($data['jadwal_jelas'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['jadwal_jelas'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['jadwal_jelas'] == 3) {
+        $nilai2 = 0;
+    }
+    if ($data['lintas_program'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['lintas_program'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['lintas_program'] == 3) {
+        $nilai3 = 0;
+    }
+    if ($data['dimonitor_kepala'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['dimonitor_kepala'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['dimonitor_kepala'] == 3) {
+        $nilai4 = 0;
+    }
+    if ($data['masukan_pelanggan'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['masukan_pelanggan'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['masukan_pelanggan'] == 3) {
+        $nilai5 = 0;
+    }
+    if ($data['pelayanan_pelanggan'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pelayanan_pelanggan'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pelayanan_pelanggan'] == 3) {
+        $nilai6 = 0;
+    }
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6;
+}
 
 // function pppp($table, $kode)
 // {

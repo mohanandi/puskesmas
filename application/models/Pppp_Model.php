@@ -13,8 +13,14 @@ class Pppp_Model extends CI_Model
         ];
         $this->db->insert('lokasi_puskesmas', $data);
     }
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('lokasi_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $kode])->row_array();
+    }
+    public function check_puskesmas($kab_kota)
+    {
+        $this->db->where('kab_kota', $kab_kota);
+        $this->db->where('role_id', '3');
+        return $this->db->get('user')->result_array();
     }
 }
