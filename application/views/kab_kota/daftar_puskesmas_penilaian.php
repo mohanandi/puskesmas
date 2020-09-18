@@ -39,7 +39,6 @@
 
 
 
-
                         <?php if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $a['kode']])->row_array()) : ?>
                             <td>TERISI</td>
                         <?php else : ?>

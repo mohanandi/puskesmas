@@ -7,9 +7,15 @@
       </div>
     </div>
 
-
-
-    <form method="POST" action="<?= base_url(''); ?>" style=" padding:20px;">
+    <?php if ($data) {
+      $link = '';
+      $button = 'Simpan Edit';
+    } else {
+      $link = base_url('Penilaian_Puskesmas/tambah');
+      $button = 'Simpan';
+    }
+    ?>
+    <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
       <div class="form-group">
         <label for="exampleFormControlInput1">Melakukan penilaian mandiri (self evaluation) atas ha-sil kinerja & mutu layanan kesehatan yang tercantum dalam Penilaian Kinerja Puskesmas</label>
         <select class="form-control" name="penilaian1" id="penilaian1">
@@ -107,9 +113,9 @@
           <?php is_terisi($data['status_iks'], set_value('penilaian12')); ?>
           <option value="1"> >0,800</option>
           <option value="2"> 0,500-0,800</option>
-          <option value="3">
-            < 0,500 </option> </select> <?= form_error('penilaian12', '<small class="text-danger pl-3">', '</small>'); ?> </div> <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
+          <option value="3"> 0,500 </option>
+        </select> <?= form_error('penilaian12', '<small class="text-danger pl-3">', '</small>'); ?> </div>
+      <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
-</div>
 </div>
