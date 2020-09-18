@@ -67,7 +67,7 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Pelaksanaan kegiatan mendapatkan dukungan dari lintas program, lintas sektor dan masyarakat sasaran di Puskesmas <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
-
+        <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Memenuhi semua kriteria nilai 10 <br>
           2. Bila salah satu kriteria tidak terpenuhi nilai 5 <br>
@@ -87,6 +87,7 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Pelaksanaan kegiatan di Puskesmas dimonitor oleh Kepala Puskesmas dan penanggung jawab terkait. <a href="##" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
+        <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Memenuhi semua kriteria nilai 10 <br>
           2. Bila salah satu kriteria tidak terpenuhi nilai 5 <br>
@@ -104,6 +105,7 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Terdapat upaya Puskesmas untuk memperoleh masukan dari pelanggan/sasaran mengenai kualitas dan kepuasan terhadap pelaksanaan kegiatan <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
+        <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Memenuhi semua kriteria nilai 10 <br>
           2. Bila salah satu kriteria tidak terpenuhi nilai 5 <br>
@@ -121,6 +123,7 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Terdapat upaya perbaikan yang dilaksanakan oleh Puskesmas terhadap masalah pelayanan yg dianggap penting atau prioritas untuk diperbaiki berdasarkan masukan pengguna layanan/ pelanggan/dinas kesehatan kabupaten/kota<a href="##" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
+        <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Memenuhi semua kriteria nilai 10 <br>
           2. Bila salah satu kriteria tidak terpenuhi nilai 5 <br>
