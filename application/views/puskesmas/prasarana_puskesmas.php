@@ -337,6 +337,7 @@
         <?php else : ?>
           <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="prasarana4_4" id="prasarana4_4" value="<?= set_value('prasarana4_4'); ?>">
         <?php endif; ?>
+        <?= form_error('prasarana4_4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Listrik tersedia 24 jam dalam sehari</label>
