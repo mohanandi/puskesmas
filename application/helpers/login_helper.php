@@ -600,11 +600,11 @@ function indikator_program($table, $kode)
         $nilai5 = 0;
     }
 
-    if ($data[' pencegahan1'] == 1) {
+    if ($data['pencegahan1'] == 1) {
         $nilai6 = 10;
-    } else if ($data[' pencegahan1'] == 2) {
+    } else if ($data['pencegahan1'] == 2) {
         $nilai6 = 5;
-    } else if ($data[' pencegahan1'] == 3) {
+    } else if ($data['pencegahan1'] == 3) {
         $nilai6 = 0;
     }
     if ($data['pencegahan2'] == 1) {
