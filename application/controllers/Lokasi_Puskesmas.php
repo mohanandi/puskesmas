@@ -13,12 +13,11 @@ class Lokasi_Puskesmas extends CI_Controller
     {
         $data['judul'] = 'Lokasi Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $check = $this->LokasiPuskesmas_Model->check();
+        $data['data'] = $this->LokasiPuskesmas_Model->check();
         $this->load->view('templates/puskesmas/head', $data);
-        if ($check == NULL) {
+        if ($data['data'] == NULL) {
             $this->load->view('puskesmas/lokasi_puskesmas', $data);
         } else {
-            $data['data'] = $this->LokasiPuskesmas_Model->check();
             $this->load->view('puskesmas/lokasi_puskesmas_hasil', $data);
         }
         $this->load->view('templates/puskesmas/foot');
@@ -79,7 +78,7 @@ class Lokasi_Puskesmas extends CI_Controller
         } else {
             $this->LokasiPuskesmas_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('lokasi_puskesmas');
+            redirect('Lokasi_Puskesmas');
         }
     }
 }
