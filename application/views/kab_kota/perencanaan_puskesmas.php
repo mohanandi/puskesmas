@@ -167,6 +167,7 @@
         <?= form_error('perencanaan1_d2c', '<small class="text-danger pl-3">', '</small>'); ?>
         <br>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">d.3 Ada penyelarasan antara hasil MMD dengan perencanaan Puskesmas dibuktikan dengan draft RUK</label>
+        <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Ada penyelarasan antara hasil MMD dengan perencanaan Puskesmas dibuktikan dengan draft RUK, nilai 10 <br>
@@ -182,6 +183,7 @@
         <?= form_error('perencanaan1_d3', '<small class="text-danger pl-3">', '</small>'); ?>
         <br>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">d.4 Ada Berita Acara/Laporan hasil Musrenbang Desa/Kelurahan yang dilaporkan ke Kepala Puskesmas</label>
+        <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Ada Berita Acara/Laporan hasil Musrenbang Desa/Kelurahan yang dilaporkan ke Kepala Puskesmas, nilai 10 <br>
@@ -242,6 +244,7 @@
         <?= form_error('perencanaan1_d7', '<small class="text-danger pl-3">', '</small>'); ?>
         <br>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">d.8 Hasil lokakarya mini lintas sektor pertama dibahas dlm Musrenbang Kecamatan. </label>
+        <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Ada hasil lokakarya mini lintas sektor pertama yang dibahas dalam Musrenbang Kecamatan, nilai 10 <br>
@@ -272,6 +275,7 @@
         <?= form_error('perencanaan1_d9', '<small class="text-danger pl-3">', '</small>'); ?>
         <br>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">d.10 Draft RUK Thn (N+1) disesuaikan dengan saran Dinkes Kab/kota dan hasil pembahasan Musrenbang Kab/kota, sebagai perbaikan draft RUK. </label>
+        <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Ada revisi draft RUK Tahun (N+ 1) setelah mendapat saran Dinkes Kab/kota dan hasil pembahasan Musrenbang Kab/Kota , nilai 10 <br>
@@ -294,6 +298,7 @@
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">a.3 Ada dukungan administrasi & manajemen untuk kelancaran kinerja Puskesmas </label>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">a.4 Adanya kerjasama & koordinasi untuk keterpaduan/sinergitas kinerja UKP </label>
         <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">a.5 Adanya sistem monitoring evaluasi untuk pemenuhan input, proses, dan output Puskesmas</label>
+        <br>
         <span><strong> Penilaian</strong> </span>
         <br>
         <p style="font-size:12px;">
@@ -382,7 +387,7 @@
         </p>
         <select class="form-control" name="perencanaan3b" id="perencanaan3b">
           <?php is_terisi($data['sdm_abk'], set_value('perencanaan3b')); ?>
-          <option value="1">1K</option>
+          <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
         </select>
@@ -430,7 +435,7 @@
         </p>
         <select class="form-control" name="perencanaan3c_3" id="perencanaan3c_3">
           <?php is_terisi($data['ada_tindak'], set_value('perencanaan3c_3')); ?>
-          <option value="1"> </option>
+          <option value="1">1</option>
           <option value="2">2</option>
         </select>
         <?= form_error('perencanaan3c_3', '<small class="text-danger pl-3">', '</small>'); ?>
