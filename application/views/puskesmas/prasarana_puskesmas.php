@@ -567,8 +567,8 @@
         <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
         <select class="form-control" name="prasarana10_b" id="prasarana10_b">
           <?php is_terisi($data['bila_ram'], set_value('prasarana10_b')); ?>
-          <option value="Ya">Sesuai</option>
-          <option value="Tidak">Tidak Sesuai</option>
+          <option value="Sesuai">Sesuai</option>
+          <option value="Tidak Sesuai">Tidak Sesuai</option>
         </select>
         <?= form_error('prasarana10_b', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 17 Sep 2020 pada 06.05
+-- Waktu pembuatan: 18 Sep 2020 pada 06.26
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -486,8 +486,8 @@ CREATE TABLE `prasarana_puskesmas` (
   `apar_co` varchar(5) NOT NULL,
   `kebisingan_luar` varchar(5) NOT NULL,
   `kebisingan_dlm` varchar(5) NOT NULL,
-  `bila_tangga` varchar(5) NOT NULL,
-  `bila_ram` varchar(5) NOT NULL,
+  `bila_tangga` varchar(50) NOT NULL,
+  `bila_ram` varchar(50) NOT NULL,
   `keliling_unit` varchar(255) NOT NULL,
   `kendaraan_ada` varchar(5) NOT NULL,
   `ambulan_unit` varchar(255) NOT NULL,
