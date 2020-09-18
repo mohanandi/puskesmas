@@ -74,7 +74,7 @@
                                         <div class="row">
 
                                             <ul class="col-md-6" style="list-style: none; padding:10px;">
-                                                <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+                                                <li><a href="<?= base_url('Identitas'); ?>" class="nav-link">Identitas Umum</a></li>
                                                 <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
                                                 <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
                                                 <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
@@ -88,7 +88,7 @@
 
 
                                             <ul class="col-md-6" style="list-style: none; padding:10px;">
-                                                <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+                                                <li><a href="<?= base_url('Identitas'); ?>" class="nav-link">Identitas Umum</a></li>
                                                 <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
                                                 <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
                                                 <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
