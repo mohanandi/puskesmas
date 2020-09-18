@@ -34,7 +34,7 @@
             <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">≤ 3</option>
+            <option value="3"> 3</option>
           </select>
           <?= form_error('pemenuhan1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
@@ -54,7 +54,7 @@
             <?php is_terisi($data['standar_prasarana'], set_value('pemenuhan2')); ?>
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">≤ 3</option>
+            <option value="3"> 3</option>
           </select>
           <?= form_error('pemenuhan2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
@@ -72,7 +72,7 @@
             <?php is_terisi($data['standar_peralatan'], set_value('pemenuhan3')); ?>
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">≤ 3</option>
+            <option value="3"> 3</option>
           </select>
           <?= form_error('pemenuhan3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
@@ -88,7 +88,7 @@
           <?php is_terisi($data['sedia_obat'], set_value('pemenuhan4')); ?>
           <option value="1">1</option>
           <option value="2">2 </option>
-          <option value="3">3 </option>
+          <option value="3"> 3</option>
         </select>
         <?= form_error('pemenuhan4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
@@ -127,7 +127,7 @@
             <?php is_terisi($data['pemenuhan_sdm'], set_value('pemenuhan6')); ?>
             <option value="1">1</option>
             <option value="2">2</option>
-            <option value="3">3</option>
+            <option value="3"> 3</option>
           </select>
           <?= form_error('pemenuhan6', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
