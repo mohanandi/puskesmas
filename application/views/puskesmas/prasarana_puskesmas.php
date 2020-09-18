@@ -382,7 +382,7 @@
           <option value="Ya">Ya</option>
           <option value="Tidak">Tidak</option>
         </select>
-        <?= form_error('prasarana5_a"', '<small class="text-danger pl-3">', '</small>'); ?>
+        <?= form_error('prasarana5_a', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">b. Tersedia telefon seluler khusus Puskesmas</label>
