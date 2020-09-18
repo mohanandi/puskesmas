@@ -84,7 +84,7 @@
                         <td><?= $no++; ?></td>
                         <td><?= $a['nama']; ?></td>
                         <td><?= $total; ?></td>
-                        <td>Detail</td>
+                        <td><a href="<?= base_url(); ?>Daftar_Puskesmas/detail/<?= $a['kode']; ?>">Detail</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

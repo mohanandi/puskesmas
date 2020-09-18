@@ -3,9 +3,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class DaftarPuskesmas_Model extends CI_Model
 {
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('lokasi_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('user', ['kode' => $kode])->row_array();
     }
     public function check_puskesmas($kab_kota)
     {
