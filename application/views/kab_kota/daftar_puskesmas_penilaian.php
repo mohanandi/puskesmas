@@ -26,34 +26,20 @@
                 <?php $no = 1; ?>
                 <?php foreach ($puskesmas as $a) : ?>
                     <tr>
-                        <?php $nilai = $fungsi($table, $data['kode']); ?>
+                        <?php $nilai = pemenuhan_sd('pemenuhan_sdm_puskesmas', $a['kode']); ?>
+                        <?php $nilai = perencanaan_puskesmas('perencanaan_puskesmas', $a['kode']); ?>
+                        <?php $nilai = ppkp('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $a['kode']); ?>
+                        <?php $nilai = pppp('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $a['kode']); ?>
+                        <?php $nilai = mutu('peningkatan_mutu', $a['kode']); ?>
+                        <?php $nilai = mutu('pencegahan_dan_pengendalian_infeksi', $a['kode']); ?>
+                        <?php $nilai = mutu('peningkatan_mutu', $a['kode']); ?>
                         <td><?= $no++; ?></td>
                         <td><?= $a['nama']; ?></td>
-                        <?php if ($this->db->get_where('pemenuhan_sdm_puskesmas', ['kode' => $a['kode']])->row_array()) : ?>
-                            <td>TERISI</td>
-                        <?php else : ?>
-                            <td>BELUM TERISI</td>
-                        <?php endif; ?>
-                        <?php if ($this->db->get_where('perencanaan_puskesmas', ['kode' => $a['kode']])->row_array()) : ?>
-                            <td>TERISI</td>
-                        <?php else : ?>
-                            <td>BELUM TERISI</td>
-                        <?php endif; ?>
-                        <?php if ($this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $a['kode']])->row_array()) : ?>
-                            <td>TERISI</td>
-                        <?php else : ?>
-                            <td>BELUM TERISI</td>
-                        <?php endif; ?>
-                        <?php if ($this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $a['kode']])->row_array()) : ?>
-                            <td>TERISI</td>
-                        <?php else : ?>
-                            <td>BELUM TERISI</td>
-                        <?php endif; ?>
-                        <?php if ($this->db->get_where('peningkatan_mutu', ['kode' => $a['kode']])->row_array()) : ?>
-                            <td>TERISI</td>
-                        <?php else : ?>
-                            <td>BELUM TERISI</td>
-                        <?php endif; ?>
+
+
+
+
+
                         <?php if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $a['kode']])->row_array()) : ?>
                             <td>TERISI</td>
                         <?php else : ?>
