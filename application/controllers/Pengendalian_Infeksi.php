@@ -83,9 +83,7 @@ class Pengendalian_Infeksi extends CI_Controller
         $this->form_validation->set_rules('pencegahan3b', '', 'trim|in_list[1,2,3]');
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/kab_kota/head', $data);
-            $this->load->view('kab_kota/pengendalian_infeksi', $data);
-            $this->load->view('templates/kab_kota/foot');
+            var_dump($this->input->post());
         } else {
             $this->PengendalianInfeksi_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');

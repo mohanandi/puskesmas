@@ -25,4 +25,12 @@ class Daftar_Puskesmas extends CI_Controller
         $this->load->view('kab_kota/daftar_puskesmas_penilaian', $data);
         $this->load->view('templates/kab_kota/foot');
     }
+    public function detai($kode)
+    {
+        $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
+        $data['puskesmas'] = $this->DaftarPuskesmas_Model->check_puskesmas($data['user']['kab_kota']);
+        $this->load->view('templates/kab_kota/head');
+        $this->load->view('kab_kota/daftar_puskesmas_penilaian', $data);
+        $this->load->view('templates/kab_kota/foot');
+    }
 }
