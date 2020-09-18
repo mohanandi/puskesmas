@@ -102,7 +102,7 @@
                                 </li>
 
 
-                                <li><a href="about.html" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
+                                <li><a href="<?= base_url('Auth/logout') ?>" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
 
 
 

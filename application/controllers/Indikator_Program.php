@@ -93,7 +93,7 @@ class Indikator_Program extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/kab_kota/head', $data);
-            $this->load->view('kab_kota/kewaspadaan_dini', $data);
+            $this->load->view('kab_kota/indikator_program', $data);
             $this->load->view('templates/kab_kota/foot');
         } else {
             $this->IndikatorProgram_Model->ubahData();

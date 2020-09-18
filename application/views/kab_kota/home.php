@@ -97,7 +97,8 @@
 											</ul>
 										</div>
 									</ul>
-								<li><a href="<?= base_url('table'); ?>" class="nav-link">Daftar Puskesmas</a>
+								<li><a href="<?= base_url('Daftar_Puskesmas'); ?>" class="nav-link">Daftar Puskesmas</a>
+								<li><a href="<?= base_url('Auth/logout') ?>" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
 								</li>
 							</ul>
 						</nav>
