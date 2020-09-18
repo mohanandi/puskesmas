@@ -116,7 +116,7 @@
             3. Tidak ada SOP, nilai 0
             <p id="foo18" style="display:none; font-size:12px; margin-left:20px;">Lihat:<br>1. Ada/tidak ada kebijakan dan SOP dan lainnya <br> 2. Dilaksanakan atau tidak </p>
             <select class="form-control" name="pencegahan6a" id="pencegahan6a">
-              <?php is_terisi($data[' perlindungan_petugas '], set_value('pencegahan6a')); ?>
+              <?php is_terisi($data['perlindungan_petugas'], set_value('pencegahan6a')); ?>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

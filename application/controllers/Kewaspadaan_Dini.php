@@ -71,7 +71,7 @@ class Kewaspadaan_Dini extends CI_Controller
         } else {
             $this->KewaspadaanDini_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('Pppp');
+            redirect('Kewaspadaan_Dini');
         }
     }
 }

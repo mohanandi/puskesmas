@@ -25,7 +25,7 @@ class Pengendalian_Infeksi extends CI_Controller
 
     public function data($kode)
     {
-        $data['judul'] = 'Peningkatan Mutu Puskesmas';
+        $data['judul'] = 'Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['data'] = $this->PengendalianInfeksi_Model->check($kode);
         $data['kode_puskesmas'] = $kode;
@@ -64,7 +64,7 @@ class Pengendalian_Infeksi extends CI_Controller
     public function ubah($kode)
     {
 
-        $data['judul'] = 'Edit Peningkatan Mutu Puskesmas';
+        $data['judul'] = 'Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan';
         $data['data'] = $this->PengendalianInfeksi_Model->check($kode);
         $data['kode_puskesmas'] = $kode;
 
@@ -89,7 +89,7 @@ class Pengendalian_Infeksi extends CI_Controller
         } else {
             $this->PengendalianInfeksi_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('Mutu');
+            redirect('Pengendalian_Infeksi');
         }
     }
 }
