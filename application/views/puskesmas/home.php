@@ -186,21 +186,21 @@
 
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-4">
-                        <a href="form.html" class="service-v1 text-center">
+                        <a href="<?= base_url('Identitas_Puskesmas'); ?>" class="service-v1 text-center">
                             <span class="flaticon-stethoscope"></span>
                             <h3>Identitas Umum</h3>
                             <p>Berisi form tentang identitas umum tentang puskesmas</p>
                         </a>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-4">
-                        <a href="#" class="service-v1 text-center">
+                        <a href="<?= base_url('Pembina_Terpadu'); ?>" class="service-v1 text-center">
                             <span class="flaticon-telephone"></span>
                             <h3>Pembina Terpadu</h3>
                             <p>Berisi identitas pembina terpadu puskesmas dan lain lain</p>
                         </a>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-4">
-                        <a href="#" class="service-v1 text-center">
+                        <a href="<?= base_url('Organisasi_Manajemen'); ?>" class="service-v1 text-center">
                             <span class="flaticon-sphygmomanometer"></span>
                             <h3>Data Umum</h3>
                             <p>Berisi tentang detail puskesmas dari berbagai aspek</p>
