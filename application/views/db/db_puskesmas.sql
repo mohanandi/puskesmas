@@ -507,7 +507,7 @@ CREATE TABLE `prasarana_puskesmas` (
 
 CREATE TABLE `sumber_daya_manusia` (
   `kode` varchar(20) NOT NULL,
-  `kepala` varchar(5) NOT NULL,
+  `kepala` varchar(255) NOT NULL,
   `dokter1` varchar(5) NOT NULL,
   `dokter2` varchar(5) NOT NULL,
   `dokter3` varchar(5) NOT NULL,

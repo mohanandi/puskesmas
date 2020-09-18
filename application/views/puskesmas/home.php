@@ -101,6 +101,8 @@
                                                 <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
                                                 <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
                                                 <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
+                                                <li><a href="<?= base_url('SDM_Puskesmas') ?>" class="nav-link">SDM Puskesmas</a></li>
+                                                <li><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="nav-link">Penilaian Kinerja Puskesmas</a></li>
                                             </ul>
 
                                         </div>
