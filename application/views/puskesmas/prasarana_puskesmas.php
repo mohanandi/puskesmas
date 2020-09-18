@@ -556,8 +556,8 @@
         <label for="exampleFormControlInput1">Ukuran Tinggi Pijakan (15-17) cm; Kemiring-an<600, Lebar Pijakan≥120 cm; Tinggi Hand-rail (65-80) cm; dan Panjang Handrail>30 cm dari batas tangga, ujung berbelok sesuai ketentuan</label>
         <select class="form-control" name="prasarana10_a" id="prasarana10_a">
           <?php is_terisi($data['bila_tangga'], set_value('prasarana10_a')); ?>
-          <option value="Ya">Sesuai</option>
-          <option value="Tidak">Tidak Sesuai</option>
+          <option value="Sesuai">Sesuai</option>
+          <option value="Tidak Sesuai">Tidak Sesuai</option>
         </select>
         <?= form_error('prasarana10_a', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
