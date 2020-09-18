@@ -292,7 +292,7 @@
         <label for="exampleFormControlInput1"><strong>4. SISTEM KELISTRIKAN</strong></label><br>
         <label for="exampleFormControlInput1">Sumber daya listrik utama Puskesmas</label>
         <select class="form-control" name="prasarana4_1" id="prasarana4_1">
-          <?php if ($data['tgl_izin']) : ?>
+          <?php if ($data['listrik_puskesmas']) : ?>
             <option value="<?= $data['listrik_puskesmas'] ?>"><?= $data['listrik_puskesmas'] ?></option>
           <?php else : ?>
             <option value="<?= set_value('prasarana4_1'); ?>"><?= set_value('prasarana4_1'); ?></option>
@@ -567,8 +567,8 @@
         <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
         <select class="form-control" name="prasarana10_b" id="prasarana10_b">
           <?php is_terisi($data['bila_ram'], set_value('prasarana10_b')); ?>
-          <option value="Sesuai">Sesuai</option>
-          <option value="Tidak Sesuai">Tidak Sesuai</option>
+          <option value="Ya">Sesuai</option>
+          <option value="Tidak">Tidak Sesuai</option>
         </select>
         <?= form_error('prasarana10_b', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
