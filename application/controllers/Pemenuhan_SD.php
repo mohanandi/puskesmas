@@ -11,7 +11,7 @@ class Pemenuhan_SD extends CI_Controller
     }
     public function index()
     {
-        $data['judul'] = 'Pemenuhan Sumber Daya Puskesma';
+        $data['judul'] = 'Pemenuhan Sumber Daya Puskesmas';
         $data['table'] = 'pemenuhan_sdm_puskesmas';
         $data['link'] = 'Pemenuhan_SD';
         $data['fungsi'] = 'pemenuhan_sd';
