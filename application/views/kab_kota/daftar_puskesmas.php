@@ -3,7 +3,7 @@
         <div class="row mb-5">
             <div class="col-lg-7 mx-auto text-center">
                 <span class="subheading">Table Menu</span>
-                <h2 class="heading"><strong class="text-primary">Identitas Umum</strong>Puskesmas Percontohan</h2>
+                <h2 class="heading"><strong class="text-primary">Daftar Puskesmas</strong> <?= $user['nama']; ?></h2>
             </div>
         </div>
         <table id="example" class="table table-striped table-bordered" style="width:100%;  text-align: center; vertical-align: middle;">
