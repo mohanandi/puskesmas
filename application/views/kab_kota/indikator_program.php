@@ -34,7 +34,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a1a" id="cakupan_a1a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_a1a')); ?>
+                            <?php is_terisi($data['kia1a'], set_value('cakupan_a1a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -49,7 +49,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a1b" id="cakupan_a1b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia1b'], set_value('cakupan_a1b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -64,7 +64,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a1c" id="cakupan_a1c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia1c'], set_value('cakupan_a1c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -83,7 +83,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a2a" id="cakupan_a2a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia2a'], set_value('cakupan_a2a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -98,7 +98,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a2b" id="cakupan_a2b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia2b'], set_value('cakupan_a2b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -113,7 +113,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a2c" id="cakupan_a2c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia2c'], set_value('cakupan_a2c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -132,7 +132,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a3a" id="cakupan_a3a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia3a'], set_value('cakupan_a3a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -147,7 +147,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a3b" id="cakupan_a3b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia3b'], set_value('cakupan_a3b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -162,7 +162,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_a3c" id="cakupan_a3c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['kia3c'], set_value('cakupan_a3c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -185,7 +185,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_b1a" id="cakupan_b1a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['imunisasi1a'], set_value('cakupan_b1a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -200,7 +200,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_b1b" id="cakupan_b1b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['imunisasi1b'], set_value('cakupan_b1b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -215,7 +215,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_b1c" id="cakupan_b1c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['imunisasi1c'], set_value('cakupan_b1c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -238,7 +238,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_c1a" id="cakupan_c1a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['gizi1a'], set_value('cakupan_c1a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -253,7 +253,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_c1b" id="cakupan_c1b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['gizi1b'], set_value('cakupan_c1b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -268,7 +268,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_c1c" id="cakupan_c1c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['gizi1c'], set_value('cakupan_c1c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -291,7 +291,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d1a" id="cakupan_d1a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan1a'], set_value('cakucakupan_d1apan_')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -306,7 +306,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d1b" id="cakupan_d1b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan1b'], set_value('cakupan_d1b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -321,7 +321,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d1c" id="cakupan_d1c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan1c'], set_value('cakupan_d1c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -340,7 +340,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d2a" id="cakupan_d2a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan2a'], set_value('cakupan_d2a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -355,7 +355,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d2b" id="cakupan_d2b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan2b'], set_value('cakupan_d2b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -370,7 +370,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d2c" id="cakupan_d2c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan2c'], set_value('cakupan_d2c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -389,7 +389,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d3a" id="cakupan_d3a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan3a'], set_value('cakupan_d3a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -404,7 +404,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d3b" id="cakupan_d3b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan3b'], set_value('cakupan_d3b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -419,7 +419,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d3c" id="cakupan_d3c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan3c'], set_value('cakupan_d3c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -438,7 +438,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d4a" id="cakupan_d4a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan4a'], set_value('cakupan_d4a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -453,7 +453,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d4b" id="cakupan_d4b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan4b'], set_value('cakupan_d4b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -468,7 +468,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d4c" id="cakupan_d4c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan4c'], set_value('cakupan_d4c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -487,7 +487,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d5a" id="cakupan_d5a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan5a'], set_value('cakupan_d5a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -502,7 +502,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d5b" id="cakupan_d5b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan5b'], set_value('cakupan_d5b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -517,7 +517,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d5c" id="cakupan_d5c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan5c'], set_value('cakupan_d5c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -536,7 +536,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d6a" id="cakupan_d6a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan6a'], set_value('cakupan_d6a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -551,7 +551,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d6b" id="cakupan_d6b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan6b'], set_value('cakupan_d6b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -566,7 +566,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d6c" id="cakupan_d6c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan6c'], set_value('cakupan_d6c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -585,7 +585,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d7a" id="cakupan_d7a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan7a'], set_value('cakupan_d7a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -600,7 +600,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d7b" id="cakupan_d7b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan7b'], set_value('cakupan_d7b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -615,7 +615,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d7c" id="cakupan_d7c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan7c'], set_value('cakupan_d7c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -634,7 +634,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d8a" id="cakupan_d8a">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan8a'], set_value('cakupan_d8a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -649,7 +649,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d8b" id="cakupan_d8b">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan8b'], set_value('cakupan_d8b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -664,7 +664,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_d8c" id="cakupan_d8c">
-                            <?php is_terisi($data['kia1'], set_value('cakupan_')); ?>
+                            <?php is_terisi($data['pencegahan8c'], set_value('cakupan_d8c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -687,7 +687,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e1a" id="cakupan_e1a">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk1a'], set_value('cakupan_e1a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -702,7 +702,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e1b" id="cakupan_e1b">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk1b'], set_value('cakupan_e1b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -717,7 +717,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e1c" id="cakupan_e1c">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk1c'], set_value('cakupan_e1c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -736,7 +736,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e2a" id="cakupan_e2a">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk2a'], set_value('cakupan_e2a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -751,7 +751,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e2b" id="cakupan_e2b">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk2b'], set_value('cakupan_e2b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -766,7 +766,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e2c" id="cakupan_e2c">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk2c'], set_value('cakupan_e2c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -785,7 +785,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e3a" id="cakupan_e3a">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk3a'], set_value('cakupan_e3a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -800,7 +800,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e3b" id="cakupan_e3b">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk3b'], set_value('cakupan_e3b')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -815,7 +815,7 @@
                             2. Tidak=0
                         </p>
                         <select class="form-control" name="cakupan_e3c" id="cakupan_e3c">
-                            <option selected>Pilih ...</option>
+                            <?php is_terisi($data['pispk3c'], set_value('cakupan_e3c')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
                         </select>
@@ -823,7 +823,7 @@
                     </div>
                 </div>
             </div>
+            <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
         </form>
-        <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
-        <a class="btn float-right btn-danger" href="#" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Hapus</a>
     </div>
+</div>
