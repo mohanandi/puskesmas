@@ -129,8 +129,7 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmtitik6', '', 'trim|required');
         $this->form_validation->set_rules('sdmtitik7', '', 'trim|required');
         if ($this->form_validation->run() == false) {
-            // $this->index();
-            var_dump($this->input->post());
+            $this->index();
         } else {
             $this->SDM_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
@@ -249,9 +248,10 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmtitik7', '', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            $this->load->view('templates/puskesmas/head', $data);
-            $this->load->view('puskesmas/sdm', $data);
-            $this->load->view('templates/puskesmas/foot');
+            // $this->load->view('templates/puskesmas/head', $data);
+            // $this->load->view('puskesmas/sdm', $data);
+            // $this->load->view('templates/puskesmas/foot');
+            var_dump($this->input->post());
         } else {
             $this->SDM_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
