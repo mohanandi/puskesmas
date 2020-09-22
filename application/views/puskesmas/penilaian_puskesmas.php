@@ -155,7 +155,21 @@
           2. Utama<br>
           3. Paripurna
         </p>
-        <input type="text" class="form-control" value="<?= set_value('penilaian9') ?>" placeholder="tahun" name="penilaian9" id="penilaian9">
+        <select class="form-control" name="penilaian9" id="penilaian9">
+          <?php if ($data) : ?>
+            <option value="<?= $data['tahun_akreditasi']; ?>"><?= $data['tahun_akreditasi']; ?></option>
+          <?php else : ?>
+            <option value="<?= set_value('penilaian9'); ?>"><?= set_value('penilaian9'); ?></option>
+          <?php endif; ?>
+          <?php
+          $thn_skr = date('Y');
+          for ($x = $thn_skr; $x >= 1990; $x--) {
+          ?>
+            <option value="<?php echo $x ?>"><?php echo $x ?></option>
+          <?php
+          }
+          ?>
+        </select>
         <?= form_error('penilaian9', '<small class="text-danger pl-3">', '</small>'); ?>
         <select class="form-control" name="penilaian10" id="penilaian10">
           <?php is_terisi($data['status_akreditas'], set_value('penilaian10')); ?>
@@ -168,18 +182,35 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Status IKS Puskesmas Terakhir, Sebutkan Tahun ...</label>
         <br>
-        <span><strong> Penilaian</strong> </span>
+        <span><strong>Penilaian</strong></span>
         <p style="font-size:12px;">
-          1. > 0,800 <br>
+          1. Lebih Besar dari0,800<br>
           2. 0,500-0,800<br>
-          3. < 0,500 </p> <input type="text" class="form-control" value="<?= set_value('penilaian11') ?>" placeholder="tahun" name="penilaian11" id="penilaian11">
-            <?= form_error('penilaian10', '<small class="text-danger pl-3">', '</small>'); ?>
-            <select class="form-control" name="penilaian12" id="penilaian12">
-              <?php is_terisi($data['status_iks'], set_value('penilaian12')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select> <?= form_error('penilaian12', '<small class="text-danger pl-3">', '</small>'); ?>
+          3. Lebih Kecil dari 0,500
+        </p>
+        <select class="form-control" name="penilaian11" id="penilaian11">
+          <?php if ($data) : ?>
+            <option value="<?= $data['tahun_iks']; ?>"><?= $data['tahun_iks']; ?></option>
+          <?php else : ?>
+            <option value="<?= set_value('penilaian11'); ?>"><?= set_value('penilaian11'); ?></option>
+          <?php endif; ?>
+          <?php
+          $thn_skr = date('Y');
+          for ($x = $thn_skr; $x >= 1990; $x--) {
+          ?>
+            <option value="<?php echo $x ?>"><?php echo $x ?></option>
+          <?php
+          }
+          ?>
+        </select>
+        <?= form_error('penilaian10', '<small class="text-danger pl-3">', '</small>'); ?>
+        <select class="form-control" name="penilaian12" id="penilaian12">
+          <?php is_terisi($data['status_iks'], set_value('penilaian12')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select> <?= form_error('penilaian12', '<small class="text-danger pl-3">', '</small>'); ?>
+
       </div>
       <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>

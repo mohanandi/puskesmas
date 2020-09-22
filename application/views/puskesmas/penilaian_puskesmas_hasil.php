@@ -119,6 +119,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Status Akreditasi Puskesmas Terakhir, Sebutkan Tahun ………</label>
+<<<<<<< HEAD
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -129,12 +130,17 @@
         <input type="text" class="form-control" value="<?= $data['tahun_akreditasi']; ?>" placeholder="tahun" name="penilaian9" id="penilaian9">
 
         <select class="form-control" name="penilaian10" id="penilaian10">
+=======
+        <input type="text" class="form-control" value="<?= $data['tahun_akreditasi']; ?>" placeholder="tahun" name="penilaian9" id="penilaian9" readonly>
+        <select class="form-control" name="penilaian10" id="penilaian10" disabled>
+>>>>>>> 2cd86503f5ba052980e1cd8496aff50bfec7c60f
           <option value="<?= $data['status_akreditas']; ?>" selected><?= $data['status_akreditas']; ?></option>
         </select>
 
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Status IKS Puskesmas Terakhir, Sebutkan Tahun ...</label>
+<<<<<<< HEAD
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -144,8 +150,14 @@
             <select class="form-control" name="penilaian12" id="penilaian12">
               <option value="<?= $data['status_iks']; ?>" selected><?= $data['status_iks']; ?></option>
             </select>
+=======
+        <input type="text" class="form-control" value="<?= $data['tahun_iks']; ?>" placeholder="tahun" name="penilaian11" id="penilaian11" readonly>
+        <select class="form-control" name="penilaian12" id="penilaian12" disabled>
+          <option value="<?= $data['status_iks']; ?>" selected><?= $data['status_iks']; ?></option>
+        </select>
+>>>>>>> 2cd86503f5ba052980e1cd8496aff50bfec7c60f
       </div>
-      <a class="btn float-right btn-danger" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Edit</a>
+      <a class="btn float-right btn-danger" href="<?= base_url(); ?>Penilaian_Puskesmas/ubah" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Edit</a>
     </form>
   </div>
 </div>
