@@ -574,7 +574,7 @@ function indikator_program($table, $kode)
         $nilai1b = 0;
     }
     if ($data['kia1c'] == 1) {
-        $nilai1c = 25;
+        $nilai1c = 50;
     } else if ($data['kia1c'] == 2) {
         $nilai1c = 0;
     }
@@ -582,236 +582,370 @@ function indikator_program($table, $kode)
     if ($nilai1 > 80) {
         $total1 = 10;
     } else if (($nilai1 > 60) and ($nilai1 < 79)) {
-        $nilai1 = 5;
-    } else if ($nilai < 60) {
-        $nilai1 = 0;
+        $total1 = 5;
+    } else if ($nilai1 < 60) {
+        $total1 = 0;
     }
 
     if ($data['kia2a'] == 1) {
-        $nilai4 = 25;
+        $nilai2a = 25;
     } else if ($data['kia2a'] == 2) {
-        $nilai4 = 0;
+        $nilai2a = 0;
     }
     if ($data['kia2b'] == 1) {
-        $nilai5 = 25;
+        $nilai2b = 25;
     } else if ($data['kia2b'] == 2) {
-        $nilai5 = 0;
+        $nilai2b = 0;
     }
     if ($data['kia2c'] == 1) {
-        $nilai6 = 25;
+        $nilai2c = 50;
     } else if ($data['kia2c'] == 2) {
-        $nilai6 = 0;
+        $nilai2c = 0;
     }
-    if ($data['kia3a'] == 1) {
-        $nilai7 = 25;
-    } else if ($data['kia3a'] == 2) {
-        $nilai7 = 0;
-    }
-    if ($data['kia3b'] == 1) {
-        $nilai8 = 25;
-    } else if ($data['kia3b'] == 2) {
-        $nilai8 = 0;
-    }
-    if ($data['kia3c'] == 1) {
-        $nilai9 = 25;
-    } else if ($data['kia3c'] == 2) {
-        $nilai9 = 0;
-    }
-    if ($data['imunisasi1a'] == 1) {
-        $nilai10 = 25;
-    } else if ($data['imunisasi1a'] == 2) {
-        $nilai10 = 0;
-    }
-    if ($data['imunisasi1b'] == 1) {
-        $nilai11 = 25;
-    } else if ($data['imunisasi1b'] == 2) {
-        $nilai11 = 0;
-    }
-    if ($data['imunisasi1c'] == 1) {
-        $nilai12 = 25;
-    } else if ($data['imunisasi1c'] == 2) {
-        $nilai12 = 0;
-    }
-    if ($data['gizi1a'] == 1) {
-        $nilai13 = 25;
-    } else if ($data['gizi1a'] == 2) {
-        $nilai13 = 0;
-    }
-    if ($data['gizi1b'] == 1) {
-        $nilai14 = 25;
-    } else if ($data['gizi1b'] == 2) {
-        $nilai14 = 0;
-    }
-    if ($data['gizi1c'] == 1) {
-        $nilai15 = 25;
-    } else if ($data['gizi1c'] == 2) {
-        $nilai15 = 0;
-    }
-    if ($data['pencegahan1a'] == 1) {
-        $nilai16 = 25;
-    } else if ($data['pencegahan1a'] == 2) {
-        $nilai16 = 0;
-    }
-    if ($data['pencegahan1b'] == 1) {
-        $nilai17 = 25;
-    } else if ($data['pencegahan1b'] == 2) {
-        $nilai17 = 0;
-    }
-    if ($data['pencegahan1c'] == 1) {
-        $nilai18 = 25;
-    } else if ($data['pencegahan1c'] == 2) {
-        $nilai18 = 0;
-    }
-    if ($data['pencegahan2a'] == 1) {
-        $nilai19 = 25;
-    } else if ($data['pencegahan2a'] == 2) {
-        $nilai19 = 0;
-    }
-    if ($data['pencegahan2b'] == 1) {
-        $nilai20 = 25;
-    } else if ($data['pencegahan2b'] == 2) {
-        $nilai20 = 0;
-    }
-    if ($data['pencegahan2c'] == 1) {
-        $nilai21 = 25;
-    } else if ($data['pencegahan2c'] == 2) {
-        $nilai21 = 0;
-    }
-    if ($data['pencegahan3a'] == 1) {
-        $nilai22 = 25;
-    } else if ($data['pencegahan3a'] == 2) {
-        $nilai22 = 0;
-    }
-    if ($data['pencegahan3b'] == 1) {
-        $nilai23 = 25;
-    } else if ($data['pencegahan3b'] == 2) {
-        $nilai23 = 0;
-    }
-    if ($data['pencegahan3c'] == 1) {
-        $nilai24 = 25;
-    } else if ($data['pencegahan3c'] == 2) {
-        $nilai24 = 0;
-    }
-    if ($data['pencegahan4a'] == 1) {
-        $nilai25 = 25;
-    } else if ($data['pencegahan4a'] == 2) {
-        $nilai25 = 0;
-    }
-    if ($data['pencegahan4b'] == 1) {
-        $nilai26 = 25;
-    } else if ($data['pencegahan4b'] == 2) {
-        $nilai26 = 0;
-    }
-    if ($data['pencegahan4c'] == 1) {
-        $nilai27 = 25;
-    } else if ($data['pencegahan4c'] == 2) {
-        $nilai27 = 0;
-    }
-    if ($data['pencegahan5a'] == 1) {
-        $nilai28 = 25;
-    } else if ($data['pencegahan5a'] == 2) {
-        $nilai28 = 0;
-    }
-    if ($data['pencegahan5b'] == 1) {
-        $nilai29 = 25;
-    } else if ($data['pencegahan5b'] == 2) {
-        $nilai29 = 0;
-    }
-    if ($data['pencegahan5c'] == 1) {
-        $nilai30 = 25;
-    } else if ($data['pencegahan5c'] == 2) {
-        $nilai30 = 0;
-    }
-    if ($data['pencegahan6a'] == 1) {
-        $nilai31 = 25;
-    } else if ($data['pencegahan6a'] == 2) {
-        $nilai31 = 0;
-    }
-    if ($data['pencegahan6b'] == 1) {
-        $nilai32 = 25;
-    } else if ($data['pencegahan6b'] == 2) {
-        $nilai32 = 0;
-    }
-    if ($data['pencegahan6c'] == 1) {
-        $nilai33 = 25;
-    } else if ($data['pencegahan6c'] == 2) {
-        $nilai33 = 0;
-    }
-    if ($data['pencegahan7a'] == 1) {
-        $nilai34 = 25;
-    } else if ($data['pencegahan7a'] == 2) {
-        $nilai34 = 0;
-    }
-    if ($data['pencegahan7b'] == 1) {
-        $nilai35 = 25;
-    } else if ($data['pencegahan7b'] == 2) {
-        $nilai35 = 0;
-    }
-    if ($data['pencegahan7c'] == 1) {
-        $nilai36 = 25;
-    } else if ($data['pencegahan7c'] == 2) {
-        $nilai36 = 0;
-    }
-    if ($data['pencegahan8a'] == 1) {
-        $nilai37 = 25;
-    } else if ($data['pencegahan8a'] == 2) {
-        $nilai37 = 0;
-    }
-    if ($data['pencegahan8b'] == 1) {
-        $nilai38 = 25;
-    } else if ($data['pencegahan8b'] == 2) {
-        $nilai38 = 0;
-    }
-    if ($data['pencegahan8c'] == 1) {
-        $nilai39 = 25;
-    } else if ($data['pencegahan8c'] == 2) {
-        $nilai39 = 0;
-    }
-    if ($data['pispk1a'] == 1) {
-        $nilai40 = 25;
-    } else if ($data['pispk1a'] == 2) {
-        $nilai40 = 0;
-    }
-    if ($data['pispk1b'] == 1) {
-        $nilai41 = 25;
-    } else if ($data['pispk1b'] == 2) {
-        $nilai41 = 0;
-    }
-    if ($data['pispk1c'] == 1) {
-        $nilai42 = 25;
-    } else if ($data['pispk1c'] == 2) {
-        $nilai42 = 0;
-    }
-    if ($data['pispk2a'] == 1) {
-        $nilai43 = 25;
-    } else if ($data['pispk2a'] == 2) {
-        $nilai43 = 0;
-    }
-    if ($data['pispk2b'] == 1) {
-        $nilai44 = 25;
-    } else if ($data['pispk2b'] == 2) {
-        $nilai44 = 0;
-    }
-    if ($data['pispk2c'] == 1) {
-        $nilai45 = 25;
-    } else if ($data['pispk2c'] == 2) {
-        $nilai45 = 0;
-    }
-    if ($data['pispk3a'] == 1) {
-        $nilai46 = 25;
-    } else if ($data['pispk3a'] == 2) {
-        $nilai46 = 0;
-    }
-    if ($data['pispk3b'] == 1) {
-        $nilai47 = 25;
-    } else if ($data['pispk3b'] == 2) {
-        $nilai47 = 0;
-    }
-    if ($data['pispk3c'] == 1) {
-        $nilai48 = 25;
-    } else if ($data['pispk3c'] == 2) {
-        $nilai48 = 0;
+    $nilai2 = $nilai2a + $nilai2b + $nilai2c;
+    if ($nilai2 > 80) {
+        $total2 = 10;
+    } else if (($nilai2 > 60) and ($nilai2 < 79)) {
+        $total2 = 5;
+    } else if ($nilai2 < 60) {
+        $total2 = 0;
     }
 
-    return $total = $total1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6 + $nilai7 + $nilai8 + $nilai9 + $nilai10 + $nilai11 + $nilai12 + $nilai13 + $nilai14 + $nilai15 + $nilai16 + $nilai17 + $nilai18 + $nilai19 + $nilai20 + $nilai21 + $nilai22 + $nilai23 + $nilai24 + $nilai25 + $nilai26 + $nilai27 + $nilai28 + $nilai29 + $nilai30 + $nilai31 + $nilai32 + $nilai33 + $nilai34 + $nilai35 + $nilai36 + $nilai37 + $nilai38 + $nilai39 + $nilai40 + $nilai41 + $nilai42 + $nilai43 + $nilai44 + $nilai45 + $nilai46 + $nilai47 + $nilai48;
+    if ($data['kia3a'] == 1) {
+        $nilai3a = 25;
+    } else if ($data['kia3a'] == 2) {
+        $nilai3a = 0;
+    }
+    if ($data['kia3b'] == 1) {
+        $nilai3b = 25;
+    } else if ($data['kia3b'] == 2) {
+        $nilai3b = 0;
+    }
+    if ($data['kia3c'] == 1) {
+        $nilai3c = 50;
+    } else if ($data['kia3c'] == 2) {
+        $nilai3c = 0;
+    }
+    $nilai3 = $nilai3a + $nilai3b + $nilai3c;
+    if ($nilai3 > 80) {
+        $total3 = 10;
+    } else if (($nilai3 > 60) and ($nilai3 < 79)) {
+        $total3 = 5;
+    } else if ($nilai3 < 60) {
+        $total3 = 0;
+    }
+
+    if ($data['imunisasi1a'] == 1) {
+        $nilai4a = 25;
+    } else if ($data['imunisasi1a'] == 2) {
+        $nilai4a = 0;
+    }
+    if ($data['imunisasi1b'] == 1) {
+        $nilai4b = 25;
+    } else if ($data['imunisasi1b'] == 2) {
+        $nilai4b = 0;
+    }
+    if ($data['imunisasi1c'] == 1) {
+        $nilai4c = 50;
+    } else if ($data['imunisasi1c'] == 2) {
+        $nilai4c = 0;
+    }
+    $nilai4 = $nilai4a + $nilai4b + $nilai4c;
+    if ($nilai4 > 80) {
+        $total4 = 10;
+    } else if (($nilai4 > 60) and ($nilai4 < 79)) {
+        $total4 = 5;
+    } else if ($nilai4 < 60) {
+        $total4 = 0;
+    }
+
+    if ($data['gizi1a'] == 1) {
+        $nilai5a = 25;
+    } else if ($data['gizi1a'] == 2) {
+        $nilai5a = 0;
+    }
+    if ($data['gizi1b'] == 1) {
+        $nilai5b = 25;
+    } else if ($data['gizi1b'] == 2) {
+        $nilai5b = 0;
+    }
+    if ($data['gizi1c'] == 1) {
+        $nilai5c = 50;
+    } else if ($data['gizi1c'] == 2) {
+        $nilai5c = 0;
+    }
+    $nilai5 = $nilai5a + $nilai5b + $nilai5c;
+    if ($nilai5 > 80) {
+        $total5 = 10;
+    } else if (($nilai5 > 60) and ($nilai5 < 79)) {
+        $total5 = 5;
+    } else if ($nilai5 < 60) {
+        $total5 = 0;
+    }
+
+    if ($data['pencegahan1a'] == 1) {
+        $nilai6a = 25;
+    } else if ($data['pencegahan1a'] == 2) {
+        $nilai6a = 0;
+    }
+    if ($data['pencegahan1b'] == 1) {
+        $nilai6b = 25;
+    } else if ($data['pencegahan1b'] == 2) {
+        $nilai6b = 0;
+    }
+    if ($data['pencegahan1c'] == 1) {
+        $nilai6c = 50;
+    } else if ($data['pencegahan1c'] == 2) {
+        $nilai6c = 0;
+    }
+    $nilai6 = $nilai6a + $nilai6b + $nilai6c;
+    if ($nilai6 > 80) {
+        $total6 = 10;
+    } else if (($nilai6 > 60) and ($nilai6 < 79)) {
+        $total6 = 5;
+    } else if ($nilai6 < 60) {
+        $total6 = 0;
+    }
+
+    if ($data['pencegahan2a'] == 1) {
+        $nilai7a = 25;
+    } else if ($data['pencegahan2a'] == 2) {
+        $nilai7a = 0;
+    }
+    if ($data['pencegahan2b'] == 1) {
+        $nilai7b = 25;
+    } else if ($data['pencegahan2b'] == 2) {
+        $nilai7b = 0;
+    }
+    if ($data['pencegahan2c'] == 1) {
+        $nilai7c = 50;
+    } else if ($data['pencegahan2c'] == 2) {
+        $nilai7c = 0;
+    }
+    $nilai7 = $nilai7a + $nilai7b + $nilai7c;
+    if ($nilai7 > 80) {
+        $total7 = 10;
+    } else if (($nilai7 > 60) and ($nilai7 < 79)) {
+        $total7 = 5;
+    } else if ($nilai7 < 60) {
+        $total7 = 0;
+    }
+
+    if ($data['pencegahan3a'] == 1) {
+        $nilai8a = 25;
+    } else if ($data['pencegahan3a'] == 2) {
+        $nilai8a = 0;
+    }
+    if ($data['pencegahan3b'] == 1) {
+        $nilai8b = 25;
+    } else if ($data['pencegahan3b'] == 2) {
+        $nilai8b = 0;
+    }
+    if ($data['pencegahan3c'] == 1) {
+        $nilai8c = 50;
+    } else if ($data['pencegahan3c'] == 2) {
+        $nilai8c = 0;
+    }
+    $nilai8 = $nilai8a + $nilai8b + $nilai8c;
+    if ($nilai8 > 80) {
+        $total8 = 10;
+    } else if (($nilai8 > 60) and ($nilai8 < 79)) {
+        $total8 = 5;
+    } else if ($nilai8 < 60) {
+        $total8 = 0;
+    }
+
+    if ($data['pencegahan4a'] == 1) {
+        $nilai9a = 25;
+    } else if ($data['pencegahan4a'] == 2) {
+        $nilai9a = 0;
+    }
+    if ($data['pencegahan4b'] == 1) {
+        $nilai9b = 25;
+    } else if ($data['pencegahan4b'] == 2) {
+        $nilai9b = 0;
+    }
+    if ($data['pencegahan4c'] == 1) {
+        $nilai9c = 50;
+    } else if ($data['pencegahan4c'] == 2) {
+        $nilai9c = 0;
+    }
+    $nilai9 = $nilai9a + $nilai9b + $nilai9c;
+    if ($nilai9 > 80) {
+        $total9 = 10;
+    } else if (($nilai9 > 60) and ($nilai9 < 79)) {
+        $total9 = 5;
+    } else if ($nilai9 < 60) {
+        $total9 = 0;
+    }
+
+    if ($data['pencegahan5a'] == 1) {
+        $nilai10a = 25;
+    } else if ($data['pencegahan5a'] == 2) {
+        $nilai10a = 0;
+    }
+    if ($data['pencegahan5b'] == 1) {
+        $nilai10b = 25;
+    } else if ($data['pencegahan5b'] == 2) {
+        $nilai10b = 0;
+    }
+    if ($data['pencegahan5c'] == 1) {
+        $nilai10c = 50;
+    } else if ($data['pencegahan5c'] == 2) {
+        $nilai10c = 0;
+    }
+    $nilai10 = $nilai10a + $nilai10b + $nilai10c;
+    if ($nilai10 > 80) {
+        $total10 = 10;
+    } else if (($nilai10 > 60) and ($nilai10 < 79)) {
+        $total10 = 5;
+    } else if ($nilai10 < 60) {
+        $total10 = 0;
+    }
+
+    if ($data['pencegahan6a'] == 1) {
+        $nilai11a = 25;
+    } else if ($data['pencegahan6a'] == 2) {
+        $nilai11a = 0;
+    }
+    if ($data['pencegahan6b'] == 1) {
+        $nilai11b = 25;
+    } else if ($data['pencegahan6b'] == 2) {
+        $nilai11b = 0;
+    }
+    if ($data['pencegahan6c'] == 1) {
+        $nilai11c = 50;
+    } else if ($data['pencegahan6c'] == 2) {
+        $nilai11c = 0;
+    }
+    $nilai11 = $nilai11a + $nilai11b + $nilai11c;
+    if ($nilai11 > 80) {
+        $total11 = 10;
+    } else if (($nilai11 > 60) and ($nilai11 < 79)) {
+        $total11 = 5;
+    } else if ($nilai11 < 60) {
+        $total11 = 0;
+    }
+
+    if ($data['pencegahan7a'] == 1) {
+        $nilai12a = 25;
+    } else if ($data['pencegahan7a'] == 2) {
+        $nilai12a = 0;
+    }
+    if ($data['pencegahan7b'] == 1) {
+        $nilai12b = 25;
+    } else if ($data['pencegahan7b'] == 2) {
+        $nilai12b = 0;
+    }
+    if ($data['pencegahan7c'] == 1) {
+        $nilai12c = 50;
+    } else if ($data['pencegahan7c'] == 2) {
+        $nilai12c = 0;
+    }
+    $nilai12 = $nilai12a + $nilai12b + $nilai12c;
+    if ($nilai12 > 80) {
+        $total12 = 10;
+    } else if (($nilai12 > 60) and ($nilai12 < 79)) {
+        $total12 = 5;
+    } else if ($nilai12 < 60) {
+        $total12 = 0;
+    }
+
+    if ($data['pencegahan8a'] == 1) {
+        $nilai13a = 25;
+    } else if ($data['pencegahan8a'] == 2) {
+        $nilai13a = 0;
+    }
+    if ($data['pencegahan8b'] == 1) {
+        $nilai13b = 25;
+    } else if ($data['pencegahan8b'] == 2) {
+        $nilai13b = 0;
+    }
+    if ($data['pencegahan8c'] == 1) {
+        $nilai13c = 50;
+    } else if ($data['pencegahan8c'] == 2) {
+        $nilai13c = 0;
+    }
+    $nilai13 = $nilai13a + $nilai13b + $nilai13c;
+    if ($nilai13 > 80) {
+        $total13 = 10;
+    } else if (($nilai13 > 60) and ($nilai13 < 79)) {
+        $total13 = 5;
+    } else if ($nilai13 < 60) {
+        $total13 = 0;
+    }
+
+    if ($data['pispk1a'] == 1) {
+        $nilai14a = 25;
+    } else if ($data['pispk1a'] == 2) {
+        $nilai14a = 0;
+    }
+    if ($data['pispk1b'] == 1) {
+        $nilai14b = 25;
+    } else if ($data['pispk1b'] == 2) {
+        $nilai14b = 0;
+    }
+    if ($data['pispk1c'] == 1) {
+        $nilai14c = 50;
+    } else if ($data['pispk1c'] == 2) {
+        $nilai14c = 0;
+    }
+    $nilai14 = $nilai14a + $nilai14b + $nilai14c;
+    if ($nilai14 > 80) {
+        $total14 = 10;
+    } else if (($nilai14 > 60) and ($nilai14 < 79)) {
+        $total14 = 5;
+    } else if ($nilai14 < 60) {
+        $total14 = 0;
+    }
+
+    if ($data['pispk2a'] == 1) {
+        $nilai15a = 25;
+    } else if ($data['pispk2a'] == 2) {
+        $nilai15a = 0;
+    }
+    if ($data['pispk2b'] == 1) {
+        $nilai15b = 25;
+    } else if ($data['pispk2b'] == 2) {
+        $nilai15b = 0;
+    }
+    if ($data['pispk2c'] == 1) {
+        $nilai15c = 50;
+    } else if ($data['pispk2c'] == 2) {
+        $nilai15c = 0;
+    }
+    $nilai15 = $nilai15a + $nilai15b + $nilai15c;
+    if ($nilai15 > 80) {
+        $total15 = 10;
+    } else if (($nilai15 > 60) and ($nilai15 < 79)) {
+        $total15 = 5;
+    } else if ($nilai15 < 60) {
+        $total15 = 0;
+    }
+
+    if ($data['pispk3a'] == 1) {
+        $nilai16a = 25;
+    } else if ($data['pispk3a'] == 2) {
+        $nilai16a = 0;
+    }
+    if ($data['pispk3b'] == 1) {
+        $nilai16b = 25;
+    } else if ($data['pispk3b'] == 2) {
+        $nilai16b = 0;
+    }
+    if ($data['pispk3c'] == 1) {
+        $nilai16c = 50;
+    } else if ($data['pispk3c'] == 2) {
+        $nilai16c = 0;
+    }
+    $nilai16 = $nilai16a + $nilai16b + $nilai16c;
+    if ($nilai16 > 80) {
+        $total16 = 10;
+    } else if (($nilai16 > 60) and ($nilai16 < 79)) {
+        $total16 = 5;
+    } else if ($nilai16 < 60) {
+        $total16 = 0;
+    }
+
+    return $total = $total1 + $total2 + $total3 + $total4 + $total5 + $total6 + $total7 + $total8 + $total9 + $total10 + $total11 + $total12 + $total13 + $total14 + $total15 + $total16;
 }
