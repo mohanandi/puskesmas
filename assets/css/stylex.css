@@ -1327,3 +1327,12 @@ figure figcaption {
 #mm:hover {
 	 background-color: #f6f6f6;
 }
+.label tr td label {
+  display: block;
+}
+
+
+[data-toggle="toggle"] {
+  display: none;
+}
+

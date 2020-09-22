@@ -20,7 +20,7 @@
 <script src="<?= base_url('assets/') ?>js/pagination.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
 
-
+<script src="<?= base_url('assets/') ?>js/provinsi.js"></script>
 <script src="<?= base_url('assets/') ?>js/main.js"></script>
 
 

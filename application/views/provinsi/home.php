@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylox.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 </head>
 
@@ -60,7 +60,7 @@
 
 					<div class="col-3 col-xl-1">
 
-						<div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
+						<div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Pembinaan<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
 					</div>
 
 					<div class="col-13 col-md-10 d-none d-xl-block">
@@ -71,21 +71,8 @@
 								<li class="has-children">
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
-										<li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
-										<li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
-										<li class="has-children">
-											<a href="#">Bab 6</a>
-											<ul class="dropdown">
-												<li><a href="#">Bab 6.1</a></li>
-												<li><a href="#">Bab 6.2</a></li>
-												<li><a href="#">Bab 6.3</a></li>
-											</ul>
-										</li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Daftar Puskesmas</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>	
 									</ul>
 								</li>
 
@@ -108,94 +95,14 @@
 		</header>
 
 
-		<!-- MAIN -->
 
-
-
-		<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
-
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-
-
-  <div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-
-    
-    <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-
-        <div class="row align-items-center">
-
- <div> <img src="images/logo.png" style=" height: 20px; width:20px;"></div>
-
-          <div class="col-3 col-xl-1">
-
-            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
-          </div>
-
-          <div class="col-13 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="has-children">
-                  <a href="services.html" class="nav-link">Menu Cepat</a>
-                  <ul class="dropdown">
-                    <li><a href="#" class="nav-link">Bab 1</a></li>
-                    <li><a href="#" class="nav-link">Bab 2</a></li>
-                    <li><a href="#" class="nav-link">Bab 3</a></li>
-                    <li><a href="#" class="nav-link">Bab 4</a></li>
-                    <li><a href="#" class="nav-link">Bab 5</a></li>
-                    <li class="has-children">
-                      <a href="#">Bab 6</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Bab 6.1</a></li>
-                        <li><a href="#">Bab 6.2</a></li>
-                        <li><a href="#">Bab 6.3</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-
-        
-                <li><a href="about.html" class="nav-link">Info</a></li>
-
-
-
-                
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
-
-        </div>
-      </div>
-
-    </header>
 
 
     <!-- MAIN -->
 
 
 
-    <div class="slide-item overlay" style="background-image: url('images/hero_1.jpg')">
+    <div class="slide-item overlay" style="background-image: url('<?= base_url('assets/') ?>images/hero_1.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
@@ -244,7 +151,7 @@
         <div class="row mb-5">
           <div class="col-lg-7 mx-auto text-center">
             <span class="subheading">Form Menu</span>
-            <h2 class="heading"><strong class="text-primary">Menu Utama</strong> Puskesmas Percontohan User Kabupaten / Kota</h2>
+            <h2 class="heading"><strong class="text-primary">Menu Utama</strong> Pembinaan Puskesmas User Provinsi</h2>
           </div>
         </div>
 
