@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylox.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 </head>
 
@@ -66,36 +66,23 @@
 					<div class="col-13 col-md-10 d-none d-xl-block">
 						<nav class="site-navigation position-relative text-right" role="navigation">
 
-							<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-								<li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
-								<li class="has-children">
-									<a class="nav-link">Menu Cepat</a>
-									<ul class="dropdown">
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
-										<li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
-										<li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
-										<li class="has-children">
-											<a href="#">Bab 6</a>
-											<ul class="dropdown">
-												<li><a href="#">Bab 6.1</a></li>
-												<li><a href="#">Bab 6.2</a></li>
-												<li><a href="#">Bab 6.3</a></li>
-											</ul>
-										</li>
-									</ul>
-								</li>
+						  <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+							<li><a href="<?= base_url('home') ?>" class="nav-link" style="color:black !important;">Home</a></li>
+							<li class="has-children">
+							  <a class="nav-link" style="color:black !important;">Menu Cepat</a>
+							  <ul class="dropdown">
+								<li><a href="<?= base_url('dinas') ?>" class="nav-link">Daftar Puskesmas</a></li>
+								<li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
+							  </ul>
+							</li>
 
 
-								<li><a href="about.html" class="nav-link">Info</a></li>
+							<li><a href="about.html" class="nav-link" style="color:black !important;"> Info</a></li>
 
 
 
 
-							</ul>
+						  </ul>
 						</nav>
 					</div>
 
