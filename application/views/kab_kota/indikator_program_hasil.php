@@ -20,7 +20,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a1a" id="cakupan_a1a">
+            <select class="form-control" name="cakupan_a1a" id="cakupan_a1a" disabled>
               <option value="<?= $data['kia1a']; ?>" selected><?= $data['kia1a']; ?></option>
             </select>
           </div>
@@ -32,7 +32,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a1b" id="cakupan_a1b">
+            <select class="form-control" name="cakupan_a1b" id="cakupan_a1b" disabled>
               <option value="<?= $data['kia1b']; ?>" selected><?= $data['kia1b']; ?></option>
             </select>
           </div>
@@ -44,7 +44,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a1c" id="cakupan_a1c">
+            <select class="form-control" name="cakupan_a1c" id="cakupan_a1c" disabled>
               <option value="<?= $data['kia1c']; ?>" selected><?= $data['kia1c']; ?></option>
             </select>
           </div>
@@ -60,7 +60,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a2a" id="cakupan_a2a">
+            <select class="form-control" name="cakupan_a2a" id="cakupan_a2a" disabled>
               <option value="<?= $data['kia2a']; ?>" selected><?= $data['kia2a']; ?></option>
             </select>
 
@@ -73,7 +73,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a2b" id="cakupan_a2b">
+            <select class="form-control" name="cakupan_a2b" id="cakupan_a2b" disabled>
               <option value="<?= $data['kia2b']; ?>" selected><?= $data['kia2b']; ?></option>
             </select>
 
@@ -86,7 +86,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a2c" id="cakupan_a2c">
+            <select class="form-control" name="cakupan_a2c" id="cakupan_a2c" disabled>
               <option value="<?= $data['kia2c']; ?>" selected><?= $data['kia2c']; ?></option>
             </select>
 
@@ -103,7 +103,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a3a" id="cakupan_a3a">
+            <select class="form-control" name="cakupan_a3a" id="cakupan_a3a" disabled>
               <option value="<?= $data['kia3a']; ?>" selected><?= $data['kia3a']; ?></option>
             </select>
 
@@ -116,7 +116,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a3b" id="cakupan_a3b">
+            <select class="form-control" name="cakupan_a3b" id="cakupan_a3b" disabled>
               <option value="<?= $data['kia3b']; ?>" selected><?= $data['kia3b']; ?></option>
             </select>
 
@@ -129,7 +129,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_a3c" id="cakupan_a3c">
+            <select class="form-control" name="cakupan_a3c" id="cakupan_a3c" disabled>
               <option value="<?= $data['kia3c']; ?>" selected><?= $data['kia3c']; ?></option>
             </select>
 
@@ -150,7 +150,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_b1a" id="cakupan_b1a">
+            <select class="form-control" name="cakupan_b1a" id="cakupan_b1a" disabled>
               <option value="<?= $data['imunisasi1a']; ?>" selected><?= $data['imunisasi1a']; ?></option>
             </select>
 
@@ -163,7 +163,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_b1b" id="cakupan_b1b">
+            <select class="form-control" name="cakupan_b1b" id="cakupan_b1b" disabled>
               <option value="<?= $data['imunisasi1b']; ?>" selected><?= $data['imunisasi1b']; ?></option>
             </select>
 
@@ -176,7 +176,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_b1c" id="cakupan_b1c">
+            <select class="form-control" name="cakupan_b1c" id="cakupan_b1c" disabled>
               <option value="<?= $data['imunisasi1c']; ?>" selected><?= $data['imunisasi1c']; ?></option>
             </select>
 
@@ -197,7 +197,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_c1a" id="cakupan_c1a">
+            <select class="form-control" name="cakupan_c1a" id="cakupan_c1a" disabled>
               <option value="<?= $data['gizi1a']; ?>" selected><?= $data['gizi1a']; ?></option>
             </select>
 
@@ -210,7 +210,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_c1b" id="cakupan_c1b">
+            <select class="form-control" name="cakupan_c1b" id="cakupan_c1b" disabled>
               <option value="<?= $data['gizi1b']; ?>" selected><?= $data['gizi1b']; ?></option>
             </select>
 
@@ -223,7 +223,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_c1c" id="cakupan_c1c">
+            <select class="form-control" name="cakupan_c1c" id="cakupan_c1c" disabled>
               <option value="<?= $data['gizi1c']; ?>" selected><?= $data['gizi1c']; ?></option>
             </select>
 
@@ -244,7 +244,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d1a" id="cakupan_d1a">
+            <select class="form-control" name="cakupan_d1a" id="cakupan_d1a" disabled>
               <option value="<?= $data['pencegahan1a']; ?>" selected><?= $data['pencegahan1a']; ?></option>
             </select>
 
@@ -257,7 +257,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d1b" id="cakupan_d1b">
+            <select class="form-control" name="cakupan_d1b" id="cakupan_d1b" disabled>
               <option value="<?= $data['pencegahan1b']; ?>" selected><?= $data['pencegahan1b']; ?></option>
             </select>
 
@@ -270,7 +270,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d1c" id="cakupan_d1c">
+            <select class="form-control" name="cakupan_d1c" id="cakupan_d1c" disabled>
               <option value="<?= $data['pencegahan1c']; ?>" selected><?= $data['pencegahan1c']; ?></option>
             </select>
 
@@ -287,7 +287,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d2a" id="cakupan_d2a">
+            <select class="form-control" name="cakupan_d2a" id="cakupan_d2a" disabled>
               <option value="<?= $data['pencegahan2a']; ?>" selected><?= $data['pencegahan2a']; ?></option>
             </select>
 
@@ -300,7 +300,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d2b" id="cakupan_d2b">
+            <select class="form-control" name="cakupan_d2b" id="cakupan_d2b" disabled>
               <option value="<?= $data['pencegahan2b']; ?>" selected><?= $data['pencegahan2b']; ?></option>
             </select>
 
@@ -313,7 +313,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d2c" id="cakupan_d2c">
+            <select class="form-control" name="cakupan_d2c" id="cakupan_d2c" disabled>
               <option value="<?= $data['pencegahan2c']; ?>" selected><?= $data['pencegahan2c']; ?></option>
             </select>
 
@@ -330,7 +330,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d3a" id="cakupan_d3a">
+            <select class="form-control" name="cakupan_d3a" id="cakupan_d3a" disabled>
               <option value="<?= $data['pencegahan3a']; ?>" selected><?= $data['pencegahan3a']; ?></option>
             </select>
 
@@ -343,7 +343,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d3b" id="cakupan_d3b">
+            <select class="form-control" name="cakupan_d3b" id="cakupan_d3b" disabled>
               <option value="<?= $data['pencegahan3b']; ?>" selected><?= $data['pencegahan3b']; ?></option>
             </select>
 
@@ -356,7 +356,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d3c" id="cakupan_d3c">
+            <select class="form-control" name="cakupan_d3c" id="cakupan_d3c" disabled>
               <option value="<?= $data['pencegahan3c']; ?>" selected><?= $data['analisa_trend']; ?></option>
             </select>
 
@@ -373,7 +373,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d4a" id="cakupan_d4a">
+            <select class="form-control" name="cakupan_d4a" id="cakupan_d4a" disabled>
               <option value="<?= $data['pencegahan4a']; ?>" selected><?= $data['pencegahan4a']; ?></option>
             </select>
 
@@ -386,7 +386,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d4b" id="cakupan_d4b">
+            <select class="form-control" name="cakupan_d4b" id="cakupan_d4b" disabled>
               <option value="<?= $data['pencegahan4b']; ?>" selected><?= $data['pencegahan4b']; ?></option>
             </select>
 
@@ -399,7 +399,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d4c" id="cakupan_d4c">
+            <select class="form-control" name="cakupan_d4c" id="cakupan_d4c" disabled>
               <option value="<?= $data['pencegahan4c']; ?>" selected><?= $data['pencegahan4c']; ?></option>
             </select>
 
@@ -416,7 +416,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d5a" id="cakupan_d5a">
+            <select class="form-control" name="cakupan_d5a" id="cakupan_d5a" disabled>
               <option value="<?= $data['pencegahan5a']; ?>" selected><?= $data['pencegahan5a']; ?></option>
             </select>
 
@@ -429,7 +429,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d5b" id="cakupan_d5b">
+            <select class="form-control" name="cakupan_d5b" id="cakupan_d5b" disabled>
               <option value="<?= $data['pencegahan5b']; ?>" selected><?= $data['pencegahan5b']; ?></option>
             </select>
 
@@ -442,7 +442,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d5c" id="cakupan_d5c">
+            <select class="form-control" name="cakupan_d5c" id="cakupan_d5c" disabled>
               <option value="<?= $data['pencegahan5c']; ?>" selected><?= $data['pencegahan5c']; ?></option>
             </select>
 
@@ -459,7 +459,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d6a" id="cakupan_d6a">
+            <select class="form-control" name="cakupan_d6a" id="cakupan_d6a" disabled>
               <option value="<?= $data['pencegahan6a']; ?>" selected><?= $data['pencegahan6a']; ?></option>
             </select>
 
@@ -472,7 +472,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d6b" id="cakupan_d6b">
+            <select class="form-control" name="cakupan_d6b" id="cakupan_d6b" disabled>
               <option value="<?= $data['pencegahan6b']; ?>" selected><?= $data['pencegahan6b']; ?></option>
             </select>
 
@@ -485,7 +485,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d6c" id="cakupan_d6c">
+            <select class="form-control" name="cakupan_d6c" id="cakupan_d6c" disabled>
               <option value="<?= $data['pencegahan6c']; ?>" selected><?= $data['pencegahan6c']; ?></option>
             </select>
 
@@ -502,7 +502,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d7a" id="cakupan_d7a">
+            <select class="form-control" name="cakupan_d7a" id="cakupan_d7a" disabled>
               <option value="<?= $data['pencegahan7a']; ?>" selected><?= $data['pencegahan7a']; ?></option>
             </select>
 
@@ -515,7 +515,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d7b" id="cakupan_d7b">
+            <select class="form-control" name="cakupan_d7b" id="cakupan_d7b" disabled>
               <option value="<?= $data['pencegahan7b']; ?>" selected><?= $data['pencegahan7b']; ?></option>
             </select>
 
@@ -528,7 +528,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d7c" id="cakupan_d7c">
+            <select class="form-control" name="cakupan_d7c" id="cakupan_d7c" disabled>
               <option value="<?= $data['pencegahan7c']; ?>" selected><?= $data['pencegahan7c']; ?></option>
             </select>
 
@@ -545,7 +545,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d8a" id="cakupan_d8a">
+            <select class="form-control" name="cakupan_d8a" id="cakupan_d8a" disabled>
               <option value="<?= $data['pencegahan8a']; ?>" selected><?= $data['pencegahan8a']; ?></option>
             </select>
 
@@ -558,7 +558,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d8b" id="cakupan_d8b">
+            <select class="form-control" name="cakupan_d8b" id="cakupan_d8b" disabled>
               <option value="<?= $data['pencegahan8b']; ?>" selected><?= $data['pencegahan8b']; ?></option>
             </select>
           </div>
@@ -570,7 +570,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_d8c" id="cakupan_d8c">
+            <select class="form-control" name="cakupan_d8c" id="cakupan_d8c" disabled>
               <option value="<?= $data['pencegahan8c']; ?>" selected><?= $data['pencegahan8c']; ?></option>
             </select>
 
@@ -591,7 +591,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e1a" id="cakupan_e1a">
+            <select class="form-control" name="cakupan_e1a" id="cakupan_e1a" disabled>
               <option value="<?= $data['pispk1a']; ?>" selected><?= $data['pispk1a']; ?></option>
             </select>
 
@@ -604,7 +604,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e1b" id="cakupan_e1b">
+            <select class="form-control" name="cakupan_e1b" id="cakupan_e1b" disabled>
               <option value="<?= $data['pispk1b']; ?>" selected><?= $data['pispk1b']; ?></option>
             </select>
 
@@ -617,7 +617,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e1c" id="cakupan_e1c">
+            <select class="form-control" name="cakupan_e1c" id="cakupan_e1c" disabled>
               <option value="<?= $data['pispk1c']; ?>" selected><?= $data['pispk1c']; ?></option>
             </select>
 
@@ -634,7 +634,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e2a" id="cakupan_e2a">
+            <select class="form-control" name="cakupan_e2a" id="cakupan_e2a" disabled>
               <option value="<?= $data['pispk2a']; ?>" selected><?= $data['pispk2a']; ?></option>
             </select>
 
@@ -647,7 +647,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e2b" id="cakupan_e2b">
+            <select class="form-control" name="cakupan_e2b" id="cakupan_e2b" disabled>
               <option value="<?= $data['pispk2b']; ?>" selected><?= $data['pispk2b']; ?></option>
             </select>
 
@@ -660,7 +660,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e2c" id="cakupan_e2c">
+            <select class="form-control" name="cakupan_e2c" id="cakupan_e2c" disabled>
               <option value="<?= $data['pispk2c']; ?>" selected><?= $data['pispk2c']; ?></option>
             </select>
 
@@ -677,7 +677,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e3a" id="cakupan_e3a">
+            <select class="form-control" name="cakupan_e3a" id="cakupan_e3a" disabled>
               <option value="<?= $data['pispk3a']; ?>" selected><?= $data['pispk3a']; ?></option>
             </select>
 
@@ -690,7 +690,7 @@
               1. Ya=25%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e3b" id="cakupan_e3b">
+            <select class="form-control" name="cakupan_e3b" id="cakupan_e3b" disabled>
               <option value="<?= $data['pispk3b']; ?>" selected><?= $data['pispk3b']; ?></option>
             </select>
 
@@ -703,7 +703,7 @@
               1. Ya=50%<br>
               2. Tidak=0
             </p>
-            <select class="form-control" name="cakupan_e3c" id="cakupan_e3c">
+            <select class="form-control" name="cakupan_e3c" id="cakupan_e3c" disabled>
               <option value="<?= $data['pispk3c']; ?>" selected><?= $data['pispk3c']; ?></option>
             </select>
 
