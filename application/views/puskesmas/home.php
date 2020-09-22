@@ -23,7 +23,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
-  <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
+  <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylox.css">
   <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 </head>
 
@@ -50,38 +50,15 @@
     </div>
 
 
-    <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+     <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
 
-        <ul class="col-md-6" style="list-style: none; padding:10px;">
-          <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
-          <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-          <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-          <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-          <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-          <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-          <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-          <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-        </ul>
         <div class="row align-items-center">
 
-          <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
-          <ul class="col-md-6" style="list-style: none; padding:10px;">
-            <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
-            <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-            <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-            <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-            <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-            <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-            <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-            <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-            <li><a href="<?= base_url('SDM_Puskesmas') ?>" class="nav-link">SDM Puskesmas</a></li>
-            <li><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="nav-link">Penilaian Kinerja Puskesmas</a></li>
-          </ul>
-          =======
+ <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
+
           <div class="col-3 col-xl-1">
-            >>>>>>> d76112e60f348e6a1be06dd400047b73af53f951
 
             <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
           </div>
@@ -110,12 +87,12 @@
                   </ul>
                 </li>
 
-
-                <li><a href="about.html" class="nav-link">Info</a></li>
-
-
+        
+                <li><a href="about.html" class="nav-link">Logout</a></li>
 
 
+
+                
               </ul>
             </nav>
           </div>
