@@ -27,18 +27,18 @@ class Penilaian_Puskesmas extends CI_Controller
 
     public function tambah()
     {
-        $this->form_validation->set_rules('penilaian1', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian2', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian3', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian4', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian5', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian6', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian7', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian8', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('penilaian1', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian2', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian3', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian4', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian6', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian7', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian8', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('penilaian9', '', 'trim|required');
-        $this->form_validation->set_rules('penilaian10', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('penilaian10', '', 'trim|in_list[1,2,3]');
         $this->form_validation->set_rules('penilaian11', '', 'trim|required');
-        $this->form_validation->set_rules('penilaian12', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('penilaian12', '', 'trim|in_list[1,2,3]');
 
 
         if ($this->form_validation->run() == false) {
@@ -54,18 +54,18 @@ class Penilaian_Puskesmas extends CI_Controller
         $data['judul'] = 'Edit Penilaian Kinerja Puskesmas';
         $data['data'] = $this->PenilaianPuskesmas_Model->check();
 
-        $this->form_validation->set_rules('penilaian1', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian2', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian3', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian4', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian5', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian6', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian7', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian8', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian9', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian10', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian11', '', 'trim|in_list[Ya,Tidak]');
-        $this->form_validation->set_rules('penilaian12', '', 'trim|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('penilaian1', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian2', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian3', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian4', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian6', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian7', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('penilaian8', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian9', '', 'trim|required');
+        $this->form_validation->set_rules('penilaian10', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('penilaian11', '', 'trim|required');
+        $this->form_validation->set_rules('penilaian12', '', 'trim|in_list[1,2,3]');
 
 
         if ($this->form_validation->run() == false) {
