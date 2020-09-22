@@ -564,20 +564,29 @@ function indikator_program($table, $kode)
     $ci = get_instance();
     $data = $ci->db->get_where($table, ['kode' => $kode])->row_array();
     if ($data['kia1a'] == 1) {
-        $nilai1 = 25;
+        $nilai1a = 25;
     } else if ($data['kia1a'] == 2) {
-        $nilai1 = 0;
+        $nilai1a = 0;
     }
     if ($data['kia1b'] == 1) {
-        $nilai2 = 25;
+        $nilai1b = 25;
     } else if ($data['kia1b'] == 2) {
-        $nilai2 = 0;
+        $nilai1b = 0;
     }
     if ($data['kia1c'] == 1) {
-        $nilai3 = 25;
+        $nilai1c = 25;
     } else if ($data['kia1c'] == 2) {
-        $nilai3 = 0;
+        $nilai1c = 0;
     }
+    $nilai1 = $nilai1a + $nilai1b + $nilai1c;
+    if ($nilai1 > 80) {
+        $total1 = 10;
+    } else if (($nilai1 > 60) and ($nilai1 < 79)) {
+        $nilai1 = 5;
+    } else if ($nilai < 60) {
+        $nilai1 = 0;
+    }
+
     if ($data['kia2a'] == 1) {
         $nilai4 = 25;
     } else if ($data['kia2a'] == 2) {
@@ -804,5 +813,5 @@ function indikator_program($table, $kode)
         $nilai48 = 0;
     }
 
-    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6 + $nilai7 + $nilai8 + $nilai9 + $nilai10 + $nilai11 + $nilai12 + $nilai13 + $nilai14 + $nilai15 + $nilai16 + $nilai17 + $nilai18 + $nilai19 + $nilai20 + $nilai21 + $nilai22 + $nilai23 + $nilai24 + $nilai25 + $nilai26 + $nilai27 + $nilai28 + $nilai29 + $nilai30 + $nilai31 + $nilai32 + $nilai33 + $nilai34 + $nilai35 + $nilai36 + $nilai37 + $nilai38 + $nilai39 + $nilai40 + $nilai41 + $nilai42 + $nilai43 + $nilai44 + $nilai45 + $nilai46 + $nilai47 + $nilai48;
+    return $total = $total1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6 + $nilai7 + $nilai8 + $nilai9 + $nilai10 + $nilai11 + $nilai12 + $nilai13 + $nilai14 + $nilai15 + $nilai16 + $nilai17 + $nilai18 + $nilai19 + $nilai20 + $nilai21 + $nilai22 + $nilai23 + $nilai24 + $nilai25 + $nilai26 + $nilai27 + $nilai28 + $nilai29 + $nilai30 + $nilai31 + $nilai32 + $nilai33 + $nilai34 + $nilai35 + $nilai36 + $nilai37 + $nilai38 + $nilai39 + $nilai40 + $nilai41 + $nilai42 + $nilai43 + $nilai44 + $nilai45 + $nilai46 + $nilai47 + $nilai48;
 }
