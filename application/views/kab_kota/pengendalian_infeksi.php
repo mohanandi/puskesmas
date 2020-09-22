@@ -89,145 +89,141 @@
           </select>
           <?= form_error('pencegahan4a', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
-      <span><strong> Penilaian</strong> </span>
-      <p style="font-size:12px;">
-        1. Dilaksanakan sesuai SOP, nilai 10 <br>
-        2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-        3. Tidak ada SOP, nilai 0
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Pengelolaan Limbah Medis (termasuk dalam IKL) <a href="#" onclick="toggle_visibility('foo17');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <p id="foo17" style="display:none; font-size:12px; margin-left:20px;">Lihat bagaimana pengelolaan limbah medis di Puskesmas <br> 1. Ada pemilahan limbah medis dan non medis. <br> 2. Limbah dimasukkan ke warna kantong yang sesuai.<br>3. Limbah padat tajam dimasukkan ke dalam safety box <br>4. Limbah ditempatkan di TPS B3 berijin <br>5. Diolah dengan pengolahan limbah B3 berizin dan atau kerja sama dengan pihak ketiga pengolah limbah B3 berizin<br>Memenuhi semua kriteria, nilai 10.<br>Memenuhi sebagian kriteria (1,3,5) nilai 5<br>Tidak memenuhi semua kriteria, nilai 0 </p>
-          <select class="form-control" name="pencegahan5a" id="pencegahan5a">
-            <?php is_terisi($data['limbah_medis'], set_value('pencegahan5a')); ?>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Pengelolaan Limbah Medis (termasuk dalam IKL) <a href="#" onclick="toggle_visibility('foo17');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <p id="foo17" style="display:none; font-size:12px; margin-left:20px;">Lihat bagaimana pengelolaan limbah medis di Puskesmas <br> 1. Ada pemilahan limbah medis dan non medis. <br> 2. Limbah dimasukkan ke warna kantong yang sesuai.<br>3. Limbah padat tajam dimasukkan ke dalam safety box <br>4. Limbah ditempatkan di TPS B3 berijin <br>5. Diolah dengan pengolahan limbah B3 berizin dan atau kerja sama dengan pihak ketiga pengolah limbah B3 berizin<br>Memenuhi semua kriteria, nilai 10.<br>Memenuhi sebagian kriteria (1,3,5) nilai 5<br>Tidak memenuhi semua kriteria, nilai 0 </p>
+        <select class="form-control" name="pencegahan5a" id="pencegahan5a">
+          <?php is_terisi($data['limbah_medis'], set_value('pencegahan5a')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <?= form_error('pencegahan5a', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Perlindungan Kesehatan Petugas <br>a. Tatalaksana Pajanan<br>b. Tatalaksana Pajanan bahan infeksius ditempat kerja<br>c. Langkah Dasar Tatalaksana Klinis Profilaksis Pasca Pajanan (PPP) HIV Pada kasus kecelakaan kerja<a href="#" onclick="toggle_visibility('foo18');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo18" style="display:none; font-size:12px; margin-left:20px;">Lihat:<br>1. Ada/tidak ada kebijakan dan SOP dan lainnya <br> 2. Dilaksanakan atau tidak </p>
+          <select class="form-control" name="pencegahan6a" id="pencegahan6a">
+            <?php is_terisi($data['perlindungan_petugas'], set_value('pencegahan6a')); ?>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
           </select>
-          <?= form_error('pencegahan5a', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Perlindungan Kesehatan Petugas <br>a. Tatalaksana Pajanan<br>b. Tatalaksana Pajanan bahan infeksius ditempat kerja<br>c. Langkah Dasar Tatalaksana Klinis Profilaksis Pasca Pajanan (PPP) HIV Pada kasus kecelakaan kerja<a href="#" onclick="toggle_visibility('foo18');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo18" style="display:none; font-size:12px; margin-left:20px;">Lihat:<br>1. Ada/tidak ada kebijakan dan SOP dan lainnya <br> 2. Dilaksanakan atau tidak </p>
-            <select class="form-control" name="pencegahan6a" id="pencegahan6a">
-              <?php is_terisi($data['perlindungan_petugas'], set_value('pencegahan6a')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan6a', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Pemisahan Pasien <a href="#" onclick="toggle_visibility('foo19');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo19" style="display:none; font-size:12px; margin-left:20px;">Lihat:<br> 1. Ada Kebijakan, SOP, lainnya, untuk memisahkan pasien infeksius dengan pasien non infeksius, misal ruang TB, ruang isolasi untuk rawat inap<br> 2. Tidak ada kebijakan, SOP, lainnya </p>
-            <select class="form-control" name="pencegahan7a" id="pencegahan7a">
-              <?php is_terisi($data['pemisahan_pasien'], set_value('pencegahan7a')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan7a', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Etika batuk <a href="#" onclick="toggle_visibility('foo20');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo20" style="display:none; font-size:12px; margin-left:20px;">Edukasi etika batuk: <br>• Ada, kebijakan, SOP edukasi etika batuk<br> • Tidak ada</p>
-            <select class="form-control" name="pencegahan8a" id="pencegahan8a">
-              <?php is_terisi($data['etika_batuk'], set_value('pencegahan8a')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan8a', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Praktik Menyuntik yang Aman <a href="#" onclick="toggle_visibility('foo21');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo21" style="display:none; font-size:12px; margin-left:20px;">SOP injeksi</p>
-            <select class="form-control" name="pencegahan9a" id="pencegahan9a">
-              <?php is_terisi($data['praktik_menyuntik'], set_value('pencegahan9a')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan9a', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <hr>
-        <div class="form-group">
-          <label for="exampleFormControlInput1"><strong>VI.B Elemen Penilaian Penerapan Kewaspadaan Berdasarkan Transmisi</strong></label><br>
-          <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Kontak <a href="#" onclick="toggle_visibility('foo22');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo22" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP </p>
-            <select class="form-control" name="pencegahan1b" id="pencegahan1b">
-              <?php is_terisi($data['kewaspadaan_kontak'], set_value('pencegahan1b')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan1b', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Droplet <a href="#" onclick="toggle_visibility('foo23');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo23" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP</p>
-            <select class="form-control" name="pencegahan2b" id="pencegahan2b">
-              <?php is_terisi($data['kewaspadaan_droplet'], set_value('pencegahan2b')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan2b', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Udara (Air-Borne Precautions) <a href="#" onclick="toggle_visibility('foo24');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
-          <br>
-          <span><strong> Penilaian</strong> </span>
-          <p style="font-size:12px;">
-            1. Dilaksanakan sesuai SOP, nilai 10 <br>
-            2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
-            3. Tidak ada SOP, nilai 0
-            <p id="foo24" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP </p>
-            <select class="form-control" name="pencegahan3b" id="pencegahan3b">
-              <?php is_terisi($data['air_borne'], set_value('pencegahan3b')); ?>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-            <?= form_error('pencegahan3b', '<small class="text-danger pl-3">', '</small>'); ?>
-        </div>
-        <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
+          <?= form_error('pencegahan6a', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Pemisahan Pasien <a href="#" onclick="toggle_visibility('foo19');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo19" style="display:none; font-size:12px; margin-left:20px;">Lihat:<br> 1. Ada Kebijakan, SOP, lainnya, untuk memisahkan pasien infeksius dengan pasien non infeksius, misal ruang TB, ruang isolasi untuk rawat inap<br> 2. Tidak ada kebijakan, SOP, lainnya </p>
+          <select class="form-control" name="pencegahan7a" id="pencegahan7a">
+            <?php is_terisi($data['pemisahan_pasien'], set_value('pencegahan7a')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan7a', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Etika batuk <a href="#" onclick="toggle_visibility('foo20');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo20" style="display:none; font-size:12px; margin-left:20px;">Edukasi etika batuk: <br>• Ada, kebijakan, SOP edukasi etika batuk<br> • Tidak ada</p>
+          <select class="form-control" name="pencegahan8a" id="pencegahan8a">
+            <?php is_terisi($data['etika_batuk'], set_value('pencegahan8a')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan8a', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Praktik Menyuntik yang Aman <a href="#" onclick="toggle_visibility('foo21');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo21" style="display:none; font-size:12px; margin-left:20px;">SOP injeksi</p>
+          <select class="form-control" name="pencegahan9a" id="pencegahan9a">
+            <?php is_terisi($data['praktik_menyuntik'], set_value('pencegahan9a')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan9a', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <hr>
+      <div class="form-group">
+        <label for="exampleFormControlInput1"><strong>VI.B Elemen Penilaian Penerapan Kewaspadaan Berdasarkan Transmisi</strong></label><br>
+        <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Kontak <a href="#" onclick="toggle_visibility('foo22');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo22" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP </p>
+          <select class="form-control" name="pencegahan1b" id="pencegahan1b">
+            <?php is_terisi($data['kewaspadaan_kontak'], set_value('pencegahan1b')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan1b', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Droplet <a href="#" onclick="toggle_visibility('foo23');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo23" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP</p>
+          <select class="form-control" name="pencegahan2b" id="pencegahan2b">
+            <?php is_terisi($data['kewaspadaan_droplet'], set_value('pencegahan2b')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan2b', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Kewaspadaan Transmisi Melalui Udara (Air-Borne Precautions) <a href="#" onclick="toggle_visibility('foo24');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <br>
+        <span><strong> Penilaian</strong> </span>
+        <p style="font-size:12px;">
+          1. Dilaksanakan sesuai SOP, nilai 10 <br>
+          2. Dilaksanakan tidak sesuai SOP, nilai 5 <br>
+          3. Tidak ada SOP, nilai 0
+          <p id="foo24" style="display:none; font-size:12px; margin-left:20px;">Lihat pelaksanaan SOP </p>
+          <select class="form-control" name="pencegahan3b" id="pencegahan3b">
+            <?php is_terisi($data['air_borne'], set_value('pencegahan3b')); ?>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <?= form_error('pencegahan3b', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
 </div>
