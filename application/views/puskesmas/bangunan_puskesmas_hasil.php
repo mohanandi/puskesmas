@@ -496,7 +496,7 @@
         </div>
         <div class="form-group">
           <label for="exampleFormControlInput1">Ruang Lainnya …………………………… (selain yang tertulis diatas) </label>
-          <input type="text" class="form-control" value="<?= $data['selain_diatas']; ?>" placeholder="ruang lainnya" name="bangunan43.14" id="bangunan43.14">
+          <input type="text" class="form-control" value="<?= $data['selain_diatas']; ?>" placeholder="ruang lainnya" name="bangunan43.14" id="bangunan43.14" readonly>
           <select class="form-control" name="bangunan43.15" id="bangunan43.15" disabled>
             <option value="<?= $data['ruang_lain']; ?>" selected><?= $data['ruang_lain']; ?></option>
           </select>

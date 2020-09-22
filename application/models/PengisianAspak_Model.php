@@ -16,4 +16,15 @@ class PengisianAspak_Model extends CI_Model
     {
         return $this->db->get_where('pengisian_aspak', ['kode' => $this->session->userdata('kode')])->row_array();
     }
+
+    public function ubahData()
+    {
+        $data = [
+            "aspak" => $this->input->post('aspak1', true),
+            "aspak_pmk" => $this->input->post('aspak2', true)
+        ];
+
+        $this->db->where('kode', $this->session->userdata('kode'));
+        $this->db->update('pengisian_aspak', $data);
+    }
 }

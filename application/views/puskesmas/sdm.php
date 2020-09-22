@@ -6,7 +6,6 @@
 				<h2 class="heading"><strong class="text-primary">Sumber Daya Manusia</strong></h2>
 			</div>
 		</div>
-
 		<?php if ($data) {
 			$link = '';
 			$button = 'Simpan Edit';
@@ -21,9 +20,9 @@
 				<label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
 				<select class="form-control" name="sdm1" id="sdm1">
 					<?php if ($data) : ?>
-						<option value="1">Dokter Umum</option>
+						<option value="<?= $data['kepala']; ?>"><?= $data['kepala']; ?></option>
 					<?php else : ?>
-						<option value="1">Dokter Umum</option>
+						<option value="<?= set_value('sdm1'); ?>"><?= set_value('sdm1'); ?></option>
 					<?php endif; ?>
 					<option value="Dokter Umum">Dokter Umum</option>
 					<option value="Dokter Gigi">Dokter Gigi</option>
@@ -97,6 +96,7 @@
 								<?= form_error('sdmdokter6', '<small class="text-danger pl-3">', '</small>'); ?>
 
 							</div><br>
+
 
 							<div class="col-md-12">
 								<label for="exampleFormControlInput1">Dokter Layanan Primer (DLP)</label>

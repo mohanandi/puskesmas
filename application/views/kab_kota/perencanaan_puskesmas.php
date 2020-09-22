@@ -159,7 +159,7 @@
           3. Hasil SMD tidak dibahas dalam forum MMD atau forum MMD tidak dilaksanakan, nilai 0
         </p>
         <select class="form-control" name="perencanaan1_d2c" id="perencanaan1_d2c">
-          <?php is_terisi($data[' hasil_smd '], set_value('perencanaan1_d2c')); ?>
+          <?php is_terisi($data['hasil_smd'], set_value('perencanaan1_d2c')); ?>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>

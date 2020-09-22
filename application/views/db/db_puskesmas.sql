@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 18 Sep 2020 pada 06.26
+-- Waktu pembuatan: 22 Sep 2020 pada 11.06
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -119,22 +119,54 @@ CREATE TABLE `bangunan_puskesmas` (
 
 CREATE TABLE `cakupan_indikator_program` (
   `kode` varchar(20) NOT NULL,
-  `kia1` int(2) NOT NULL,
-  `kia2` int(2) NOT NULL,
-  `kia3` int(2) NOT NULL,
-  `imunisasi1` int(2) NOT NULL,
-  `gizi1` int(2) NOT NULL,
-  `pencegahan1` int(2) NOT NULL,
-  `pencegahan2` int(2) NOT NULL,
-  `pencegahan3` int(2) NOT NULL,
-  `pencegahan4` int(2) NOT NULL,
-  `pencegahan5` int(2) NOT NULL,
-  `pencegahan6` int(2) NOT NULL,
-  `pencegahan7` int(2) NOT NULL,
-  `pencegahan8` int(2) NOT NULL,
-  `pispk1` int(2) NOT NULL,
-  `pispk2` int(2) NOT NULL,
-  `pispk3` int(2) NOT NULL,
+  `kia1a` int(2) NOT NULL,
+  `kia1b` int(2) NOT NULL,
+  `kia1c` int(2) NOT NULL,
+  `kia2a` int(2) NOT NULL,
+  `kia2b` int(2) NOT NULL,
+  `kia2c` int(2) NOT NULL,
+  `kia3a` int(2) NOT NULL,
+  `kia3b` int(2) NOT NULL,
+  `kia3c` int(2) NOT NULL,
+  `imunisasi1a` int(2) NOT NULL,
+  `imunisasi1b` int(2) NOT NULL,
+  `imunisasi1c` int(2) NOT NULL,
+  `gizi1a` int(2) NOT NULL,
+  `gizi1b` int(2) NOT NULL,
+  `gizi1c` int(2) NOT NULL,
+  `pencegahan1a` int(2) NOT NULL,
+  `pencegahan1b` int(2) NOT NULL,
+  `pencegahan1c` int(2) NOT NULL,
+  `pencegahan2a` int(2) NOT NULL,
+  `pencegahan2b` int(2) NOT NULL,
+  `pencegahan2c` int(2) NOT NULL,
+  `pencegahan3a` int(2) NOT NULL,
+  `pencegahan3b` int(2) NOT NULL,
+  `pencegahan3c` int(2) NOT NULL,
+  `pencegahan4a` int(2) NOT NULL,
+  `pencegahan4b` int(2) NOT NULL,
+  `pencegahan4c` int(2) NOT NULL,
+  `pencegahan5a` int(2) NOT NULL,
+  `pencegahan5b` int(2) NOT NULL,
+  `pencegahan5c` int(2) NOT NULL,
+  `pencegahan6a` int(2) NOT NULL,
+  `pencegahan6b` int(2) NOT NULL,
+  `pencegahan6c` int(2) NOT NULL,
+  `pencegahan7a` int(2) NOT NULL,
+  `pencegahan7b` int(2) NOT NULL,
+  `pencegahan7c` int(2) NOT NULL,
+  `pencegahan8a` int(2) NOT NULL,
+  `pencegahan8b` int(2) NOT NULL,
+  `pencegahan8c` int(2) NOT NULL,
+  `pispk1a` int(2) NOT NULL,
+  `pispk1b` int(2) NOT NULL,
+  `pispk1c` int(2) NOT NULL,
+  `pispk2a` int(2) NOT NULL,
+  `pispk2b` int(2) NOT NULL,
+  `pispk2c` int(2) NOT NULL,
+  `pispk3a` int(2) NOT NULL,
+  `pispk3b` int(2) NOT NULL,
+  `pispk3c` int(2) NOT NULL,
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -215,6 +247,13 @@ CREATE TABLE `pelaksanaan_sistem_kewaspadaan_dini` (
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `pelaksanaan_sistem_kewaspadaan_dini`
+--
+
+INSERT INTO `pelaksanaan_sistem_kewaspadaan_dini` (`kode`, `skdr`, `laporan_skdr`, `analisa_trend`, `input_by`) VALUES
+('puskesmas', 1, 1, 2, 'kabupaten_kota');
+
 -- --------------------------------------------------------
 
 --
@@ -257,6 +296,13 @@ CREATE TABLE `pencegahan_dan_pengendalian_infeksi` (
   `input_by` int(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data untuk tabel `pencegahan_dan_pengendalian_infeksi`
+--
+
+INSERT INTO `pencegahan_dan_pengendalian_infeksi` (`kode`, `cuci_tangan`, `apd`, `dekontaminasi`, `kesehatan_lingkungan`, `limbah_medis`, `perlindungan_petugas`, `pemisahan_pasien`, `etika_batuk`, `praktik_menyuntik`, `kewaspadaan_kontak`, `kewaspadaan_droplet`, `air_borne`, `input_by`) VALUES
+('puskesmas', 1, 2, 3, 3, 1, 1, 2, 2, 1, 1, 1, 1, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -286,6 +332,13 @@ CREATE TABLE `penggerakan_dan_pelaksanaan_kegiatan_puskesmas` (
   `pelayanan_pelanggan` int(2) NOT NULL,
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `penggerakan_dan_pelaksanaan_kegiatan_puskesmas`
+--
+
+INSERT INTO `penggerakan_dan_pelaksanaan_kegiatan_puskesmas` (`kode`, `dipandu_jelas`, `jadwal_jelas`, `lintas_program`, `dimonitor_kepala`, `masukan_pelanggan`, `pelayanan_pelanggan`, `input_by`) VALUES
+('puskesmas', 2, 1, 2, 2, 3, 3, 'kabupaten_kota');
 
 -- --------------------------------------------------------
 
@@ -336,6 +389,13 @@ CREATE TABLE `peningkatan_mutu` (
   `pelaporan_insiden` int(2) NOT NULL,
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `peningkatan_mutu`
+--
+
+INSERT INTO `peningkatan_mutu` (`kode`, `indikator_mutu`, `audit_internal`, `rapat_tinjauan`, `melaksanakan_pps`, `pelaporan_insiden`, `input_by`) VALUES
+('puskesmas', 2, 2, 3, 2, 1, 'kabupaten_kota');
 
 -- --------------------------------------------------------
 
@@ -612,6 +672,13 @@ CREATE TABLE `sumber_daya_manusia` (
   `titik6` varchar(5) NOT NULL,
   `titik7` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `sumber_daya_manusia`
+--
+
+INSERT INTO `sumber_daya_manusia` (`kode`, `kepala`, `dokter1`, `dokter2`, `dokter3`, `dokter4`, `dokter5`, `dokter6`, `dlp1`, `dlp2`, `dlp3`, `dlp4`, `dlp5`, `dlp6`, `gigi1`, `gigi2`, `gigi3`, `gigi4`, `gigi5`, `gigi6`, `perawat1`, `perawat2`, `perawat3`, `perawat4`, `perawat5`, `perawat6`, `bidan1`, `bidan2`, `bidan3`, `bidan4`, `bidan5`, `bidan6`, `promosi1`, `promosi2`, `promosi3`, `promosi4`, `promosi5`, `promosi6`, `sanitasi1`, `sanitasi2`, `sanitasi3`, `sanitasi4`, `sanitasi5`, `sanitasi6`, `nutrisionis1`, `nutrisionis2`, `nutrisionis3`, `nutrisionis4`, `nutrisionis5`, `nutrisionis6`, `apoteker1`, `apoteker2`, `apoteker3`, `apoteker4`, `apoteker5`, `apoteker6`, `kefarmasian1`, `kefarmasian2`, `kefarmasian3`, `kefarmasian4`, `kefarmasian5`, `kefarmasian6`, `ahli1`, `ahli2`, `ahli3`, `ahli4`, `ahli5`, `ahli6`, `kesehatan1`, `kesehatan2`, `kesehatan3`, `kesehatan4`, `kesehatan5`, `kesehatan6`, `keuangan1`, `keuangan2`, `keuangan3`, `keuangan4`, `keuangan5`, `keuangan6`, `tatausaha1`, `tatausaha2`, `tatausaha3`, `tatausaha4`, `tatausaha5`, `tatausaha6`, `pekarya1`, `pekarya2`, `pekarya3`, `pekarya4`, `pekarya5`, `pekarya6`, `tradisional1`, `tradisional2`, `tradisional3`, `tradisional4`, `tradisional5`, `tradisional6`, `titik1`, `titik2`, `titik3`, `titik4`, `titik5`, `titik6`, `titik7`) VALUES
+('puskesmas', '1', '1', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '2', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '', '', '', '', '', '', '3', '33', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', 'sdadas', '3', '3', '3', '3', '3', '3');
 
 -- --------------------------------------------------------
 
@@ -1818,6 +1885,12 @@ ALTER TABLE `peningkatan_mutu`
 -- Indeks untuk tabel `peralatan_puskesmas`
 --
 ALTER TABLE `peralatan_puskesmas`
+  ADD PRIMARY KEY (`kode`);
+
+--
+-- Indeks untuk tabel `perencanaan_puskesmas`
+--
+ALTER TABLE `perencanaan_puskesmas`
   ADD PRIMARY KEY (`kode`);
 
 --

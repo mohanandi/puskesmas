@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylox.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 </head>
 
@@ -71,8 +71,21 @@
 								<li class="has-children">
 									<a class="nav-link">Menu Cepat</a>
 									<ul class="dropdown">
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Daftar Puskesmas</a></li>
-										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>	
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Dinas</a></li>
+										<li><a href="<?= base_url('dinas/dinas2'); ?>" class="nav-link">Dinas2</a></li>
+										<li><a href="<?= base_url('dinas/dinas3'); ?>" class="nav-link">Dinas3</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 2</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Form 3</a></li>
+										<li><a href="<?= base_url('dinas') ?>" class="nav-link">Table</a></li>
+										<li class="has-children">
+											<a href="#">Bab 6</a>
+											<ul class="dropdown">
+												<li><a href="#">Bab 6.1</a></li>
+												<li><a href="#">Bab 6.2</a></li>
+												<li><a href="#">Bab 6.3</a></li>
+											</ul>
+										</li>
 									</ul>
 								</li>
 

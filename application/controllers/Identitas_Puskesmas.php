@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Identitas extends CI_Controller
+class Identitas_Puskesmas extends CI_Controller
 {
     public function __construct()
     {
@@ -41,7 +41,7 @@ class Identitas extends CI_Controller
         } else {
             $this->IdentitasPuskesmas_Model->tambahData();
             $this->session->set_flashdata('flash', 'Ditambahkan');
-            redirect('Identitas');
+            redirect('Identitas_Puskesmas');
         }
     }
 
@@ -69,7 +69,7 @@ class Identitas extends CI_Controller
         } else {
             $this->IdentitasPuskesmas_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('Identitas');
+            redirect('Identitas_Puskesmas');
         }
     }
 }
