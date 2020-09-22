@@ -24,6 +24,15 @@ function is_logged_in()
 }
 
 
+function puskesmas($kab_kota)
+{
+    $ci = get_instance();
+
+    $ci->db->where('kab_kota', $kab_kota);
+    $ci->db->where('role_id', '3');
+    return $ci->db->get('user')->result_array();
+}
+
 function check_access($role_id, $menu_id)
 {
     $ci = get_instance();
