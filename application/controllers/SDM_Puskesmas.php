@@ -248,10 +248,9 @@ class SDM_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('sdmtitik7', '', 'trim|required');
 
         if ($this->form_validation->run() == false) {
-            // $this->load->view('templates/puskesmas/head', $data);
-            // $this->load->view('puskesmas/sdm', $data);
-            // $this->load->view('templates/puskesmas/foot');
-            var_dump($this->input->post());
+            $this->load->view('templates/puskesmas/head', $data);
+            $this->load->view('puskesmas/sdm', $data);
+            $this->load->view('templates/puskesmas/foot');
         } else {
             $this->SDM_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');

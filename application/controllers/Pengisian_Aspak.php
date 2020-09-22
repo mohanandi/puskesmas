@@ -38,4 +38,23 @@ class Pengisian_Aspak extends CI_Controller
             redirect('Pengisian_Aspak');
         }
     }
+
+    public function ubah()
+    {
+        $data['judul'] = 'Edit Pengisian ASPAK';
+        $data['data'] = $this->PengisianAspak_Model->check();
+
+        $this->form_validation->set_rules('aspak1', 'Nama', 'trim|required|in_list[Ya,Tidak]');
+        $this->form_validation->set_rules('aspak2', 'Nama', 'trim|required');
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/puskesmas/head', $data);
+            $this->load->view('puskesmas/pengisian_aspak', $data);
+            $this->load->view('templates/puskesmas/foot');
+        } else {
+            $this->PengisianAspak_Model->ubahData();
+            $this->session->set_flashdata('flash', 'Diubah');
+            redirect('Pengisian_Aspak');
+        }
+    }
 }

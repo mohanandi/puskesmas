@@ -7,9 +7,15 @@
       </div>
     </div>
 
-
-
-    <form method="POST" action="<?= base_url('Pengisian_Aspak/tambah'); ?>" style=" padding:20px;">
+    <?php if ($data) {
+      $link = '';
+      $button = 'Simpan Edit';
+    } else {
+      $link = base_url('Pengisian_Aspak/tambah');
+      $button = 'Simpan';
+    }
+    ?>
+    <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
 
       <div class="form-group">
         <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
@@ -28,15 +34,14 @@
           <?php else : ?>
             <option value="<?= set_value('aspak2'); ?>"><?= set_value('aspak2'); ?></option>
           <?php endif; ?>
-          <option value="1">≥ 80%</option>
-          <option value="2">70 - 79%</option>
-          <option value="3">61 – 69%</option>
-          <option value="4">≤ 60%</option>
+          <option value="≥80%">≥80%</option>
+          <option value="70-79%">70-79%</option>
+          <option value="61–69%">61–69%</option>
+          <option value="≤60%">≤60%</option>
         </select>
         <?= form_error('aspak2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
-      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</button>
+      <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>
   </div>
-</div>
 </div>

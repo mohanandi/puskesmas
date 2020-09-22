@@ -17,10 +17,6 @@
         <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
         <select class="form-control" name="sdm1" id="sdm1" disabled>
           <option value="<?= $data['kepala']; ?>" selected><?= $data['kepala']; ?></option>
-          <option value="1">Dokter Umum</option>
-          <option value="2">Dokter Gigi</option>
-          <option value="2">Sarjana Kesehatan Masyarakat (SKM)</option>
-          <option value="2">Lain-lain</option>
         </select>
       </div>
       <!-- Tenaga dan Status Kepegawaian -->
