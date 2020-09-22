@@ -30,103 +30,80 @@
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-    <div id="overlayer"></div>
-    <div class="loader">
-        <div class="spinner-border text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
         </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
     </div>
 
+    
+    <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
 
-    <div class="site-wrap">
+      <div class="container">
 
-        <div class="site-mobile-menu site-navbar-target">
-            <div class="site-mobile-menu-header">
-                <div class="site-mobile-menu-close mt-3">
-                    <span class="icon-close2 js-menu-toggle"></span>
-                </div>
-            </div>
-            <div class="site-mobile-menu-body"></div>
+        <div class="row align-items-center">
+
+ <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
+
+          <div class="col-3 col-xl-1">
+
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
+          </div>
+
+          <div class="col-13 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="has-children">
+                  <a href="services.html" class="nav-link">Menu Cepat</a>
+                  <ul class="dropdown">
+                    <li><a href="#" class="nav-link">Bab 1</a></li>
+                    <li><a href="#" class="nav-link">Bab 2</a></li>
+                    <li><a href="#" class="nav-link">Bab 3</a></li>
+                    <li><a href="#" class="nav-link">Bab 4</a></li>
+                    <li><a href="#" class="nav-link">Bab 5</a></li>
+                    <li class="has-children">
+                      <a href="#">Bab 6</a>
+                      <ul class="dropdown">
+                        <li><a href="#">Bab 6.1</a></li>
+                        <li><a href="#">Bab 6.2</a></li>
+                        <li><a href="#">Bab 6.3</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+        
+                <li><a href="about.html" class="nav-link">Info</a></li>
+
+
+
+                
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
+
         </div>
+      </div>
 
-
-        <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
-
-            <div class="container">
-
-                <div class="row align-items-center">
-
-                    <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
-
-                    <div class="col-3 col-xl-1">
-
-                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
-                    </div>
-
-                    <div class="col-13 col-md-10 d-none d-xl-block" style="margin-left:-80px;">
-                        <nav class="site-navigation position-relative text-right" role="navigation">
-
-                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                                <li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
-                                <li class="has-children">
-                                    <a class="nav-link">Input Puskesmas</a>
-                                    <ul class="dropdown">
-                                        <br>
-                                        <div class="row">
-                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
-
-                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
-                                        </div>
-                                        <hr>
-                                        <div class="row">
-
-                                            <ul class="col-md-6" style="list-style: none; padding:10px;">
-                                                <li><a href="<?= base_url('Identitas'); ?>" class="nav-link">Identitas Umum</a></li>
-                                                <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-                                                <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-                                                <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-                                            </ul>
-
-
-                                            <ul class="col-md-6" style="list-style: none; padding:10px;">
-                                                <li><a href="<?= base_url('Identitas'); ?>" class="nav-link">Identitas Umum</a></li>
-                                                <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-                                                <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-                                                <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-                                                <li><a href="<?= base_url('SDM_Puskesmas') ?>" class="nav-link">SDM Puskesmas</a></li>
-                                                <li><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="nav-link">Penilaian Kinerja Puskesmas</a></li>
-                                            </ul>
-
-                                        </div>
-
-                                    </ul>
-                                </li>
-
-
-                                <li><a href="<?= base_url('Auth/logout') ?>" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
-
-
-
-
-                            </ul>
-                        </nav>
-                    </div>
-
-
-                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
-
-                </div>
-            </div>
-
-        </header>
+    </header>
 
 
         <!-- MAIN -->
