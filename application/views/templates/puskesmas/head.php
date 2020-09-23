@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/flaticon/font/flaticon.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/aos.css">
     <link rel="stylesheet" href="<?= base_url('assets/') ?>css/pagination.css">
-    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylox.css">
+    <link rel="stylesheet" href="<?= base_url('assets/') ?>css/stylex.css">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/') ?>css/tooltip.css">
 
 </head>
