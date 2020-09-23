@@ -17,7 +17,7 @@
           2. kelengkapan antara 61 % - 79 % nilai 5 <br>
           3. kelengkapan ≤ 60%, nilai 0
           <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <select class="form-control" name="pelaksanaan1" id="pelaksanaan1">
+          <select class="form-control" name="pelaksanaan1" id="pelaksanaan1" disabled>
             <option value="<?= $data['skdr']; ?>" selected><?= $data['skdr']; ?></option>
           </select>
 
@@ -32,7 +32,7 @@
           2. kelengkapan antara 61 % - 79 % nilai 5 <br>
           3. kelengkapan ≤ 60%, nilai 0
           <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <select class="form-control" name="pelaksanaan2" id="pelaksanaan2">
+          <select class="form-control" name="pelaksanaan2" id="pelaksanaan2" disabled>
             <option value="<?= $data['laporan_skdr']; ?>" selected><?= $data['laporan_skdr']; ?></option>
           </select>
 
@@ -46,7 +46,7 @@
           1. ada, nilai 10 <br>
           2. tidak ada, nilai 0
           <p id="foo27" style="display:none; font-size:12px; margin-left:20px;">Grafik trend mingguan beberapa penyakit potensial KLB di Puskesmas </p>
-          <select class="form-control" name="pelaksanaan3" id="pelaksanaan3">
+          <select class="form-control" name="pelaksanaan3" id="pelaksanaan3" disabled>
             <option value="<?= $data['analisa_trend']; ?>" selected><?= $data['analisa_trend']; ?></option>
           </select>
 
