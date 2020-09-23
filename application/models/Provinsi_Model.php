@@ -18,9 +18,9 @@ class Provinsi_Model extends CI_Model
         ];
         $this->db->insert('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $data);
     }
-    public function check($kode)
+    public function check_puskesmas($kode)
     {
-        return $this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $kode])->row_array();
+        return $this->db->get_where('user', ['kode' => $kode])->row_array();
     }
     public function check_kabupaten($provinsi)
     {

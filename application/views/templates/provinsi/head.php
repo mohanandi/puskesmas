@@ -66,7 +66,7 @@
                 <li class="has-children">
                   <a class="nav-link" style="color:black !important;">Menu Cepat</a>
                   <ul class="dropdown">
-                    <li><a href="<?= base_url('dinas') ?>" class="nav-link">Daftar Puskesmas</a></li>
+                    <li><a href="<?= base_url('Provinsi/daftar_puskesmas') ?>" class="nav-link">Daftar Puskesmas</a></li>
                     <li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
                   </ul>
                 </li>
@@ -120,14 +120,14 @@
 
               <p style="text-align: center;">Daftar Kabupaten/Kota dan Puskesmas</p>
               <?php foreach ($kabupaten as $k) : ?>
-                <button type="button" class="collapsible"><?= $k['nama']; ?></button>
+                <a type="button" class="collapsible"><?= $k['nama']; ?></a>
                 <?php
                 $puskesmas = puskesmas($k['kab_kota']);
                 foreach ($puskesmas as $psk) :
                 ?>
                   <div class="content">
                     <br>
-                    <a href="#">
+                    <a href="<?= base_url() ?>Provinsi/data/<?= $psk['kode']; ?>">
                       <p style="text-align: center;"><?= $psk['nama']; ?></p>
                     </a>
                     <hr>
