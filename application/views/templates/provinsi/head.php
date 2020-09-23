@@ -64,31 +64,18 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="<?= base_url('home') ?>" class="nav-link" style="color:black !important;">Home</a></li>
                 <li class="has-children">
-                  <a class="nav-link" style="color:black !important;">Menu Cepat</a>
+                  <a class="nav-link" style="color:black !important;">Menu</a>
                   <ul class="dropdown">
-                    <li><a href="<?= base_url('Provinsi/daftar_puskesmas') ?>" class="nav-link">Daftar Puskesmas</a></li>
-                    <li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
+                    <li><a href="<?= base_url('Provinsi/daftar_puskesmas'); ?>" class="nav-link">Daftar Puskesmas</a></li>
                   </ul>
                 </li>
-
-
-                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link">Logout</a></li>
-
-
-
-
+                <li><a href="<?= base_url('Auth/logout') ?>" class="nav-link" style="color:red !important;"><strong>Logout</strong></a></li>
               </ul>
             </nav>
           </div>
-
-
           <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
-
         </div>
       </div>
-
-
-
     </header>
     <div class="site-section" id="menu">
       <div class="container">

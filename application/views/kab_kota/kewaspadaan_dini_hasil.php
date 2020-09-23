@@ -51,7 +51,7 @@
           </select>
 
       </div>
-      <a class="btn float-right btn-danger" href="<?= base_url() ?>Mutu/ubah/<?= $data['kode']; ?>" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
+      <a class="btn float-right btn-danger" href="<?= base_url() ?>Kewaspadaan_Dini/ubah/<?= $data['kode']; ?>" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
     </form>
   </div>
 </div>

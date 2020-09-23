@@ -80,16 +80,8 @@
 												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
 												<li id="mm"><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
-												<li id="mm"><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
-												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
-												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
-												<li id="mm"><a href="<?= base_url('Indikator_Program') ?>" class="nav-link">Cakupan Indikator Program</a></li>
 											</ul>
 											<ul class="col-md-6" style="list-style: none; padding:10px;">
-												<li id="mm"><a href="<?= base_url('Pemenuhan_SD') ?>" class="nav-link">Pemenuhan Sumber Daya Puskesmas</a></li>
-												<li id="mm"><a href="<?= base_url('Perencanaan_Puskesmas'); ?>" class="nav-link">Perencanaan Puskesmas</a></li>
-												<li id="mm"><a href="<?= base_url('Ppkp'); ?>" class="nav-link">Penggerakan dan Pelaksanaan Kegiatan Puskesmas </a></li>
-												<li id="mm"><a href="<?= base_url('Pppp') ?>" class="nav-link">Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Mutu') ?>" class="nav-link">Peningkatan Mutu Puskesmas</a></li>
 												<li id="mm"><a href="<?= base_url('Pengendalian_Infeksi') ?>" class="nav-link">Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</a></li>
 												<li id="mm"><a href="<?= base_url('Kewaspadaan_Dini') ?>" class="nav-link">Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menuar Potensial KLB / Wabah</a></li>
