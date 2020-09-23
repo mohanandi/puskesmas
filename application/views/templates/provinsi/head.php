@@ -72,7 +72,7 @@
                 </li>
 
 
-                <li><a href="about.html" class="nav-link" style="color:black !important;"> Info</a></li>
+                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link">Logout</a></li>
 
 
 
@@ -134,12 +134,4 @@
                   </div>
                 <?php endforeach; ?>
               <?php endforeach; ?>
-              <div class="content">
-                <br>
-                <a href="#">
-                  <p style="text-align: center;">Pemenuhan Sumber Daya Puskesmas</p>
-                </a>
-                <hr>
-              </div>
-          
           </div>
