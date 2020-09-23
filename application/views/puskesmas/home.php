@@ -50,7 +50,7 @@
     </div>
 
 
-     <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
+    <header class="site-navbar light js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
 
@@ -58,7 +58,7 @@
 
           <div class="col-3 col-xl-1">
 
-            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0">Puskesmas<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Percontohan</a> </a></div>
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Monev<a style="opacity: 0;">.</a><a style="color:black;">Pembinaan</a><a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
           </div>
 
           <div class="col-13 col-md-10 d-none d-xl-block">
@@ -69,40 +69,23 @@
                 <li class="has-children">
                   <a href="services.html" class="nav-link">Menu Cepat</a>
                   <ul class="dropdown">
-                     <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
-					<li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
-					 <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
-					<li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
-					<li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
-					<li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
-					<li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
-					<li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
-					<li><a href="<?= base_url('SDM_Puskesmas') ?>" class="nav-link">SDM Puskesmas</a></li>
-					<li><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="nav-link">Penilaian Kinerja Puskesmas</a></li>
-                    <li class="has-children">
-                      <a href="#">Bab 6</a>
-                      <ul class="dropdown">
-                        <li><a href="#">Bab 6.1</a></li>
-                        <li><a href="#">Bab 6.2</a></li>
-                        <li><a href="#">Bab 6.3</a></li>
-                      </ul>
-                    </li>
+                    <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
+                    <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>
+                    <li><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="nav-link">Organisasi Manajemen</a></li>
+                    <li><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="nav-link">Lokasi Puskesmas</a></li>
+                    <li><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="nav-link">Bangunan Puskesmas</a></li>
+                    <li><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="nav-link">Prasarana Puskesmas</a></li>
+                    <li><a href="<?= base_url('Peralatan_Puskesmas') ?>" class="nav-link">Peralatan Puskesmas</a></li>
+                    <li><a href="<?= base_url('Pengisian_Aspak') ?>" class="nav-link">Pengisian Aspak</a></li>
+                    <li><a href="<?= base_url('SDM_Puskesmas') ?>" class="nav-link">SDM Puskesmas</a></li>
+                    <li><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="nav-link">Penilaian Kinerja Puskesmas</a></li>
                   </ul>
                 </li>
-
-        
-                <li><a href="about.html" class="nav-link">Logout</a></li>
-
-
-
-                
+                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link">Logout</a></li>
               </ul>
             </nav>
           </div>
-
-
           <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3 text-black"></span></a></div>
-
         </div>
       </div>
 

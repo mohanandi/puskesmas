@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/') ?>fonts/icomoon/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>css/bootstrap.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>css/font-awesome.min.css">
   <link rel="stylesheet" href="<?= base_url('assets/') ?>css/jquery-ui.css">
@@ -56,7 +56,7 @@
         <div class="row align-items-center">
           <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
           <div class="col-3 col-xl-1">
-            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Pembinaan<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Monev<a style="opacity: 0;">.</a><a style="color:black;">Pembinaan</a><a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
           </div>
           <div class="col-13 col-md-10 d-none d-xl-block" style="margin-left:-80px;">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -72,7 +72,7 @@
                 </li>
 
 
-                <li><a href="about.html" class="nav-link" style="color:black !important;"> Info</a></li>
+                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link">Logout</a></li>
 
 
 
@@ -134,35 +134,4 @@
                   </div>
                 <?php endforeach; ?>
               <?php endforeach; ?>
-              <div class="content">
-                <br>
-                <a href="#">
-                  <p style="text-align: center;">Pemenuhan Sumber Daya Puskesmas</p>
-                </a>
-                <hr>
-              </div>
-              <button type="button" class="collapsible">Menu 2</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <button type="button" class="collapsible">Menu 3</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <button type="button" class="collapsible">Menu 3</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <button type="button" class="collapsible">Menu 3</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <button type="button" class="collapsible">Menu 3</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
-              <button type="button" class="collapsible">Menu 3</button>
-              <div class="content">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              </div>
           </div>

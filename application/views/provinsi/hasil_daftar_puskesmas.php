@@ -1,10 +1,5 @@
-
-
-<div class="site-section col-md-9" style="margin-top:-140px;"id = "menu">
-
-      <div class="container">
-        <div class="row mb-5">
-        </div>
+<div class="site-section col-md-9" >
+	<div class="container" style="margin-top:-100px;">
           <form>
             <div class="form-group">
               <label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
@@ -28,14 +23,6 @@
             </div>
             <a class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Masukan</a>
           </form>
-
           <BR>
-
-        </span>
-      </div>
-    </div>
-
-
-  </div>
-
+	</div>
 </div>

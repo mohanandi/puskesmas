@@ -18,7 +18,7 @@
 			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url('<?= base_url('assets/') ?>images/bg-1.jpg')">
 					<span class="login100-form-title-1">
-						PUSKESMAS <span style="color: #16b3ac;"> PERCONTOHAN </span>
+						MONEV PEMBINAAN <span style="color: #16b3ac;"> PUSKESMAS </span>
 					</span>
 					<span class="login100-form-title-1">
 						LOGIN
