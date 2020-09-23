@@ -19,7 +19,7 @@
           2. Bila salah satu kriteria tidak terpenuhi, nilai 5 <br>
           3. Tidak memenuhi semua kriteria, nilai 0
           <p id="foo8" style="display:none; font-size:12px; margin-left:20px;">Melakukan pengukuran indikator mutu secara periodik sesuai dengan ketentuan yang ditetapkan oleh kepala Puskesmas. </p>
-          <select class="form-control" name="peningkatan1" id="peningkatan1">
+          <select class="form-control" name="peningkatan1" id="peningkatan1" disabled>
             <option value="<?= $data['indikator_mutu']; ?>" selected><?= $data['indikator_mutu']; ?></option>
           </select>
 
@@ -33,7 +33,7 @@
           2. Bila salah satu kriteria tidak terpenuhi, nilai 5 <br>
           3. Tidak memenuhi semua kriteria, nilai 0
           <p id="foo9" style="display:none; font-size:12px; margin-left:20px;">1. Ditetapkan rencana audit (audit plan) <br> 2. Dilaksanakannya audit internal sesuai rencana<br> 3. Dilaksanakan tindak lanjut audit internal<br>4. Disusun laporan pelaksanaan audit internal </p>
-          <select class="form-control" name="peningkatan2" id="peningkatan2">
+          <select class="form-control" name="peningkatan2" id="peningkatan2" disabled>
             <option value="<?= $data['audit_internal']; ?>" selected><?= $data['audit_internal']; ?></option>
           </select>
 
@@ -47,7 +47,7 @@
           2. Bila salah satu kriteria tidak terpenuhi, nilai 5 <br>
           3. Tidak memenuhi semua kriteria, nilai 0
           <p id="foo10" style="display:none; font-size:12px; margin-left:20px;">1. Ditetapkan jadwal RTM <br> 2. Dilaksanakan RTM<br>3. Dilakukan tindak lanjut RTM </p>
-          <select class="form-control" name="peningkatan3" id="peningkatan3">
+          <select class="form-control" name="peningkatan3" id="peningkatan3" disabled>
             <option value="<?= $data['rapat_tinjauan']; ?>" selected><?= $data['rapat_tinjauan']; ?></option>
           </select>
 
@@ -61,7 +61,7 @@
           2. Bila salah satu kriteria tidak terpenuhi, nilai 5 <br>
           3. Tidak memenuhi semua kriteria, nilai 0
           <p id="foo11" style="display:none; font-size:12px; margin-left:20px;">1. Disusun PPS berdasarkan rekomendasi survey akreditasi <br> 2. Dilaksanakan tindak lanjut PPS yang sudah disusun <br> 3. Dilakukan evaluasi tindak lanjut PPS</p>
-          <select class="form-control" name="peningkatan4" id="peningkatan4">
+          <select class="form-control" name="peningkatan4" id="peningkatan4" disabled>
             <option value="<?= $data['melaksanakan_pps']; ?>" selected><?= $data['melaksanakan_pps']; ?></option>
           </select>
 
@@ -75,7 +75,7 @@
           2. Bila salah satu kriteria tidak terpenuhi, nilai 5 <br>
           3. Tidak memenuhi semua kriteria, nilai 0
           <p id="foo12" style="display:none; font-size:12px; margin-left:20px;">1. Pelaporan harus tepat waktu <br> 2. Semua kasus dilaporkan </p>
-          <select class="form-control" name="peningkatan5" id="peningkatan5">
+          <select class="form-control" name="peningkatan5" id="peningkatan5" disabled>
             <option value="<?= $data['melaksanakan_pps']; ?>" selected><?= $data['melaksanakan_pps']; ?></option>
           </select>
 
