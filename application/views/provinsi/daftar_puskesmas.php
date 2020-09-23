@@ -12,24 +12,90 @@
 						<thead style="background-color:#16b3ac; color:white;">
 							<tr>
 								<th>JUDUL BAB</th>
-								<th>DETAIL</th>
-								<th>VALIDASI</th>
+								<th>STATUS</th>
+								<th>KETERANGAN</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<th>Identitas Puskesmas</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
+								<?php if ($this->db->get_where('identitas_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
 								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
 							</tr>
 							<tr>
 								<th>Tim Pembina Terpadu</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
+								<?php if ($this->db->get_where('tim_pembina_terpadu', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
 								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
 							</tr>
 							<tr>
-								<th>Data Umum</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
+								<th>Organisasi Manajemen</th>
+								<?php if ($this->db->get_where('organisasi_manajemen', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Lokasi Puskesmas</th>
+								<?php if ($this->db->get_where('lokasi_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Bangunan Puskesmas</th>
+								<?php if ($this->db->get_where('bangunan_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Prasarana Puskesmas</th>
+								<?php if ($this->db->get_where('prasarana_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Peralatan Puskesmas</th>
+								<?php if ($this->db->get_where('peralatan_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Pengisian ASPAK</th>
+								<?php if ($this->db->get_where('pengisian_aspak', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
+								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+							</tr>
+							<tr>
+								<th>Penilaian Kinerja Puskesmas</th>
+								<?php if ($this->db->get_where('sumber_daya_manusia', ['kode' => $puskesmas])->row_array()) : ?>
+									<td>TERISI</td>
+								<?php else : ?>
+									<td>BELUM TERISI</td>
+								<?php endif; ?>
 								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
 							</tr>
 						</tbody>
@@ -49,46 +115,45 @@
 						</thead>
 						<tbody>
 							<?php
-							if ($this->db->get_where('pemenuhan_sdm_puskesmas', ['kode' => $puseksmas])->row_array() == NULL) {
-								echo "Tidak bisa";
+							if ($this->db->get_where('pemenuhan_sdm_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n1 = 0;
 							} else {
-								$n1 = pemenuhan_sd('pemenuhan_sdm_puskesmas', $puseksmas);
+								$n1 = pemenuhan_sd('pemenuhan_sdm_puskesmas', $puskesmas);
 							}
-							if ($this->db->get_where('perencanaan_puskesmas', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('perencanaan_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n2 = 0;
 							} else {
-								$n2 = perencanaan_puskesmas('perencanaan_puskesmas', $puseksmas);
+								$n2 = perencanaan_puskesmas('perencanaan_puskesmas', $puskesmas);
 							}
-							if ($this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n3 = 0;
 							} else {
-								$n3 = ppkp('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $puseksmas);
+								$n3 = ppkp('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $puskesmas);
 							}
-							if ($this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n4 = 0;
 							} else {
-								$n4 = pppp('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $puseksmas);
+								$n4 = pppp('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $puskesmas);
 							}
-							if ($this->db->get_where('peningkatan_mutu', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('peningkatan_mutu', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n5 = 0;
 							} else {
-								$n5 = mutu('peningkatan_mutu', $puseksmas);
+								$n5 = mutu('peningkatan_mutu', $puskesmas);
 							}
-							if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n6 = 0;
 							} else {
-								$n6 = pengendalian_infeksi('pencegahan_dan_pengendalian_infeksi', $puseksmas);
+								$n6 = pengendalian_infeksi('pencegahan_dan_pengendalian_infeksi', $puskesmas);
 							}
-							if ($this->db->get_where('pelaksanaan_sistem_kewaspadaan_dini', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('pelaksanaan_sistem_kewaspadaan_dini', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n7 = 0;
 							} else {
-								$n7 = kewaspadaan_dini('pelaksanaan_sistem_kewaspadaan_dini', $puseksmas);
+								$n7 = kewaspadaan_dini('pelaksanaan_sistem_kewaspadaan_dini', $puskesmas);
 							}
-							if ($this->db->get_where('cakupan_indikator_program', ['kode' => $puseksmas])->row_array() == NULL) {
+							if ($this->db->get_where('cakupan_indikator_program', ['kode' => $puskesmas])->row_array() == NULL) {
 								$n8 = 0;
 							} else {
-								$n8 = indikator_program('cakupan_indikator_program', $puseksmas);
+								$n8 = indikator_program('cakupan_indikator_program', $puskesmas);
 							}
 							?>
 							<?php
@@ -99,62 +164,46 @@
 							$persen5 = $n5 / 50 * 100;
 							$persen6 = $n6 / 120 * 100;
 							$persen7 = $n7 / 30 * 100;
-							$persen8 = $n8 / 1600 * 100;
-							$total = $persen1 + $persen2 + $persen3 + $persen4 + $persen5 + $persen6 + $persen7 + $persen8;  ?>
+							$persen8 = $n8 / 160 * 100; ?>
 							<tr>
 								<th>Pemenuhan Sumber Daya</th>
-								<td></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen1; ?></td>
+								<td><?= indikator($persen1); ?></td>
 							</tr>
 							<tr>
 								<th>Perencanaan Puskesmas</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen2; ?></td>
+								<td><?= indikator($persen2); ?></td>
 							</tr>
 							<tr>
 								<th>Penggerakan dan Pelakasanaan Kegiatan Puskesmas</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen3; ?></td>
+								<td><?= indikator($persen3); ?></td>
 							</tr>
 							<tr>
 								<th>Pengawasan, Pengendalian dan Penilaian Kinerja Puskesmas</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen4; ?></td>
+								<td><?= indikator($persen4); ?></td>
 							</tr>
 							<tr>
 								<th>Penningkatan Mutu Puskesmas</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen5; ?></td>
+								<td><?= indikator($persen5); ?></td>
 							</tr>
 							<tr>
 								<th>Pencegahan dan Pengendalian Infeksi Dan Kesehatan Lingkungan</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen6; ?></td>
+								<td><?= indikator($persen6); ?></td>
 							</tr>
 							<tr>
 								<th>Pelaksanaan Sistem Kewaspadaan Dini dan Respons Terhadap Penyakit Menular Potensial KLB / Wabah</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen7; ?></td>
+								<td><?= indikator($persen7); ?></td>
 							</tr>
 							<tr>
 								<th>Cakupan Indikator Program</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
-							</tr>
-							<tr>
-								<th>PUpaya Inovasi</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
-							</tr>
-							<tr>
-								<th>Rekapitulasi Skor</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
-							</tr>
-							<tr>
-								<th>Rencana Tidak Lanjut</th>
-								<td><a href="##"><i class="fa fa-folder" style="color:#e2af80;"></i> </a></td>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+								<td><?= $persen8; ?></td>
+								<td><?= indikator($persen8); ?></td>
 							</tr>
 						</tbody>
 					</table>

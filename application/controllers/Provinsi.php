@@ -12,7 +12,7 @@ class Provinsi extends CI_Controller
 
     public function data($puskesmas)
     {
-        $data['puskesmas'] = $puskesmas;
+        $data['puskesmas'] = $this->Provinsi_Model->check_puskesmas($puskesmas);
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
         $this->load->view('templates/provinsi/head', $data);
@@ -29,7 +29,6 @@ class Provinsi extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
         $this->load->view('templates/provinsi/head', $data);
-        $this->load->view('provinsi/daftar_puskesmas', $data);
         $this->load->view('templates/provinsi/foot');
     }
 

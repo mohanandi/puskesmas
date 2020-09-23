@@ -24,6 +24,20 @@ function is_logged_in()
 }
 
 
+function indikator($nilai)
+{
+    $ci = get_instance();
+
+    if ($nilai >= 80) {
+        $ind = "BAIK";
+    } else if (($nilai < 80) and ($nilai >= 61)) {
+        $ind = "CUKUP";
+    } else {
+        $ind = "KURANG";
+    }
+    return $ind;
+}
+
 function puskesmas($kab_kota)
 {
     $ci = get_instance();
