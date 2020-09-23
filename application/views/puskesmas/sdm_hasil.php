@@ -15,9 +15,8 @@
       <?php endif; ?>
       <div class="form-group">
         <label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
-        <select class="form-control" name="sdm1" id="sdm1" disabled>
-          <option value="<?= $data['kepala']; ?>" selected><?= $data['kepala']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['kepala']; ?>" placeholder="" name="sdm1" id="sdm1" readonly>
+
       </div>
       <!-- Tenaga dan Status Kepegawaian -->
       <label for="exampleFormControlInput1"><strong>Tenaga dan Status Kepegawaian</strong></label><br>

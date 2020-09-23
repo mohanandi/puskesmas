@@ -19,17 +19,15 @@
 
             <div class="form-group">
                 <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
-                <select class="form-control" name="aspak1" id="aspak1" disabled>
-                    <option value="<?= $data['aspak']; ?>" selected><?= $data['aspak']; ?></option>
-                </select>
+                <input type="text" class="form-control" value="<?= $data['aspak']; ?>" placeholder="" name="aspak1" id="aspak1" readonly>
+
 
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
-                <select class="form-control" name="aspak2" id="aspak2" disabled>
-                    <option value="<?= $data['aspak_pmk']; ?>" selected><?= $data['aspak_pmk']; ?></option>
-                </select>
-                <?= form_error('aspak2', '<small class="text-danger pl-3">', '</small>'); ?>
+                <input type="text" class="form-control" value="<?= $data['aspak_pmk']; ?>" placeholder="" name="aspak2" id="aspak2" readonly>
+
+
             </div>
             <a class="btn float-right btn-success" href="<?= base_url('Pengisian_Aspak/ubah') ?>" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;">Edit</a>
         </form>
