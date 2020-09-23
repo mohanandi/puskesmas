@@ -17,7 +17,7 @@
           1. Ada dokumen RPK tahun berjalan (N), nilai 10 <br>
           2. Tidak ada dokumen perencanaan , nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_a" id="perencanaan1_a">
+        <select class="form-control" name="perencanaan1_a" id="perencanaan1_a" disabled>
           <option value="<?= $data['rpk_n']; ?>" selected><?= $data['rpk_n']; ?></option>
         </select>
 
@@ -31,7 +31,7 @@
           2. Tidak semua kegiatan di RUK tahun N yang disesuaikan menjadi RPK tahun N, nilai 5 <br>
           3. Tidak dilakukan penyesuaian RUK tahun N menjadi RPK tahun N berdasarkan ketersediaan sumber daya yang dialokasikan untuk Puskesmas/ tidak ada kaitan antara RUK tahun N dengan RPK tahun N, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_b1" id="perencanaan1_b1">
+        <select class="form-control" name="perencanaan1_b1" id="perencanaan1_b1" disabled>
           <option value="<?= $data['ruk']; ?>" selected><?= $data['ruk']; ?></option>
         </select>
 
@@ -44,7 +44,7 @@
           2. RPK disusun secara rinci (Januari s.d Desember), tidak berdasarkan usulan pengelola progra, nilai 5 <br>
           3. Tidak disusun RPK secara rinci (bulanan) , nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_b2" id="perencanaan1_b2">
+        <select class="form-control" name="perencanaan1_b2" id="perencanaan1_b2" disabled>
           <option value="<?= $data['rpk_rinci']; ?>" selected><?= $data['rpk_rinci']; ?></option>
         </select>
 
@@ -57,7 +57,7 @@
           2. Hanya RPK, atau hanya draft RKA tahun N, yang diserahkan ke Dinkes Kab/Kota, nilai 5 <br>
           3. RPK dan draft RKA tahun (N) tidak diserahkan Puskesmas ke Dinkes Kab/Kota, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_b3" id="perencanaan1_b3">
+        <select class="form-control" name="perencanaan1_b3" id="perencanaan1_b3" disabled>
           <option value="<?= $data['draft_rka']; ?>" selected><?= $data['draft_rka']; ?></option>
         </select>
 
@@ -69,7 +69,7 @@
           1. Puskesmas menyusun dokumen RUK tahun mendatang (N+1) nilai 10 <br>
           2. Puskesmas tidak menyusun dokumen RUK tahun mendatang (N+1), nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_c" id="perencanaan1_c">
+        <select class="form-control" name="perencanaan1_c" id="perencanaan1_c" disabled>
           <option value="<?= $data['ruk_mendatang']; ?>" selected><?= $data['ruk_mendatang']; ?></option>
         </select>
 
@@ -83,7 +83,7 @@
           2. Ada hasil analisis masalah kesehatan masyarakat dari data Puskesmas (profil, Program Indonesia Sehat dengan Pendekatan Keluarga, pencapaian program, SMD, dll), tetapi tidak memperhatikan hasil Penilaian Kinerja Puskesmas tahun sebelumnya <br>
           3. Tidak ada hasil analisis masalah kesehatan masyarakat di Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d1" id="perencanaan1_d1">
+        <select class="form-control" name="perencanaan1_d1" id="perencanaan1_d1" disabled>
           <option value="<?= $data['ada_hasil']; ?>" selected><?= $data['ada_hasil']; ?></option>
         </select>
 
@@ -97,7 +97,7 @@
           2. Ada umpan balik ke masyarakat berupa hasil analisis masalah, tetapi belum ada informasi penggerakkan sumber daya di masyarakat untuk mengatasi masalah kesehatan tetapi tidak dapat dibuktikan dengan dokumen fisik (pemberitahuan, laporan,foto, dll) , nilai 5 <br>
           3. Tidak ada umpan balik ke masyarakat, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d2a" id="perencanaan1_d2a">
+        <select class="form-control" name="perencanaan1_d2a" id="perencanaan1_d2a" disabled>
           <option value="<?= $data['umpan_balik']; ?>" selected><?= $data['umpan_balik']; ?></option>
         </select>
 
@@ -110,7 +110,7 @@
           2. Ada tabulasi hasil wawancara, tetapi tidak sesuai dengan kriteria menggunakan kuesioner yang disusun masyarakat dan atau tidak mendapat umpan balik masyarakat, nilai 5 <br>
           3. Tidak ada tabulasi hasil wawancara, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d2b" id="perencanaan1_d2b">
+        <select class="form-control" name="perencanaan1_d2b" id="perencanaan1_d2b" disabled>
           <option value="<?= $data['tabulasi_wawancara']; ?>" selected><?= $data['tabulasi_wawancara']; ?></option>
         </select>
 
@@ -123,7 +123,7 @@
           2. Ada hasil SMD yang dibahas dalam forum MMD, tetapi hasil MMD yang membutuhkan pembiayaan tidak diusulkan dalam Musrenbang Desa/Kelurahan, nilai 5 <br>
           3. Hasil SMD tidak dibahas dalam forum MMD atau forum MMD tidak dilaksanakan, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d2c" id="perencanaan1_d2c">
+        <select class="form-control" name="perencanaan1_d2c" id="perencanaan1_d2c" disabled>
           <option value="<?= $data['hasil_smd']; ?>" selected><?= $data['hasil_smd']; ?></option>
         </select>
 
@@ -136,7 +136,7 @@
           2. Ada penyelarasan antara hasil MMD dengan perencanaan Puskesmas, tetapi tidak seluruhnya/penyelerasan tidak menyeluruh, nilai 5 <br>
           3. Tidak ada penyelarasan antara hasil MMD dengan perencanaan Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d3" id="perencanaan1_d3">
+        <select class="form-control" name="perencanaan1_d3" id="perencanaan1_d3" disabled>
           <option value="<?= $data['penyelarasan_mmd']; ?>" selected><?= $data['penyelarasan_mmd']; ?></option>
         </select>
 
@@ -149,7 +149,7 @@
           2. Ada Berita Acara/Laporan hasil Musrenbang Desa/Kelurahan, tetapi belum dilaporkan ke Kepala Puskesmas , nilai 5 <br>
           3. Tidak ada Berita Acara/Laporan hasil Musrenbang Desa/Kelurahan, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d4" id="perencanaan1_d4">
+        <select class="form-control" name="perencanaan1_d4" id="perencanaan1_d4" disabled>
           <option value="<?= $data['berita_acara']; ?>" selected><?= $data['berita_acara']; ?></option>
         </select>
 
@@ -161,7 +161,7 @@
           2. Ada laporan penanggung jawab daerah binaan ke Kepala Puskesmas, tetapi tidak diteruskan ke penanggung jawab program untuk diolah dan dianalisis dan/atau tidak dibahas dalam lokakarya mini bulanan, nilai 5 <br>
           3. Tidak ada laporan/kompilasi laporan, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d5" id="perencanaan1_d5">
+        <select class="form-control" name="perencanaan1_d5" id="perencanaan1_d5" disabled>
           <option value="<?= $data['laporan_penanggung']; ?>" selected><?= $data['laporan_penanggung']; ?></option>
         </select>
 
@@ -173,7 +173,7 @@
           2. Ada laporan lokakarya mini bulanan kedua, tidak menjadi bahan masukan dalam melengkapi RUK, tidak menggambarkan keterpaduan lintas program, dan atau tidak dijadikan bahan lokakarya mini lintas sektor, nilai 5 <br>
           3. Tidak ada laporan lokakarya mini bulanan kedua, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d6" id="perencanaan1_d6">
+        <select class="form-control" name="perencanaan1_d6" id="perencanaan1_d6" disabled>
           <option value="<?= $data['laporan_lokakarya']; ?>" selected><?= $data['laporan_lokakarya']; ?></option>
         </select>
 
@@ -185,7 +185,7 @@
           2. Ada pembahasan dengan lintas sektor, tetapi tidak mendapatkan dukungan penyelesaian masalah , nilai 5 <br>
           3. Tidak ada pembahasan dengan lintas sektor, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d7" id="perencanaan1_d7">
+        <select class="form-control" name="perencanaan1_d7" id="perencanaan1_d7" disabled>
           <option value="<?= $data['lokakarya_mini']; ?>" selected><?= $data['lokakarya_mini']; ?></option>
         </select>
 
@@ -199,7 +199,7 @@
         </p>
         <br>
 
-        <select class="form-control" name="perencanaan1_d8" id="perencanaan1_d8">
+        <select class="form-control" name="perencanaan1_d8" id="perencanaan1_d8" disabled>
           <option value="<?= $data['hasil_lokakarya']; ?>" selected><?= $data['hasil_lokakarya']; ?></option>
         </select>
 
@@ -211,7 +211,7 @@
           2. Draft RUK diserahkan ke Dinkes Kab/kota, tetapi diserahkan setelah musrenbangkab dan atau diserahkan tanpa adanya Kerangka Acuan Kegiatan, nilai 5 <br>
           3. Draft RUK tidak diserahkan ke dinkes kab/kota, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d9" id="perencanaan1_d9">
+        <select class="form-control" name="perencanaan1_d9" id="perencanaan1_d9" disabled>
           <option value="<?= $data['draft_ruk']; ?>" selected><?= $data['draft_ruk']; ?></option>
         </select>
 
@@ -224,7 +224,7 @@
           2. Tidak seluruhnya direvisi sekalipun ada saran dari Dinkes Kab/kota, nilai 5 <br>
           3. Tidak merevisi sama sekali/Tidak mendapatkan saran dari dinkes kab/kota, nilai 0
         </p>
-        <select class="form-control" name="perencanaan1_d10" id="perencanaan1_d10">
+        <select class="form-control" name="perencanaan1_d10" id="perencanaan1_d10" disabled>
           <option value="<?= $data['ruk_dinkes']; ?>" selected><?= $data['ruk_dinkes']; ?></option>
         </select>
 
@@ -245,7 +245,7 @@
           2. Bila salah satu dari 5 rangkaian tidak terpenuhi, nilai 5 <br>
           3. Bila dalam 5 rangkaian tidak terpenuhi lebih dari 1 (satu), nilai 0
         </p>
-        <select class="form-control" name="perencanaan2a" id="perencanaan2a">
+        <select class="form-control" name="perencanaan2a" id="perencanaan2a" disabled>
           <option value="<?= $data['rankaian_menunjang']; ?>" selected><?= $data['rankaian_menunjang']; ?></option>
         </select>
 
@@ -266,7 +266,7 @@
           2. Bila 1 atau 2 unsur tidak terpenuhi dalam setiap pelaksanaan upaya Puskesmas, nilai 5 <br>
           3. Bila lebih dari 2 unsur tidak terpenuhi dalam setiap pelaksanaan upaya Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan2b" id="perencanaan2b">
+        <select class="form-control" name="perencanaan2b" id="perencanaan2b" disabled>
           <option value="<?= $data['upaya_tercapai']; ?>" selected><?= $data['upaya_tercapai']; ?></option>
         </select>
 
@@ -285,7 +285,7 @@
           2. Bila 1 atau 2 unsur tidak terpenuhi dalam setiap pelaksanaan upaya Puskesmas , nilai 5 <br>
           3. Bila lebih dari 2 unsur tidak terpenuhi dalam setiap pelaksanaan upaya Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan2c" id="perencanaan2c">
+        <select class="form-control" name="perencanaan2c" id="perencanaan2c" disabled>
           <option value="<?= $data['pelaksanaan_ukp']; ?>" selected><?= $data['pelaksanaan_ukp']; ?></option>
         </select>
 
@@ -299,7 +299,7 @@
           2. Dibuat formasi, tetapi tidak berdasarkan ABK atau peta jabatan, nilai 5 <br>
           3. Tidak dibuat formasi, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3a" id="perencanaan3a">
+        <select class="form-control" name="perencanaan3a" id="perencanaan3a" disabled>
           <option value="<?= $data['formasi_abk']; ?>" selected><?= $data['formasi_abk']; ?></option>
         </select>
 
@@ -312,7 +312,7 @@
           2. Ada Perencanaan kebutuhan, tidak sesuai dengan ABK, nilai 5 <br>
           3. Tidak ada rencana penambahan tenaga kesehatan, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3b" id="perencanaan3b">
+        <select class="form-control" name="perencanaan3b" id="perencanaan3b" disabled>
           <option value="<?= $data['sdm_abk']; ?>" selected><?= $data['sdm_abk']; ?></option>
         </select>
 
@@ -326,7 +326,7 @@
           2. Ada tindak lanjut yang dilakukan, tidak sesuai rencana yang disusun, nilai 5 <br>
           3. Tidak ada tindak lanjut, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3c_1" id="perencanaan3c_1">
+        <select class="form-control" name="perencanaan3c_1" id="perencanaan3c_1" disabled>
           <option value="<?= $data['tindak_lanjut']; ?>" selected><?= $data['tindak_lanjut']; ?></option>
         </select>
 
@@ -339,7 +339,7 @@
           2. Ada perencanaan kebutuhan peralatan Puskesmas, tidak sesuai persyaratan, nilai 5 <br>
           3. Tidak ada perencanaan kebutuhan peralatan Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3c_2" id="perencanaan3c_2">
+        <select class="form-control" name="perencanaan3c_2" id="perencanaan3c_2" disabled>
           <option value="<?= $data['perencanaan_peralatan']; ?>" selected><?= $data['perencanaan_peralatan']; ?></option>
         </select>
 
@@ -351,7 +351,7 @@
           1. Ada dokumen tindak lanjut, nilai 10 <br>
           2. tidak ada dokumen tindak lanjut, nilai 0 <br>
         </p>
-        <select class="form-control" name="perencanaan3c_3" id="perencanaan3c_3">
+        <select class="form-control" name="perencanaan3c_3" id="perencanaan3c_3" disabled>
           <option value="<?= $data['ada_tindak']; ?>" selected><?= $data['ada_tindak']; ?></option>
         </select>
 
@@ -364,7 +364,7 @@
           2. Ada perencanaan kebutuhan sarana prasarana Puskesmas, tidak sesuai persyaratan, nilai 5 <br>
           3. Tidak ada perencanaan kebutuhan sarana prasarana Puskesmas, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3c_4" id="perencanaan3c_4">
+        <select class="form-control" name="perencanaan3c_4" id="perencanaan3c_4" disabled>
           <option value="<?= $data['kondisi_sarana']; ?>" selected><?= $data['kondisi_sarana']; ?></option>
         </select>
 
@@ -376,7 +376,7 @@
           1. ada dokumen tindak lanjut , nilai 10 <br>
           2. tidak ada dokumen tindak lanjut, nilai 0 <br>
         </p>
-        <select class="form-control " name="perencanaan3c_5" id="perencanaan3c_5">
+        <select class="form-control " name="perencanaan3c_5" id="perencanaan3c_5" disabled>
           <option value="<?= $data['dokumen_perencanaan']; ?>" selected><?= $data['dokumen_perencanaan']; ?></option>
         </select>
 
@@ -389,7 +389,7 @@
           2. 61% - 79 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 5 <br>
           3. ≤ 60 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3c_6" id="perencanaan3c_6">
+        <select class="form-control" name="perencanaan3c_6" id="perencanaan3c_6" disabled>
           <option value="<?= $data['alokasi_kebutuhan']; ?>" selected><?= $data['alokasi_kebutuhan']; ?></option>
         </select>
 
@@ -401,7 +401,7 @@
           1. ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna , nilai 10 <br>
           2. tidak ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna, nilai 0
         </p>
-        <select class="form-control" name="perencanaan3c_7" id="perencanaan3c_7">
+        <select class="form-control" name="perencanaan3c_7" id="perencanaan3c_7" disabled>
           <option value="<?= $data['usulan_pengadaan']; ?>" selected><?= $data['usulan_pengadaan']; ?></option>
         </select>
       </div>
