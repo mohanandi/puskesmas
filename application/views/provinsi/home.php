@@ -71,7 +71,7 @@
                 <li class="has-children">
                   <a class="nav-link" style="color:black !important;">Menu Cepat</a>
                   <ul class="dropdown">
-                    <li><a href="<?= base_url('dinas') ?>" class="nav-link">Daftar Puskesmas</a></li>
+                    <li><a href="<?= base_url('Provinsi/d') ?>" class="nav-link">Daftar Puskesmas</a></li>
                     <li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
                   </ul>
                 </li>
@@ -106,7 +106,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
-            <h1 class="heading mb-5">Selamat Datang "User"</h1>
+            <h1 class="heading mb-5">Selamat Datang <?= $user['nama']; ?></h1>
             <p><a href="#menu" class="btn" style="background-color: #16b3ac; color: #ffffff;">Mulai</a></p>
           </div>
         </div>
@@ -157,10 +157,10 @@
 
         <div class="row">
           <div class="col-8 col-sm-8 col-md-8 col-lg-6 mb-4 mb-lg-4">
-            <a href="form.html" class="service-v1 text-center">
+            <a href="<?= base_url('Provinsi/daftar_puskesmas') ?>" class="service-v1 text-center">
               <span class="flaticon-stethoscope"></span>
-              <h3>Daftar Kabupaten</h3>
-              <p>Daftar puskesmas dalam kabupaten berjumlah <span><strong> 120 Kabupaten</strong> Dengan Jumlah <strong>200 Puskesmas</strong></span> </p>
+              <h3>Daftar Puskesmas</h3>
+              <p>Daftar puskesmas dalam kabupaten</p>
             </a>
           </div>
           <div class="col-8 col-sm-8 col-md-8 col-lg-6 mb-4 mb-lg-4">
