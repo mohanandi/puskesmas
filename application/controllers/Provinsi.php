@@ -38,4 +38,11 @@ class Provinsi extends CI_Controller
         $this->load->view('provinsi/hasil_daftar_puskesmas');
         $this->load->view('templates/provinsi/foot');
     }
+
+	public function daftar_puskesmas_landing()
+    {
+        $this->load->view('templates/provinsi/head');
+        $this->load->view('provinsi/daftar_puskesmas_landing');
+        $this->load->view('templates/provinsi/foot');
+    }
 }
