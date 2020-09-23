@@ -64,7 +64,7 @@ class Pengendalian_Infeksi extends CI_Controller
     public function ubah($kode)
     {
 
-        $data['judul'] = 'Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan';
+        $data['judul'] = 'Edit Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan';
         $data['data'] = $this->PengendalianInfeksi_Model->check($kode);
         $data['kode_puskesmas'] = $kode;
 
@@ -83,7 +83,9 @@ class Pengendalian_Infeksi extends CI_Controller
         $this->form_validation->set_rules('pencegahan3b', '', 'trim|in_list[1,2,3]');
 
         if ($this->form_validation->run() == false) {
-            var_dump($this->input->post());
+            $this->load->view('templates/kab_kota/head', $data);
+            $this->load->view('kab_kota/pengendalian_infeksi', $data);
+            $this->load->view('templates/kab_kota/foot');
         } else {
             $this->PengendalianInfeksi_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');

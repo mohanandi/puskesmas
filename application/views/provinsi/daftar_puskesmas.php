@@ -19,7 +19,7 @@
 						<tbody>
 							<tr>
 								<th>Identitas Puskesmas</th>
-								<?php if ($this->db->get_where('identitas_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('identitas_puskesmas', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -28,7 +28,7 @@
 							</tr>
 							<tr>
 								<th>Tim Pembina Terpadu</th>
-								<?php if ($this->db->get_where('tim_pembina_terpadu', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('tim_pembina_terpadu', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -37,7 +37,7 @@
 							</tr>
 							<tr>
 								<th>Organisasi Manajemen</th>
-								<?php if ($this->db->get_where('organisasi_manajemen', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('organisasi_manajemen', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -46,7 +46,7 @@
 							</tr>
 							<tr>
 								<th>Lokasi Puskesmas</th>
-								<?php if ($this->db->get_where('lokasi_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('lokasi_puskesmas', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -55,7 +55,7 @@
 							</tr>
 							<tr>
 								<th>Bangunan Puskesmas</th>
-								<?php if ($this->db->get_where('bangunan_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('bangunan_puskesmas', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -64,7 +64,7 @@
 							</tr>
 							<tr>
 								<th>Prasarana Puskesmas</th>
-								<?php if ($this->db->get_where('prasarana_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('prasarana_puskesmas', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -73,7 +73,7 @@
 							</tr>
 							<tr>
 								<th>Peralatan Puskesmas</th>
-								<?php if ($this->db->get_where('peralatan_puskesmas', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('peralatan_puskesmas', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -82,7 +82,7 @@
 							</tr>
 							<tr>
 								<th>Pengisian ASPAK</th>
-								<?php if ($this->db->get_where('pengisian_aspak', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('pengisian_aspak', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -91,7 +91,7 @@
 							</tr>
 							<tr>
 								<th>Penilaian Kinerja Puskesmas</th>
-								<?php if ($this->db->get_where('sumber_daya_manusia', ['kode' => $puskesmas])->row_array()) : ?>
+								<?php if ($this->db->get_where('sumber_daya_manusia', ['kode' => $puskesmas['kode']])->row_array()) : ?>
 									<td>TERISI</td>
 								<?php else : ?>
 									<td>BELUM TERISI</td>
@@ -115,45 +115,45 @@
 						</thead>
 						<tbody>
 							<?php
-							if ($this->db->get_where('pemenuhan_sdm_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('pemenuhan_sdm_puskesmas', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n1 = 0;
 							} else {
-								$n1 = pemenuhan_sd('pemenuhan_sdm_puskesmas', $puskesmas);
+								$n1 = pemenuhan_sd('pemenuhan_sdm_puskesmas', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('perencanaan_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('perencanaan_puskesmas', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n2 = 0;
 							} else {
-								$n2 = perencanaan_puskesmas('perencanaan_puskesmas', $puskesmas);
+								$n2 = perencanaan_puskesmas('perencanaan_puskesmas', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n3 = 0;
 							} else {
-								$n3 = ppkp('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $puskesmas);
+								$n3 = ppkp('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n4 = 0;
 							} else {
-								$n4 = pppp('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $puskesmas);
+								$n4 = pppp('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('peningkatan_mutu', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('peningkatan_mutu', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n5 = 0;
 							} else {
-								$n5 = mutu('peningkatan_mutu', $puskesmas);
+								$n5 = mutu('peningkatan_mutu', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('pencegahan_dan_pengendalian_infeksi', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n6 = 0;
 							} else {
-								$n6 = pengendalian_infeksi('pencegahan_dan_pengendalian_infeksi', $puskesmas);
+								$n6 = pengendalian_infeksi('pencegahan_dan_pengendalian_infeksi', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('pelaksanaan_sistem_kewaspadaan_dini', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('pelaksanaan_sistem_kewaspadaan_dini', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n7 = 0;
 							} else {
-								$n7 = kewaspadaan_dini('pelaksanaan_sistem_kewaspadaan_dini', $puskesmas);
+								$n7 = kewaspadaan_dini('pelaksanaan_sistem_kewaspadaan_dini', $puskesmas['kode']);
 							}
-							if ($this->db->get_where('cakupan_indikator_program', ['kode' => $puskesmas])->row_array() == NULL) {
+							if ($this->db->get_where('cakupan_indikator_program', ['kode' => $puskesmas['kode']])->row_array() == NULL) {
 								$n8 = 0;
 							} else {
-								$n8 = indikator_program('cakupan_indikator_program', $puskesmas);
+								$n8 = indikator_program('cakupan_indikator_program', $puskesmas['kode']);
 							}
 							?>
 							<?php
