@@ -17,9 +17,8 @@ div class="site-section" id="menu">
         2. 61 % - 79 % nilai 5 <br>
         3. ≤ 60%, nilai 0
         <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-        <select class="form-control" name="pemenuhan1" id="pemenuhan1" disabled>
-          <option value="<?= $data['standar_bangunan']; ?>" selected><?= $data['standar_bangunan']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['standar_bangunan']; ?>" placeholder="" name="pemenuhan1" id="pemenuhan1" readonly>
+
 
     </div>
 
@@ -33,10 +32,8 @@ div class="site-section" id="menu">
         2. 61 % - 79 % nilai 5 <br>
         3. ≤ 60%, nilai 0
         <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+        <input type="text" class="form-control" value="<?= $data['standar_prasarana']; ?>" placeholder="" name="pemenuhan2" id="pemenuhan2" readonly>
 
-        <select class="form-control" name="pemenuhan2" id="pemenuhan2" disabled>
-          <option value="<?= $data['standar_prasarana']; ?>" selected><?= $data['standar_prasarana']; ?></option>
-        </select>
 
     </div>
     <div class="form-group">
@@ -49,9 +46,8 @@ div class="site-section" id="menu">
         2. 61 % - 79 % nilai 5 <br>
         3. ≤ 60%, nilai 0
         <p id="foo3" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
-        <select class="form-control" name="pemenuhan3" id="pemenuhan3" disabled>
-          <option value="<?= $data['standar_peralatan']; ?>" selected><?= $data['standar_peralatan']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['standar_peralatan']; ?>" placeholder="" name="pemenuhan3" id="pemenuhan3" readonly>
+
 
     </div>
     <div class="form-group">
@@ -62,9 +58,8 @@ div class="site-section" id="menu">
         1. Seluruh obat (100%) sesuai RKO tersedia di Puskesmas, nilai 10 <br>
         2. 80% - < 100% obat di RKO tersedia di Puskesmas, nilai 5 <br>
           3. < 80 % obat di RKO tersedia di Puskesmas , nilai 0 <p id="foo4" style="display:none; font-size:14px;">Ketersediaan obat di Puskesmas sesuai dengan RKO</p>
-      <select class="form-control" name="pemenuhan4" id="pemenuhan4" disabled>
-        <option value="<?= $data['sedia_obat']; ?>" selected><?= $data['sedia_obat']; ?></option>
-      </select>
+      <input type="text" class="form-control" value="<?= $data['sedia_obat']; ?>" placeholder="" name="pemenuhan4" id="pemenuhan4" readonly>
+
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Pengendalian Ketersediaan Obat <a href="#" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -79,9 +74,8 @@ div class="site-section" id="menu">
           <br> 2. Dokumen Perencanaan Kebutuhan Obat
           <br> 3. Dokumen mutasi obat/distribusi obat</p>
         </label>
-        <select class="form-control" name="pemenuhan5" id="pemenuhan5" disabled>
-          <option value="<?= $data['pengendali_obat']; ?>" selected><?= $data['pengendali_obat']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['pengendali_obat']; ?>" placeholder="" name="pemenuhan5" id="pemenuhan5" readonly>
+
     </div>
     <div class="form-group">
       <label for="exampleFormControlInput1">Pemenuhan sumber daya manusia (SDM) <a href="#" onclick="toggle_visibility('foo6');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -93,9 +87,8 @@ div class="site-section" id="menu">
         3. SDM Kesehatan Puskesmas tidak sesuai ABK dan standar minimal , nilai 0
         <p id="foo6" style="display:none; font-size:14px;">Jenis dan jumlah SDM kesehatan Puskesmas terpenuhi sesuai analisis beban kerja (Permenkes 33 tahun 2015 tentang Analisis Beban Kerja SDM Kesehatan)
           Standar minimal sesuai dengan Permenkes 43 tahun 2019 tentang Puskesmas</p>
-        <select class="form-control" name="pemenuhan6" id="pemenuhan6" disabled>
-          <option value="<?= $data['pemenuhan_sdm']; ?>" selected><?= $data['pemenuhan_sdm']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['pemenuhan_sdm']; ?>" placeholder="" name="pemenuhan6" id="pemenuhan6" readonly>
+
 
     </div>
     <div class="form-group">
@@ -107,9 +100,8 @@ div class="site-section" id="menu">
         2. Aplikasi Sisrute telah tersedia tetapi frekuensi pemanfaatannya rendah (< 50 kasus per tahun), nilai 5 <br>
           3. Aplikasi Sisrute belum tersedia, nilai 0
           <p id="foo7" style="display:none; font-size:14px;">Sistem rujukan terintegrasi sudah diterapkan ditandai dengan: pemanfaatan Aplikasi Sisrute dalam proses rujukan pasien ke FKRTL atau ke FKTP lainnya</p>
-          <select class="form-control" name="pemenuhan7" id="pemenuhan7" disabled>
-            <option value="<?= $data['sisrute']; ?>" selected><?= $data['sisrute']; ?></option>
-          </select>
+          <input type="text" class="form-control" value="<?= $data['sisrute']; ?>" placeholder="" name="pemenuhan7" id="pemenuhan7" readonly>
+
 
     </div>
     <div class="form-group">
@@ -121,9 +113,8 @@ div class="site-section" id="menu">
         2. Pencatatan dan pelaporan dilakukan sesuai ketentuan tetapi tidak tepat waktu, nilai 5 <br>
         3. Pencatatan dan pelaporan tidak dilakukan sesuai dengan ketentuan, nilai 0
         <p id="foo8" style="display:none; font-size:14px;">Sistem Informasi Puskesmas telah diterapkan dengan baik di Puskesmas ditandai dengan: adanya pencatatan dan pelaporan Puskesmas dalam bentuk elektronik atau non elektronik sesuai dengan ketentuan yang berlaku.(Permenkes 31 tahun 2019 tentang Sistem Informasi Puskesmas)</p>
-        <select class="form-control" name="pemenuhan8" id="pemenuhan8" disabled>
-          <option value="<?= $data['informasi_puskesmas']; ?>" selected><?= $data['informasi_puskesmas']; ?></option>
-        </select>
+        <input type="text" class="form-control" value="<?= $data['informasi_puskesmas']; ?>" placeholder="" name="pemenuhan8" id="pemenuhan8" readonly>
+
     </div>
     <a class="btn float-right btn-danger" href="<?= base_url() ?>Pemenuhan_SD/ubah/<?= $data['kode']; ?>" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
   </form>
