@@ -10,9 +10,9 @@
         <table class="table table-striped table-bordered" style="width:100%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
             <thead style="background-color:#16b3ac; color:white;">
                 <tr>
-                    <th>JUDUL BAB</th>
+                    <th>JUDUL BAB/PARAMETER</th>
                     <th>SKOR</th>
-                    <th>INDIKATOR</th>
+                    <th>NILAI</th>
                 </tr>
             </thead>
             <tbody>
