@@ -11,9 +11,8 @@
 					<table class="table table-striped table-bordered" style="width:100%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
 						<thead style="background-color:#16b3ac; color:white;">
 							<tr>
-								<th>JUDUL BAB</th>
+								<th>JUDUL BAB/PARAMETER</th>
 								<th>STATUS</th>
-								<th>KETERANGAN</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -24,7 +23,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Tim Pembina Terpadu</th>
@@ -33,7 +32,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Organisasi Manajemen</th>
@@ -42,7 +41,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Lokasi Puskesmas</th>
@@ -51,7 +50,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Bangunan Puskesmas</th>
@@ -60,7 +59,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Prasarana Puskesmas</th>
@@ -69,7 +68,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Peralatan Puskesmas</th>
@@ -78,7 +77,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Pengisian ASPAK</th>
@@ -87,7 +86,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 							<tr>
 								<th>Penilaian Kinerja Puskesmas</th>
@@ -96,7 +95,7 @@
 								<?php else : ?>
 									<td>BELUM TERISI</td>
 								<?php endif; ?>
-								<td><a href="##"><i class="fa fa-check-square-o" style="color:#228c22;"></i> </a></td>
+
 							</tr>
 						</tbody>
 					</table>
@@ -108,9 +107,9 @@
 					<table class="table table-striped table-bordered" style="width:100%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
 						<thead style="background-color:#16b3ac; color:white;">
 							<tr>
-								<th>JUDUL BAB</th>
+								<th>JUDUL BAB/PARAMETER</th>
 								<th>SKOR</th>
-								<th>INDIKATOR</th>
+								<th>NILAI</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -191,7 +190,7 @@
 								<td><?= indikator($persen5); ?></td>
 							</tr>
 							<tr>
-								<th>Pencegahan dan Pengendalian Infeksi Dan Kesehatan Lingkungan</th>
+								<th>Pencegahan dan Pengendalian Infeksi dan Kesehatan Lingkungan</th>
 								<td><?= $persen6; ?></td>
 								<td><?= indikator($persen6); ?></td>
 							</tr>

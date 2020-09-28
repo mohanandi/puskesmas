@@ -56,7 +56,8 @@
         <div class="row align-items-center">
           <div> <img src="<?= base_url('assets/') ?>images/logo.png" style=" height: 20px; width:20px;"></div>
           <div class="col-3 col-xl-1">
-                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Instrumen<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Monitoring</a><a style="opacity: 0;">.</a>dan<a style="opacity: 0;">.</a>Evaluasi<a style="opacity: 0;">.</a>Pembinaan<a style="opacity: 0;">.</a>Ke<a style="opacity: 0;">.</a>Puskesmas </a></div></div>
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="index.html" class="mb-0" style="color: #000000;">Instrumen<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Monitoring</a><a style="opacity: 0;">.</a>dan<a style="opacity: 0;">.</a>Evaluasi<a style="opacity: 0;">.</a>Pembinaan<a style="opacity: 0;">.</a>Ke<a style="opacity: 0;">.</a>Puskesmas </a></div>
+          </div>
           <div class="col-13 col-md-10 d-none d-xl-block" style="margin-left:-80px;">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
@@ -90,18 +91,6 @@
 
             <body>
               <a id="button"></a>
-              <button type="button active" class="collapsible">Profil Puskesmas</button>
-              <div class="content">
-                <br>
-                <img src="<?= base_url('assets/') ?>images/person_3.jpg" alt="Avatar" style="width:150px; border-radius: 50%; margin-left: 15%;">
-                <br>
-                <br>
-                <p style="text-align: center;">Nama Puskesmas <span><strong>Puskesmas Jakarta</strong></span></p>
-                <p style="text-align: center;">Lokasi<br> <span><strong>Pondok Labu, Jakarta Selatan No. 17</strong></span></p>
-                <p style="text-align: center;">Tanggal Peresmian<br> <span><strong>20 Juni 2011</strong></span></p>
-                <p style="text-align: center;">Status Akreditasi<br><span><strong>Paripurna</strong></span></p>
-                <p style="text-align: center;">Motto<br> <span><strong>Jaya Selalu Puskesmas</strong></span></p>
-              </div>
               <br>
 
               <p style="text-align: center;">Daftar Kabupaten/Kota dan Puskesmas</p>

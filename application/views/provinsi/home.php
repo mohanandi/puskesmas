@@ -60,7 +60,7 @@
 
           <div class="col-3 col-xl-1">
 
-                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 14px;"><a href="index.html" class="mb-0" style="color: #000000;">Instrumen<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Monitoring</a><a style="opacity: 0;">.</a>dan<a style="opacity: 0;">.</a>Evaluasi<a style="opacity: 0;">.</a>Pembinaan<a style="opacity: 0;">.</a>Ke<a style="opacity: 0;">.</a>Puskesmas </a></div>
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 14px;"><a href="index.html" class="mb-0" style="color: #000000;">Instrumen<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Monitoring</a><a style="opacity: 0;">.</a>dan<a style="opacity: 0;">.</a>Evaluasi<a style="opacity: 0;">.</a>Pembinaan<a style="opacity: 0;">.</a>Ke<a style="opacity: 0;">.</a>Puskesmas </a></div>
           </div>
 
           <div class="col-13 col-md-10 d-none d-xl-block">
@@ -69,10 +69,9 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
                 <li class="has-children">
-                  <a class="nav-link">Menu Cepat</a>
+                  <a class="nav-link">Menu</a>
                   <ul class="dropdown">
-                    <li><a href="<?= base_url('Provinsi/d') ?>" class="nav-link">Daftar Puskesmas</a></li>
-                    <li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
+                    <li><a href="<?= base_url('Provinsi/daftar_puskesmas') ?>" class="nav-link">Daftar Puskesmas</a></li>
                   </ul>
                 </li>
 
@@ -164,7 +163,7 @@
             </a>
           </div>
           <div class="col-8 col-sm-8 col-md-8 col-lg-6 mb-4 mb-lg-4">
-            <a href="#" class="service-v1 text-center">
+            <a href="<?= base_url('Provinsi/daftar_puskesmas') ?>" class="service-v1 text-center">
               <span class="flaticon-sphygmomanometer"></span>
               <h3>Rekapitulasi Skor Puskesmas</h3>
               <p>Rekapitulasi skor setiap puskesmas yang telah diisi</p>

@@ -110,24 +110,28 @@
             </tbody>
         </table>
 
-		<table class="table table-striped table-bordered" style="width:45%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
+        <table class="table table-striped table-bordered" style="width:45%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
             <thead style="background-color:#16b3ac; color:white;">
                 <tr>
-                    <th>No</th>
                     <th>Intepretasi</th>
                 </tr>
-			<tbody>
-				<tr>
-                    <th>1</th>
-                    <td>Baik, bila setiap parameter bernilai  ≥ 80%</td>
-                </tr>
+            <tbody>
                 <tr>
-                    <th>2</th>
-                    <td>Cukup, bila ada satu atau dua parameter bernilai 61% - 79% dan parameter yang lain bernilai  ≥ 80%</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>Kurang, bila tidak memenuhi kriteria 1 dan 2</td>
+                    <?php $indikator = [$persen1, $persen2, $persen3, $persen4, $persen5, $persen6, $persen7, $persen8];
+                    $cek = array();
+                    foreach ($indikator as $ind) :
+                        $hasil = indikator($ind);
+                        array_push($cek, $hasil);
+                    endforeach;
+                    if (in_array("KURANG", $cek)) {
+                        $result = "KURANG";
+                    } else if (in_array("CUKUP", $cek)) {
+                        $result = "CUKUP";
+                    } else {
+                        $result = "BAIK";
+                    }
+                    ?>
+                    <td><?= $result; ?></td>
                 </tr>
             </tbody>
         </table>

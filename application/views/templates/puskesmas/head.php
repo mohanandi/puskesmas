@@ -63,12 +63,12 @@
                             <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                                 <li><a href="<?= base_url('home') ?>" class="nav-link" style="color:black !important;">Home</a></li>
                                 <li class="has-children">
-                                    <a class="nav-link" style="color:black !important;">Input Puskesmas</a>
+                                    <a class="nav-link" style="color:black !important;">Menu</a>
                                     <ul class="dropdown">
                                         <br>
                                         <div class="row">
-                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
-                                            <h5 class="col-md-6" style="font-size:18px; color: #000;"> Input Puskesmas </h5>
+                                            <h5 class="col-md-6" style="font-size:18px; color: #000;">Menu</h5>
+                                            <h5 class="col-md-6" style="font-size:18px; color: #000;">Menu</h5>
                                         </div>
                                         <hr>
                                         <div class="row">

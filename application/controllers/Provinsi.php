@@ -16,6 +16,7 @@ class Provinsi extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['subjudul'] = $data['puskesmas']['nama'];
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
+        $data['judul'] = "DAFTAR PUSKESMAS";
         $this->load->view('templates/provinsi/head', $data);
         $this->load->view('provinsi/daftar_puskesmas', $data);
         $this->load->view('templates/provinsi/foot');
@@ -30,6 +31,7 @@ class Provinsi extends CI_Controller
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['subjudul'] = "Daftar Puskesmas";
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
+        $data['judul'] = "DAFTAR PUSKESMAS";
         $this->load->view('templates/provinsi/head', $data);
         $this->load->view('provinsi/daftar_puskesmas_landing');
         $this->load->view('templates/provinsi/foot');

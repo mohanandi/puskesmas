@@ -20,6 +20,7 @@
                     <th>PERALATAN PUSKESMAS</th>
                     <th>PENGISIAN ASPAK</th>
                     <th>SDM PUSKESMAS</th>
+                    <th>PENILAIAN PUSKESMAS</th>
                 </tr>
             </thead>
             <tbody>
@@ -73,6 +74,7 @@
                         <?php else : ?>
                             <td>BELUM TERISI</td>
                         <?php endif; ?>
+                        <td><a href="<?= base_url(); ?>/Daftar_Puskesmas/penilaian/<?= $a['kode']; ?>">DETAIL</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
