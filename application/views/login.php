@@ -16,7 +16,7 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<div class="login100-form-title" style="background-image: url('<?= base_url('assets/') ?>images/bg-1.jpg')">
+				<div class="login100-form-title" style="background-image: url('<?= base_url('assets/') ?>images/bg.jpg')">
 					<span class="login100-form-title-1">
 						INSTRUMEN MONITORING DAN EVALUASI PEMBINAAN KE<span style="color: #16b3ac;"> PUSKESMAS </span>
 					</span>

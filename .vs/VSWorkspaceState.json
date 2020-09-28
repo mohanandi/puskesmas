@@ -3,13 +3,14 @@
     "",
     "\\application",
     "\\application\\views",
-    "\\application\\views\\kab_kota",
-    "\\application\\views\\puskesmas",
+    "\\application\\views\\provinsi",
     "\\application\\views\\templates",
     "\\application\\views\\templates\\kab_kota",
     "\\application\\views\\templates\\provinsi",
-    "\\application\\views\\templates\\puskesmas"
+    "\\application\\views\\templates\\puskesmas",
+    "\\assets",
+    "\\assets\\images"
   ],
-  "SelectedNode": "\\application\\views\\kab_kota\\home.php",
+  "SelectedNode": "\\application\\views\\provinsi\\home.php",
   "PreviewInSolutionExplorer": false
 }
