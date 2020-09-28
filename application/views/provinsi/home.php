@@ -60,16 +60,16 @@
 
           <div class="col-3 col-xl-1">
 
-            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 14px;"><a href="#" class="mb-0">Pembinaan<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
+                        <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 14px;"><a href="index.html" class="mb-0" style="color: #000000;">Instrumen<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Monitoring</a><a style="opacity: 0;">.</a>dan<a style="opacity: 0;">.</a>Evaluasi<a style="opacity: 0;">.</a>Pembinaan<a style="opacity: 0;">.</a>Ke<a style="opacity: 0;">.</a>Puskesmas </a></div>
           </div>
 
           <div class="col-13 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="<?= base_url('home') ?>" class="nav-link" style="color:black !important;">Home</a></li>
+                <li><a href="<?= base_url('home') ?>" class="nav-link">Home</a></li>
                 <li class="has-children">
-                  <a class="nav-link" style="color:black !important;">Menu Cepat</a>
+                  <a class="nav-link">Menu Cepat</a>
                   <ul class="dropdown">
                     <li><a href="<?= base_url('Provinsi/d') ?>" class="nav-link">Daftar Puskesmas</a></li>
                     <li><a href="<?= base_url('dinas') ?>" class="nav-link">Rekapitulasi Skor Puskesmas</a></li>
@@ -77,7 +77,7 @@
                 </li>
 
 
-                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link">Logout</a></li>
+                <li><a href="<?= base_url('Auth/logout'); ?>" class="nav-link" style="color:red !important;">Logout</a></li>
 
 
 
