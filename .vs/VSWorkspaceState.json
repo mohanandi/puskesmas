@@ -2,13 +2,14 @@
   "ExpandedNodes": [
     "",
     "\\application",
-    "\\application\\controllers",
     "\\application\\views",
-    "\\application\\views\\provinsi",
+    "\\application\\views\\kab_kota",
     "\\application\\views\\puskesmas",
     "\\application\\views\\templates",
-    "\\application\\views\\templates\\provinsi"
+    "\\application\\views\\templates\\kab_kota",
+    "\\application\\views\\templates\\provinsi",
+    "\\application\\views\\templates\\puskesmas"
   ],
-  "SelectedNode": "\\application\\controllers\\Provinsi.php",
+  "SelectedNode": "\\application\\views\\kab_kota\\home.php",
   "PreviewInSolutionExplorer": false
 }

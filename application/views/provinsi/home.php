@@ -60,7 +60,7 @@
 
           <div class="col-3 col-xl-1">
 
-            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 18px;"><a href="#" class="mb-0">Pembinaan<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
+            <div class="mb-0 site-logo" style="top: 1.2px; left:-6px; font-size: 14px;"><a href="#" class="mb-0">Pembinaan<a style="opacity: 0;">.</a><a style="color: #16b3ac;">Puskesmas</a> </a></div>
           </div>
 
           <div class="col-13 col-md-10 d-none d-xl-block">
@@ -102,7 +102,7 @@
 
 
 
-    <div class="slide-item overlay" style="background-image: url('<?= base_url('assets/') ?>images/hero_1.jpg')">
+    <div class="slide-item overlay" style="background-image: url('<?= base_url('assets/') ?>images/bg.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 align-self-center">
