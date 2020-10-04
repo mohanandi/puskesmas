@@ -17,7 +17,7 @@
 		<form method="POST" action="<?= $link; ?>" style=" padding:20px;">
 
 			<div class="form-group">
-				<label for="exampleFormControlInput1"><strong>Kepala Puskesmas </strong></label>
+				<label for="exampleFormControlInput1"><strong>1. Kepala Puskesmas </strong></label>
 				<select class="form-control" name="sdm1" id="sdm1">
 					<?php if ($data) : ?>
 						<option value="<?= $data['kepala']; ?>"><?= $data['kepala']; ?></option>
@@ -31,7 +31,7 @@
 				</select>
 			</div>
 			<!-- Tenaga dan Status Kepegawaian -->
-			<label for="exampleFormControlInput1"><strong>Tenaga dan Status Kepegawaian</strong></label><br>
+			<label for="exampleFormControlInput1"><strong>2. Tenaga dan Status Kepegawaian</strong></label><br>
 
 			<section class="form-group" id="form-group">
 				<div class="form-group">

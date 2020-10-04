@@ -63,9 +63,7 @@
       <div class="form-group">
         <label for="exampleFormControlInput1">Kelembapan berkisar 40-70% RH</label>
         <input type="text" class="form-control" value="<?= $data['kelembapan']; ?>" placeholder="" name="prasarana1_10" id="prasarana1_10" readonly>
-        <select class="form-control" name="prasarana1_10" id="prasarana1.10" disabled>
-          <option value="<?= $data['kelembapan']; ?>" selected><?= $data['kelembapan']; ?></option>
-        </select>
+
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">Laju ventilasi udara 0,15 – 0,50 meter/detik</label>

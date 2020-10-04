@@ -18,7 +18,7 @@
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
 
       <div class="form-group">
-        <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
+        <label for="exampleFormControlInput1">1. Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
         <select class="form-control" name="aspak1" id="aspak1">
           <?php is_terisi($data['aspak'], set_value('aspak1')); ?>
           <option value="Ya">Ya</option>
@@ -27,7 +27,7 @@
         <?= form_error('aspak1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
+        <label for="exampleFormControlInput1">2. Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
         <select class="form-control" name="aspak2" id="aspak2">
           <?php if ($data['aspak_pmk']) : ?>
             <option value="<?= $data['aspak_pmk']; ?>"><?= $data['aspak_pmk']; ?></option>

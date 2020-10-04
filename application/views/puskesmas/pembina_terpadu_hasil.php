@@ -3,7 +3,7 @@
     <div class="row mb-5">
       <div class="col-lg-7 mx-auto text-center">
         <span class="subheading">Form Menu</span>
-        <h2 class="heading"><strong class="text-primary">Pembina Terpadu</strong></h2>
+        <h2 class="heading"><strong class="text-primary">Tim Pembina Terpadu</strong></h2>
       </div>
     </div>
     <form>
@@ -13,7 +13,7 @@
         </div>
       <?php endif; ?>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Nama Pembina dan No. Telepon</label>
+        <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu dan No. Telepon</label>
         <div class="row">
           <div class="col">
             <input type="text" class="form-control" placeholder="Nama Pembina 1" value="<?= $data['pembina1'] ?>" readonly>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Tanggal Pembinaan</label>
+        <label for="exampleFormControlInput1">2. Tanggal Pembinaan</label>
         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= date('d F Y', $data['tgl_pembinaan']); ?>" readonly>
       </div>
 

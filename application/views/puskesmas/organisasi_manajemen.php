@@ -17,7 +17,7 @@
 		<form method="POST" action="<?= $link; ?>" style=" padding:20px;">
 
 			<div class="form-group">
-				<label for="exampleFormControlInput1">Nomor izin operasional Puskesmas</label>
+				<label for="exampleFormControlInput1">1. Nomor izin operasional Puskesmas</label>
 				<?php if ($data['niop']) : ?>
 					<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi1" id="organisasi1" value="<?= $data['niop']; ?>">
 				<?php else : ?>
@@ -26,7 +26,7 @@
 				<?= form_error('organisasi1', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class="form-group">
-				<label for="exampleFormControlInput1">Tanggal terbit izin operasional Puskesmas</label>
+				<label for="exampleFormControlInput1">2. Tanggal terbit izin operasional Puskesmas</label>
 				<?php if ($data['tgl_izin']) : ?>
 					<input type="date" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi2" id="organisasi2" value="<?= date('Y-m-d', $data['tgl_izin']); ?>">
 				<?php else : ?>
@@ -35,7 +35,7 @@
 				<?= form_error('organisasi2', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class=" form-group">
-				<label for="exampleFormControlInput1">Kategori Puskesmas</label>
+				<label for="exampleFormControlInput1">3. Kategori Puskesmas</label>
 				<select class="form-control" name="organisasi3" id="organisasi3">
 					<?php if ($data['kategori']) : ?>
 						<option value="<?= $data['kategori']; ?>"><?= $data['kategori']; ?></option>
@@ -52,7 +52,7 @@
 				<?= form_error('organisasi3', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class="form-group">
-				<label for="exampleFormControlInput1">Status Akreditasi</label>
+				<label for="exampleFormControlInput1">4. Status Akreditasi</label>
 				<select class="form-control" name="organisasi4" id="organisasi4">
 					<?php if ($data['status']) : ?>
 						<option value="<?= $data['status']; ?>"><?= $data['status']; ?></option>
@@ -68,7 +68,7 @@
 				<?= form_error('organisasi4', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class="form-group">
-				<label for="exampleFormControlInput1">Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
+				<label for="exampleFormControlInput1">5. Puskesmas mempunyai dokumen pengelolaan lingkungan (UKL/UPL atau PPLH)</label>
 				<select class="form-control" name="organisasi5" id="organisasi5">
 					<?php is_terisi($data['pplh'], set_value('organisasi5')); ?>
 					<option value="Ya">Ya</option>

@@ -17,7 +17,7 @@
     ?>
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
       <div class="form-group">
-        <label for="exampleFormControlInput1">Melakukan penilaian mandiri (self evaluation) atas ha-sil kinerja & mutu layanan kesehatan yang tercantum dalam Penilaian Kinerja Puskesmas</label>
+        <label for="exampleFormControlInput1">1. Melakukan penilaian mandiri (self evaluation) atas ha-sil kinerja & mutu layanan kesehatan yang tercantum dalam Penilaian Kinerja Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -32,7 +32,7 @@
         <?= form_error('penilaian1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut, berapa cakupan kinerja di Tahun (N-2) untuk Hasil Pelayanan Kesehatan Puskesmas</label>
+        <label for="exampleFormControlInput1">2. Jika Ya, jawab pertanyaan berikut, berapa cakupan kinerja di Tahun (N-2) untuk Hasil Pelayanan Kesehatan Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -49,7 +49,7 @@
         <?= form_error('penilaian2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut, berapa cakupan kinerja di Tahun (N-2) untuk Hasil Manajemen Puskesmas</label>
+        <label for="exampleFormControlInput1">3. Jika Ya, jawab pertanyaan berikut, berapa cakupan kinerja di Tahun (N-2) untuk Hasil Manajemen Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -66,7 +66,7 @@
         <?= form_error('penilaian3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut, berapa Tingkat Kinerja Cakupan, Tahun (N-1) untuk Hasil Pelayanan Kesehatan Puskesmas</label>
+        <label for="exampleFormControlInput1">4. Jika Ya, jawab pertanyaan berikut, berapa Tingkat Kinerja Cakupan, Tahun (N-1) untuk Hasil Pelayanan Kesehatan Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -83,7 +83,7 @@
         <?= form_error('penilaian4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut, berapa Tingkat Kinerja Cakupan, Tahun (N-1) untuk Hasil Manajemen Puskesmas</label>
+        <label for="exampleFormControlInput1">5. Jika Ya, jawab pertanyaan berikut, berapa Tingkat Kinerja Cakupan, Tahun (N-1) untuk Hasil Manajemen Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -100,7 +100,7 @@
         <?= form_error('penilaian5', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Apakah Saudara melakukan Uji Petik/Monitoring Evaluasi Antar Waktu Untuk Data nomor 2 & nomor 3 di atas, Atas Kinerja & Mutu Layanan Kesehatan Puskesmas Saudara?</label>
+        <label for="exampleFormControlInput1">6. Apakah Saudara melakukan Uji Petik/Monitoring Evaluasi Antar Waktu Untuk Data nomor 2 & nomor 3 di atas, Atas Kinerja & Mutu Layanan Kesehatan Puskesmas Saudara?</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -115,7 +115,7 @@
         <?= form_error('penilaian6', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Bila jawaban nomor 6 (Ya), apakah Saudara berencana melakukan satu inovasi atas hasil analisis kinerja dan mutu saat saudara melakukan uji petik/monitoring dan evaluasi atas kedua hasil kinerja & mutu layanan Puskesmas Saudara?</label>
+        <label for="exampleFormControlInput1">7. Bila jawaban nomor 6 (Ya), apakah Saudara berencana melakukan satu inovasi atas hasil analisis kinerja dan mutu saat saudara melakukan uji petik/monitoring dan evaluasi atas kedua hasil kinerja & mutu layanan Puskesmas Saudara?</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -130,7 +130,7 @@
         <?= form_error('penilaian7', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Bila jawaban nomor 7 (Ya), sebutkan bentuk rumusan upaya Inovasi Saudara?</label>
+        <label for="exampleFormControlInput1">8. Bila jawaban nomor 7 (Ya), sebutkan bentuk rumusan upaya Inovasi Saudara?</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -147,7 +147,7 @@
         <?= form_error('penilaian8', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Status Akreditasi Puskesmas Terakhir, Sebutkan Tahun ………</label>
+        <label for="exampleFormControlInput1">9. Status Akreditasi Puskesmas Terakhir, Sebutkan Tahun ………</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -180,7 +180,7 @@
         <?= form_error('penilaian10', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Status IKS Puskesmas Terakhir, Sebutkan Tahun ...</label>
+        <label for="exampleFormControlInput1">10. Status IKS Puskesmas Terakhir, Sebutkan Tahun ...</label>
         <br>
         <span><strong>Penilaian</strong></span>
         <p style="font-size:12px;">

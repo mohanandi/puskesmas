@@ -18,13 +18,13 @@
             <?php endif; ?>
 
             <div class="form-group">
-                <label for="exampleFormControlInput1">Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
+                <label for="exampleFormControlInput1">1. Melaksanakan Pengisian Aplikasi Sarana, Prasarana, dan Peralatan Kesehatan (ASPAK)</label>
                 <input type="text" class="form-control" value="<?= $data['aspak']; ?>" placeholder="" name="aspak1" id="aspak1" readonly>
 
 
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
+                <label for="exampleFormControlInput1">2. Jika Ya, jawab pertanyaan berikut. berapa pemenuhan Standar ASPAK menurut PMK 43/2019 </label>
                 <input type="text" class="form-control" value="<?= $data['aspak_pmk']; ?>" placeholder="" name="aspak2" id="aspak2" readonly>
 
 

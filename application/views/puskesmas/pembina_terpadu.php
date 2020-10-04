@@ -17,7 +17,7 @@
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
 
       <div class="form-group">
-        <label for="exampleFormControlInput1">Nama Pembina dan No. Telepon</label>
+        <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu dan No. Telepon</label>
         <div class="row">
           <div class="col">
             <?php if ($data['pembina1']) : ?>
@@ -76,7 +76,7 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Tanggal Pembinaan</label>
+        <label for="exampleFormControlInput1">2. Tanggal Pembinaan</label>
         <?php if ($data['tgl_pembinaan']) : ?>
           <input type="date" class="form-control" id="exampleFormControlInput1" name="tgl_pembinaan" id="tgl_pembinaan" value="<?= date('Y-m-d', $data['tgl_pembinaan']); ?>">
         <?php else : ?>
