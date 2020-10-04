@@ -21,7 +21,7 @@
         <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
       <?php endif; ?>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Kelengkapan laporan SKDR <a href="#" onclick="toggle_visibility('foo25');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">1. Kelengkapan laporan SKDR <a href="##" onclick="toggle_visibility('foo25');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -39,7 +39,7 @@
           <?= form_error('pelaksanaan1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Ketepatan Laporan SKDR <a href="#" onclick="toggle_visibility('foo26');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">2. Ketepatan Laporan SKDR <a href="##" onclick="toggle_visibility('foo26');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -57,7 +57,7 @@
           <?= form_error('pelaksanaan2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Analisa Trend Mingguan Penyakit Potensial KLB <a href="#" onclick="toggle_visibility('foo27');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">3. Analisa Trend Mingguan Penyakit Potensial KLB <a href="##" onclick="toggle_visibility('foo27');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 

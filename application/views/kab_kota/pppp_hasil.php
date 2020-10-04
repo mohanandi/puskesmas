@@ -3,13 +3,13 @@
     <div class="row mb-5">
       <div class="col-lg-7 mx-auto text-center">
         <span class="subheading">Form Menu</span>
-        <h2 class="heading"><strong class="text-primary">Pengawasan, Pengendalian dan Penilaian Kinerja </strong> Puskesmas</h2>
+        <h2 class="heading"><strong class="text-primary">Pengawasan, Pengendalian dan Penilaian Kinerja </strong><br> Puskesmas</h2>
       </div>
     </div>
     <form style="padding:20px;">
       <div class="form-group">
         <label for="exampleFormControlInput1"><strong>IV. PENGAWASAN, PENGENDALIAN DAN PENILAIAN KINERJA PUSKESMAS</strong></label><br>
-        <label for="exampleFormControlInput1">Dilakukan penilaian kinerja Puskesmas.<a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">1. Dilakukan penilaian kinerja Puskesmas.<a href="##" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -20,7 +20,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Penilaian kinerja Puskesmas diverifikasi dan diberikan umpan balik (feedback) <a href="#" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">2. Penilaian kinerja Puskesmas diverifikasi dan diberikan umpan balik (feedback) <a href="##" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">

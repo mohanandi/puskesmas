@@ -15,8 +15,13 @@
     }
     ?>
     <form style="padding:20px;" method="POST" action="<?= $link; ?>">
+      <?php if ($kode_puskesmas) : ?>
+        <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
+      <?php else : ?>
+        <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
+      <?php endif; ?>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">1. Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -24,12 +29,7 @@
           1. ≥ 80% nilai 10 <br>
           2. 61 % - 79 % nilai 5 <br>
           3. ≤ 60%, nilai 0
-          <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-          <?php if ($kode_puskesmas) : ?>
-            <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= $kode_puskesmas; ?>">
-          <?php else : ?>
-            <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
-          <?php endif; ?>
+          <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
           <select class="form-control" name="pemenuhan1" id="pemenuhan1">
             <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
             <option value="1">1</option>
@@ -40,7 +40,7 @@
       </div>
 
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pemenuhan standar prasarana <a href="#" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">2. Pemenuhan standar prasarana <a href="##" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -48,7 +48,7 @@
           1. ≥ 80% nilai 10 <br>
           2. 61 % - 79 % nilai 5 <br>
           3. ≤ 60%, nilai 0
-          <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+          <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
 
           <select class="form-control" name="pemenuhan2" id="pemenuhan2">
             <?php is_terisi($data['standar_prasarana'], set_value('pemenuhan2')); ?>
@@ -59,7 +59,7 @@
           <?= form_error('pemenuhan2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pemenuhan standar peralatan Puskesmas <a href="#" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">3. Pemenuhan standar peralatan Puskesmas <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -67,7 +67,7 @@
           1. ≥ 80% nilai 10 <br>
           2. 61 % - 79 % nilai 5 <br>
           3. ≤ 60%, nilai 0
-          <p id="foo3" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+          <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
           <select class="form-control" name="pemenuhan3" id="pemenuhan3">
             <?php is_terisi($data['standar_peralatan'], set_value('pemenuhan3')); ?>
             <option value="1">1</option>
@@ -77,7 +77,7 @@
           <?= form_error('pemenuhan3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Ketersediaan obat <a href="#" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">4. Ketersediaan obat <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -93,14 +93,14 @@
         <?= form_error('pemenuhan4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pengendalian Ketersediaan Obat <a href="#" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">5. Pengendalian Ketersediaan Obat <a href="##" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
           1. Tersedianya 3 dokumen, nilai 10 <br>
           2. Tersedia dua dokumen, nilai 5 <br>
           3. Hanya tersedia satu dokumen atau tidak ada dokumen tersedia, nilai 0
-          <p id="foo5" style="display:none; font-size:14px;">Terdapat upaya yang dilakukan untuk mencegah/mengatasi kekosongan atau kekurangan obat di puskesmas, meliputi tersedianya 3 dokumen : <br>
+          <p id="foo5" style="display:none; font-size:14px;">Terdapat upaya yang dilakukan untuk mencegah/mengatasi kekosongan atau kekurangan obat di puskesmas, meliputi tersedianya 3 dokumen :
             <br> 1. SOP Pengendalian Ketersediaan
             <br> 2. Dokumen Perencanaan Kebutuhan Obat
             <br> 3. Dokumen mutasi obat/distribusi obat</p>
@@ -114,7 +114,7 @@
           </select>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pemenuhan sumber daya manusia (SDM) <a href="#" onclick="toggle_visibility('foo6');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">6. Pemenuhan sumber daya manusia (SDM) <a href="##" onclick="toggle_visibility('foo6');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -132,7 +132,7 @@
           <?= form_error('pemenuhan6', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Penerapan Sistem Rujukan Terintegrasi (Sisrute)<a href="#" onclick="toggle_visibility('foo7');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">7. Penerapan Sistem Rujukan Terintegrasi (Sisrute)<a href="##" onclick="toggle_visibility('foo7');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -149,7 +149,7 @@
             <?= form_error('pemenuhan7', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pelaksanaan Sistem Informasi Puskesmas <a href="#" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">8. Pelaksanaan Sistem Informasi Puskesmas <a href="##" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">

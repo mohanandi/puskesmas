@@ -22,7 +22,7 @@
         <input type="hidden" class="form-control" placeholder="" name="kode_puskesmas" id="kode_puskesmas" value="<?= set_value('kode_puskesmas'); ?>">
       <?php endif; ?>
       <div class="form-group">
-        <label for="exampleFormControlInput1"> Pelaksanaan Kegiatan di Puskesmas dipandu dengan kebijakan, pe-doman dan prosedur yang jelas <a href="#" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">1. Pelaksanaan Kegiatan di Puskesmas dipandu dengan kebijakan, pe-doman dan prosedur yang jelas <a href="##" onclick="toggle_visibility('foo');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -44,7 +44,7 @@
       </div>
 
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pelaksanaan kegiatan di Puskesmas mempunyai jadwal yang jelas dan disosialisasikan ke sasaran<a href="##" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">2. Pelaksanaan kegiatan di Puskesmas mempunyai jadwal yang jelas dan disosialisasikan ke sasaran<a href="##" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
 
@@ -65,7 +65,7 @@
       </div>
 
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pelaksanaan kegiatan mendapatkan dukungan dari lintas program, lintas sektor dan masyarakat sasaran di Puskesmas <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">3. Pelaksanaan kegiatan mendapatkan dukungan dari lintas program, lintas sektor dan masyarakat sasaran di Puskesmas <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -85,7 +85,7 @@
         <?= form_error('penggerakkan3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pelaksanaan kegiatan di Puskesmas dimonitor oleh Kepala Puskesmas dan penanggung jawab terkait. <a href="##" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">4. Pelaksanaan kegiatan di Puskesmas dimonitor oleh Kepala Puskesmas dan penanggung jawab terkait. <a href="##" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -103,7 +103,7 @@
         <?= form_error('penggerakkan4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Terdapat upaya Puskesmas untuk memperoleh masukan dari pelanggan/sasaran mengenai kualitas dan kepuasan terhadap pelaksanaan kegiatan <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">5. Terdapat upaya Puskesmas untuk memperoleh masukan dari pelanggan/sasaran mengenai kualitas dan kepuasan terhadap pelaksanaan kegiatan <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -121,7 +121,7 @@
         <?= form_error('penggerakkan5', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Terdapat upaya perbaikan yang dilaksanakan oleh Puskesmas terhadap masalah pelayanan yg dianggap penting atau prioritas untuk diperbaiki berdasarkan masukan pengguna layanan/ pelanggan/dinas kesehatan kabupaten/kota<a href="##" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">6. Terdapat upaya perbaikan yang dilaksanakan oleh Puskesmas terhadap masalah pelayanan yg dianggap penting atau prioritas untuk diperbaiki berdasarkan masukan pengguna layanan/ pelanggan/dinas kesehatan kabupaten/kota<a href="##" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">

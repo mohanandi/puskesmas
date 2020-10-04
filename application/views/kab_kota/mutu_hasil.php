@@ -3,7 +3,7 @@
     <div class="row mb-5">
       <div class="col-lg-7 mx-auto text-center">
         <span class="subheading">Form Menu</span>
-        <h2 class="heading"><strong class="text-primary">Peningkatan Mutu</strong> Puskesmas</h2>
+        <h2 class="heading"><strong class="text-primary">Peningkatan Mutu</strong><br> Puskesmas</h2>
       </div>
     </div>
 
@@ -11,7 +11,7 @@
 
     <form style=" padding:20px;">
       <div class="form-group">
-        <label for="exampleFormControlInput1">Terlaksananya pengukuran indikator mutu<a href="#" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">1. Terlaksananya pengukuran indikator mutu<a href="##" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -24,7 +24,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Kegiatan audit internal dilaksanakan untuk memantau mutu dan kinerja puskesmas <a href="#" onclick="toggle_visibility('foo9');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">2. Kegiatan audit internal dilaksanakan untuk memantau mutu dan kinerja puskesmas <a href="##" onclick="toggle_visibility('foo9');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -37,7 +37,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Pertemuan tim mutu (Rapat Tinjauan Manajemen), sebagai wadah untuk evaluasi minimal setiap semester <a href="#" onclick="toggle_visibility('foo10');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">3. Pertemuan tim mutu (Rapat Tinjauan Manajemen), sebagai wadah untuk evaluasi minimal setiap semester <a href="##" onclick="toggle_visibility('foo10');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -49,7 +49,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Melaksanakan PPS (Perencanaan Program Strategi) sebagai bentuk upaya perbaikan dan peningkatan mutu secara berkesinambungan <a href="#" onclick="toggle_visibility('foo11');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">4. Melaksanakan PPS (Perencanaan Program Strategi) sebagai bentuk upaya perbaikan dan peningkatan mutu secara berkesinambungan <a href="##" onclick="toggle_visibility('foo11');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
@@ -62,7 +62,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">Ada pelaporan Insiden Keselamatan Pasien <a href="#" onclick="toggle_visibility('foo12');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+        <label for="exampleFormControlInput1">5. Ada pelaporan Insiden Keselamatan Pasien <a href="##" onclick="toggle_visibility('foo12');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">

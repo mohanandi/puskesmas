@@ -8,7 +8,7 @@ div class="site-section" id="menu">
   </div>
   <form style=" padding:20px;">
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pemenuhan standar bangunan Puskesmas <a href="#" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">1. Pemenuhan standar bangunan Puskesmas <a href="##" onclick="toggle_visibility('foo1');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
 
@@ -23,7 +23,7 @@ div class="site-section" id="menu">
     </div>
 
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pemenuhan standar prasarana <a href="#" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">2. Pemenuhan standar prasarana <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
 
@@ -37,7 +37,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pemenuhan standar peralatan Puskesmas <a href="#" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">3. Pemenuhan standar peralatan Puskesmas <a href="##" onclick="toggle_visibility('foo3');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
 
@@ -51,7 +51,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Ketersediaan obat <a href="#" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">4. Ketersediaan obat <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
       <p style="font-size:12px;">
@@ -62,7 +62,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pengendalian Ketersediaan Obat <a href="#" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">5. Pengendalian Ketersediaan Obat <a href="##" onclick="toggle_visibility('foo5');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
       <p style="font-size:12px;">
@@ -78,7 +78,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pemenuhan sumber daya manusia (SDM) <a href="#" onclick="toggle_visibility('foo6');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">6. Pemenuhan sumber daya manusia (SDM) <a href="##" onclick="toggle_visibility('foo6');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
       <p style="font-size:12px;">
@@ -92,7 +92,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Penerapan Sistem Rujukan Terintegrasi (Sisrute)<a href="#" onclick="toggle_visibility('foo7');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">7. Penerapan Sistem Rujukan Terintegrasi (Sisrute)<a href="##" onclick="toggle_visibility('foo7');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
       <p style="font-size:12px;">
@@ -105,7 +105,7 @@ div class="site-section" id="menu">
 
     </div>
     <div class="form-group">
-      <label for="exampleFormControlInput1">Pelaksanaan Sistem Informasi Puskesmas <a href="#" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
+      <label for="exampleFormControlInput1">8. Pelaksanaan Sistem Informasi Puskesmas <a href="##" onclick="toggle_visibility('foo8');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
       <br>
       <span><strong> Penilaian</strong> </span>
       <p style="font-size:12px;">
