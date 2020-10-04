@@ -82,7 +82,7 @@
         <div class="row mb-5">
           <div class="col-lg-7 mx-auto text-center">
             <span class="subheading">Form Menu</span>
-            <h2 class="heading"><strong class="text-primary">Daftar</strong> Puskesmas</h2>
+            <h2 class="heading"><strong class="text-primary"><?= $subjudul; ?></strong></h2>
           </div>
         </div>
         </head>
@@ -95,7 +95,7 @@
 
               <p style="text-align: center;">Daftar Kabupaten/Kota dan Puskesmas</p>
               <?php foreach ($kabupaten as $k) : ?>
-                <a type="button" class="collapsible"><?= $k['nama']; ?></a>
+                <button type="button" class="collapsible"><a href="<?= base_url(); ?>Provinsi/nilai_kabupaten/<?= $k['kode']; ?>" class="badge badge-success"><?= $k['nama']; ?></a></button>
                 <?php
                 $puskesmas = puskesmas($k['kab_kota']);
                 foreach ($puskesmas as $psk) :

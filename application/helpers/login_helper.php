@@ -38,6 +38,136 @@ function indikator($nilai)
     return $ind;
 }
 
+function penilaian_pembinaan_terpadu($kode)
+{
+    $ci = get_instance();
+    $data = $ci->db->get_where('penilaian_pembinaan_terpadu', ['kode' => $kode])->row_array();
+    if ($data['cluster_binaan'] == 1) {
+        $nilai1 = 10;
+    } else if ($data['cluster_binaan'] == 2) {
+        $nilai1 = 0;
+    }
+
+    if ($data['sk_tim'] == 1) {
+        $nilai2 = 10;
+    } else if ($data['sk_tim'] == 2) {
+        $nilai2 = 0;
+    }
+
+    if ($data['cluster_perwakilan'] == 1) {
+        $nilai3 = 10;
+    } else if ($data['cluster_perwakilan'] == 2) {
+        $nilai3 = 0;
+    }
+    if ($data['pengenalan_peran'] == 1) {
+        $nilai4 = 10;
+    } else if ($data['pengenalan_peran'] == 2) {
+        $nilai4 = 0;
+    }
+    if ($data['nspk'] == 1) {
+        $nilai5 = 10;
+    } else if ($data['nspk'] == 2) {
+        $nilai5 = 0;
+    }
+
+    if ($data['pengolahan_analisis'] == 1) {
+        $nilai6 = 10;
+    } else if ($data['pengolahan_analisis'] == 2) {
+        $nilai6 = 0;
+    }
+
+    if ($data['trend_analysis'] == 1) {
+        $nilai7 = 10;
+    } else if ($data['trend_analysis'] == 2) {
+        $nilai7 = 0;
+    }
+    if ($data['lintas_sektor'] == 1) {
+        $nilai8 = 10;
+    } else if ($data['lintas_sektor'] == 2) {
+        $nilai8 = 0;
+    }
+
+    if ($data['lintas_program'] == 1) {
+        $nilai9 = 10;
+    } else if ($data['lintas_program'] == 2) {
+        $nilai9 = 0;
+    }
+
+    if ($data['tpt'] == 1) {
+        $nilai10 = 10;
+    } else if ($data['tpt'] == 2) {
+        $nilai10 = 0;
+    }
+
+    if ($data['rincian_tpt'] == 1) {
+        $nilai11 = 10;
+    } else if ($data['rincian_tpt'] == 2) {
+        $nilai11 = 0;
+    }
+
+    if ($data['simulasi_pembinaan'] == 1) {
+        $nilai12 = 10;
+    } else if ($data['simulasi_pembinaan'] == 2) {
+        $nilai12 = 0;
+    }
+
+    if ($data['setiap_bulan'] == 1) {
+        $nilai13 = 10;
+    } else if ($data['setiap_bulan'] == 2) {
+        $nilai13 = 5;
+    } else if ($data['setiap_bulan'] == 3) {
+        $nilai13 = 0;
+    }
+
+    if ($data['internal'] == 1) {
+        $nilai14 = 10;
+    } else if ($data['internal'] == 2) {
+        $nilai14 = 0;
+    }
+
+    if ($data['1x_setahun'] == 1) {
+        $nilai15 = 10;
+    } else if ($data['1x_setahun'] == 2) {
+        $nilai15 = 0;
+    }
+
+    if ($data['monitoring_evaluasi'] == 1) {
+        $nilai16 = 10;
+    } else if ($data['monitoring_evaluasi'] == 2) {
+        $nilai16 = 0;
+    }
+
+    if ($data['tersusunnya_instrumen'] == 1) {
+        $nilai17 = 10;
+    } else if ($data['tersusunnya_instrumen'] == 2) {
+        $nilai17 = 0;
+    }
+
+    if ($data['tersusunnya_laporan'] == 1) {
+        $nilai18 = 10;
+    } else if ($data['tersusunnya_laporan'] == 2) {
+        $nilai18 = 5;
+    } else if ($data['tersusunnya_laporan'] == 3) {
+        $nilai18 = 0;
+    }
+
+    if ($data['kesehatan_kabupaten'] == 1) {
+        $nilai19 = 10;
+    } else if ($data['kesehatan_kabupaten'] == 2) {
+        $nilai19 = 5;
+    } else if ($data['kesehatan_kabupaten'] == 3) {
+        $nilai19 = 0;
+    }
+
+    if ($data['akhir_tahun'] == 1) {
+        $nilai20 = 10;
+    } else if ($data['akhir_tahun'] == 2) {
+        $nilai20 = 0;
+    }
+
+    return $total = $nilai1 + $nilai2 + $nilai3 + $nilai4 + $nilai5 + $nilai6 + $nilai7 + $nilai8 + $nilai9 + $nilai10 + $nilai11 + $nilai12 + $nilai13 + $nilai14 + $nilai15 + $nilai16 + $nilai17 + $nilai18 + $nilai19 + $nilai20;
+}
+
 function puskesmas($kab_kota)
 {
     $ci = get_instance();
