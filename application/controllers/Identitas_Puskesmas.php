@@ -18,7 +18,7 @@ class Identitas_Puskesmas extends CI_Controller
         if ($data['data'] == NULL) {
             $this->load->view('puskesmas/identitas_puskesmas', $data);
         } else {
-            $this->load->view('puskesmas/Identitas_puskesmas_hasil', $data);
+            $this->load->view('puskesmas/identitas_puskesmas_hasil', $data);
         }
         $this->load->view('templates/puskesmas/foot');
     }
