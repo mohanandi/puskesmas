@@ -146,7 +146,8 @@ class Provinsi extends CI_Controller
         } else {
             $this->Provinsi_Model->ubah_penilaian_pembinaan();
             $this->session->set_flashdata('flash', 'Diubah');
-            $this->nilai_kabupaten($this->input->post('kode_kabupaten'));
+            $kode = $this->input->post('kode_kabupaten');
+            redirect("Provinsi/nilai_kabupaten/$kode");
         }
     }
 

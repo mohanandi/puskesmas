@@ -12,6 +12,7 @@
                     <th>KABUPATEN/KOTA</th>
                     <th>STATUS</th>
                     <th>SKOR</th>
+                    <th>PRESENTASE</th>
                     <th>KETERANGAN</th>
                 </tr>
             </thead>
@@ -21,9 +22,15 @@
                     <?php if ($this->db->get_where('penilaian_pembinaan_terpadu', ['kode' => $data_kabupaten['kode']])->row_array()) : ?>
                         <td>TERISI</td>
                         <td><?= penilaian_pembinaan_terpadu($data_kabupaten['kode']); ?></td>
+                        <td><?php
+                            $nilai = penilaian_pembinaan_terpadu($data_kabupaten['kode']);
+                            $persen  = $nilai / 200 * 100;
+                            echo "$persen%";
+                            ?></td>
                         <td><a href="<?= base_url(); ?>Provinsi/penilaian_kabupaten/<?= $data_kabupaten['kode']; ?>">DETAIL</a></td>
                     <?php else : ?>
                         <td>BELUM TERISI</td>
+                        <td>0</td>
                         <td>0</td>
                         <td><a href="<?= base_url(); ?>Provinsi/penilaian_kabupaten/<?= $data_kabupaten['kode']; ?>">ISI</a></td>
                     <?php endif; ?>
