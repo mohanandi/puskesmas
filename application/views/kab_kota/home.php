@@ -113,7 +113,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 align-self-center">
-						<h1 class="heading mb-5">Selamat Datang Dinas Provinsi <?= $user['nama']; ?></h1>
+						<h1 class="heading mb-5">Selamat Datang Dinas Kabupaten/Kota <?= $user['nama']; ?></h1>
 						<p><a href="#menu" class="btn" style="background-color: #16b3ac; color: #ffffff;">Mulai</a></p>
 					</div>
 				</div>
