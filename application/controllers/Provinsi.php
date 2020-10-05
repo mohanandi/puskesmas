@@ -50,7 +50,7 @@ class Provinsi extends CI_Controller
         $data['subjudul'] = "Pemantauan Proses Pembinaan Terpadu Puskesmas yang Dilakukan Dinkes Kabupaten/Kota";
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
         $data['judul'] = "Instrumen Monitoring dan Evaluasi Pembinaan ke Puskesmas";
-        $data['data_kabupaten'] = $this->Provinsi_Model->data_kabupaten($kode);
+        $data['data_kabupaten'] = $this->Provinsi_Model->data_kabupaten(urldecode($kode));
         $this->load->view('templates/provinsi/head', $data);
         $this->load->view('provinsi/nilai_kabupaten', $data);
         $this->load->view('templates/provinsi/foot');
@@ -61,10 +61,10 @@ class Provinsi extends CI_Controller
         $data['judul'] = "Instrumen Monitoring dan Evaluasi Pembinaan ke Puskesmas";
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
-        $data['kabupaten_pilih'] = $this->Provinsi_Model->data_kabupaten($kode);
+        $data['kabupaten_pilih'] = $this->Provinsi_Model->data_kabupaten(urldecode($kode));
         $data['subjudul'] = "Pemantauan Proses Pembinaan Terpadu Puskesmas yang Dilakukan Dinkes Kabupaten/Kota " . $data['kabupaten_pilih']['nama'];
-        $data['data'] = $this->Provinsi_Model->check_penilaian_pembinaan($kode);
-        $data['kode_kabupaten'] = $kode;
+        $data['data'] = $this->Provinsi_Model->check_penilaian_pembinaan(urldecode($kode));
+        $data['kode_kabupaten'] = urldecode($kode);
         $this->load->view('templates/provinsi/head', $data);
         if ($data['data'] == NULL) {
             $this->load->view('provinsi/penilaian_kabupaten', $data);
@@ -113,10 +113,10 @@ class Provinsi extends CI_Controller
         $data['judul'] = "Instrumen Monitoring dan Evaluasi Pembinaan ke Puskesmas";
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['kabupaten'] = $this->Provinsi_Model->check_kabupaten($data['user']['provinsi']);
-        $data['data'] = $this->Provinsi_Model->check_penilaian_pembinaan($kode);
-        $data['kabupaten_pilih'] = $this->Provinsi_Model->data_kabupaten($kode);
+        $data['data'] = $this->Provinsi_Model->check_penilaian_pembinaan(urldecode($kode));
+        $data['kabupaten_pilih'] = $this->Provinsi_Model->data_kabupaten(urldecode($kode));
         $data['subjudul'] = "Pemantauan Proses Pembinaan Terpadu Puskesmas yang Dilakukan Dinkes Kabupaten/Kota " . $data['kabupaten_pilih']['nama'];
-        $data['kode_kabupaten'] = $kode;
+        $data['kode_kabupaten'] = urldecode($kode);
 
         $this->form_validation->set_rules('kode_kabupaten', '', 'trim|required');
         $this->form_validation->set_rules('pemantauan1', '', 'trim|in_list[1,2]');
