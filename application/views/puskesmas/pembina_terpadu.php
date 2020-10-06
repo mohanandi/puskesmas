@@ -10,7 +10,7 @@
       $link = '';
       $button = 'Simpan Edit';
     } else {
-      $link = base_url('Pembina_terpadu/tambah');
+      $link = base_url('Pembina_Terpadu/tambah');
       $button = 'Simpan';
     }
     ?>
