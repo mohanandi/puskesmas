@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Waktu pembuatan: 07 Okt 2020 pada 20.04
--- Versi server: 10.3.24-MariaDB
--- Versi PHP: 7.3.6
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 07 Okt 2020 pada 17.31
+-- Versi server: 10.4.13-MariaDB
+-- Versi PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u8879435_puskesmas`
+-- Database: `db_puskesmas`
 --
 
 -- --------------------------------------------------------
@@ -281,6 +280,7 @@ CREATE TABLE `organisasi_manajemen` (
   `niop` varchar(255) NOT NULL,
   `tgl_izin` int(11) NOT NULL,
   `kategori` varchar(255) NOT NULL,
+  `kategorinon` varchar(255) NOT NULL,
   `status` varchar(255) NOT NULL,
   `pplh` varchar(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -289,14 +289,14 @@ CREATE TABLE `organisasi_manajemen` (
 -- Dumping data untuk tabel `organisasi_manajemen`
 --
 
-INSERT INTO `organisasi_manajemen` (`kode`, `niop`, `tgl_izin`, `kategori`, `status`, `pplh`) VALUES
-('1012334', '1871/503/00014/445-10PKm/III.16/2019', 1575936000, 'Puskesmas Rawat Inap', 'Terakreditasi Paripurna', 'Ya'),
-('1032284', '445/05/pj.I/2020', 1584489600, 'Puskesmas Kawasan Perdesaan', 'Terakreditasi Paripurna', 'Ya'),
-('1032386', '503 / 4800', 1523404800, 'Puskesmas Kawasaan Perkotaan', 'Terakreditasi Paripurna', 'Ya'),
-('1032584', '5033610p35.07.122/2019', 1567728000, 'Puskesmas Kawasaan Perkotaan', 'Terakreditasi Utama', 'Ya'),
-('1033297', '503.445/44/PKM-RIUB/P/436.7.2/IX/2020', 1222905600, 'Puskesmas Rawat Inap', 'Terakreditasi Utama', 'Ya'),
-('1050116', '445/3136/DIKES/2016', 1465516800, 'Puskesmas Kawasaan Perkotaan', 'Terakreditasi Utama', 'Ya'),
-('puskesmas', '11112222223330000', 1603670400, 'Puskesmas Kawasaan Perkotaan', 'Terakreditasi Dasar', 'Ya');
+INSERT INTO `organisasi_manajemen` (`kode`, `niop`, `tgl_izin`, `kategori`, `kategorinon`, `status`, `pplh`) VALUES
+('1012334', '1871/503/00014/445-10PKm/III.16/2019', 1575936000, 'Puskesmas Rawat Inap', '', 'Terakreditasi Paripurna', 'Ya'),
+('1032284', '445/05/pj.I/2020', 1584489600, 'Puskesmas Kawasan Perdesaan', '', 'Terakreditasi Paripurna', 'Ya'),
+('1032386', '503 / 4800', 1523404800, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Paripurna', 'Ya'),
+('1032584', '5033610p35.07.122/2019', 1567728000, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Utama', 'Ya'),
+('1033297', '503.445/44/PKM-RIUB/P/436.7.2/IX/2020', 1222905600, 'Puskesmas Rawat Inap', '', 'Terakreditasi Utama', 'Ya'),
+('1050116', '445/3136/DIKES/2016', 1465516800, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Utama', 'Ya'),
+('puskesmas', '11112222223330000', 1603666800, 'Puskesmas Kawasaan Perkotaan', 'Puskesmas Rawat Inap', 'Terakreditasi Dasar', 'Ya');
 
 -- --------------------------------------------------------
 
