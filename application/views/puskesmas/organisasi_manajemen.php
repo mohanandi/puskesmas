@@ -35,7 +35,8 @@
 				<?= form_error('organisasi2', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class=" form-group">
-				<label for="exampleFormControlInput1">3. Kategori Puskesmas</label>
+				<label for="exampleFormControlInput1">3. Kategori Puskesmas</label><br>
+				<label for="exampleFormControlInput1">a. Kategori Puskesmas (Kawasan)</label>
 				<select class="form-control" name="organisasi3" id="organisasi3">
 					<?php if ($data['kategori']) : ?>
 						<option value="<?= $data['kategori']; ?>"><?= $data['kategori']; ?></option>
@@ -46,10 +47,21 @@
 					<option value="Puskesmas Kawasan Perdesaan">Puskesmas Kawasan Perdesaan</option>
 					<option value="Puskesmas Kawasan Terpencil">Puskesmas Kawasan Terpencil</option>
 					<option value="Puskesmas Kawasan Sangat Terpencil">Puskesmas Kawasan Sangat Terpencil</option>
+				</select>
+				<?= form_error('organisasi3', '<small class="text-danger pl-3">', '</small>'); ?>
+			</div>
+			<div class=" form-group">
+				<label for="exampleFormControlInput1">b. Kategori Puskesmas (Rawat inap/Non rawat inap)</label>
+				<select class="form-control" name="organisasi3a" id="organisasi3a">
+					<?php if ($data['kategorinon']) : ?>
+						<option value="<?= $data['kategorinon']; ?>"><?= $data['kategorinon']; ?></option>
+					<?php else : ?>
+						<option value="<?= set_value('organisasi3a'); ?>"><?= set_value('organisasi3a'); ?></option>
+					<?php endif; ?>
 					<option value="Puskesmas Non Rawat Inap">Puskesmas Non Rawat Inap</option>
 					<option value="Puskesmas Rawat Inap">Puskesmas Rawat Inap</option>
 				</select>
-				<?= form_error('organisasi3', '<small class="text-danger pl-3">', '</small>'); ?>
+				<?= form_error('organisasi3a', '<small class="text-danger pl-3">', '</small>'); ?>
 			</div>
 			<div class="form-group">
 				<label for="exampleFormControlInput1">4. Status Akreditasi</label>

@@ -27,6 +27,7 @@ class Organisasi_Manajemen extends CI_Controller
         $this->form_validation->set_rules('organisasi1', '', 'required');
         $this->form_validation->set_rules('organisasi2', '', 'required');
         $this->form_validation->set_rules('organisasi3', '', 'required');
+        $this->form_validation->set_rules('organisasi3a', '', 'required');
         $this->form_validation->set_rules('organisasi4', '', 'required');
         $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
 
@@ -46,6 +47,7 @@ class Organisasi_Manajemen extends CI_Controller
         $this->form_validation->set_rules('organisasi1', '', 'required');
         $this->form_validation->set_rules('organisasi2', '', 'required');
         $this->form_validation->set_rules('organisasi3', '', 'required');
+        $this->form_validation->set_rules('organisasi3a', '', 'required');
         $this->form_validation->set_rules('organisasi4', '', 'required');
         $this->form_validation->set_rules('organisasi5', '', 'trim|in_list[Ya,Tidak]');
 

@@ -23,8 +23,13 @@
 						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi2" id="organisasi2" value="<?= date('d F Y', $data['tgl_izin']); ?>" readonly>
 					</div>
 					<div class="form-group">
-						<label for="exampleFormControlInput1">3. Kategori Puskesmas</label>
+						<label for="exampleFormControlInput1">3. Kategori Puskesmas</label><br>
+						<label for="exampleFormControlInput1">a. Kategori Puskesmas (Kawasan)</label>
 						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi3" id="organisasi3" value="<?= $data['kategori']; ?>" readonly>
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlInput1">b. Kategori Puskesmas (Rawat inap/Non rawat inap)</label>
+						<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="organisasi3a" id="organisasi3a" value="<?= $data['kategorinon']; ?>" readonly>
 					</div>
 					<div class="form-group">
 						<label for="exampleFormControlInput1">4. Status Akreditasi</label>

@@ -10,6 +10,7 @@ class OrganisasiManajemen_Model extends CI_Model
             "niop" => $this->input->post('organisasi1', true),
             "tgl_izin" => strtotime($this->input->post('organisasi2', true)),
             "kategori" => $this->input->post('organisasi3', true),
+            "kategorinon" => $this->input->post('organisasi3a', true),
             "status" => $this->input->post('organisasi4', true),
             "pplh" => $this->input->post('organisasi5', true)
         ];
@@ -27,6 +28,7 @@ class OrganisasiManajemen_Model extends CI_Model
             "niop" => $this->input->post('organisasi1', true),
             "tgl_izin" => strtotime($this->input->post('organisasi2', true)),
             "kategori" => $this->input->post('organisasi3', true),
+            "kategorinon" => $this->input->post('organisasi3a', true),
             "status" => $this->input->post('organisasi4', true),
             "pplh" => $this->input->post('organisasi5', true)
         ];
