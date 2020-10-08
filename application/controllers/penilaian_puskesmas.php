@@ -75,7 +75,7 @@ class Penilaian_Puskesmas extends CI_Controller
         } else {
             $this->PenilaianPuskesmas_Model->ubahData();
             $this->session->set_flashdata('flash', 'Diubah');
-            redirect('penilaian_puskesmas');
+            redirect('Penilaian_Puskesmas');
         }
     }
 }
