@@ -17,8 +17,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia1a']; ?>" placeholder="" name="cakupan_a1a" id="cakupan_a1a" readonly>
 
@@ -28,8 +28,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia1b']; ?>" placeholder="" name="cakupan_a1b" id="cakupan_a1b" readonly>
 
@@ -53,8 +53,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia2a']; ?>" placeholder="" name="cakupan_a2a" id="cakupan_a2a" readonly>
 
@@ -65,8 +65,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia2b']; ?>" placeholder="" name="cakupan_a2b" id="cakupan_a2b" readonly>
 
@@ -92,8 +92,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia3a']; ?>" placeholder="" name="cakupan_a3a" id="cakupan_a3a" readonly>
 
@@ -104,8 +104,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['kia3b']; ?>" placeholder="" name="cakupan_a3b" id="cakupan_a3b" readonly>
 
@@ -135,8 +135,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['imunisasi1a']; ?>" placeholder="" name="cakupan_b1a" id="cakupan_b1a" readonly>
 
@@ -147,8 +147,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['imunisasi1b']; ?>" placeholder="" name="cakupan_b1b" id="cakupan_b1b" readonly>
 
@@ -177,8 +177,8 @@
                 <br>
                 <span><strong> Penilaian</strong> </span>
                 <p style="font-size:12px;">
-                  1. Ya=25%<br>
-                  2. Tidak=0
+                  1. Ya<br>
+                  2. Tidak
                 </p>
                 <input type="text" class="form-control" value="<?= $data['gizi1a']; ?>" placeholder="" name="cakupan_c1a" id="cakupan_c1a" readonly>
 
@@ -189,8 +189,8 @@
                 <br>
                 <span><strong> Penilaian</strong> </span>
                 <p style="font-size:12px;">
-                  1. Ya=25%<br>
-                  2. Tidak=0
+                  1. Ya<br>
+                  2. Tidak
                 </p>
                 <input type="text" class="form-control" value="<?= $data['gizi1b']; ?>" placeholder="" name="cakupan_c1b" id="cakupan_c1b" readonly>
 
@@ -220,8 +220,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan1a']; ?>" placeholder="" name="cakupan_d1a" id="cakupan_d1a" readonly>
 
@@ -232,8 +232,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan1b']; ?>" placeholder="" name="cakupan_d1b" id="cakupan_d1b" readonly>
 
@@ -259,8 +259,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan2a']; ?>" placeholder="" name="cakupan_d2a" id="cakupan_d2a" readonly>
 
@@ -271,8 +271,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan2b']; ?>" placeholder="" name="cakupan_d2b" id="cakupan_d2b" readonly>
 
@@ -297,8 +297,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan3a']; ?>" placeholder="" name="cakupan_d3a" id="cakupan_d3a" readonly>
 
@@ -309,8 +309,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan3b']; ?>" placeholder="" name="cakupan_d3b" id="cakupan_d3b" readonly>
 
@@ -335,8 +335,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan4a']; ?>" placeholder="" name="cakupan_d4a" id="cakupan_d4a" readonly>
 
@@ -347,8 +347,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan4b']; ?>" placeholder="" name="cakupan_d4b" id="cakupan_d4b" readonly>
 
@@ -374,8 +374,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan5a']; ?>" placeholder="" name="cakupan_d5a" id="cakupan_d5a" readonly>
 
@@ -386,8 +386,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan5b']; ?>" placeholder="" name="cakupan_d5b" id="cakupan_d5b" readonly>
 
@@ -413,8 +413,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan6a']; ?>" placeholder="" name="cakupan_d6a" id="cakupan_d6a" readonly>
 
@@ -424,8 +424,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan6b']; ?>" placeholder="" name="cakupan_d6b" id="cakupan_d6b" readonly>
 
@@ -451,8 +451,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan7a']; ?>" placeholder="" name="cakupan_d7a" id="cakupan_d7a" readonly>
 
@@ -463,8 +463,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan7b']; ?>" placeholder="" name="cakupan_d7b" id="cakupan_d7b" readonly>
 
@@ -490,8 +490,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan8a']; ?>" placeholder="" name="cakupan_d8a" id="cakupan_d8a" readonly>
 
@@ -502,8 +502,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pencegahan8b']; ?>" placeholder="" name="cakupan_d8b" id="cakupan_d8b" readonly>
 
@@ -532,8 +532,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk1a']; ?>" placeholder="" name="cakupan_e1a" id="cakupan_e1a" readonly>
 
@@ -543,8 +543,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk1b']; ?>" placeholder="" name="cakupan_e1b" id="cakupan_e1b" readonly>
 
@@ -570,8 +570,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk2a']; ?>" placeholder="" name="cakupan_e2a" id="cakupan_e2a" readonly>
 
@@ -582,8 +582,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk2b']; ?>" placeholder="" name="cakupan_e2b" id="cakupan_e2b" readonly>
 
@@ -608,8 +608,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk3a']; ?>" placeholder="" name="cakupan_e3a" id="cakupan_e3a" readonly>
 
@@ -620,8 +620,8 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              1. Ya=25%<br>
-              2. Tidak=0
+              1. Ya<br>
+              2. Tidak
             </p>
             <input type="text" class="form-control" value="<?= $data['pispk3b']; ?>" placeholder="" name="cakupan_e3b" id="cakupan_e3b" readonly>
 

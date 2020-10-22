@@ -17,7 +17,8 @@ class IdentitasPuskesmas_Model extends CI_Model
             "no_telp" => $this->input->post('no_telp', true),
             "no_telp_gadar" => $this->input->post('telp_gadar', true),
             "no_faksimile" => $this->input->post('faks', true),
-            "email" => $this->input->post('email', true)
+            "email" => $this->input->post('email', true),
+            "website" => $this->input->post('website', true)
         ];
         $this->db->insert('identitas_puskesmas', $data);
     }
@@ -40,7 +41,8 @@ class IdentitasPuskesmas_Model extends CI_Model
             "no_telp" => $this->input->post('no_telp', true),
             "no_telp_gadar" => $this->input->post('telp_gadar', true),
             "no_faksimile" => $this->input->post('faks', true),
-            "email" => $this->input->post('email', true)
+            "email" => $this->input->post('email', true),
+            "website" => $this->input->post('website', true)
         ];
 
         $this->db->where('kode', $this->session->userdata('kode'));

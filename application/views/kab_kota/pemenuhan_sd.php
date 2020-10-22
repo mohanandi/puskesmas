@@ -27,16 +27,15 @@
 
         <p style="font-size:12px;">
           1. ≥ 80% nilai 10 <br>
-          2. 61 % - 79 % nilai 5 <br>
-          3. ≤ 60%, nilai 0
-          <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-          <select class="form-control" name="pemenuhan1" id="pemenuhan1">
-            <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3"> 3</option>
-          </select>
-          <?= form_error('pemenuhan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          2. 60% s.d. < 80% nilai 5 <br>
+            3. < 60%, nilai 0 <p id="foo" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
+        <select class="form-control" name="pemenuhan1" id="pemenuhan1">
+          <?php is_terisi($data['standar_bangunan'], set_value('pemenuhan1')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3"> 3</option>
+        </select>
+        <?= form_error('pemenuhan1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
 
       <div class="form-group">
@@ -46,17 +45,16 @@
 
         <p style="font-size:12px;">
           1. ≥ 80% nilai 10 <br>
-          2. 61 % - 79 % nilai 5 <br>
-          3. ≤ 60%, nilai 0
-          <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+          2. 60% s.d. < 80% nilai 5 <br>
+            3. < 60%, nilai 0 <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
 
-          <select class="form-control" name="pemenuhan2" id="pemenuhan2">
-            <?php is_terisi($data['standar_prasarana'], set_value('pemenuhan2')); ?>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3"> 3</option>
-          </select>
-          <?= form_error('pemenuhan2', '<small class="text-danger pl-3">', '</small>'); ?>
+        <select class="form-control" name="pemenuhan2" id="pemenuhan2">
+          <?php is_terisi($data['standar_prasarana'], set_value('pemenuhan2')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3"> 3</option>
+        </select>
+        <?= form_error('pemenuhan2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">3. Pemenuhan standar peralatan Puskesmas <a href="##" onclick="toggle_visibility('foo2');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -65,16 +63,15 @@
 
         <p style="font-size:12px;">
           1. ≥ 80% nilai 10 <br>
-          2. 61 % - 79 % nilai 5 <br>
-          3. ≤ 60%, nilai 0
-          <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
-          <select class="form-control" name="pemenuhan3" id="pemenuhan3">
-            <?php is_terisi($data['standar_peralatan'], set_value('pemenuhan3')); ?>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3"> 3</option>
-          </select>
-          <?= form_error('pemenuhan3', '<small class="text-danger pl-3">', '</small>'); ?>
+          2. 60% s.d. < 80% nilai 5 <br>
+            3. < 60%, nilai 0 <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar peralatan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+        <select class="form-control" name="pemenuhan3" id="pemenuhan3">
+          <?php is_terisi($data['standar_peralatan'], set_value('pemenuhan3')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3"> 3</option>
+        </select>
+        <?= form_error('pemenuhan3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">4. Ketersediaan obat <a href="##" onclick="toggle_visibility('foo4');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>

@@ -26,17 +26,17 @@
         <span><strong> Penilaian</strong> </span>
 
         <p style="font-size:12px;">
+
           1. Kelengkapan ≥ 80%, nilai 10 <br>
-          2. kelengkapan antara 61 % - 79 % nilai 5 <br>
-          3. kelengkapan ≤ 60%, nilai 0
-          <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <select class="form-control" name="pelaksanaan1" id="pelaksanaan1">
-            <?php is_terisi($data['skdr'], set_value('pelaksanaan1')); ?>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-          <?= form_error('pelaksanaan1', '<small class="text-danger pl-3">', '</small>'); ?>
+          2. kelengkapan antara 60 % s.d. < 80 %, nilai 5 <br>
+            3. kelengkapan < 60%, nilai 0 <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+        <select class="form-control" name="pelaksanaan1" id="pelaksanaan1">
+          <?php is_terisi($data['skdr'], set_value('pelaksanaan1')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <?= form_error('pelaksanaan1', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">2. Ketepatan Laporan SKDR <a href="##" onclick="toggle_visibility('foo26');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>
@@ -45,16 +45,15 @@
 
         <p style="font-size:12px;">
           1. Kelengkapan ≥ 80%, nilai 10 <br>
-          2. kelengkapan antara 61 % - 79 % nilai 5 <br>
-          3. kelengkapan ≤ 60%, nilai 0
-          <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <select class="form-control" name="pelaksanaan2" id="pelaksanaan2">
-            <?php is_terisi($data['laporan_skdr'], set_value('pelaksanaan2')); ?>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-          <?= form_error('pelaksanaan2', '<small class="text-danger pl-3">', '</small>'); ?>
+          2. kelengkapan antara 60 % s.d. < 80%, nilai 5 <br>
+            3. kelengkapan < 60%, nilai 0 <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+        <select class="form-control" name="pelaksanaan2" id="pelaksanaan2">
+          <?php is_terisi($data['laporan_skdr'], set_value('pelaksanaan2')); ?>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+        <?= form_error('pelaksanaan2', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">3. Analisa Trend Mingguan Penyakit Potensial KLB <a href="##" onclick="toggle_visibility('foo27');" style="margin-left: 3px; font-size: 12px; color: #16b3ac;"> Kriteria </a> </label>

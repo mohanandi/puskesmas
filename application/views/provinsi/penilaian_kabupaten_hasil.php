@@ -10,7 +10,8 @@
                             <br>
                             <p style="font-size:12px;">
                                 1. Ya = 10 <br>
-                                2. Tidak = 0
+                                2. Sebagian = 5 <br>
+                                3. Tidak = 0
 
                             </p>
                             <input type="text" class="form-control" value="<?= $data['cluster_binaan']; ?>" placeholder="" name="pemantauan1" id="pemantauan1" readonly>
@@ -24,7 +25,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <input type="text" class="form-control" value="<?= $data['sk_tim']; ?>" placeholder="" name="pemantauan1a" id="pemantauan1a" readonly>
@@ -36,7 +38,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['cluster_perwakilan']; ?>" placeholder="" name="pemantauan1b" id="pemantauan1b" readonly>
@@ -49,7 +52,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <input type="text" class="form-control" value="<?= $data['pengenalan_peran']; ?>" placeholder="" name="pemantauan2a" id="pemantauan2a" readonly>
@@ -62,7 +66,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['nspk']; ?>" placeholder="" name="pemantauan2b" id="pemantauan2b" readonly>
@@ -75,7 +80,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['pengolahan_analisis']; ?>" placeholder="" name="pemantauan2c" id="pemantauan2c" readonly>
@@ -89,7 +95,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <input type="text" class="form-control" value="<?= $data['trend_analysis']; ?>" placeholder="" name="pemantauan3a" id="pemantauan3a" readonly>
@@ -102,7 +109,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['lintas_sektor']; ?>" placeholder="" name="pemantauan3b" id="pemantauan3b" readonly>
@@ -115,7 +123,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['lintas_program']; ?>" placeholder="" name="pemantauan3c" id="pemantauan3c" readonly>
@@ -130,7 +139,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <input type="text" class="form-control" value="<?= $data['tpt']; ?>" placeholder="" name="pemantauan4a" id="pemantauan4a" readonly>
@@ -144,7 +154,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['rincian_tpt']; ?>" placeholder="" name="pemantauan4b" id="pemantauan4b" readonly>
@@ -158,7 +169,8 @@
 
                 <p style="font-size:12px;">
                     1. Ya = 10 <br>
-                    2. Tidak = 0
+                    2. Sebagian = 5 <br>
+                    3. Tidak = 0
 
                 </p>
                 <input type="text" class="form-control" value="<?= $data['simulasi_pembinaan']; ?>" placeholder="" name="pemantauan5" id="pemantauan5" readonly>
@@ -188,7 +200,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['internal']; ?>" placeholder="" name="pemantauan6b" id="pemantauan6b" readonly>
@@ -202,7 +215,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['1x_setahun']; ?>" placeholder="" name="pemantauan6c" id="pemantauan6c" readonly>
@@ -216,7 +230,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['monitoring_evaluasi']; ?>" placeholder="" name="pemantauan6d" id="pemantauan6d" readonly>
@@ -231,7 +246,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <input type="text" class="form-control" value="<?= $data['tersusunnya_instrumen']; ?>" placeholder="" name="pemantauan7a" id="pemantauan7a" readonly>
@@ -275,7 +291,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <input type="text" class="form-control" value="<?= $data['akhir_tahun']; ?>" placeholder="" name="pemantauan7d" id="pemantauan7d" readonly>

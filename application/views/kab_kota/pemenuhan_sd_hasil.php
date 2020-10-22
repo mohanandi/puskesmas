@@ -13,11 +13,11 @@ div class="site-section" id="menu">
       <span><strong> Penilaian</strong> </span>
 
       <p style="font-size:12px;">
+
         1. ≥ 80% nilai 10 <br>
-        2. 61 % - 79 % nilai 5 <br>
-        3. ≤ 60%, nilai 0
-        <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
-        <input type="text" class="form-control" value="<?= $data['standar_bangunan']; ?>" placeholder="" name="pemenuhan1" id="pemenuhan1" readonly>
+        2. 60% s.d. < 80% nilai 5 <br>
+          3. < 60%, nilai 0 <p id="foo1" style="display:none; font-size:14px;">Persentase pemenuhan standar bangunan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan</p>
+      <input type="text" class="form-control" value="<?= $data['standar_bangunan']; ?>" placeholder="" name="pemenuhan1" id="pemenuhan1" readonly>
 
 
     </div>
@@ -29,10 +29,9 @@ div class="site-section" id="menu">
 
       <p style="font-size:12px;">
         1. ≥ 80% nilai 10 <br>
-        2. 61 % - 79 % nilai 5 <br>
-        3. ≤ 60%, nilai 0
-        <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
-        <input type="text" class="form-control" value="<?= $data['standar_prasarana']; ?>" placeholder="" name="pemenuhan2" id="pemenuhan2" readonly>
+        2. 60% s.d. < 80% nilai 5 <br>
+          3. < 60%, nilai 0 <p id="foo2" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+      <input type="text" class="form-control" value="<?= $data['standar_prasarana']; ?>" placeholder="" name="pemenuhan2" id="pemenuhan2" readonly>
 
 
     </div>
@@ -43,10 +42,9 @@ div class="site-section" id="menu">
 
       <p style="font-size:12px;">
         1. ≥ 80% nilai 10 <br>
-        2. 61 % - 79 % nilai 5 <br>
-        3. ≤ 60%, nilai 0
-        <p id="foo3" style="display:none; font-size:14px;">Persentase pemenuhan standar prasarana Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
-        <input type="text" class="form-control" value="<?= $data['standar_peralatan']; ?>" placeholder="" name="pemenuhan3" id="pemenuhan3" readonly>
+        2. 60 % s.d. < 80% nilai 5 <br>
+          3. < 60%, nilai 0 <p id="foo3" style="display:none; font-size:14px;">Persentase pemenuhan standar peralatan Puskesmas yang tercantum dalam ASPAK dan sudah divalidasi pada saat pembinaan </p>
+      <input type="text" class="form-control" value="<?= $data['standar_peralatan']; ?>" placeholder="" name="pemenuhan3" id="pemenuhan3" readonly>
 
 
     </div>

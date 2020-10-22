@@ -59,7 +59,7 @@
 								<?= form_error('sdmdokter2', '<small class="text-danger pl-3">', '</small>'); ?>
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdokter3" id="sdmdokter3" value="<?= $data['dokter3']; ?>">
 								<?php else : ?>
@@ -122,7 +122,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdlp3" id="sdmdlp3" value="<?= $data['dlp3']; ?>">
 								<?php else : ?>
@@ -187,7 +187,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmgigi3" id="sdmgigi3" value="<?= $data['gigi3']; ?>">
 								<?php else : ?>
@@ -251,7 +251,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmperawat3" id="sdmperawat3" value="<?= $data['perawat3']; ?>">
 								<?php else : ?>
@@ -315,7 +315,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmbidan3" id="sdmbidan3" value="<?= $data['bidan3']; ?>">
 								<?php else : ?>
@@ -379,7 +379,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpromosi3" id="sdmpromosi3" value="<?= $data['promosi3']; ?>">
 								<?php else : ?>
@@ -443,7 +443,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmsanitasi3" id="sdmsanitasi3" value="<?= $data['sanitasi3']; ?>">
 								<?php else : ?>
@@ -507,7 +507,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmnutrisionis3" id="sdmnutrisionis3" value="<?= $data['nutrisionis3']; ?>">
 								<?php else : ?>
@@ -571,7 +571,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmapoteker3" id="sdmapoteker3" value="<?= $data['apoteker3']; ?>">
 								<?php else : ?>
@@ -635,7 +635,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkefarmasian3" id="sdmkefarmasian3" value="<?= $data['kefarmasian3']; ?>">
 								<?php else : ?>
@@ -699,7 +699,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmahli3" id="sdmahli3" value="<?= $data['ahli3']; ?>">
 								<?php else : ?>
@@ -762,7 +762,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkesehatan3" id="sdmkesehatan3" value="<?= $data['kesehatan3']; ?>">
 								<?php else : ?>
@@ -826,7 +826,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkeuangan3" id="sdmkeuangan3" value="<?= $data['keuangan3']; ?>">
 								<?php else : ?>
@@ -890,7 +890,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtatausaha3" id="sdmtatausaha3" value="<?= $data['tatausaha3']; ?>">
 								<?php else : ?>
@@ -954,7 +954,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpekarya3" id="sdmpekarya3" value="<?= $data['pekarya3']; ?>">
 								<?php else : ?>
@@ -1021,7 +1021,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtradisional3" id="sdmtradisional3" value="<?= $data['tradisional3']; ?>">
 								<?php else : ?>
@@ -1092,7 +1092,7 @@
 
 							</div>
 							<div class="col-md-2">
-								<label for="exampleFormControlInput1">NS</label>
+								<label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
 								<?php if ($data) : ?>
 									<input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtitik4" id="sdmtitik4" value="<?= $data['titik4']; ?>">
 								<?php else : ?>

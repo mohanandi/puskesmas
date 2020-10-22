@@ -54,8 +54,12 @@
         <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['no_faksimile']; ?>" readonly>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">11. Alamat email dan website</label>
+        <label for="exampleFormControlInput1">11. Alamat email</label>
         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['email']; ?>" readonly>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">11. Alamat website</label>
+        <input type="website" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['website']; ?>" readonly>
       </div>
     </form>
     <a href="<?= base_url(); ?>Identitas_Puskesmas/ubah" class="btn float-right btn-danger" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>

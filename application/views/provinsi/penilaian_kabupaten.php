@@ -23,7 +23,8 @@
                             <br>
                             <p style="font-size:12px;">
                                 1. Ya = 10 <br>
-                                2. Tidak = 0
+                                2. Sebagian = 5 <br>
+                                3. Tidak = 0
 
                             </p>
                             <select class="form-control" name="pemantauan1" id="pemantauan1">
@@ -41,7 +42,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <select class="form-control" name="pemantauan1a" id="pemantauan1a">
@@ -58,7 +60,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan1b" id="pemantauan1b">
@@ -76,7 +79,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <select class="form-control" name="pemantauan2a" id="pemantauan2a">
@@ -93,7 +97,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan2b" id="pemantauan2b">
@@ -109,7 +114,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan2c" id="pemantauan2c">
@@ -127,7 +133,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <select class="form-control" name="pemantauan3a" id="pemantauan3a">
@@ -144,7 +151,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan3b" id="pemantauan3b">
@@ -160,7 +168,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan3c" id="pemantauan3c">
@@ -178,7 +187,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <select class="form-control" name="pemantauan4a" id="pemantauan4a">
@@ -195,7 +205,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan4b" id="pemantauan4b">
@@ -213,7 +224,8 @@
 
                 <p style="font-size:12px;">
                     1. Ya = 10 <br>
-                    2. Tidak = 0
+                    2. Sebagian = 5 <br>
+                    3. Tidak = 0
 
                 </p>
                 <select class="form-control" name="pemantauan5" id="pemantauan5">
@@ -250,7 +262,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan6b" id="pemantauan6b">
@@ -267,7 +280,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan6c" id="pemantauan6c">
@@ -284,7 +298,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan6d" id="pemantauan6d">
@@ -302,7 +317,8 @@
 
                         <p style="font-size:12px;">
                             1. Ya = 10 <br>
-                            2. Tidak = 0
+                            2. Sebagian = 5 <br>
+                            3. Tidak = 0
 
                         </p>
                         <select class="form-control" name="pemantauan7a" id="pemantauan7a">
@@ -357,7 +373,8 @@
 
                     <p style="font-size:12px;">
                         1. Ya = 10 <br>
-                        2. Tidak = 0
+                        2. Sebagian = 5 <br>
+                        3. Tidak = 0
 
                     </p>
                     <select class="form-control" name="pemantauan7d" id="pemantauan7d">

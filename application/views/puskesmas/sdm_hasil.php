@@ -37,7 +37,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdokter2" id="sdmdokter2" value="<?= $data['dokter2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdokter3" id="sdmdokter3" value="<?= $data['dokter3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -68,7 +68,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdlp2" id="sdmdlp2" value="<?= $data['dlp2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmdlp3" id="sdmdlp3" value="<?= $data['dlp3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -99,7 +99,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmgigi2" id="sdmgigi2" value="<?= $data['gigi2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmgigi3" id="sdmgigi3" value="<?= $data['gigi3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -130,7 +130,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmperawat2" id="sdmperawat2" value="<?= $data['perawat2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmperawat3" id="sdmperawat3" value="<?= $data['perawat3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -161,7 +161,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmbidan2" id="sdmbidan2" value="<?= $data['bidan2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmbidan3" id="sdmbidan3" value="<?= $data['bidan3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -192,7 +192,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpromosi2" id="sdmpromosi2" value="<?= $data['promosi2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpromosi3" id="sdmpromosi3" value="<?= $data['promosi3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -223,7 +223,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmsanitasi2" id="sdmsanitasi2" value="<?= $data['sanitasi2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmsanitasi3" id="sdmsanitasi3" value="<?= $data['sanitasi3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -254,7 +254,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmnutrisionis2" id="sdmnutrisionis2" value="<?= $data['nutrisionis2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmnutrisionis3" id="sdmnutrisionis3" value="<?= $data['nutrisionis3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -285,7 +285,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmapoteker2" id="sdmapoteker2" value="<?= $data['apoteker2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmapoteker3" id="sdmapoteker3" value="<?= $data['apoteker3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -316,7 +316,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkefarmasian2" id="sdmkefarmasian2" value="<?= $data['kefarmasian2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkefarmasian3" id="sdmkefarmasian3" value="<?= $data['kefarmasian3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -347,7 +347,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmahli2" id="sdmahli2" value="<?= $data['ahli2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmahli3" id="sdmahli3" value="<?= $data['ahli3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -378,7 +378,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkesehatan2" id="sdmkesehatan2" value="<?= $data['kesehatan2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkesehatan3" id="sdmkesehatan3" value="<?= $data['kesehatan3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -409,7 +409,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkeuangan2" id="sdmkeuangan2" value="<?= $data['keuangan2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmkeuangan3" id="sdmkeuangan3" value="<?= $data['keuangan3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -440,7 +440,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtatausaha2" id="sdmtatausaha2" value="<?= $data['tatausaha2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtatausaha3" id="sdmtatausaha3" value="<?= $data['tatausaha3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -471,7 +471,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpekarya2" id="sdmpekarya2" value="<?= $data['pekarya2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmpekarya3" id="sdmpekarya3" value="<?= $data['pekarya3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -505,7 +505,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtradisional2" id="sdmtradisional2" value="<?= $data['tradisional2']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="NS" name="sdmtradisional3" id="sdmtradisional3" value="<?= $data['tradisional3']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -537,7 +537,7 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtitik3" id="sdmtitik3" value="<?= $data['titik3']; ?>" readonly>
               </div>
               <div class="col-md-2">
-                <label for="exampleFormControlInput1">NS</label>
+                <label for="exampleFormControlInput1">NUSANTARA SEHAT</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtitik4" id="sdmtitik4" value="<?= $data['titik4']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -554,6 +554,13 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
+                <input type="text" readonly> <br>
+                <br>
+                <br>
+              </div>
+
+              <div class="col-md-12">
+                <label for="exampleFormControlInput1">JUMLAH KESELURUHAN :</label>
                 <input type="text" readonly>
               </div>
             </div>

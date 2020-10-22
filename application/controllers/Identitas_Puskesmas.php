@@ -35,6 +35,7 @@ class Identitas_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('telp_gadar', 'No. Telepon Ruang Gadar', 'required');
         $this->form_validation->set_rules('faks', 'No. Faksimile', 'required');
         $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
+        $this->form_validation->set_rules('website', 'Alamat website', 'required');
 
         if ($this->form_validation->run() == false) {
             $this->index();
@@ -61,6 +62,7 @@ class Identitas_Puskesmas extends CI_Controller
         $this->form_validation->set_rules('telp_gadar', 'No. Telepon Ruang Gadar', 'required');
         $this->form_validation->set_rules('faks', 'No. Faksimile', 'required');
         $this->form_validation->set_rules('email', 'Alamat email', 'required|valid_email');
+        $this->form_validation->set_rules('website', 'Alamat website', 'required');
 
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/puskesmas/head', $data);

@@ -14,10 +14,9 @@
 
         <p style="font-size:12px;">
           1. Kelengkapan ≥ 80%, nilai 10 <br>
-          2. kelengkapan antara 61 % - 79 % nilai 5 <br>
-          3. kelengkapan ≤ 60%, nilai 0
-          <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <input type="text" class="form-control" value="<?= $data['skdr']; ?>" placeholder="" name="pelaksanaan1" id="pelaksanaan1" readonly>
+          2. kelengkapan antara 60 % s.d. < 80% nilai 5 <br>
+            3. kelengkapan < 60%, nilai 0 <p id="foo25" style="display:none; font-size:12px; margin-left:20px;">Lihat kelengkapan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+        <input type="text" class="form-control" value="<?= $data['skdr']; ?>" placeholder="" name="pelaksanaan1" id="pelaksanaan1" readonly>
 
 
       </div>
@@ -28,10 +27,9 @@
 
         <p style="font-size:12px;">
           1. Kelengkapan ≥ 80%, nilai 10 <br>
-          2. kelengkapan antara 61 % - 79 % nilai 5 <br>
-          3. kelengkapan ≤ 60%, nilai 0
-          <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
-          <input type="text" class="form-control" value="<?= $data['laporan_skdr']; ?>" placeholder="" name="pelaksanaan2" id="pelaksanaan2" readonly>
+          2. kelengkapan antara 60 % s.d. < 80% nilai 5 <br>
+            3. kelengkapan < 60%, nilai 0 <p id="foo26" style="display:none; font-size:12px; margin-left:20px;">Lihat ketepatan laporan SKDR kumulatif dari minggu ke-1 sampai dengan minggu berjalan. Koordinasi dengan tenaga surveilans kabupaten/kota utk melihat ke sistem SKDR </p>
+        <input type="text" class="form-control" value="<?= $data['laporan_skdr']; ?>" placeholder="" name="pelaksanaan2" id="pelaksanaan2" readonly>
 
 
       </div>

@@ -106,13 +106,22 @@
         <?= form_error('faks', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">11. Alamat email dan website</label>
+        <label for="exampleFormControlInput1">11. Alamat email</label>
         <?php if ($data['email']) : ?>
           <input type="email" class="form-control" placeholder="" name="email" id="email" value="<?= $data['email']; ?>">
         <?php else : ?>
           <input type="email" class="form-control" placeholder="" name="email" id="email" value="<?= set_value('email'); ?>">
         <?php endif; ?>
         <?= form_error('email', '<small class="text-danger pl-3">', '</small>'); ?>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">11. Alamat website</label>
+        <?php if ($data['website']) : ?>
+          <input type="website" class="form-control" placeholder="" name="website" id="website" value="<?= $data['website']; ?>">
+        <?php else : ?>
+          <input type="website" class="form-control" placeholder="" name="website" id="website" value="<?= set_value('website'); ?>">
+        <?php endif; ?>
+        <?= form_error('website', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <button type="submit" class="btn float-right btn-success" style="color: white; margin-left:10px; margin-top:5px; border-radius:5px;"><?= $button; ?></button>
     </form>

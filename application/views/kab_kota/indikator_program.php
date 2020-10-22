@@ -30,8 +30,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a1a" id="cakupan_a1a">
                             <?php is_terisi($data['kia1a'], set_value('cakupan_a1a')); ?>
@@ -45,8 +45,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a1b" id="cakupan_a1b">
                             <?php is_terisi($data['kia1b'], set_value('cakupan_a1b')); ?>
@@ -75,8 +75,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a2a" id="cakupan_a2a">
                             <?php is_terisi($data['kia2a'], set_value('cakupan_a2a')); ?>
@@ -90,8 +90,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a2b" id="cakupan_a2b">
                             <?php is_terisi($data['kia2b'], set_value('cakupan_a2b')); ?>
@@ -120,8 +120,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a3a" id="cakupan_a3a">
                             <?php is_terisi($data['kia3a'], set_value('cakupan_a3a')); ?>
@@ -135,8 +135,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_a3b" id="cakupan_a3b">
                             <?php is_terisi($data['kia3b'], set_value('cakupan_a3b')); ?>
@@ -169,8 +169,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_b1a" id="cakupan_b1a">
                             <?php is_terisi($data['imunisasi1a'], set_value('cakupan_b1a')); ?>
@@ -184,8 +184,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_b1b" id="cakupan_b1b">
                             <?php is_terisi($data['imunisasi1b'], set_value('cakupan_b1b')); ?>
@@ -217,8 +217,8 @@
                                 <br>
                                 <span><strong> Penilaian</strong> </span>
                                 <p style="font-size:12px;">
-                                    1. Ya=25%<br>
-                                    2. Tidak=0
+                                    1. Ya<br>
+                                    2. Tidak
                                 </p>
                                 <select class="form-control" name="cakupan_c1a" id="cakupan_c1a">
                                     <?php is_terisi($data['gizi1a'], set_value('cakupan_c1a')); ?>
@@ -232,8 +232,8 @@
                                 <br>
                                 <span><strong> Penilaian</strong> </span>
                                 <p style="font-size:12px;">
-                                    1. Ya=25%<br>
-                                    2. Tidak=0
+                                    1. Ya<br>
+                                    2. Tidak
                                 </p>
                                 <select class="form-control" name="cakupan_c1b" id="cakupan_c1b">
                                     <?php is_terisi($data['gizi1b'], set_value('cakupan_c1b')); ?>
@@ -266,8 +266,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d1a" id="cakupan_d1a">
                             <?php is_terisi($data['pencegahan1a'], set_value('cakucakupan_d1apan_')); ?>
@@ -281,8 +281,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d1b" id="cakupan_d1b">
                             <?php is_terisi($data['pencegahan1b'], set_value('cakupan_d1b')); ?>
@@ -311,8 +311,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d2a" id="cakupan_d2a">
                             <?php is_terisi($data['pencegahan2a'], set_value('cakupan_d2a')); ?>
@@ -326,8 +326,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d2b" id="cakupan_d2b">
                             <?php is_terisi($data['pencegahan2b'], set_value('cakupan_d2b')); ?>
@@ -356,8 +356,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d3a" id="cakupan_d3a">
                             <?php is_terisi($data['pencegahan3a'], set_value('cakupan_d3a')); ?>
@@ -371,8 +371,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d3b" id="cakupan_d3b">
                             <?php is_terisi($data['pencegahan3b'], set_value('cakupan_d3b')); ?>
@@ -400,8 +400,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d4a" id="cakupan_d4a">
                             <?php is_terisi($data['pencegahan4a'], set_value('cakupan_d4a')); ?>
@@ -415,8 +415,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d4b" id="cakupan_d4b">
                             <?php is_terisi($data['pencegahan4b'], set_value('cakupan_d4b')); ?>
@@ -445,8 +445,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d5a" id="cakupan_d5a">
                             <?php is_terisi($data['pencegahan5a'], set_value('cakupan_d5a')); ?>
@@ -460,8 +460,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d5b" id="cakupan_d5b">
                             <?php is_terisi($data['pencegahan5b'], set_value('cakupan_d5b')); ?>
@@ -490,8 +490,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d6a" id="cakupan_d6a">
                             <?php is_terisi($data['pencegahan6a'], set_value('cakupan_d6a')); ?>
@@ -505,8 +505,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d6b" id="cakupan_d6b">
                             <?php is_terisi($data['pencegahan6b'], set_value('cakupan_d6b')); ?>
@@ -535,8 +535,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d7a" id="cakupan_d7a">
                             <?php is_terisi($data['pencegahan7a'], set_value('cakupan_d7a')); ?>
@@ -550,8 +550,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d7b" id="cakupan_d7b">
                             <?php is_terisi($data['pencegahan7b'], set_value('cakupan_d7b')); ?>
@@ -580,8 +580,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d8a" id="cakupan_d8a">
                             <?php is_terisi($data['pencegahan8a'], set_value('cakupan_d8a')); ?>
@@ -595,8 +595,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_d8b" id="cakupan_d8b">
                             <?php is_terisi($data['pencegahan8b'], set_value('cakupan_d8b')); ?>
@@ -629,8 +629,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e1a" id="cakupan_e1a">
                             <?php is_terisi($data['pispk1a'], set_value('cakupan_e1a')); ?>
@@ -644,8 +644,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e1b" id="cakupan_e1b">
                             <?php is_terisi($data['pispk1b'], set_value('cakupan_e1b')); ?>
@@ -674,8 +674,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e2a" id="cakupan_e2a">
                             <?php is_terisi($data['pispk2a'], set_value('cakupan_e2a')); ?>
@@ -689,8 +689,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e2b" id="cakupan_e2b">
                             <?php is_terisi($data['pispk2b'], set_value('cakupan_e2b')); ?>
@@ -719,8 +719,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e3a" id="cakupan_e3a">
                             <?php is_terisi($data['pispk3a'], set_value('cakupan_e3a')); ?>
@@ -734,8 +734,8 @@
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">
-                            1. Ya=25%<br>
-                            2. Tidak=0
+                            1. Ya<br>
+                            2. Tidak
                         </p>
                         <select class="form-control" name="cakupan_e3b" id="cakupan_e3b">
                             <?php is_terisi($data['pispk3b'], set_value('cakupan_e3b')); ?>

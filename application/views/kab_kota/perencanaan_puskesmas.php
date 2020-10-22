@@ -474,31 +474,30 @@
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
+
           1. ≥ 80 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 10 <br>
-          2. 61% - 79 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 5 <br>
-          3. ≤ 60 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 0
-        </p>
-        <select class="form-control" name="perencanaan3c_6" id="perencanaan3c_6">
-          <?php is_terisi($data['alokasi_kebutuhan'], set_value('perencanaan3c_6')); ?>
-          <option value="1">1 </option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-        </select>
-        <?= form_error('perencanaan3c_6', '<small class="text-danger pl-3">', '</small>'); ?>
-        <br>
-        <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">c.7 usulan pengadaan, perbaikan atau pengembangan sistem informasi kesehatan dan/atau teknologi tepat guna</label>
-        <br>
-        <span><strong> Penilaian</strong> </span>
-        <p style="font-size:12px;">
-          1. ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna , nilai 10 <br>
-          2. tidak ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna, nilai 0
-        </p>
-        <select class="form-control" name="perencanaan3c_7" id="perencanaan3c_7">
-          <?php is_terisi($data['usulan_pengadaan'], set_value('perencanaan3c_7')); ?>
-          <option value="1">1</option>
-          <option value="2">2</option>
-        </select>
-        <?= form_error('perencanaan3c_7', '<small class="text-danger pl-3">', '</small>'); ?>
+          2. 60% s.d. < 80% kebutuhan Puskesmas terpenuhi anggarannya, nilai 5 <br>
+            3. < 60 % kebutuhan Puskesmas terpenuhi anggarannya, nilai 0 </p> <select class="form-control" name="perencanaan3c_6" id="perencanaan3c_6">
+              <?php is_terisi($data['alokasi_kebutuhan'], set_value('perencanaan3c_6')); ?>
+              <option value="1">1 </option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              </select>
+              <?= form_error('perencanaan3c_6', '<small class="text-danger pl-3">', '</small>'); ?>
+              <br>
+              <label for="exampleFormControlInput1" style="font-size:14px; margin-left:5px; text-align:justify;">c.7 usulan pengadaan, perbaikan atau pengembangan sistem informasi kesehatan dan/atau teknologi tepat guna</label>
+              <br>
+              <span><strong> Penilaian</strong> </span>
+              <p style="font-size:12px;">
+                1. ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna , nilai 10 <br>
+                2. tidak ada dokumen usulan pengadaan, perbaikan atau pengembangan perangkat sistem informasi kesehatan dan/atau teknologi tepat guna, nilai 0
+              </p>
+              <select class="form-control" name="perencanaan3c_7" id="perencanaan3c_7">
+                <?php is_terisi($data['usulan_pengadaan'], set_value('perencanaan3c_7')); ?>
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <?= form_error('perencanaan3c_7', '<small class="text-danger pl-3">', '</small>'); ?>
 
       </div>
       <button type="submit" class="btn float-right btn-success" href="table.html" style="color: white; margin-left:10px; border-radius:5px;"><?= $button; ?></button>
