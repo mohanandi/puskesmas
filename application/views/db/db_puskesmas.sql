@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 07 Okt 2020 pada 17.31
--- Versi server: 10.4.13-MariaDB
--- Versi PHP: 7.2.31
+-- Host: localhost:3306
+-- Waktu pembuatan: 21 Okt 2020 pada 14.47
+-- Versi server: 10.3.24-MariaDB
+-- Versi PHP: 7.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_puskesmas`
+-- Database: `u8879435_puskesmas`
 --
 
 -- --------------------------------------------------------
@@ -118,10 +119,11 @@ CREATE TABLE `bangunan_puskesmas` (
 INSERT INTO `bangunan_puskesmas` (`kode`, `kdb`, `klb`, `kdh`, `tataletak`, `pencahayaan`, `lebar_koridor`, `tingi_langit`, `bila_antar`, `bangunan_puskesmas`, `lambang_puskesmas`, `lambang_jauh`, `papannama`, `posisi_bangunan`, `atap_puskesmas`, `langit_langit`, `material_dinding`, `dinding_wc`, `dinding_lab`, `material_lantai`, `lantai_wc`, `lebar_bukaan`, `lebar_pintu`, `pintu_wc`, `material_pintu`, `wc_disabilitas`, `halaman_puskesmas`, `drainase`, `kursi_tunggu`, `meubelair`, `tmpt_poster`, `tmpt_spanduk`, `taman_obat`, `bebas_rokok`, `bebas_kecoa`, `bebas_tikus`, `bebas_kucing`, `bebas_jentik`, `populasi_lalat`, `populasi_kecoa`, `kir`, `ruang_admin`, `ruang_karyawan`, `ruang_kepala`, `ruang_rapat`, `ruang_pendaftaran`, `ruang_pemeriksaaan`, `ruang_tindakan`, `ruang_kia`, `ruang_khusus`, `ruang_gigi`, `ruang_kie`, `ruang_farmasi`, `ruang_resep`, `ruang_racik`, `ruang_obat`, `ruang_konseling`, `ruang_bmhp`, `ruang_arsip`, `ruang_persalinan`, `ruang_pasca`, `ruang_lab`, `ruang_kb`, `ruang_anak`, `ruang_inap`, `wc`, `ruang_tunggu`, `ruang_asi`, `ruang_steril`, `ruang_linen`, `ruang_dapur`, `ruang_jaga`, `gudang_umum`, `wc_pasien`, `rumah_dinas`, `roda_2`, `roda_4`, `garasi_ambulan`, `area_tabung`, `selain_diatas`, `ruang_lain`) VALUES
 ('1012334', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak ada', 'Tidak'),
 ('1032284', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Ya', 'ruang pemeriksaan pasien batuk', 'Ya'),
-('1032386', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'ruang pengambilan swab', 'Ya'),
+('1032386', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'ruang pengambilan swab', 'Ya'),
 ('1032584', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ruang akreditasi', 'Ya'),
 ('1033297', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ruang Laboratorium Gigi', 'Ya'),
-('1050116', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ruang VCT, Ruang IMS, Perpustakaan', 'Ya'),
+('1050002', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'VCT/TB DOT\'s, JIWA/AKUPRESURE', 'Ya'),
+('1050116', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'VCT, IMS, TB, LANSIA', 'Ya'),
 ('puskesmas', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'jilkokokok', 'Tidak');
 
 -- --------------------------------------------------------
@@ -189,9 +191,12 @@ CREATE TABLE `cakupan_indikator_program` (
 
 INSERT INTO `cakupan_indikator_program` (`kode`, `kia1a`, `kia1b`, `kia1c`, `kia2a`, `kia2b`, `kia2c`, `kia3a`, `kia3b`, `kia3c`, `imunisasi1a`, `imunisasi1b`, `imunisasi1c`, `gizi1a`, `gizi1b`, `gizi1c`, `pencegahan1a`, `pencegahan1b`, `pencegahan1c`, `pencegahan2a`, `pencegahan2b`, `pencegahan2c`, `pencegahan3a`, `pencegahan3b`, `pencegahan3c`, `pencegahan4a`, `pencegahan4b`, `pencegahan4c`, `pencegahan5a`, `pencegahan5b`, `pencegahan5c`, `pencegahan6a`, `pencegahan6b`, `pencegahan6c`, `pencegahan7a`, `pencegahan7b`, `pencegahan7c`, `pencegahan8a`, `pencegahan8b`, `pencegahan8c`, `pispk1a`, `pispk1b`, `pispk1c`, `pispk2a`, `pispk2b`, `pispk2c`, `pispk3a`, `pispk3b`, `pispk3c`, `input_by`) VALUES
 ('1012334', 1, 1, 40, 1, 1, 35, 1, 1, 45, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, '1012334'),
-('1032284', 1, 1, 49, 1, 1, 49, 1, 1, 49, 1, 1, 49, 1, 1, 50, 1, 1, 40, 1, 1, 43, 1, 1, 43, 1, 1, 39, 1, 1, 11, 1, 1, 4, 1, 1, 46, 1, 1, 43, 1, 1, 50, 1, 1, 35, 1, 1, 50, 'K3401110201'),
+('1032284', 1, 1, 49, 1, 1, 49, 1, 1, 49, 1, 1, 49, 1, 1, 50, 1, 1, 40, 1, 1, 43, 1, 1, 43, 1, 1, 39, 1, 1, 4, 1, 1, 4, 1, 1, 15, 1, 1, 9, 1, 1, 50, 1, 1, 50, 1, 1, 50, 'K3401110201'),
+('1032386', 1, 1, 50, 1, 1, 50, 1, 1, 43, 1, 1, 50, 1, 1, 50, 1, 1, 46, 1, 1, 50, 1, 1, 50, 1, 1, 39, 1, 1, 50, 1, 1, 25, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 50, 1, 1, 5, 'K3471140101'),
 ('1032584', 1, 1, 50, 1, 1, 41, 1, 1, 46, 1, 1, 40, 1, 1, 0, 1, 1, 7, 1, 1, 32, 1, 1, 50, 1, 1, 42, 1, 1, 50, 2, 1, 12, 1, 1, 42, 1, 1, 17, 1, 1, 50, 1, 1, 2, 1, 1, 67, 'K3507240101'),
-('1050116', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 'K5171030102'),
+('1033297', 1, 1, 35, 1, 1, 37, 1, 1, 38, 1, 1, 48, 1, 1, 50, 1, 1, 21, 1, 1, 50, 1, 1, 50, 1, 1, 38, 1, 1, 50, 1, 1, 10, 1, 1, 33, 1, 1, 23, 1, 1, 49, 1, 1, 50, 1, 1, 50, 'K3578110101'),
+('1050002', 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 100, 1, 1, 67, 1, 1, 100, 1, 1, 100, 1, 1, 10, 'K5101010101'),
+('1050116', 1, 1, 50, 1, 1, 47, 1, 1, 47, 1, 1, 50, 1, 1, 0, 1, 1, 37, 1, 1, 53, 1, 1, 50, 1, 1, 5, 1, 1, 8, 1, 1, 2, 1, 1, 10, 1, 1, 3, 1, 1, 50, 1, 1, 46, 1, 1, 46, 'K5171030102'),
 ('puskesmas', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'kabupaten_kota');
 
 -- --------------------------------------------------------
@@ -228,7 +233,7 @@ INSERT INTO `identitas_puskesmas` (`no`, `kode`, `nama`, `no_reg`, `tgl_pendiria
 (10, '1033297', 'PUSKESMAS JAGIR', '1033297', -297216000, 'JL BENDUL MERISI NO 1 SURABAYA', 'WONOKROMO', 'SURABAYA', 'JAWA TIMUR', '0318416926', '0318416926', '0', 'pkmjagir.sby@gmail.com'),
 (11, '1032584', 'Puskesmas Tumpang', '3507240101', -315619200, 'Jalan Setiawan No 227 Desa Tumpang', 'Tumpang', 'Kabupaten Malang', 'Jawa Timur', '0341787290', '0341787232', '0341787232', 'Puskesmastumpang@ymail.com'),
 (12, '1050002', 'UPTD PUSKESMAS I MELAYA', '05101010102', 197164800, 'JALAN JAYA SAKTI', 'MELAYA', 'JEMBRANA', 'BALI', '087861560609', '03654790672', '0', 'puskesmassatu_melaya@yahoo.co.id'),
-(13, '1032386', 'PUSKESMAS TEGALREJO', '3471140101', 946598400, 'Jalan Magelang Km.2 No. 180 Yogyakarta', 'Tegalrejo', 'Yogyakarta', 'DIY', '0274586841', '0274586841', '0274586841', 'pusktr@gmail.com');
+(13, '1032386', 'PUSKESMAS TEGALREJO', '3471140101', 31449600, 'Jalan Magelang Km.2 No. 180 Yogyakarta', 'Tegalrejo', 'Yogyakarta', 'Daerah Istimewa Yogyakarta', '0274586841', '0274586841', '0274586841', 'pusktr@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -265,7 +270,8 @@ INSERT INTO `lokasi_puskesmas` (`kode`, `puskesmas_tanah`, `slf`, `puskesmas_ler
 ('1032284', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1032386', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1032584', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
-('1033297', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('1033297', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('1050002', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1050116', 'Ya', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya'),
 ('puskesmas', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak');
 
@@ -295,8 +301,9 @@ INSERT INTO `organisasi_manajemen` (`kode`, `niop`, `tgl_izin`, `kategori`, `kat
 ('1032386', '503 / 4800', 1523404800, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Paripurna', 'Ya'),
 ('1032584', '5033610p35.07.122/2019', 1567728000, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Utama', 'Ya'),
 ('1033297', '503.445/44/PKM-RIUB/P/436.7.2/IX/2020', 1222905600, 'Puskesmas Rawat Inap', '', 'Terakreditasi Utama', 'Ya'),
+('1050002', '503/079.Op.Pusk.09/kes/KPPT/VIII/2016', 1471910400, 'Puskesmas Kawasan Perdesaan', '', 'Terakreditasi Utama', 'Ya'),
 ('1050116', '445/3136/DIKES/2016', 1465516800, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Utama', 'Ya'),
-('puskesmas', '11112222223330000', 1603666800, 'Puskesmas Kawasaan Perkotaan', 'Puskesmas Rawat Inap', 'Terakreditasi Dasar', 'Ya');
+('puskesmas', '11112222223330000', 1603670400, 'Puskesmas Kawasaan Perkotaan', '', 'Terakreditasi Dasar', 'Ya');
 
 -- --------------------------------------------------------
 
@@ -319,8 +326,11 @@ CREATE TABLE `pelaksanaan_sistem_kewaspadaan_dini` (
 INSERT INTO `pelaksanaan_sistem_kewaspadaan_dini` (`kode`, `skdr`, `laporan_skdr`, `analisa_trend`, `input_by`) VALUES
 ('1012334', 1, 1, 1, 'kota bandar lampung'),
 ('1032284', 1, 1, 1, 'K3401110201'),
+('1032386', 1, 1, 1, 'K3471140101'),
 ('1032584', 1, 1, 1, 'K3507240101'),
-('1050116', 3, 3, 2, 'K5171030102'),
+('1033297', 1, 1, 1, 'K3578110101'),
+('1050002', 3, 3, 1, 'K5101010101'),
+('1050116', 1, 1, 1, 'K5171030102'),
 ('puskesmas', 1, 1, 1, 'kabupaten_kota');
 
 -- --------------------------------------------------------
@@ -351,7 +361,9 @@ INSERT INTO `pemenuhan_sdm_puskesmas` (`kode`, `standar_bangunan`, `standar_pras
 ('1032284', 1, 1, 1, 1, 1, 1, 2, 1, 'K3401110201'),
 ('1032386', 1, 1, 1, 1, 1, 1, 1, 1, 'K3471140101'),
 ('1032584', 1, 1, 1, 1, 1, 2, 2, 2, 'K3507240101'),
-('1050116', 1, 1, 1, 1, 1, 2, 1, 2, 'K5171030102'),
+('1033297', 1, 1, 1, 1, 1, 1, 3, 1, 'K3578110101'),
+('1050002', 1, 1, 1, 1, 1, 1, 2, 1, 'K5101010101'),
+('1050116', 1, 2, 1, 1, 1, 2, 1, 1, 'K5171030102'),
 ('puskesmas', 3, 3, 3, 3, 3, 3, 3, 3, 'kabupaten_kota');
 
 -- --------------------------------------------------------
@@ -384,7 +396,10 @@ CREATE TABLE `pencegahan_dan_pengendalian_infeksi` (
 INSERT INTO `pencegahan_dan_pengendalian_infeksi` (`kode`, `cuci_tangan`, `apd`, `dekontaminasi`, `kesehatan_lingkungan`, `limbah_medis`, `perlindungan_petugas`, `pemisahan_pasien`, `etika_batuk`, `praktik_menyuntik`, `kewaspadaan_kontak`, `kewaspadaan_droplet`, `air_borne`, `input_by`) VALUES
 ('1012334', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0),
 ('1032284', 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 0),
+('1032386', 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 2, 0),
 ('1032584', 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 1, 0),
+('1033297', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0),
+('1050002', 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 0),
 ('1050116', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0),
 ('puskesmas', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0);
 
@@ -408,7 +423,10 @@ CREATE TABLE `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas` (
 INSERT INTO `pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas` (`kode`, `penilaian_kinerja`, `feedback`, `input_by`) VALUES
 ('1012334', 1, 1, 'kota bandar lampung'),
 ('1032284', 1, 1, 'K3401110201'),
-('1032584', 1, 3, 'K3507240101'),
+('1032386', 1, 1, 'K3471140101'),
+('1032584', 1, 1, 'K3507240101'),
+('1033297', 1, 1, 'K3578110101'),
+('1050002', 1, 1, 'K5101010101'),
 ('1050116', 1, 1, 'K5171030102'),
 ('puskesmas', 1, 1, 'kabupaten_kota');
 
@@ -436,7 +454,10 @@ CREATE TABLE `penggerakan_dan_pelaksanaan_kegiatan_puskesmas` (
 INSERT INTO `penggerakan_dan_pelaksanaan_kegiatan_puskesmas` (`kode`, `dipandu_jelas`, `jadwal_jelas`, `lintas_program`, `dimonitor_kepala`, `masukan_pelanggan`, `pelayanan_pelanggan`, `input_by`) VALUES
 ('1012334', 1, 1, 1, 1, 1, 1, 'kota bandar lampung'),
 ('1032284', 1, 1, 1, 1, 1, 1, 'K3401110201'),
+('1032386', 1, 1, 1, 1, 1, 1, 'K3471140101'),
 ('1032584', 1, 1, 1, 1, 1, 1, 'K3507240101'),
+('1033297', 1, 1, 1, 1, 1, 1, 'K3578110101'),
+('1050002', 1, 1, 1, 1, 1, 1, 'K5101010101'),
 ('1050116', 1, 1, 1, 1, 1, 1, 'K5171030102'),
 ('puskesmas', 1, 1, 1, 1, 1, 1, 'kabupaten_kota');
 
@@ -462,6 +483,7 @@ INSERT INTO `pengisian_aspak` (`kode`, `aspak`, `aspak_pmk`) VALUES
 ('1032386', 'Ya', '≥80%'),
 ('1032584', 'Ya', '≥80%'),
 ('1033297', 'Ya', '≥80%'),
+('1050002', 'Ya', '≥80%'),
 ('1050116', 'Ya', '61–69%'),
 ('puskesmas', 'Ya', '≥80%');
 
@@ -495,6 +517,9 @@ INSERT INTO `penilaian_kinerja_puskesmas` (`kode`, `self`, `n2_pelayanan`, `n2_m
 ('1032284', '1', '1', '1', '1', '1', '1', '1', '1', '2019', '3', '2019', '3'),
 ('1032386', '1', '1', '1', '1', '1', '1', '1', '3', '2019', '3', '2019', '3'),
 ('1032584', '1', '2', '1', '2', '1', '1', '1', '1', '2019', '2', '2019', '3'),
+('1033297', '1', '1', '1', '1', '1', '1', '1', '1', '2019', '2', '2020', '3'),
+('1050002', '1', '1', '1', '1', '1', '1', '1', '1', '2019', '2', '2019', '3'),
+('1050116', '1', '1', '1', '1', '1', '1', '1', '3', '2019', '2', '2019', '3'),
 ('puskesmas', '1', '1', '1', '1', '1', '1', '1', '1', '2003', '1', '2003', '1');
 
 -- --------------------------------------------------------
@@ -536,9 +561,13 @@ CREATE TABLE `penilaian_pembinaan_terpadu` (
 --
 
 INSERT INTO `penilaian_pembinaan_terpadu` (`kode`, `cluster_binaan`, `sk_tim`, `cluster_perwakilan`, `pengenalan_peran`, `nspk`, `pengolahan_analisis`, `trend_analysis`, `lintas_sektor`, `lintas_program`, `tpt`, `rincian_tpt`, `simulasi_pembinaan`, `setiap_bulan`, `internal`, `1x_setahun`, `monitoring_evaluasi`, `tersusunnya_instrumen`, `tersusunnya_laporan`, `kesehatan_kabupaten`, `akhir_tahun`, `kesimpulan`, `rekomendasi`, `rencana_tindak_lanjut`, `input_by`) VALUES
+('K1501090101', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10016'),
 ('K1871080102', 1, 2, 2, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, '', '', '', 'provinsi lampung'),
 ('K3401110201', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10025'),
-('K3471140101', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10025');
+('K3471140101', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10025'),
+('K3507240101', 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 2, 2, 2, 1, '', '', '', 'Pr10026'),
+('K3578110101', 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10026'),
+('K5171030102', 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1, 1, 1, '', '', '', 'Pr10027');
 
 -- --------------------------------------------------------
 
@@ -563,7 +592,10 @@ CREATE TABLE `peningkatan_mutu` (
 INSERT INTO `peningkatan_mutu` (`kode`, `indikator_mutu`, `audit_internal`, `rapat_tinjauan`, `melaksanakan_pps`, `pelaporan_insiden`, `input_by`) VALUES
 ('1012334', 1, 1, 1, 2, 1, 'kota bandar lampung'),
 ('1032284', 1, 1, 1, 1, 2, 'K3401110201'),
+('1032386', 1, 1, 1, 1, 2, 'K3471140101'),
 ('1032584', 1, 2, 1, 2, 1, 'K3507240101'),
+('1033297', 1, 1, 1, 1, 1, 'K3578110101'),
+('1050002', 1, 1, 1, 1, 1, 'K5101010101'),
 ('1050116', 1, 1, 1, 1, 1, 'K5171030102'),
 ('puskesmas', 1, 1, 2, 2, 2, 'kabupaten_kota');
 
@@ -622,7 +654,8 @@ INSERT INTO `peralatan_puskesmas` (`kode`, `set_umum`, `set_tindakan`, `set_ibu`
 ('1032386', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1032584', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1033297', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
-('1050116', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
+('1050002', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya'),
+('1050116', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Lengkap', 'Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('puskesmas', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak Lengkap', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak');
 
 -- --------------------------------------------------------
@@ -672,8 +705,10 @@ CREATE TABLE `perencanaan_puskesmas` (
 INSERT INTO `perencanaan_puskesmas` (`kode`, `rpk_n`, `ruk`, `rpk_rinci`, `draft_rka`, `ruk_mendatang`, `ada_hasil`, `umpan_balik`, `tabulasi_wawancara`, `hasil_smd`, `penyelarasan_mmd`, `berita_acara`, `laporan_penanggung`, `laporan_lokakarya`, `lokakarya_mini`, `hasil_lokakarya`, `draft_ruk`, `ruk_dinkes`, `rankaian_menunjang`, `upaya_tercapai`, `pelaksanaan_ukp`, `formasi_abk`, `sdm_abk`, `tindak_lanjut`, `perencanaan_peralatan`, `ada_tindak`, `kondisi_sarana`, `dokumen_perencanaan`, `alokasi_kebutuhan`, `usulan_pengadaan`, `input_by`) VALUES
 ('1012334', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 1, 1, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 'kota bandar lampung'),
 ('1032284', 1, 2, 1, 1, 1, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K3401110201'),
-('1032386', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 'K3471140101'),
-('1032584', 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 3, 3, 2, 1, 2, 3, 3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K3507240101'),
+('1032386', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K3471140101'),
+('1032584', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K3507240101'),
+('1033297', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K3578110101'),
+('1050002', 1, 1, 1, 1, 1, 1, 2, 1, 1, 2, 2, 2, 1, 1, 1, 2, 2, 1, 2, 1, 1, 1, 2, 1, 1, 1, 1, 2, 1, 'K5101010101'),
 ('1050116', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'K5171030102'),
 ('puskesmas', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 'kabupaten_kota');
 
@@ -761,10 +796,11 @@ CREATE TABLE `prasarana_puskesmas` (
 INSERT INTO `prasarana_puskesmas` (`kode`, `ventilasi_alami`, `ac_farmasi`, `ac_tindakan`, `ac_persalinan`, `ac_lab`, `lab_ac`, `ventilasi_tunggu`, `udara_puskesmas`, `udara_berbau`, `kelembapan`, `laju_ventilasi`, `pencahayaan`, `duaratus`, `tigaratus`, `seratus`, `hygiene`, `limabelas`, `empatpuluh`, `hygiene_seratus`, `sumber_air`, `saluran_air`, `ipal`, `sampah_dua`, `pemilihan`, `tps`, `westafel`, `serbet`, `handrub`, `septik_tank`, `listrik_puskesmas`, `daya_listrik`, `listrik_cadangan`, `kekuatan_cadangan`, `listrik_sehari`, `listrik_mencukupi`, `listrik_minimal`, `peletakan_kabel`, `saluran_tlp`, `saluran_seluler`, `tlp_gadar`, `internet`, `pemanggilan_jelas`, `sistem_antrian`, `mesin_nomor`, `tv_urut`, `perkiraan_waktu`, `gas_putih`, `gas_aman`, `gas_tutup`, `proteksi`, `apar`, `apar_dua`, `apar_dinding`, `apar_co`, `kebisingan_luar`, `kebisingan_dlm`, `bila_tangga`, `bila_ram`, `keliling_unit`, `kendaraan_ada`, `ambulan_unit`, `ambulan_ada`, `roda_unit`, `roda_ada`, `puskesmas_keliling`, `ambulan_baik`, `rujukan`) VALUES
 ('1012334', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '2200', 'Genset', '23000', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '1', 'Ya', '1', 'Ya', '1', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('1032284', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'PLN', '22.00', 'Genset', '25.00', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '2', 'Ya', '0', 'Tidak', '5', 'Ya', 'Ya', 'Tidak', 'Ya'),
-('1032386', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '20.00', 'Genset', '18.00', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '1', 'Ya', '2', 'Ya', '6', 'Ya', 'Ya', 'Ya', 'Ya'),
-('1032584', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '16600', 'Genset', '5000', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '1', 'Ya', '3', 'Ya', '2', 'Ya', 'Tidak', 'Ya', 'Ya'),
+('1032386', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '22000', 'Genset', '18000', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '0', 'Tidak', '2', 'Ya', '5', 'Ya', 'Tidak', 'Ya', 'Ya'),
+('1032584', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '16600', 'Genset', '5000', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '1', 'Ya', '3', 'Ya', '2', 'Ya', 'Tidak', 'Ya', 'Ya'),
 ('1033297', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '43.00', 'Genset', '100.0', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Sesuai', 'Sesuai', '1', 'Ya', '1', 'Ya', '2', 'Ya', 'Ya', 'Ya', 'Ya'),
-('1050116', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '66400', 'Genset', '25', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak Sesuai', 'Sesuai', '1', 'Ya', '3', 'Ya', '7', 'Ya', 'Ya', 'Ya', 'Ya'),
+('1050002', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Tidak', 'Ya', 'Tidak', 'Tidak', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Tidak', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'PLN', '50000', 'Genset', '15000', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Tidak', 'Tidak', 'Tidak', 'Sesuai', 'Tidak Sesuai', '1', 'Ya', '1', 'Ya', '10', 'Ya', 'Tidak', 'Ya', 'Ya'),
+('1050116', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PDAM', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'PLN', '66400', 'Genset', '25', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Tidak', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Ya', 'Tidak Sesuai', 'Sesuai', '1', 'Ya', '2', 'Ya', '7', 'Ya', 'Ya', 'Ya', 'Ya'),
 ('puskesmas', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Lainnya', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Lainnya', '10', 'Lainnya', '10', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak', 'Tidak Sesuai', 'Tidak Sesuai', '10', 'Tidak', '1', 'Tidak', '10', 'Tidak', 'Tidak', 'Tidak', 'Tidak');
 
 -- --------------------------------------------------------
@@ -888,8 +924,10 @@ CREATE TABLE `sumber_daya_manusia` (
 INSERT INTO `sumber_daya_manusia` (`kode`, `kepala`, `dokter1`, `dokter2`, `dokter3`, `dokter4`, `dokter5`, `dokter6`, `dlp1`, `dlp2`, `dlp3`, `dlp4`, `dlp5`, `dlp6`, `gigi1`, `gigi2`, `gigi3`, `gigi4`, `gigi5`, `gigi6`, `perawat1`, `perawat2`, `perawat3`, `perawat4`, `perawat5`, `perawat6`, `bidan1`, `bidan2`, `bidan3`, `bidan4`, `bidan5`, `bidan6`, `promosi1`, `promosi2`, `promosi3`, `promosi4`, `promosi5`, `promosi6`, `sanitasi1`, `sanitasi2`, `sanitasi3`, `sanitasi4`, `sanitasi5`, `sanitasi6`, `nutrisionis1`, `nutrisionis2`, `nutrisionis3`, `nutrisionis4`, `nutrisionis5`, `nutrisionis6`, `apoteker1`, `apoteker2`, `apoteker3`, `apoteker4`, `apoteker5`, `apoteker6`, `kefarmasian1`, `kefarmasian2`, `kefarmasian3`, `kefarmasian4`, `kefarmasian5`, `kefarmasian6`, `ahli1`, `ahli2`, `ahli3`, `ahli4`, `ahli5`, `ahli6`, `kesehatan1`, `kesehatan2`, `kesehatan3`, `kesehatan4`, `kesehatan5`, `kesehatan6`, `keuangan1`, `keuangan2`, `keuangan3`, `keuangan4`, `keuangan5`, `keuangan6`, `tatausaha1`, `tatausaha2`, `tatausaha3`, `tatausaha4`, `tatausaha5`, `tatausaha6`, `pekarya1`, `pekarya2`, `pekarya3`, `pekarya4`, `pekarya5`, `pekarya6`, `tradisional1`, `tradisional2`, `tradisional3`, `tradisional4`, `tradisional5`, `tradisional6`, `titik1`, `titik2`, `titik3`, `titik4`, `titik5`, `titik6`, `titik7`) VALUES
 ('1012334', 'Dokter Gigi', '08', '0', '0', '0', '02', '0', '02', '0', '0', '0', '0', '0', '04', '0', '0', '0', '0', '0', '13', '0', '0', '0', '0', '0', '13', '0', '0', '0', '0', '0', '01', '0', '0', '0', '01', '0', '02', '0', '0', '0', '0', '0', '02', '0', '0', '0', '0', '0', '01', '0', '0', '0', '0', '0', '01', '0', '0', '0', '02', '03', '02', '0', '0', '0', '0', '0', '00', '0', '0', '0', '0', '0', '00', '0', '0', '0', '02', '0', '02', '0', '0', '0', '01', '0', '0', '0', '0', '0', '02', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0'),
 ('1032284', 'Dokter Umum', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '8', '0', '0', '0', '1', '0', '9', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '1', '0', '0', '0', '1', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '1', '0', '2', '0', '0', '0', '1', '0', '7', '0', '0', '0', '8', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'JMD, kebersihan dan jaga malam', '0', '0', '0', '0', '9', '0'),
-('1032584', 'Dokter Umum', '1', '0', '0', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '11', '0', '0', '16', '3', '0', '20', '0', '0', '0', '2', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '2', '0', '2', '0', '0', '0', '2', '1', '1', '0', '0', '0', '9', '0', '0', '0', '0', '0', '5', '5', '0', '0', '0', '0', '0', '0', 'Keamanan + Juru Masak + Driver', '1', '0', '0', '0', '8', '0'),
+('1032386', 'Dokter Umum', '7', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '5', '0', '0', '0', '2', '0', '12', '0', '0', '0', '3', '15', '0', '0', '0', '0', '1', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '2', '0', '0', '0', '0', '0', '2', '0', '0', '0', '1', '0', '1', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '2', '0', '2', '0', '0', '0', '7', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '-', '0', '0', '0', '0', '0', '0'),
+('1032584', 'Dokter Umum', '1', '0', '0', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '11', '0', '0', '16', '3', '0', '20', '0', '0', '0', '2', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '2', '0', '1', '0', '0', '0', '2', '0', '1', '0', '0', '0', '9', '0', '0', '0', '0', '0', '5', '5', '0', '0', '0', '0', '0', '0', 'Keamanan + Juru Masak + Driver', '1', '0', '0', '0', '8', '0'),
 ('1033297', 'Dokter Umum', '2', '4', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '2', '0', '0', '0', '0', '11', '5', '0', '0', '0', '0', '5', '9', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '2', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '6', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', 'Tekniker Gigi', '2', '1', '0', '0', '0', '0'),
+('1050002', 'Dokter Umum', '1', '0', '0', '0', '6', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '2', '1', '7', '0', '0', '0', '6', '0', '13', '0', '0', '0', '0', '24', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '0', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '8', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'JMD,SOPIR,SATPAM,CS, JABATAN PELAKSANA UMUM', '3', '0', '0', '0', '22', '0'),
 ('1050116', 'Dokter Umum', '2', '0', '0', '2', '1', '0', '1', '0', '0', '0', '0', '0', '2', '0', '0', '0', '4', '0', '5', '0', '0', '0', '7', '0', '15', '0', '0', '0', '12', '0', '0', '0', '0', '0', '3', '0', '1', '0', '0', '0', '2', '0', '1', '0', '0', '0', '2', '0', '1', '0', '0', '0', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '2', '0', '0', '0', '4', '0', '3', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'Perawat Gigi', '5', '0', '0', '0', '2', '1'),
 ('puskesmas', 'Sarjana Kesehatan Masyarakat (SKM)', '2', '3', '2', '3', '3', '2', '3', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', 'dokter bedah', '2', '2', '2', '2', '2', '2');
 
@@ -917,7 +955,9 @@ CREATE TABLE `tim_pembina_terpadu` (
 INSERT INTO `tim_pembina_terpadu` (`kode`, `pembina1`, `no_pembina1`, `pembina2`, `no_pembina2`, `pembina3`, `no_pembina3`, `tgl_pembinaan`) VALUES
 ('1012334', 'Desti Mega Putri, SP.MT', '082180798943', 'Setiono, SKM, M.Eng', '085384842029', 'tidak ada', '0', 1581292800),
 ('1032284', 'dr. Ananta Kogam DK. M.Kes', '085743448433', 'RR. Emi Nurwijayanti, SE', '08122693874', 'Suhartini,SKM, M.Si', '081927267181', 1594771200),
-('1032386', 'Susi Susilowati', '08122952067', 'dr. Iva Kusdyarini', '081328770317', 'drg. Yunita Haryanti', '0811255756', 1601683200),
+('1032386', 'dr. Riska Novriana', '081392026554', 'Sri Fajar Astuti, SE', '085878740455', 'drg. Rohadanti, MPH', '087838702358', 1602288000),
+('1033297', 'HARIANTO', '081259116946', 'LENNA QONITA', '081330230511', 'KATARINA', '08563190480', 1580774400),
+('1050116', 'dr. Made Ayu Witriasih M Kes', '081916236888', 'Ni Nyoman Muryati SKM', '08123615311', '00', '00', 1558396800),
 ('puskesmas', 'nama 1', '1', 'nama 2', '2', 'nama 3', '2', 1603929600);
 
 -- --------------------------------------------------------
