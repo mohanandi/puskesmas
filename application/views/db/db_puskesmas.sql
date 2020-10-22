@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.5
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Waktu pembuatan: 21 Okt 2020 pada 14.47
--- Versi server: 10.3.24-MariaDB
--- Versi PHP: 7.3.6
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 22 Okt 2020 pada 19.14
+-- Versi server: 10.4.13-MariaDB
+-- Versi PHP: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `u8879435_puskesmas`
+-- Database: `db_puskesmas`
 --
 
 -- --------------------------------------------------------
@@ -218,22 +217,23 @@ CREATE TABLE `identitas_puskesmas` (
   `no_telp` varchar(20) NOT NULL,
   `no_telp_gadar` varchar(20) NOT NULL,
   `no_faksimile` varchar(20) NOT NULL,
-  `email` varchar(255) NOT NULL
+  `email` varchar(255) NOT NULL,
+  `website` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `identitas_puskesmas`
 --
 
-INSERT INTO `identitas_puskesmas` (`no`, `kode`, `nama`, `no_reg`, `tgl_pendirian`, `alamat`, `kecamatan`, `kab_kota`, `provinsi`, `no_telp`, `no_telp_gadar`, `no_faksimile`, `email`) VALUES
-(6, 'puskesmas', 'Andi Mohan', '1232131111', 1601416800, 'Bandung1', 'sada1', 'dsasadadaaaaa1', 'sadasdasd1', '1231321', '1231321', '1321321', 'da@gmail.com'),
-(7, '1012334', 'RAWAT INAP KEDATON', '1012334', 1171065600, 'JL TEUKU UMAR NO 62 KEDATON', 'KEDATON', 'KOTA BANDAR LAMPUNG', 'LAMPUNG', '62721702045', '620721702045', '0721702045', 'puskeskedaton@gmail.com'),
-(8, '1050116', 'Puskesmas II Dinas Kesehatan Kecamatan Denpasar Barat', '1050116', 468028800, 'Jl. Gunung Soputan Gg. Puskesmas No.3 Denpasar', 'Denpasar Barat', 'Denpasar', 'Bali', '0361488343', '00000000000000', '000000000000000', 'pkm2db@gmail.com'),
-(9, '1032284', 'UPTD Puskesmas Kalibawang', '3401110201', 1255132800, 'Ngrajun, Banjarharjo', 'Kalibawang', 'Kulon Progo', 'DI Yogyakarta', '08112954334', '08112954334', '0', 'puskesmas.kalibawang@gmail.com'),
-(10, '1033297', 'PUSKESMAS JAGIR', '1033297', -297216000, 'JL BENDUL MERISI NO 1 SURABAYA', 'WONOKROMO', 'SURABAYA', 'JAWA TIMUR', '0318416926', '0318416926', '0', 'pkmjagir.sby@gmail.com'),
-(11, '1032584', 'Puskesmas Tumpang', '3507240101', -315619200, 'Jalan Setiawan No 227 Desa Tumpang', 'Tumpang', 'Kabupaten Malang', 'Jawa Timur', '0341787290', '0341787232', '0341787232', 'Puskesmastumpang@ymail.com'),
-(12, '1050002', 'UPTD PUSKESMAS I MELAYA', '05101010102', 197164800, 'JALAN JAYA SAKTI', 'MELAYA', 'JEMBRANA', 'BALI', '087861560609', '03654790672', '0', 'puskesmassatu_melaya@yahoo.co.id'),
-(13, '1032386', 'PUSKESMAS TEGALREJO', '3471140101', 31449600, 'Jalan Magelang Km.2 No. 180 Yogyakarta', 'Tegalrejo', 'Yogyakarta', 'Daerah Istimewa Yogyakarta', '0274586841', '0274586841', '0274586841', 'pusktr@gmail.com');
+INSERT INTO `identitas_puskesmas` (`no`, `kode`, `nama`, `no_reg`, `tgl_pendirian`, `alamat`, `kecamatan`, `kab_kota`, `provinsi`, `no_telp`, `no_telp_gadar`, `no_faksimile`, `email`, `website`) VALUES
+(6, 'puskesmas', 'Andi Mohan', '1232131111', 1601416800, 'Bandung1', 'sada1', 'dsasadadaaaaa1', 'sadasdasd1', '1231321', '1231321', '1321321', 'da@gmail.com', 'monevpuskesmas.nearosarteti.com'),
+(7, '1012334', 'RAWAT INAP KEDATON', '1012334', 1171065600, 'JL TEUKU UMAR NO 62 KEDATON', 'KEDATON', 'KOTA BANDAR LAMPUNG', 'LAMPUNG', '62721702045', '620721702045', '0721702045', 'puskeskedaton@gmail.com', ''),
+(8, '1050116', 'Puskesmas II Dinas Kesehatan Kecamatan Denpasar Barat', '1050116', 468028800, 'Jl. Gunung Soputan Gg. Puskesmas No.3 Denpasar', 'Denpasar Barat', 'Denpasar', 'Bali', '0361488343', '00000000000000', '000000000000000', 'pkm2db@gmail.com', ''),
+(9, '1032284', 'UPTD Puskesmas Kalibawang', '3401110201', 1255132800, 'Ngrajun, Banjarharjo', 'Kalibawang', 'Kulon Progo', 'DI Yogyakarta', '08112954334', '08112954334', '0', 'puskesmas.kalibawang@gmail.com', ''),
+(10, '1033297', 'PUSKESMAS JAGIR', '1033297', -297216000, 'JL BENDUL MERISI NO 1 SURABAYA', 'WONOKROMO', 'SURABAYA', 'JAWA TIMUR', '0318416926', '0318416926', '0', 'pkmjagir.sby@gmail.com', ''),
+(11, '1032584', 'Puskesmas Tumpang', '3507240101', -315619200, 'Jalan Setiawan No 227 Desa Tumpang', 'Tumpang', 'Kabupaten Malang', 'Jawa Timur', '0341787290', '0341787232', '0341787232', 'Puskesmastumpang@ymail.com', ''),
+(12, '1050002', 'UPTD PUSKESMAS I MELAYA', '05101010102', 197164800, 'JALAN JAYA SAKTI', 'MELAYA', 'JEMBRANA', 'BALI', '087861560609', '03654790672', '0', 'puskesmassatu_melaya@yahoo.co.id', ''),
+(13, '1032386', 'PUSKESMAS TEGALREJO', '3471140101', 31449600, 'Jalan Magelang Km.2 No. 180 Yogyakarta', 'Tegalrejo', 'Yogyakarta', 'Daerah Istimewa Yogyakarta', '0274586841', '0274586841', '0274586841', 'pusktr@gmail.com', '');
 
 -- --------------------------------------------------------
 
