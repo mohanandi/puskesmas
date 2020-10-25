@@ -1137,12 +1137,16 @@ function indikator_program($table, $kode)
     } else if ($data['pispk3b'] == 2) {
         $nilai16b = 0;
     }
-    // if ($data['pispk3c'] == 1) {
-    //     $nilai16c = 50;
-    // } else if ($data['pispk3c'] == 2) {
-    //     $nilai16c = 0;
-    // }
-    $nilai16c = round($data['pispk3c'] / 2, 2);
+    if ($data['pispk3c'] == 1) {
+        $nilai16c = 50;
+    } else if ($data['pispk3c'] == 2) {
+        $nilai16c = 25;
+    } else if ($data['pispk3c'] == 3) {
+        $nilai16c = 0;
+    } else {
+        $nilai16c = 0;
+    }
+    // $nilai16c = round($data['pispk3c'] / 2, 2);
     $nilai16 = $nilai16a + $nilai16b + $nilai16c;
     if ($nilai16 >= 80) {
         $total16 = 10;
