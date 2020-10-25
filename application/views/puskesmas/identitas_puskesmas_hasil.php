@@ -59,7 +59,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">11. Alamat website</label>
-        <input type="website" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['website']; ?>" readonly>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" value="<?= $data['website']; ?>" readonly>
       </div>
     </form>
     <a href="<?= base_url(); ?>Identitas_Puskesmas/ubah" class="btn float-right btn-danger" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
