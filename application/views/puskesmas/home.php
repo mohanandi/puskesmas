@@ -68,7 +68,7 @@
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li class="has-children">
-                  <a href="services.html" class="nav-link">Menu</a>
+                  <a href="" class="nav-link">Menu</a>
                   <ul class="dropdown">
                     <li><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="nav-link">Identitas Umum</a></li>
                     <li><a href="<?= base_url('Pembina_Terpadu'); ?>" class="nav-link">Pembina Terpadu</a></li>

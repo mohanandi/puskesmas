@@ -24,7 +24,7 @@
                         <td><?= penilaian_pembinaan_terpadu($data_kabupaten['kode']); ?></td>
                         <td><?php
                             $nilai = penilaian_pembinaan_terpadu($data_kabupaten['kode']);
-                            $persen  = $nilai / 200 * 100;
+                            $persen  = round($nilai / 200 * 100, 2);
                             echo "$persen%";
                             ?></td>
                         <td><a href="<?= base_url(); ?>Provinsi/penilaian_kabupaten/<?= $data_kabupaten['kode']; ?>">DETAIL</a></td>
