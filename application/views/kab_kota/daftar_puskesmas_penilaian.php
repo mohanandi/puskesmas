@@ -88,7 +88,7 @@
                     <td><?= indikator($persen4); ?></td>
                 </tr>
                 <tr>
-                    <th>Penningkatan Mutu Puskesmas</th>
+                    <th>Peningkatan Mutu Puskesmas</th>
                     <td><?= $persen5; ?></td>
                     <td><?= indikator($persen5); ?></td>
                 </tr>
