@@ -30,7 +30,7 @@ function indikator($nilai)
 
     if ($nilai >= 80) {
         $ind = "BAIK";
-    } else if (($nilai < 80) and ($nilai >= 61)) {
+    } else if (($nilai < 80) and ($nilai >= 60)) {
         $ind = "CUKUP";
     } else {
         $ind = "KURANG";
@@ -45,69 +45,95 @@ function penilaian_pembinaan_terpadu($kode)
     if ($data['cluster_binaan'] == 1) {
         $nilai1 = 10;
     } else if ($data['cluster_binaan'] == 2) {
+        $nilai1 = 5;
+    } else if ($data['cluster_binaan'] == 3) {
         $nilai1 = 0;
     }
 
     if ($data['sk_tim'] == 1) {
         $nilai2 = 10;
     } else if ($data['sk_tim'] == 2) {
+        $nilai2 = 5;
+    } else if ($data['sk_tim'] == 3) {
         $nilai2 = 0;
     }
 
     if ($data['cluster_perwakilan'] == 1) {
         $nilai3 = 10;
     } else if ($data['cluster_perwakilan'] == 2) {
+        $nilai3 = 5;
+    } else if ($data['cluster_perwakilan'] == 3) {
         $nilai3 = 0;
     }
+
     if ($data['pengenalan_peran'] == 1) {
         $nilai4 = 10;
     } else if ($data['pengenalan_peran'] == 2) {
+        $nilai4 = 5;
+    } else if ($data['pengenalan_peran'] == 3) {
         $nilai4 = 0;
     }
+
     if ($data['nspk'] == 1) {
         $nilai5 = 10;
     } else if ($data['nspk'] == 2) {
+        $nilai5 = 5;
+    } else if ($data['nspk'] == 3) {
         $nilai5 = 0;
     }
 
     if ($data['pengolahan_analisis'] == 1) {
         $nilai6 = 10;
     } else if ($data['pengolahan_analisis'] == 2) {
+        $nilai6 = 5;
+    } else if ($data['pengolahan_analisis'] == 3) {
         $nilai6 = 0;
     }
 
     if ($data['trend_analysis'] == 1) {
         $nilai7 = 10;
     } else if ($data['trend_analysis'] == 2) {
+        $nilai7 = 5;
+    } else if ($data['trend_analysis'] == 3) {
         $nilai7 = 0;
     }
     if ($data['lintas_sektor'] == 1) {
         $nilai8 = 10;
     } else if ($data['lintas_sektor'] == 2) {
+        $nilai8 = 5;
+    } else if ($data['lintas_sektor'] == 3) {
         $nilai8 = 0;
     }
 
     if ($data['lintas_program'] == 1) {
         $nilai9 = 10;
     } else if ($data['lintas_program'] == 2) {
+        $nilai9 = 5;
+    } else if ($data['lintas_program'] == 3) {
         $nilai9 = 0;
     }
 
     if ($data['tpt'] == 1) {
         $nilai10 = 10;
     } else if ($data['tpt'] == 2) {
+        $nilai10 = 5;
+    } else if ($data['tpt'] == 3) {
         $nilai10 = 0;
     }
 
     if ($data['rincian_tpt'] == 1) {
         $nilai11 = 10;
     } else if ($data['rincian_tpt'] == 2) {
+        $nilai11 = 5;
+    } else if ($data['rincian_tpt'] == 3) {
         $nilai11 = 0;
     }
 
     if ($data['simulasi_pembinaan'] == 1) {
         $nilai12 = 10;
     } else if ($data['simulasi_pembinaan'] == 2) {
+        $nilai12 = 5;
+    } else if ($data['simulasi_pembinaan'] == 3) {
         $nilai12 = 0;
     }
 
@@ -122,24 +148,32 @@ function penilaian_pembinaan_terpadu($kode)
     if ($data['internal'] == 1) {
         $nilai14 = 10;
     } else if ($data['internal'] == 2) {
+        $nilai14 = 5;
+    } else if ($data['internal'] == 3) {
         $nilai14 = 0;
     }
 
     if ($data['1x_setahun'] == 1) {
         $nilai15 = 10;
     } else if ($data['1x_setahun'] == 2) {
+        $nilai15 = 5;
+    } else if ($data['1x_setahun'] == 3) {
         $nilai15 = 0;
     }
 
     if ($data['monitoring_evaluasi'] == 1) {
         $nilai16 = 10;
     } else if ($data['monitoring_evaluasi'] == 2) {
+        $nilai16 = 5;
+    } else if ($data['monitoring_evaluasi'] == 3) {
         $nilai16 = 0;
     }
 
     if ($data['tersusunnya_instrumen'] == 1) {
         $nilai17 = 10;
     } else if ($data['tersusunnya_instrumen'] == 2) {
+        $nilai17 = 5;
+    } else if ($data['tersusunnya_instrumen'] == 3) {
         $nilai17 = 0;
     }
 
@@ -162,6 +196,8 @@ function penilaian_pembinaan_terpadu($kode)
     if ($data['akhir_tahun'] == 1) {
         $nilai20 = 10;
     } else if ($data['akhir_tahun'] == 2) {
+        $nilai20 = 5;
+    } else if ($data['akhir_tahun'] == 3) {
         $nilai20 = 0;
     }
 
@@ -731,11 +767,11 @@ function indikator_program($table, $kode)
     // } else if ($data['kia1c'] == 2) {
     //     $nilai1c = 0;
     // }
-    $nilai1c = $data['kia1c'];
+    $nilai1c = round($data['kia1c'] / 2, 2);
     $nilai1 = $nilai1a + $nilai1b + $nilai1c;
-    if ($nilai1 > 80) {
+    if ($nilai1 >= 80) {
         $total1 = 10;
-    } else if (($nilai1 > 60) and ($nilai1 < 79)) {
+    } else if (($nilai1 >= 60) and ($nilai1 < 80)) {
         $total1 = 5;
     } else if ($nilai1 < 60) {
         $total1 = 0;
@@ -756,11 +792,11 @@ function indikator_program($table, $kode)
     // } else if ($data['kia2c'] == 2) {
     //     $nilai2c = 0;
     // }
-    $nilai2c = $data['kia2c'];
+    $nilai2c =  round($data['kia2c'] / 2, 2);
     $nilai2 = $nilai2a + $nilai2b + $nilai2c;
-    if ($nilai2 > 80) {
+    if ($nilai2 >= 80) {
         $total2 = 10;
-    } else if (($nilai2 > 60) and ($nilai2 < 79)) {
+    } else if (($nilai2 >= 60) and ($nilai2 < 80)) {
         $total2 = 5;
     } else if ($nilai2 < 60) {
         $total2 = 0;
@@ -781,11 +817,11 @@ function indikator_program($table, $kode)
     // } else if ($data['kia3c'] == 2) {
     //     $nilai3c = 0;
     // }
-    $nilai3c = $data['kia3c'];
+    $nilai3c = round($data['kia3c'] / 2, 2);
     $nilai3 = $nilai3a + $nilai3b + $nilai3c;
-    if ($nilai3 > 80) {
+    if ($nilai3 >= 80) {
         $total3 = 10;
-    } else if (($nilai3 > 60) and ($nilai3 < 79)) {
+    } else if (($nilai3 >= 60) and ($nilai3 < 80)) {
         $total3 = 5;
     } else if ($nilai3 < 60) {
         $total3 = 0;
@@ -806,11 +842,11 @@ function indikator_program($table, $kode)
     // } else if ($data['imunisasi1c'] == 2) {
     //     $nilai4c = 0;
     // }
-    $nilai4c = $data['imunisasi1c'];
+    $nilai4c =   round($data['imunisasi1c'] / 2, 2);
     $nilai4 = $nilai4a + $nilai4b + $nilai4c;
-    if ($nilai4 > 80) {
+    if ($nilai4 >= 80) {
         $total4 = 10;
-    } else if (($nilai4 > 60) and ($nilai4 < 79)) {
+    } else if (($nilai4 >= 60) and ($nilai4 < 80)) {
         $total4 = 5;
     } else if ($nilai4 < 60) {
         $total4 = 0;
@@ -831,11 +867,11 @@ function indikator_program($table, $kode)
     // } else if ($data['gizi1c'] == 2) {
     //     $nilai5c = 0;
     // }
-    $nilai5c = $data['gizi1c'];
+    $nilai5c =  round($data['gizi1c'] / 2, 2);
     $nilai5 = $nilai5a + $nilai5b + $nilai5c;
-    if ($nilai5 > 80) {
+    if ($nilai5 >= 80) {
         $total5 = 10;
-    } else if (($nilai5 > 60) and ($nilai5 < 79)) {
+    } else if (($nilai5 >= 60) and ($nilai5 < 80)) {
         $total5 = 5;
     } else if ($nilai5 < 60) {
         $total5 = 0;
@@ -856,11 +892,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan1c'] == 2) {
     //     $nilai6c = 0;
     // }
-    $nilai6c = $data['pencegahan1c'];
+    $nilai6c =  round($data['pencegahan1c'] / 2, 2);
     $nilai6 = $nilai6a + $nilai6b + $nilai6c;
-    if ($nilai6 > 80) {
+    if ($nilai6 >= 80) {
         $total6 = 10;
-    } else if (($nilai6 > 60) and ($nilai6 < 79)) {
+    } else if (($nilai6 >= 60) and ($nilai6 < 80)) {
         $total6 = 5;
     } else if ($nilai6 < 60) {
         $total6 = 0;
@@ -881,11 +917,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan2c'] == 2) {
     //     $nilai7c = 0;
     // }
-    $nilai7c = $data['pencegahan2c'];
+    $nilai7c =  round($data['pencegahan2c'] / 2, 2);
     $nilai7 = $nilai7a + $nilai7b + $nilai7c;
-    if ($nilai7 > 80) {
+    if ($nilai7 >= 80) {
         $total7 = 10;
-    } else if (($nilai7 > 60) and ($nilai7 < 79)) {
+    } else if (($nilai7 >= 60) and ($nilai7 < 80)) {
         $total7 = 5;
     } else if ($nilai7 < 60) {
         $total7 = 0;
@@ -906,11 +942,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan3c'] == 2) {
     //     $nilai8c = 0;
     // }
-    $nilai8c = $data['pencegahan3c'];
+    $nilai8c =  round($data['pencegahan3c'] / 2, 2);
     $nilai8 = $nilai8a + $nilai8b + $nilai8c;
-    if ($nilai8 > 80) {
+    if ($nilai8 >= 80) {
         $total8 = 10;
-    } else if (($nilai8 > 60) and ($nilai8 < 79)) {
+    } else if (($nilai8 >= 60) and ($nilai8 < 80)) {
         $total8 = 5;
     } else if ($nilai8 < 60) {
         $total8 = 0;
@@ -931,11 +967,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan4c'] == 2) {
     //     $nilai9c = 0;
     // }
-    $nilai9c = $data['pencegahan4c'];
+    $nilai9c =  round($data['pencegahan4c'] / 2, 2);
     $nilai9 = $nilai9a + $nilai9b + $nilai9c;
-    if ($nilai9 > 80) {
+    if ($nilai9 >= 80) {
         $total9 = 10;
-    } else if (($nilai9 > 60) and ($nilai9 < 79)) {
+    } else if (($nilai9 >= 60) and ($nilai9 < 80)) {
         $total9 = 5;
     } else if ($nilai9 < 60) {
         $total9 = 0;
@@ -956,11 +992,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan5c'] == 2) {
     //     $nilai10c = 0;
     // }
-    $nilai10c = $data['pencegahan5c'];
+    $nilai10c =  round($data['pencegahan5c'] / 2, 2);
     $nilai10 = $nilai10a + $nilai10b + $nilai10c;
-    if ($nilai10 > 80) {
+    if ($nilai10 >= 80) {
         $total10 = 10;
-    } else if (($nilai10 > 60) and ($nilai10 < 79)) {
+    } else if (($nilai10 >= 60) and ($nilai10 < 80)) {
         $total10 = 5;
     } else if ($nilai10 < 60) {
         $total10 = 0;
@@ -981,11 +1017,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan6c'] == 2) {
     //     $nilai11c = 0;
     // }
-    $nilai11c = $data['pencegahan6c'];
+    $nilai11c =  round($data['pencegahan6c'] / 2, 2);
     $nilai11 = $nilai11a + $nilai11b + $nilai11c;
-    if ($nilai11 > 80) {
+    if ($nilai11 >= 80) {
         $total11 = 10;
-    } else if (($nilai11 > 60) and ($nilai11 < 79)) {
+    } else if (($nilai11 >= 60) and ($nilai11 < 80)) {
         $total11 = 5;
     } else if ($nilai11 < 60) {
         $total11 = 0;
@@ -1006,11 +1042,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan7c'] == 2) {
     //     $nilai12c = 0;
     // }
-    $nilai12c = $data['pencegahan7c'];
+    $nilai12c = round($data['pencegahan7c'] / 2, 2);
     $nilai12 = $nilai12a + $nilai12b + $nilai12c;
-    if ($nilai12 > 80) {
+    if ($nilai12 >= 80) {
         $total12 = 10;
-    } else if (($nilai12 > 60) and ($nilai12 < 79)) {
+    } else if (($nilai12 >= 60) and ($nilai12 < 80)) {
         $total12 = 5;
     } else if ($nilai12 < 60) {
         $total12 = 0;
@@ -1031,11 +1067,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pencegahan8c'] == 2) {
     //     $nilai13c = 0;
     // }
-    $nilai13c = $data['pencegahan8c'];
+    $nilai13c =  round($data['pencegahan8c'] / 2, 2);
     $nilai13 = $nilai13a + $nilai13b + $nilai13c;
-    if ($nilai13 > 80) {
+    if ($nilai13 >= 80) {
         $total13 = 10;
-    } else if (($nilai13 > 60) and ($nilai13 < 79)) {
+    } else if (($nilai13 >= 60) and ($nilai13 < 80)) {
         $total13 = 5;
     } else if ($nilai13 < 60) {
         $total13 = 0;
@@ -1056,11 +1092,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pispk1c'] == 2) {
     //     $nilai14c = 0;
     // }
-    $nilai14c = $data['pispk1c'];
+    $nilai14c = round($data['pispk1c'] / 2, 2);
     $nilai14 = $nilai14a + $nilai14b + $nilai14c;
-    if ($nilai14 > 80) {
+    if ($nilai14 >= 80) {
         $total14 = 10;
-    } else if (($nilai14 > 60) and ($nilai14 < 79)) {
+    } else if (($nilai14 >= 60) and ($nilai14 < 80)) {
         $total14 = 5;
     } else if ($nilai14 < 60) {
         $total14 = 0;
@@ -1081,11 +1117,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pispk2c'] == 2) {
     //     $nilai15c = 0;
     // }
-    $nilai15c = $data['pispk2c'];
+    $nilai15c = round($data['pispk2c'] / 2, 2);
     $nilai15 = $nilai15a + $nilai15b + $nilai15c;
-    if ($nilai15 > 80) {
+    if ($nilai15 >= 80) {
         $total15 = 10;
-    } else if (($nilai15 > 60) and ($nilai15 < 79)) {
+    } else if (($nilai15 >= 60) and ($nilai15 < 80)) {
         $total15 = 5;
     } else if ($nilai15 < 60) {
         $total15 = 0;
@@ -1106,11 +1142,11 @@ function indikator_program($table, $kode)
     // } else if ($data['pispk3c'] == 2) {
     //     $nilai16c = 0;
     // }
-    $nilai16c = $data['pispk3c'];
+    $nilai16c = round($data['pispk3c'] / 2, 2);
     $nilai16 = $nilai16a + $nilai16b + $nilai16c;
-    if ($nilai16 > 80) {
+    if ($nilai16 >= 80) {
         $total16 = 10;
-    } else if (($nilai16 > 60) and ($nilai16 < 79)) {
+    } else if (($nilai16 >= 60) and ($nilai16 < 80)) {
         $total16 = 5;
     } else if ($nilai16 < 60) {
         $total16 = 0;
