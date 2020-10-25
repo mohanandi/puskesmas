@@ -20,13 +20,32 @@
       </div>
       <!-- Tenaga dan Status Kepegawaian -->
       <label for="exampleFormControlInput1"><strong>2. Tenaga dan Status Kepegawaian</strong></label><br>
-
       <section class="form-group" id="form-group">
         <div class="form-group">
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Dokter</label>
+                <label for="exampleFormControlInput1"><b>Dokter</b></label>
+                <?php
+                $total_dokter = $data['dokter1'] + $data['dokter2'] + $data['dokter3'] + $data['dokter4'] + $data['dokter5'] + $data['dokter6'];
+                $total_dlp = $data['dlp1'] + $data['dlp2'] + $data['dlp3'] + $data['dlp4'] + $data['dlp5'] + $data['dlp6'];
+                $total_gigi = $data['gigi1'] + $data['gigi2'] + $data['gigi3'] + $data['gigi4'] + $data['gigi5'] + $data['gigi6'];
+                $total_perawat = $data['perawat1'] + $data['perawat2'] + $data['perawat3'] + $data['perawat4'] + $data['perawat5'] + $data['perawat6'];
+                $total_bidan = $data['bidan1'] + $data['bidan2'] + $data['bidan3'] + $data['bidan4'] + $data['bidan5'] + $data['bidan6'];
+                $total_promosi = $data['promosi1'] + $data['promosi2'] + $data['promosi3'] + $data['promosi4'] + $data['promosi5'] + $data['promosi6'];
+                $total_sanitasi = $data['sanitasi1'] + $data['sanitasi2'] + $data['sanitasi3'] + $data['sanitasi4'] + $data['sanitasi5'] + $data['sanitasi6'];
+                $total_nutrisionis = $data['nutrisionis1'] + $data['nutrisionis2'] + $data['nutrisionis3'] + $data['nutrisionis4'] + $data['nutrisionis5'] + $data['nutrisionis6'];
+                $total_apoteker = $data['apoteker1'] + $data['apoteker2'] + $data['apoteker3'] + $data['apoteker4'] + $data['apoteker5'] + $data['apoteker6'];
+                $total_kefarmasian = $data['kefarmasian1'] + $data['kefarmasian2'] + $data['kefarmasian3'] + $data['kefarmasian4'] + $data['kefarmasian5'] + $data['kefarmasian6'];
+                $total_ahli = $data['ahli1'] + $data['ahli2'] + $data['ahli3'] + $data['ahli4'] + $data['ahli5'] + $data['ahli6'];
+                $total_kesehatan = $data['kesehatan1'] + $data['kesehatan2'] + $data['kesehatan3'] + $data['kesehatan4'] + $data['kesehatan5'] + $data['kesehatan6'];
+                $total_keuangan = $data['keuangan1'] + $data['keuangan2'] + $data['keuangan3'] + $data['keuangan4'] + $data['keuangan5'] + $data['keuangan6'];
+                $total_tatausaha = $data['tatausaha1'] + $data['tatausaha2'] + $data['tatausaha3'] + $data['tatausaha4'] + $data['tatausaha5'] + $data['tatausaha6'];
+                $total_pekarya = $data['pekarya1'] + $data['pekarya2'] + $data['pekarya3'] + $data['pekarya4'] + $data['pekarya5'] + $data['pekarya6'];
+                $total_tradisional = $data['tradisional1'] + $data['tradisional2'] + $data['tradisional3'] + $data['tradisional4'] + $data['tradisional5'] + $data['tradisional6'];
+                $total_titik = $data['titik7'] + $data['titik2'] + $data['titik3'] + $data['titik4'] + $data['titik5'] + $data['titik6'];
+                $total_semua = $total_dokter + $total_dlp + $total_gigi + $total_perawat + $total_bidan + $total_promosi + $total_sanitasi + $total_nutrisionis + $total_apoteker + $total_kefarmasian + $total_ahli + $total_kesehatan + $total_keuangan + $total_tatausaha + $total_pekarya + $total_tradisional + $total_titik;
+                ?>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -54,10 +73,10 @@
               </div><br>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_dokter; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Dokter Layanan Primer (DLP)</label>
+                <label for="exampleFormControlInput1"><b>Dokter Layanan Primer (DLP)</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -85,10 +104,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_dlp; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Dokter Gigi</label>
+                <label for="exampleFormControlInput1"><b>Dokter Gigi</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -116,10 +135,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_gigi; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Perawat</label>
+                <label for="exampleFormControlInput1"><b>Perawat</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -147,10 +166,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_perawat; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Bidan</label>
+                <label for="exampleFormControlInput1"><b>Bidan</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -178,10 +197,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_bidan; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga promosi kesehatan dan ilmu perilaku</label>
+                <label for="exampleFormControlInput1"><b>Tenaga promosi kesehatan dan ilmu perilaku</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -209,10 +228,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_promosi; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga sanitasi lingkungan</label>
+                <label for="exampleFormControlInput1"><b>Tenaga sanitasi lingkungan</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -240,10 +259,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_sanitasi; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Nutrisionis</label>
+                <label for="exampleFormControlInput1"><b>Nutrisionis</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -271,10 +290,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_nutrisionis; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga Apoteker </label>
+                <label for="exampleFormControlInput1"><b>Tenaga Apoteker</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -302,10 +321,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_apoteker; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga teknis kefarmasian</label>
+                <label for="exampleFormControlInput1"><b>Tenaga teknis kefarmasian</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -333,10 +352,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_kefarmasian; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Ahli teknologi laboratorium medik</label>
+                <label for="exampleFormControlInput1"><b>Ahli teknologi laboratorium medik</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -364,10 +383,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_ahli; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga sistem informasi kesehatan </label>
+                <label for="exampleFormControlInput1"><b>Tenaga sistem informasi kesehatan</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -395,10 +414,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_kesehatan; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga administrasi keuangan</label>
+                <label for="exampleFormControlInput1"><b>Tenaga administrasi keuangan</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -426,10 +445,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_keuangan; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Tenaga ketatausahaan</label>
+                <label for="exampleFormControlInput1"><b>Tenaga ketatausahaan</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -457,10 +476,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_tatausaha; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Pekarya</label>
+                <label for="exampleFormControlInput1"><b>Pekarya</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -488,13 +507,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_pekarya; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">Lain-lain Sebutkan:</label>
-              </div>
-              <div class="col-md-12">
-                <label for="exampleFormControlInput1">a. Tenaga Kesehatan Tradisional</label>
+                <label for="exampleFormControlInput1"><b>a. Tenaga Kesehatan Tradisional</b></label>
               </div>
               <div class="col-md-2">
                 <label for="exampleFormControlInput1">PNS</label>
@@ -522,10 +538,10 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_tradisional; ?>" readonly>
               </div>
               <div class="col-md-12">
-                <label for="exampleFormControlInput1">B. .......</label>
+                <label for="exampleFormControlInput1"><b>B. .......</b></label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="sdmtitik1" id="sdmtitik1" value="<?= $data['titik1']; ?>" readonly>
               </div>
               <div class="col-md-2">
@@ -554,14 +570,14 @@
               </div>
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">Total</label>
-                <input type="text" readonly> <br>
+                <input type="text" value="<?= $total_titik; ?>" readonly> <br>
                 <br>
                 <br>
               </div>
 
               <div class="col-md-12">
                 <label for="exampleFormControlInput1">JUMLAH KESELURUHAN :</label>
-                <input type="text" readonly>
+                <input type="text" value="<?= $total_semua; ?>" readonly>
               </div>
             </div>
           </div>

@@ -62,7 +62,7 @@
                         <p style="font-size:12px;">
                             % ibu hamil mendapatkan pelayanan antenatal sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['kia1c']; ?>" placeholder="" name="cakupan_a1c" id="cakupan_a1c">
+                        <input type="number" step=any class="form-control" value="<?= $data['kia1c']; ?>" placeholder="" name="cakupan_a1c" id="cakupan_a1c">
 
                         <?= form_error('cakupan_a1c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -107,7 +107,7 @@
                         <p style="font-size:12px;">
                             % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['kia2c']; ?>" placeholder="" name="cakupan_a2c" id="cakupan_a2c">
+                        <input type="number" step=any class="form-control" value="<?= $data['kia2c']; ?>" placeholder="" name="cakupan_a2c" id="cakupan_a2c">
 
                         <?= form_error('cakupan_a2c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -152,7 +152,7 @@
                         <p style="font-size:12px;">
                             % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['kia3c']; ?>" placeholder="" name="cakupan_a3c" id="cakupan_a3c">
+                        <input type="number" step=any class="form-control" value="<?= $data['kia3c']; ?>" placeholder="" name="cakupan_a3c" id="cakupan_a3c">
 
                         <?= form_error('cakupan_a3c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -201,7 +201,7 @@
                         <p style="font-size:12px;">
                             % bayi mendapatkan imunisasi dasar lengkap dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['imunisasi1c']; ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c">
+                        <input type="number" step=any class="form-control" value="<?= $data['imunisasi1c']; ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c">
 
                         <?= form_error('cakupan_b1c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -249,7 +249,7 @@
                                 <p style="font-size:12px;">
                                     % balita gizi buruk yang mendapatkan penanganan sesuai standar dikali 50%
                                 </p>
-                                <input type="number" class="form-control" value="<?= $data['gizi1c']; ?>" placeholder="" name="cakupan_c1c" id="cakupan_c1c">
+                                <input type="number" step=any class="form-control" value="<?= $data['gizi1c']; ?>" placeholder="" name="cakupan_c1c" id="cakupan_c1c">
 
                                 <?= form_error('cakupan_c1c', '<small class="text-danger pl-3">', '</small>'); ?>
                             </div>
@@ -298,7 +298,7 @@
                         <p style="font-size:12px;">
                             % orang terduga TBC mendapatkan pelayanan sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan1c']; ?>" placeholder="" name="cakupan_d1c" id="cakupan_d1c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan1c']; ?>" placeholder="" name="cakupan_d1c" id="cakupan_d1c">
 
                         <?= form_error('cakupan_d1c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -343,7 +343,7 @@
                         <p style="font-size:12px;">
                             % orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan2c']; ?>" placeholder="" name="cakupan_d2c" id="cakupan_d2c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan2c']; ?>" placeholder="" name="cakupan_d2c" id="cakupan_d2c">
 
                         <?= form_error('cakupan_d2c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -388,7 +388,7 @@
                         <p style="font-size:12px;">
                             % ibu hamil yang dilakukan pemeriksaan Hepatitis B dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan3c']; ?>" placeholder="" name="cakupan_d3c" id="cakupan_d3c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan3c']; ?>" placeholder="" name="cakupan_d3c" id="cakupan_d3c">
                         <?= form_error('cakupan_d3c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                 </div>
@@ -432,7 +432,7 @@
                         <p style="font-size:12px;">
                             % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan4c']; ?>" placeholder="" name="cakupan_d4c" id="cakupan_d4c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan4c']; ?>" placeholder="" name="cakupan_d4c" id="cakupan_d4c">
 
                         <?= form_error('cakupan_d4c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -477,7 +477,7 @@
                         <p style="font-size:12px;">
                             % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan5c']; ?>" placeholder="" name="cakupan_d5c" id="cakupan_d5c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan5c']; ?>" placeholder="" name="cakupan_d5c" id="cakupan_d5c">
 
                         <?= form_error('cakupan_d5c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -522,7 +522,7 @@
                         <p style="font-size:12px;">
                             % wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan6c']; ?>" placeholder="" name="cakupan_d6c" id="cakupan_d6c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan6c']; ?>" placeholder="" name="cakupan_d6c" id="cakupan_d6c">
 
                         <?= form_error('cakupan_d6c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -567,7 +567,7 @@
                         <p style="font-size:12px;">
                             % penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan7c']; ?>" placeholder="" name="cakupan_d7c" id="cakupan_d7c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan7c']; ?>" placeholder="" name="cakupan_d7c" id="cakupan_d7c">
 
                         <?= form_error('cakupan_d7c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -612,7 +612,7 @@
                         <p style="font-size:12px;">
                             % penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pencegahan8c']; ?>" placeholder="" name="cakupan_d8c" id="cakupan_d8c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pencegahan8c']; ?>" placeholder="" name="cakupan_d8c" id="cakupan_d8c">
 
                         <?= form_error('cakupan_d8c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -661,7 +661,7 @@
                         <p style="font-size:12px;">
                             % keluarga yang telah dikunjungi dan intervensi awal dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pispk1c']; ?>" placeholder="" name="cakupan_e1c" id="cakupan_e1c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pispk1c']; ?>" placeholder="" name="cakupan_e1c" id="cakupan_e1c">
 
                         <?= form_error('cakupan_e1c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -706,7 +706,7 @@
                         <p style="font-size:12px;">
                             % keluarga yang telah dikunjungi dan dilakukan intervensi lanjut dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pispk2c']; ?>" placeholder="" name="cakupan_e2c" id="cakupan_e2c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pispk2c']; ?>" placeholder="" name="cakupan_e2c" id="cakupan_e2c">
 
                         <?= form_error('cakupan_e2c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
@@ -751,7 +751,7 @@
                         <p style="font-size:12px;">
                             % peningkatan IKS dikali 50%
                         </p>
-                        <input type="number" class="form-control" value="<?= $data['pispk3c']; ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c">
+                        <input type="number" step=any class="form-control" value="<?= $data['pispk3c']; ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c">
 
                         <?= form_error('cakupan_e3c', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>

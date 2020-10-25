@@ -41,7 +41,7 @@
             <p style="font-size:12px;">
               % ibu hamil mendapatkan pelayanan antenatal sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['kia1c']; ?>" placeholder="" name="cakupan_a1c" id="cakupan_a1c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['kia1c'] / 2, 2); ?>" placeholder="" name="cakupan_a1c" id="cakupan_a1c" readonly>
 
           </div>
         </div>
@@ -79,7 +79,7 @@
             <p style="font-size:12px;">
               % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['kia2c']; ?>" placeholder="" name="cakupan_a2c" id="cakupan_a2c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['kia2c'] / 2, 2); ?>" placeholder="" name="cakupan_a2c" id="cakupan_a2c" readonly>
 
 
           </div>
@@ -118,7 +118,7 @@
             <p style="font-size:12px;">
               % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['kia3c']; ?>" placeholder="" name="cakupan_a3c" id="cakupan_a3c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['kia3c'] / 2, 2); ?>" placeholder="" name="cakupan_a3c" id="cakupan_a3c" readonly>
 
 
           </div>
@@ -161,7 +161,7 @@
             <p style="font-size:12px;">
               % bayi mendapatkan imunisasi dasar lengkap dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['imunisasi1c']; ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['imunisasi1c'] / 2, 2); ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c" readonly>
 
 
           </div>
@@ -203,7 +203,7 @@
                 <p style="font-size:12px;">
                   % balita gizi buruk yang mendapatkan penanganan sesuai standar dikali 50%
                 </p>
-                <input type="text" class="form-control" value="<?= $data['gizi1c']; ?>" placeholder="" name="cakupan_c1c" id="cakupan_c1c" readonly>
+                <input type="text" class="form-control" value="<?= round($data['gizi1c'] / 2, 2); ?>" placeholder="" name="cakupan_c1c" id="cakupan_c1c" readonly>
 
 
               </div>
@@ -246,7 +246,7 @@
             <p style="font-size:12px;">
               % orang terduga TBC mendapatkan pelayanan sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan1c']; ?>" placeholder="" name="cakupan_d1c" id="cakupan_d1c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan1c'] / 2, 2); ?>" placeholder="" name="cakupan_d1c" id="cakupan_d1c" readonly>
 
 
           </div>
@@ -285,7 +285,7 @@
             <p style="font-size:12px;">
               % orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan2c']; ?>" placeholder="" name="cakupan_d2c" id="cakupan_d2c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan2c'] / 2, 2); ?>" placeholder="" name="cakupan_d2c" id="cakupan_d2c" readonly>
 
           </div>
         </div>
@@ -322,7 +322,7 @@
             <p style="font-size:12px;">
               % ibu hamil yang dilakukan pemeriksaan Hepatitis B dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan3c']; ?>" placeholder="" name="cakupan_d3c" id="cakupan_d3c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan3c'] / 2, 2); ?>" placeholder="" name="cakupan_d3c" id="cakupan_d3c" readonly>
 
 
           </div>
@@ -361,7 +361,7 @@
             <p style="font-size:12px;">
               % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan4c']; ?>" placeholder="" name="cakupan_d4c" id="cakupan_d4c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan4c'] / 2, 2); ?>" placeholder="" name="cakupan_d4c" id="cakupan_d4c" readonly>
 
 
           </div>
@@ -400,7 +400,7 @@
             <p style="font-size:12px;">
               % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan5c']; ?>" placeholder="" name="cakupan_d5c" id="cakupan_d5c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan5c'] / 2, 2); ?>" placeholder="" name="cakupan_d5c" id="cakupan_d5c" readonly>
 
 
           </div>
@@ -438,7 +438,7 @@
             <p style="font-size:12px;">
               % wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan6c']; ?>" placeholder="" name="cakupan_d6c" id="cakupan_d6c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan6c'] / 2, 2); ?>" placeholder="" name="cakupan_d6c" id="cakupan_d6c" readonly>
 
 
           </div>
@@ -477,7 +477,7 @@
             <p style="font-size:12px;">
               % penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan7c']; ?>" placeholder="" name="cakupan_d7c" id="cakupan_d7c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan7c'] / 2, 2); ?>" placeholder="" name="cakupan_d7c" id="cakupan_d7c" readonly>
 
 
           </div>
@@ -515,7 +515,7 @@
             <p style="font-size:12px;">
               % penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pencegahan8c']; ?>" placeholder="" name="cakupan_d8c" id="cakupan_d8c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pencegahan8c'] / 2, 2); ?>" placeholder="" name="cakupan_d8c" id="cakupan_d8c" readonly>
 
 
           </div>
@@ -557,7 +557,7 @@
             <p style="font-size:12px;">
               % keluarga yang telah dikunjungi dan intervensi awal dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pispk1c']; ?>" placeholder="" name="cakupan_e1c" id="cakupan_e1c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pispk1c'] / 2, 2); ?>" placeholder="" name="cakupan_e1c" id="cakupan_e1c" readonly>
 
 
           </div>
@@ -596,7 +596,7 @@
             <p style="font-size:12px;">
               % keluarga yang telah dikunjungi dan dilakukan intervensi lanjut dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pispk2c']; ?>" placeholder="" name="cakupan_e2c" id="cakupan_e2c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pispk2c'] / 2, 2); ?>" placeholder="" name="cakupan_e2c" id="cakupan_e2c" readonly>
 
           </div>
         </div>
@@ -634,7 +634,7 @@
             <p style="font-size:12px;">
               % peningkatan IKS dikali 50%
             </p>
-            <input type="text" class="form-control" value="<?= $data['pispk3c']; ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c" readonly>
+            <input type="text" class="form-control" value="<?= round($data['pispk3c'] / 2, 2); ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c" readonly>
 
           </div>
         </div>
