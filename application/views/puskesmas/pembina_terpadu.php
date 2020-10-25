@@ -15,9 +15,17 @@
     }
     ?>
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
-
       <div class="form-group">
-        <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu dan No. Telepon</label>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu</label>
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1">No. Telepon</label>
+          </div>
+        </div>
+
+
         <div class="row">
           <div class="col">
             <?php if ($data['pembina1']) : ?>
@@ -72,6 +80,44 @@
               <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="No. Telepon" name="no_pembina3" id="no_pembina3" value="<?= set_value('no_pembina3'); ?>">
             <?php endif; ?>
             <?= form_error('no_pembina3', '<small class="text-danger pl-3">', '</small>'); ?>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <?php if ($data['pembina4']) : ?>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pembina 4" name="pembina4" id="pembina4" value="<?= $data['pembina4']; ?>">
+            <?php else : ?>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pembina 4" name="pembina4" id="pembina4" value="<?= set_value('pembina4'); ?>">
+            <?php endif; ?>
+            <?= form_error('pembina4', '<small class="text-danger pl-3">', '</small>'); ?>
+          </div>
+          <div class="col">
+            <?php if ($data['no_pembina4']) : ?>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="No. Telepon" name="no_pembina4" id="no_pembina4" value="<?= $data['no_pembina4']; ?>">
+            <?php else : ?>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="No. Telepon" name="no_pembina4" id="no_pembina4" value="<?= set_value('no_pembina4'); ?>">
+            <?php endif; ?>
+            <?= form_error('no_pembina4', '<small class="text-danger pl-3">', '</small>'); ?>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <?php if ($data['pembina5']) : ?>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pembina 5" name="pembina5" id="pembina5" value="<?= $data['pembina5']; ?>">
+            <?php else : ?>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama Pembina 5" name="pembina5" id="pembina5" value="<?= set_value('pembina5'); ?>">
+            <?php endif; ?>
+            <?= form_error('pembina5', '<small class="text-danger pl-3">', '</small>'); ?>
+          </div>
+          <div class="col">
+            <?php if ($data['no_pembina5']) : ?>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="No. Telepon" name="no_pembina5" id="no_pembina5" value="<?= $data['no_pembina5']; ?>">
+            <?php else : ?>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="No. Telepon" name="no_pembina5" id="no_pembina5" value="<?= set_value('no_pembina5'); ?>">
+            <?php endif; ?>
+            <?= form_error('no_pembina5', '<small class="text-danger pl-3">', '</small>'); ?>
           </div>
         </div>
       </div>

@@ -30,6 +30,10 @@ class Pembina_Terpadu extends CI_Controller
         $this->form_validation->set_rules('no_pembina2', '', 'trim|required');
         $this->form_validation->set_rules('pembina3', '', 'trim|required');
         $this->form_validation->set_rules('no_pembina3', '', 'trim|required');
+        $this->form_validation->set_rules('pembina4', '', 'trim|required');
+        $this->form_validation->set_rules('no_pembina4', '', 'trim|required');
+        $this->form_validation->set_rules('pembina5', '', 'trim|required');
+        $this->form_validation->set_rules('no_pembina5', '', 'trim|required');
         $this->form_validation->set_rules('tgl_pembinaan', '', 'trim|required');
 
         if ($this->form_validation->run() == false) {
@@ -52,6 +56,10 @@ class Pembina_Terpadu extends CI_Controller
         $this->form_validation->set_rules('no_pembina2', '', 'trim|required');
         $this->form_validation->set_rules('pembina3', '', 'trim|required');
         $this->form_validation->set_rules('no_pembina3', '', 'trim|required');
+        $this->form_validation->set_rules('pembina4', '', 'trim|required');
+        $this->form_validation->set_rules('no_pembina4', '', 'trim|required');
+        $this->form_validation->set_rules('pembina5', '', 'trim|required');
+        $this->form_validation->set_rules('no_pembina5', '', 'trim|required');
         $this->form_validation->set_rules('tgl_pembinaan', '', 'trim|required');
 
         if ($this->form_validation->run() == false) {

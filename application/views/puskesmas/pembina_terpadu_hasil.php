@@ -13,7 +13,14 @@
         </div>
       <?php endif; ?>
       <div class="form-group">
-        <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu dan No. Telepon</label>
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1">1. Nama Tim Pembina Terpadu</label>
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1">No. Telepon</label>
+          </div>
+        </div>
         <div class="row">
           <div class="col">
             <input type="text" class="form-control" placeholder="Nama Pembina 1" value="<?= $data['pembina1'] ?>" readonly>
@@ -40,6 +47,25 @@
             <input type="text" class="form-control" placeholder="No. Telepon" value="<?= $data['no_pembina3'] ?>" readonly>
           </div>
         </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nama Pembina 4" value="<?= $data['pembina4'] ?>" readonly>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="No. Telepon" value="<?= $data['no_pembina4'] ?>" readonly>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nama Pembina 5" value="<?= $data['pembina5'] ?>" readonly>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="No. Telepon" value="<?= $data['no_pembina5'] ?>" readonly>
+          </div>
+        </div>
+
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">2. Tanggal Pembinaan</label>

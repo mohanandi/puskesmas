@@ -13,6 +13,10 @@ class PembinaTerpadu_Model extends CI_Model
             "no_pembina2" => $this->input->post('no_pembina2', true),
             "pembina3" => $this->input->post('pembina3', true),
             "no_pembina3" => $this->input->post('no_pembina3', true),
+            "pembina4" => $this->input->post('pembina4', true),
+            "no_pembina4" => $this->input->post('no_pembina4', true),
+            "pembina5" => $this->input->post('pembina5', true),
+            "no_pembina5" => $this->input->post('no_pembina5', true),
             "tgl_pembinaan" => strtotime($this->input->post('tgl_pembinaan', true))
         ];
         $this->db->insert('tim_pembina_terpadu', $data);
@@ -32,6 +36,10 @@ class PembinaTerpadu_Model extends CI_Model
             "no_pembina2" => $this->input->post('no_pembina2', true),
             "pembina3" => $this->input->post('pembina3', true),
             "no_pembina3" => $this->input->post('no_pembina3', true),
+            "pembina4" => $this->input->post('pembina4', true),
+            "no_pembina4" => $this->input->post('no_pembina4', true),
+            "pembina5" => $this->input->post('pembina5', true),
+            "no_pembina5" => $this->input->post('no_pembina5', true),
             "tgl_pembinaan" => strtotime($this->input->post('tgl_pembinaan', true))
         ];
 

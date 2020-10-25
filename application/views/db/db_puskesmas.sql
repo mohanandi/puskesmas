@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Okt 2020 pada 19.14
+-- Waktu pembuatan: 25 Okt 2020 pada 19.10
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -135,52 +135,52 @@ CREATE TABLE `cakupan_indikator_program` (
   `kode` varchar(20) NOT NULL,
   `kia1a` int(2) NOT NULL,
   `kia1b` int(2) NOT NULL,
-  `kia1c` int(2) NOT NULL,
+  `kia1c` float NOT NULL,
   `kia2a` int(2) NOT NULL,
   `kia2b` int(2) NOT NULL,
-  `kia2c` int(2) NOT NULL,
+  `kia2c` float NOT NULL,
   `kia3a` int(2) NOT NULL,
   `kia3b` int(2) NOT NULL,
-  `kia3c` int(2) NOT NULL,
+  `kia3c` float NOT NULL,
   `imunisasi1a` int(2) NOT NULL,
   `imunisasi1b` int(2) NOT NULL,
-  `imunisasi1c` int(2) NOT NULL,
+  `imunisasi1c` float NOT NULL,
   `gizi1a` int(2) NOT NULL,
   `gizi1b` int(2) NOT NULL,
-  `gizi1c` int(2) NOT NULL,
+  `gizi1c` float NOT NULL,
   `pencegahan1a` int(2) NOT NULL,
   `pencegahan1b` int(2) NOT NULL,
-  `pencegahan1c` int(2) NOT NULL,
+  `pencegahan1c` float NOT NULL,
   `pencegahan2a` int(2) NOT NULL,
   `pencegahan2b` int(2) NOT NULL,
-  `pencegahan2c` int(2) NOT NULL,
+  `pencegahan2c` float NOT NULL,
   `pencegahan3a` int(2) NOT NULL,
   `pencegahan3b` int(2) NOT NULL,
-  `pencegahan3c` int(2) NOT NULL,
+  `pencegahan3c` float NOT NULL,
   `pencegahan4a` int(2) NOT NULL,
   `pencegahan4b` int(2) NOT NULL,
-  `pencegahan4c` int(2) NOT NULL,
+  `pencegahan4c` float NOT NULL,
   `pencegahan5a` int(2) NOT NULL,
   `pencegahan5b` int(2) NOT NULL,
-  `pencegahan5c` int(2) NOT NULL,
+  `pencegahan5c` float NOT NULL,
   `pencegahan6a` int(2) NOT NULL,
   `pencegahan6b` int(2) NOT NULL,
-  `pencegahan6c` int(2) NOT NULL,
+  `pencegahan6c` float NOT NULL,
   `pencegahan7a` int(2) NOT NULL,
   `pencegahan7b` int(2) NOT NULL,
-  `pencegahan7c` int(2) NOT NULL,
+  `pencegahan7c` float NOT NULL,
   `pencegahan8a` int(2) NOT NULL,
   `pencegahan8b` int(2) NOT NULL,
-  `pencegahan8c` int(2) NOT NULL,
+  `pencegahan8c` float NOT NULL,
   `pispk1a` int(2) NOT NULL,
   `pispk1b` int(2) NOT NULL,
-  `pispk1c` int(2) NOT NULL,
+  `pispk1c` float NOT NULL,
   `pispk2a` int(2) NOT NULL,
   `pispk2b` int(2) NOT NULL,
-  `pispk2c` int(2) NOT NULL,
+  `pispk2c` float NOT NULL,
   `pispk3a` int(2) NOT NULL,
   `pispk3b` int(2) NOT NULL,
-  `pispk3c` int(2) NOT NULL,
+  `pispk3c` float NOT NULL,
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -945,6 +945,10 @@ CREATE TABLE `tim_pembina_terpadu` (
   `no_pembina2` varchar(20) NOT NULL,
   `pembina3` varchar(255) NOT NULL,
   `no_pembina3` varchar(20) NOT NULL,
+  `pembina4` varchar(255) NOT NULL,
+  `no_pembina4` varchar(20) NOT NULL,
+  `pembina5` varchar(255) NOT NULL,
+  `no_pembina5` varchar(20) NOT NULL,
   `tgl_pembinaan` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -952,13 +956,13 @@ CREATE TABLE `tim_pembina_terpadu` (
 -- Dumping data untuk tabel `tim_pembina_terpadu`
 --
 
-INSERT INTO `tim_pembina_terpadu` (`kode`, `pembina1`, `no_pembina1`, `pembina2`, `no_pembina2`, `pembina3`, `no_pembina3`, `tgl_pembinaan`) VALUES
-('1012334', 'Desti Mega Putri, SP.MT', '082180798943', 'Setiono, SKM, M.Eng', '085384842029', 'tidak ada', '0', 1581292800),
-('1032284', 'dr. Ananta Kogam DK. M.Kes', '085743448433', 'RR. Emi Nurwijayanti, SE', '08122693874', 'Suhartini,SKM, M.Si', '081927267181', 1594771200),
-('1032386', 'dr. Riska Novriana', '081392026554', 'Sri Fajar Astuti, SE', '085878740455', 'drg. Rohadanti, MPH', '087838702358', 1602288000),
-('1033297', 'HARIANTO', '081259116946', 'LENNA QONITA', '081330230511', 'KATARINA', '08563190480', 1580774400),
-('1050116', 'dr. Made Ayu Witriasih M Kes', '081916236888', 'Ni Nyoman Muryati SKM', '08123615311', '00', '00', 1558396800),
-('puskesmas', 'nama 1', '1', 'nama 2', '2', 'nama 3', '2', 1603929600);
+INSERT INTO `tim_pembina_terpadu` (`kode`, `pembina1`, `no_pembina1`, `pembina2`, `no_pembina2`, `pembina3`, `no_pembina3`, `pembina4`, `no_pembina4`, `pembina5`, `no_pembina5`, `tgl_pembinaan`) VALUES
+('1012334', 'Desti Mega Putri, SP.MT', '082180798943', 'Setiono, SKM, M.Eng', '085384842029', 'tidak ada', '0', '', '', '', '', 1581292800),
+('1032284', 'dr. Ananta Kogam DK. M.Kes', '085743448433', 'RR. Emi Nurwijayanti, SE', '08122693874', 'Suhartini,SKM, M.Si', '081927267181', '', '', '', '', 1594771200),
+('1032386', 'dr. Riska Novriana', '081392026554', 'Sri Fajar Astuti, SE', '085878740455', 'drg. Rohadanti, MPH', '087838702358', '', '', '', '', 1602288000),
+('1033297', 'HARIANTO', '081259116946', 'LENNA QONITA', '081330230511', 'KATARINA', '08563190480', '', '', '', '', 1580774400),
+('1050116', 'dr. Made Ayu Witriasih M Kes', '081916236888', 'Ni Nyoman Muryati SKM', '08123615311', '00', '00', '', '', '', '', 1558396800),
+('puskesmas', 'nama 1', '1', 'nama 2', '2', 'nama 3', '2', 'nama', '5', 'nama 5', '6', 1603926000);
 
 -- --------------------------------------------------------
 
