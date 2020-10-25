@@ -632,7 +632,9 @@
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">
-              % peningkatan IKS dikali 50%
+              1. IKS meningkat -> skor 50% <br>
+              2. IKS tetap -> skor 25% <br>
+              3. IKS turun -> skor 0
             </p>
             <input type="text" class="form-control" value="<?= round($data['pispk3c'] / 2, 2); ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c" readonly>
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 25 Okt 2020 pada 19.10
+-- Waktu pembuatan: 25 Okt 2020 pada 20.53
 -- Versi server: 10.4.13-MariaDB
 -- Versi PHP: 7.2.31
 
@@ -180,7 +180,7 @@ CREATE TABLE `cakupan_indikator_program` (
   `pispk2c` float NOT NULL,
   `pispk3a` int(2) NOT NULL,
   `pispk3b` int(2) NOT NULL,
-  `pispk3c` float NOT NULL,
+  `pispk3c` int(2) NOT NULL,
   `input_by` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
