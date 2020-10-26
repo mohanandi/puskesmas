@@ -45,7 +45,7 @@
                     <input type="text" class="form-control" value="<?= $data['cluster_perwakilan']; ?>" placeholder="" name="pemantauan1b" id="pemantauan1b" readonly>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Peningkatan Kompetensi TPT
+                <label for="exampleFormControlInput1">Peningkatan Kompetensi TPCB
                     <label for="exampleFormControlInput1">a. Dilaksanakannya pengenalan peran, tugas dan fungsi antar bidang dan sekretariat dalam organisasi dinkes kab/kota oleh Kadinkes kab/kota
                         <br>
                         <span><strong> Penilaian</strong> </span>
@@ -134,7 +134,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Persiapan Pelaksanaan Pembinaan, rincian kegiatan
-                    <label for="exampleFormControlInput1">a. Tersusunnya dokumen perencanaan pelaksanaan pembinaan oleh TPT
+                    <label for="exampleFormControlInput1">a. Tersusunnya dokumen perencanaan pelaksanaan pembinaan oleh TPCB
                         <br>
                         <span><strong> Penilaian</strong> </span>
 
@@ -149,7 +149,7 @@
 
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">b. Tersusunnya rincian kegiatan pembinaan oleh masing-masing anggota TPT mencakup gambaran strategis Puskesmas, tujuan, metode, sasaran, rincian kegiatan, dukungan sumber daya, jadwal pelaksanaan dan proses pemantauan dan evaluasi.
+                <label for="exampleFormControlInput1">b. Tersusunnya rincian kegiatan pembinaan oleh masing-masing anggota TPCB mencakup gambaran strategis Puskesmas, tujuan, metode, sasaran, rincian kegiatan, dukungan sumber daya, jadwal pelaksanaan dan proses pemantauan dan evaluasi.
                     <br>
                     <span><strong> Penilaian</strong> </span>
 
@@ -163,8 +163,8 @@
 
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Dilakukan simulasi pembinaan </label>
-                <label for="exampleFormControlInput1">Simulasi pembinaan dilakukan sebelum pelaksanaan pembinaan oleh TPT </label>
+                <label for="exampleFormControlInput1">Dilakukan simulasi pembinaan </label><br>
+                <label for="exampleFormControlInput1">Simulasi pembinaan dilakukan sebelum pelaksanaan pembinaan oleh TPCB </label>
                 <br>
                 <span><strong> Penilaian</strong> </span>
 
@@ -180,13 +180,13 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Pelaksanaan pembinaan
-                    <label for="exampleFormControlInput1">a. Dilakukan pembinaan tidak langsung dalam bentuk pemberian umpan balik oleh TPT terhadap laporan Puskesmas setiap bulan
+                    <label for="exampleFormControlInput1">a. Dilakukan pembinaan tidak langsung dalam bentuk pemberian umpan balik oleh TPCB terhadap laporan Puskesmas setiap bulan
                         <br>
                         <span><strong> Penilaian</strong> </span>
 
                         <p style="font-size:12px;">
-                            1. Ya, dilakukan oleh semua TPT. Nilai = 10<br>
-                            2. Ya, dilakukan oleh sebagian TPT. Nilai = 5<br>
+                            1. Ya, dilakukan oleh semua TPCB. Nilai = 10<br>
+                            2. Ya, dilakukan oleh sebagian TPCB. Nilai = 5<br>
                             3. Tidak dilakukan. Nilai =0
 
                         </p>
@@ -195,7 +195,7 @@
 
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">b. Dilakukan pembinaan tidak langsung dalam bentuk pertemuan internal untuk masing-masing TPT secara berkala setiap 3 bulan
+                <label for="exampleFormControlInput1">b. Dilakukan pembinaan tidak langsung dalam bentuk pertemuan internal untuk masing-masing TPCB secara berkala setiap 3 bulan
                     <br>
                     <span><strong> Penilaian</strong> </span>
 
@@ -241,7 +241,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Monitoring dan Evaluasi Pembinaan
-                    <label for="exampleFormControlInput1">a. Tersusunnya Instrumen Monitoring Pelaksanaan Pembinaan TPT untuk melihat kesesuaian pelaksanaan pembinaan dengan perencanaan pembinaan.
+                    <label for="exampleFormControlInput1">a. Tersusunnya Instrumen Monitoring Pelaksanaan Pembinaan TPCB untuk melihat kesesuaian pelaksanaan pembinaan dengan perencanaan pembinaan.
                         <br>
                         <span><strong> Penilaian</strong> </span>
 
@@ -261,8 +261,8 @@
                     <span><strong> Penilaian</strong> </span>
 
                     <p style="font-size:12px;">
-                        1. Ya, dilakukan oleh semua TPT. Nilai = 10<br>
-                        2. Ya, dilakukan oleh sebagian TPT. Nilai = 5<br>
+                        1. Ya, dilakukan oleh semua TPCB. Nilai = 10<br>
+                        2. Ya, dilakukan oleh sebagian TPCB. Nilai = 5<br>
                         3. Tidak dilakukan. Nilai =0
 
                     </p>
@@ -276,8 +276,8 @@
                     <span><strong> Penilaian</strong> </span>
 
                     <p style="font-size:12px;">
-                        1. Ya, dilakukan oleh semua TPT. Nilai = 10<br>
-                        2. Ya, dilakukan oleh sebagian TPT. Nilai = 5<br>
+                        1. Ya, dilakukan oleh semua TPCB. Nilai = 10<br>
+                        2. Ya, dilakukan oleh sebagian TPCB. Nilai = 5<br>
                         3. Tidak dilakukan. Nilai =0
 
                     </p>
