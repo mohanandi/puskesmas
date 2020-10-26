@@ -31,12 +31,13 @@
                                 <?php is_terisi($data['cluster_binaan'], set_value('pemantauan1')); ?>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
                             <?= form_error('pemantauan1', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Pembentukan TPT dengan keterwakilan seluruh bidang dan sekretariat di Dinkes kab/kota
-                    <label for="exampleFormControlInput1">a. Tersedia SK Tim Pembina Terpadu (TPT) yang ditandatangani Kadinkes Kab/Kota
+                <label for="exampleFormControlInput1">Pembentukan TPCB dengan keterwakilan seluruh bidang dan sekretariat di Dinkes kab/kota
+                    <label for="exampleFormControlInput1">a. Tersedia SK Tim Pembina Cluster Binaan (TPCB) yang ditandatangani Kadinkes Kab/Kota
                         <br>
                         <span><strong> Penilaian</strong> </span>
 
@@ -50,6 +51,7 @@
                             <?php is_terisi($data['sk_tim'], set_value('pemantauan1a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <?= form_error('pemantauan1a', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -68,6 +70,7 @@
                         <?php is_terisi($data['cluster_perwakilan'], set_value('pemantauan1b')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan1b', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -87,6 +90,7 @@
                             <?php is_terisi($data['pengenalan_peran'], set_value('pemantauan2a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <?= form_error('pemantauan2a', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -105,6 +109,7 @@
                         <?php is_terisi($data['nspk'], set_value('pemantauan2b')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan2b', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -122,6 +127,7 @@
                         <?php is_terisi($data['pengolahan_analisis'], set_value('pemantauan2c')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan2c', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -141,6 +147,7 @@
                             <?php is_terisi($data['trend_analysis'], set_value('pemantauan3a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <?= form_error('pemantauan3a', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -159,11 +166,13 @@
                         <?php is_terisi($data['lintas_sektor'], set_value('pemantauan3b')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan3b', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">c. Dilakukan analisis keterpaduan lintas program dalam pelayanan Puskesmas
+                    <br>
                     <span><strong> Penilaian</strong> </span>
 
                     <p style="font-size:12px;">
@@ -176,6 +185,7 @@
                         <?php is_terisi($data['lintas_program'], set_value('pemantauan3c')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan3c', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -195,6 +205,7 @@
                             <?php is_terisi($data['tpt'], set_value('pemantauan4a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <?= form_error('pemantauan4a', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -213,6 +224,7 @@
                         <?php is_terisi($data['rincian_tpt'], set_value('pemantauan4b')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan4b', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -232,6 +244,7 @@
                     <?php is_terisi($data['simulasi_pembinaan'], set_value('pemantauan5')); ?>
                     <option value="1">1</option>
                     <option value="2">2</option>
+                    <option value="3">3</option>
                 </select>
                 <?= form_error('pemantauan5', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -270,6 +283,7 @@
                         <?php is_terisi($data['internal'], set_value('pemantauan6b')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan6b', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -288,6 +302,7 @@
                         <?php is_terisi($data['1x_setahun'], set_value('pemantauan6c')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan6c', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -306,6 +321,7 @@
                         <?php is_terisi($data['monitoring_evaluasi'], set_value('pemantauan6d')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan6d', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -325,6 +341,7 @@
                             <?php is_terisi($data['tersusunnya_instrumen'], set_value('pemantauan7a')); ?>
                             <option value="1">1</option>
                             <option value="2">2</option>
+                            <option value="3">3</option>
                         </select>
                         <?= form_error('pemantauan7a', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>
@@ -381,6 +398,7 @@
                         <?php is_terisi($data['akhir_tahun'], set_value('pemantauan7d')); ?>
                         <option value="1">1</option>
                         <option value="2">2</option>
+                        <option value="3">3</option>
                     </select>
                     <?= form_error('pemantauan7d', '<small class="text-danger pl-3">', '</small>'); ?>
             </div>

@@ -667,7 +667,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1"><strong>3. Peningkatan IKS di Puskesmas<br> DO:</strong><br>• Peningkatan IKS di Puskesmas merupakan selisih nilai IKS wilayah Puskesmas pada saat dilakukan monitoring dan evaluasi Puskesmas dengan nilai IKS pada awal tahun berjalan.<br>• Penilaian peningkatan IKS dilakukan jika cakupan kunjungan keluarga >50%.</label>
+                    <label for="exampleFormControlInput1"><strong>3. Peningkatan IKS di Puskesmas<br> DO:</strong><br>• Peningkatan IKS di Puskesmas merupakan kondisi dimana nilai IKS wilayah Puskesmas pada saat dilakukan monitoring dan evaluasi lebih tinggi dibandingkan dengan nilai IKS sebelumnya (dalam rentang waktu minimal 6 bulan).<br>• Penilaian peningkatan IKS dilakukan jika cakupan kunjungan keluarga >50%.</label>
                     <br>
                     <div class="form-group">
                         <label for="exampleFormControlInput1"> a. Tersedia regulasi internal PIS-PK terkait peningkatan IKS (SK, SOP, Pedoman, Panduan)</label>
@@ -700,7 +700,7 @@
                         <?= form_error('cakupan_e3b', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1"> c. Persentase peningkatan IKS (Nilai IKS pada saat monitoring evaluasi Puskesmas dibagi dengan nilai IKS pada awal tahun berjalan, dikali 100%) </label>
+                        <label for="exampleFormControlInput1"> c. Adanya peningkatan IKS dibandingkan dengan tahun sebelumnya atau periode evaluasi sebelumnya. </label>
                         <br>
                         <span><strong> Penilaian</strong> </span>
                         <p style="font-size:12px;">

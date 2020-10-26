@@ -18,8 +18,8 @@
 
             </div>
             <div class="form-group">
-                <label for="exampleFormControlInput1">Pembentukan TPT dengan keterwakilan seluruh bidang dan sekretariat di Dinkes kab/kota
-                    <label for="exampleFormControlInput1">a. Tersedia SK Tim Pembina Terpadu (TPT) yang ditandatangani Kadinkes Kab/Kota
+                <label for="exampleFormControlInput1">Pembentukan TPCB dengan keterwakilan seluruh bidang dan sekretariat di Dinkes kab/kota
+                    <label for="exampleFormControlInput1">a. Tersedia SK Tim Pembina Cluster Binaan (TPCB) yang ditandatangani Kadinkes Kab/Kota
                         <br>
                         <span><strong> Penilaian</strong> </span>
 
@@ -119,6 +119,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">c. Dilakukan analisis keterpaduan lintas program dalam pelayanan Puskesmas
+                    <br>
                     <span><strong> Penilaian</strong> </span>
 
                     <p style="font-size:12px;">

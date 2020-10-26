@@ -77,26 +77,26 @@ class Provinsi extends CI_Controller
     public function tambah_penilaian_pembinaan()
     {
         $this->form_validation->set_rules('kode_kabupaten', '', 'trim|required');
-        $this->form_validation->set_rules('pemantauan1', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan1a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan1b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan4a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan4b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan5', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6d', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7d', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('pemantauan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan1a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan1b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan4a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan4b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6d', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7d', '', 'trim|in_list[1,2,3]');
 
 
         if ($this->form_validation->run() == false) {
@@ -119,26 +119,26 @@ class Provinsi extends CI_Controller
         $data['kode_kabupaten'] = urldecode($kode);
 
         $this->form_validation->set_rules('kode_kabupaten', '', 'trim|required');
-        $this->form_validation->set_rules('pemantauan1', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan1a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan1b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan2c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan3c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan4a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan4b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan5', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan6d', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7a', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7b', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7c', '', 'trim|in_list[1,2]');
-        $this->form_validation->set_rules('pemantauan7d', '', 'trim|in_list[1,2]');
+        $this->form_validation->set_rules('pemantauan1', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan1a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan1b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan2c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan3c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan4a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan4b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan5', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan6d', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7a', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7b', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7c', '', 'trim|in_list[1,2,3]');
+        $this->form_validation->set_rules('pemantauan7d', '', 'trim|in_list[1,2,3]');
         if ($this->form_validation->run() == false) {
             $this->load->view('templates/provinsi/head', $data);
             $this->load->view('provinsi/penilaian_kabupaten', $data);
