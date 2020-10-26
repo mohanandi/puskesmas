@@ -156,14 +156,14 @@
 							}
 							?>
 							<?php
-							$persen1 = round($n1 / 80 * 100,2);
-							$persen2 = round($n2 / 290 * 100,2);
-							$persen3 = round($n3 / 60 * 100,2);
-							$persen4 = round($n4 / 20 * 100),2;
-							$persen5 = round($n5 / 50 * 100,2);
-							$persen6 = round($n6 / 120 * 100,2);
-							$persen7 = round($n7 / 30 * 100,2);
-							$persen8 = round($n8 / 160 * 100,2); ?>
+							$persen1 = round($n1 / 80 * 100, 2);
+							$persen2 = round($n2 / 290 * 100, 2);
+							$persen3 = round($n3 / 60 * 100, 2);
+							$persen4 = round($n4 / 20 * 100, 2);
+							$persen5 = round($n5 / 50 * 100, 2);
+							$persen6 = round($n6 / 120 * 100, 2);
+							$persen7 = round($n7 / 30 * 100, 2);
+							$persen8 = round($n8 / 160 * 100, 2); ?>
 							<tr>
 								<th>Pemenuhan Sumber Daya</th>
 								<td><?= $persen1; ?></td>
