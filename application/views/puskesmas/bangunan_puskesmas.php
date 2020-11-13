@@ -80,7 +80,7 @@
         <?= form_error('bangunan8', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">8. Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7o.</label>
+        <label for="exampleFormControlInput1">8. Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7˚</label>
         <select class="form-control" name="bangunan9" id="bangunan9">
           <?php is_terisi($data['bila_antar'], set_value('bangunan9')); ?>
           <option value="Ya">Ya</option>
@@ -625,7 +625,7 @@
         <?= form_error('bangunan42_14"', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">- Kamar mandi/WC ((terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
+        <label for="exampleFormControlInput1">- Kamar mandi/WC (terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
         <select class="form-control" name="bangunan42_15" id="bangunan42_15">
 
           <?php is_terisi($data['wc'], set_value('bangunan42_15')); ?>

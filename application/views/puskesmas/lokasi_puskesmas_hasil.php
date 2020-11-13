@@ -38,7 +38,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">6. Puskesmas Tidak di atas atau dekat dengan jalur patahan aktif)</label>
+        <label for="exampleFormControlInput1">6. Puskesmas Tidak di atas atau dekat dengan jalur patahan aktif</label>
         <input type="text" class="form-control" value="<?= $data['puskesmas_aktif']; ?>" placeholder="" name="lokasi6" id="lokasi6" readonly>
 
       </div>

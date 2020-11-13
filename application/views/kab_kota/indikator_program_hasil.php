@@ -155,7 +155,7 @@
 
           </div>
           <div class="form-group">
-            <label for="exampleFormControlInput1"> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%) | % bayi mendapatkan imunisasi dasar lengkap dikali 50%</label>
+            <label for="exampleFormControlInput1"> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%)</label>
             <br>
             <span><strong> Penilaian</strong> </span>
             <p style="font-size:12px;">

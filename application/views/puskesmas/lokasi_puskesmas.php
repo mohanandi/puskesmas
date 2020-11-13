@@ -61,7 +61,7 @@
         <?= form_error('lokasi5', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">6. Puskesmas Tidak di atas atau dekat dengan jalur patahan aktif)</label>
+        <label for="exampleFormControlInput1">6. Puskesmas Tidak di atas atau dekat dengan jalur patahan aktif</label>
         <select class="form-control" name="lokasi6" id="lokasi6">
           <?php is_terisi($data['puskesmas_aktif'], set_value('lokasi6')); ?>
           <option value="Ya">Ya</option>

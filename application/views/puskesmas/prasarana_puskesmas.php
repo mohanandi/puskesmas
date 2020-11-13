@@ -327,6 +327,7 @@
           <option value="Tenaga Angin">Tenaga Angin</option>
           <option value="Tenaga Air">Tenaga Air</option>
           <option value="Lainnya">Lainnya</option>
+          <option value="Tidak Ada">Tidak Ada</option>
         </select>
         <?= form_error('prasarana4_3', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
@@ -564,7 +565,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">b. Bila Ram, Apakah itu:</label><br>
-        <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
+        <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤7˚ dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
         <select class="form-control" name="prasarana10_b" id="prasarana10_b">
           <?php is_terisi($data['bila_ram'], set_value('prasarana10_b')); ?>
           <option value="Sesuai">Sesuai</option>

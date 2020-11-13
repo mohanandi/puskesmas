@@ -46,7 +46,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">8. Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7o.</label>
+        <label for="exampleFormControlInput1">8. Bila antar bangunan/ruangan di dalam Puskesmas menggunakan RAM, kemiringan tidak melebihi 7˚</label>
         <input type="text" class="form-control" value="<?= $data['bila_antar']; ?>" placeholder="" name="bangunan9" id="bangunan9" readonly>
 
       </div>
@@ -332,7 +332,7 @@
 
         </div>
         <div class="form-group">
-          <label for="exampleFormControlInput1">- Kamar mandi/WC ((terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
+          <label for="exampleFormControlInput1">- Kamar mandi/WC (terpisah laki-laki dan perempuan, dikondisikan untuk dapat digunakan oleh penyandang disabilitas dan lansia)</label>
           <input type="text" class="form-control" value="<?= $data['wc']; ?>" placeholder="" name="bangunan42_15" id="bangunan42_15" readonly>
 
         </div>

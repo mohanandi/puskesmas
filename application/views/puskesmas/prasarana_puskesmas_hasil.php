@@ -310,7 +310,7 @@
       </div>
       <div class="form-group">
         <label for="exampleFormControlInput1">b. Bila Ram, Apakah itu:</label><br>
-        <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤70 dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
+        <label for="exampleFormControlInput1">Landaian Menerus, Berbelok, Berbalik Arah, atau Kearah Pintu,maka: Sudut Kemiringan Pijakan (≤7˚ dan panjang mendatar Ram Mak-simal (9m), Lebar Pijakan Minimal 120 cm, Lebar Bordes minimal 180 cm (Bila di lantai atas untuk pelayanan), sesuai ketentuan</label>
         <input type="text" class="form-control" value="<?= $data['bila_ram']; ?>" placeholder="" name="prasarana10_b" id="prasarana10_b" readonly>
 
       </div>

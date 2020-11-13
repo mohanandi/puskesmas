@@ -186,7 +186,7 @@
                         <?= form_error('cakupan_b1b', '<small class="text-danger pl-3">', '</small>'); ?>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1"> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%) | % bayi mendapatkan imunisasi dasar lengkap dikali 50%</label>
+                        <label for="exampleFormControlInput1"> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%)</label>
                         <br>
 
                         <input type="number" step=any class="form-control" value="<?= $data['imunisasi1c']; ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c">

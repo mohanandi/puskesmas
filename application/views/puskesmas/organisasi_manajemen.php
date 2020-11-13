@@ -71,10 +71,10 @@
 					<?php else : ?>
 						<option value="<?= set_value('organisasi4'); ?>"><?= set_value('organisasi4'); ?></option>
 					<?php endif; ?>
-					<option value="Terakreditasi Dasar">Terakreditasi Dasar</option>
-					<option value="Terakreditasi Madya">Terakreditasi Madya</option>
-					<option value="Terakreditasi Utama">Terakreditasi Utama</option>
-					<option value="Terakreditasi Paripurna">Terakreditasi Paripurna</option>
+					<option value="Paripurna">Paripurna</option>
+					<option value="Utama">Utama</option>
+					<option value="Madya">Madya</option>
+					<option value="Dasar">Dasar</option>
 					<option value="Belum Terakreditasi">Belum Terakreditasi</option>
 				</select>
 				<?= form_error('organisasi4', '<small class="text-danger pl-3">', '</small>'); ?>

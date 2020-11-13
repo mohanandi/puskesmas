@@ -17,7 +17,7 @@
     ?>
     <form method="POST" action="<?= $link; ?>" style=" padding:20px;">
       <div class="form-group">
-        <label for="exampleFormControlInput1">1. Melakukan penilaian mandiri (self evaluation) atas ha-sil kinerja & mutu layanan kesehatan yang tercantum dalam Penilaian Kinerja Puskesmas</label>
+        <label for="exampleFormControlInput1">1. Melakukan penilaian mandiri (self evaluation) atas hasil kinerja & mutu layanan kesehatan yang tercantum dalam Penilaian Kinerja Puskesmas</label>
         <br>
         <span><strong> Penilaian</strong> </span>
         <p style="font-size:12px;">
