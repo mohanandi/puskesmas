@@ -12,6 +12,9 @@
         <?= $this->session->flashdata('flash'); ?>
       </div>
     <?php endif; ?>
+
+
+
     <form>
       <div class="form-group">
         <label for="exampleFormControlInput1">1. Nama Puskesmas</label>
@@ -63,5 +66,6 @@
       </div>
     </form>
     <a href="<?= base_url(); ?>Identitas_Puskesmas/ubah" class="btn float-right btn-danger" style="color: white; margin-left:10px; margin-top:5px;border-radius:5px;">Edit</a>
+
   </div>
 </div>

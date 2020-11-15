@@ -152,7 +152,7 @@
 
         <div class="row">
           <div class="col-6 col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-4">
-            <a href="<?= base_url('Identitas_Puskesmas'); ?>" class="service-v1 text-center">
+            <a href="<?= base_url('daftar_puskesmas'); ?>" class="service-v1 text-center">
               <span class="flaticon-stethoscope"></span>
               <h3>Identitas Umum</h3>
               <p>Berisi form tentang identitas umum tentang puskesmas</p>

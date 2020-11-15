@@ -37,10 +37,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1">c. Persentase ibu hamil yang mendapatkan pelayanan sesuai standar. (Jumlah ibu hamil yang mendapatkan pelayanan antenatal sesuai standar dibagi dengan jumlah ibu hamil yang ada di wilayah kerja Puskesmas, dikali 100%)</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % ibu hamil mendapatkan pelayanan antenatal sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['kia1c'] / 2, 2); ?>" placeholder="" name="cakupan_a1c" id="cakupan_a1c" readonly>
 
           </div>
@@ -75,10 +72,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1">c. Persentase bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar. (Jumlah bayi baru lahir yang mendapatkan pelayanan neonatal esensial sesuai standar dibagi dengan jumlah bayi baru lahir yang ada di wilayah kerja Puskesmas, dikali 100%) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['kia2c'] / 2, 2); ?>" placeholder="" name="cakupan_a2c" id="cakupan_a2c" readonly>
 
 
@@ -114,10 +108,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1">c. Persentase bayi baru lahir yang mendapatkan pelayanan sesuai standar. (Jumlah bayi baru lahir yang mendapatkan pelayanan sesuai standar dibagi dengan jumlah bayi baru lahir yang ada di wilayah kerja Puskesmas, dikali 100%)</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % bayi baru lahir mendapatkan pelayanan neonatal esensial sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['kia3c'] / 2, 2); ?>" placeholder="" name="cakupan_a3c" id="cakupan_a3c" readonly>
 
 
@@ -157,10 +148,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase bayi yang mendapatkan imunisasi dasar lengkap. (Jumlah bayi yang telah mendapatkan imunisasi dasar lengkap dibagi Jumlah bayi berusia 9-11 bulan dalam 1 tahun dalam wilayah kerja Puskesmas, dikali 100%)</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % bayi mendapatkan imunisasi dasar lengkap dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['imunisasi1c'] / 2, 2); ?>" placeholder="" name="cakupan_b1c" id="cakupan_b1c" readonly>
 
 
@@ -199,10 +187,7 @@
               <div class="form-group">
                 <label for="exampleFormControlInput1">c. Persentase balita gizi buruk yang mendapatkan penanganan sesuai standar. (Jumlah kasus balita gizi buruk yang mendapatkan penanganan sesuai standar di wilayah kerja Puskesmas dibagi jumlah kasus balita gizi buruk yang ditemukan dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%) </label>
                 <br>
-                <span><strong> Penilaian</strong> </span>
-                <p style="font-size:12px;">
-                  % balita gizi buruk yang mendapatkan penanganan sesuai standar dikali 50%
-                </p>
+
                 <input type="text" class="form-control" value="<?= round($data['gizi1c'] / 2, 2); ?>" placeholder="" name="cakupan_c1c" id="cakupan_c1c" readonly>
 
 
@@ -242,10 +227,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase orang terduga TBC mendapatkan pelayanan kesehatan sesuai standar. (Jumlah orang terduga TBC yang dilakukan pemeriksaan penunjang dibagi jumlah orang terduga TBC dalam kurun waktu satu tahun di wilayah kerja Puskesmas, dikali 100%) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % orang terduga TBC mendapatkan pelayanan sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan1c'] / 2, 2); ?>" placeholder="" name="cakupan_d1c" id="cakupan_d1c" readonly>
 
 
@@ -281,10 +263,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar (Jumlah orang dengan risiko terinfeksi HIV yang mendapatkan pelayanan sesuai standar dibagi jumlah orang dengan risiko terinfeksi HIV dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%)</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % orang dengan risiko terinfeksi HIV mendapatkan pelayanan kesehatan sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan2c'] / 2, 2); ?>" placeholder="" name="cakupan_d2c" id="cakupan_d2c" readonly>
 
           </div>
@@ -318,10 +297,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase ibu hamil yang dilakukan pemeriksaan Hepatitis B. (Jumlah Ibu Hamil yang mendapatkan pemeriksaan Hepatitis B sesuai standar dibagi jumlah Ibu Hamil dalam 1 tahun di wilayah kerja Puskesmas, dikali 100%) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % ibu hamil yang dilakukan pemeriksaan Hepatitis B dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan3c'] / 2, 2); ?>" placeholder="" name="cakupan_d3c" id="cakupan_d3c" readonly>
 
 
@@ -357,10 +333,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar. (Jumlah ODGJ berat di wilayah kerja kab/kota yang mendapatkan pelayanan kesehatan jiwa sesuai standar dalam kurun waktu satu tahun dibagi jumlah ODGJ berat dalam 1 tahun di wilayah kerja Puskesmas, dikali 100) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan4c'] / 2, 2); ?>" placeholder="" name="cakupan_d4c" id="cakupan_d4c" readonly>
 
 
@@ -396,10 +369,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase orang usia ≥ 15 tahun, yang mendapatkan pelayanan terpadu (PANDU) di Puskesmas. (Jumlah orang usia ≥ 15 tahun yang mendapatkan pelayanan terpadu (PANDU) di Puskesmas dibagi jumlah orang usia ≥ 15 tahun di wilayah kerja Puskesmas, dikali 100%).</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % ODGJ berat yang mendapatkan pelayanan kesehatan jiwa sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan5c'] / 2, 2); ?>" placeholder="" name="cakupan_d5c" id="cakupan_d5c" readonly>
 
 
@@ -434,10 +404,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS. (Jumlah wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dibagi jumlah wanita usia 30 – 50 tahun di wilayah kerja Puskesmas, dikali 100%. </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % wanita usia 30 – 50 tahun yang sudah menikah atau berhubungan seksual yang melakukan deteksi dini kanker leher rahim dengan IVA dan kanker payudara dengan SADANIS dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan6c'] / 2, 2); ?>" placeholder="" name="cakupan_d6c" id="cakupan_d6c" readonly>
 
 
@@ -473,10 +440,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar (Jumlah penderita DM usia ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dibagi jumlah penderita DM usia ≥ 15 tahun dalam 1 tahun di wilayah kerja Puskesmas dikali 100%) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % penderita DM usia 15 tahun ke atas yang mendapatkan pelayanan sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan7c'] / 2, 2); ?>" placeholder="" name="cakupan_d7c" id="cakupan_d7c" readonly>
 
 
@@ -511,10 +475,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar (Jumlah penderita hipertensi usia ≥ 15 tahun yang mendapakan pelayanan kesehatan sesuai standar dibagi jumlah penderita hipertensi dalam 1 tahun di wilayah kerja Puskesmas, dikali 100% </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % penderita Hipertensi ≥ 15 tahun yang mendapatkan pelayanan kesehatan sesuai standar dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pencegahan8c'] / 2, 2); ?>" placeholder="" name="cakupan_d8c" id="cakupan_d8c" readonly>
 
 
@@ -553,10 +514,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase keluarga yang telah dikunjungi dan diintervensi awal (Jumlah keluarga yang telah dikunjungi dan diintervensi awal dibagi jumlah seluruh keluarga di wilayah kerja Puskesmas, dikali 100%) </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % keluarga yang telah dikunjungi dan intervensi awal dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pispk1c'] / 2, 2); ?>" placeholder="" name="cakupan_e1c" id="cakupan_e1c" readonly>
 
 
@@ -592,10 +550,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Persentase keluarga yang telah dikunjungi dan dilakukan intervensi lanjut (jumlah keluarga yang dilakukan intervensi lanjut dibagi jumlah seluruh keluarga yang direncanakan untuk dilakukan intervensi lanjut di wilayah kerja Puskesmas, dikali 100% Keluarga)</label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              % keluarga yang telah dikunjungi dan dilakukan intervensi lanjut dikali 50%
-            </p>
+
             <input type="text" class="form-control" value="<?= round($data['pispk2c'] / 2, 2); ?>" placeholder="" name="cakupan_e2c" id="cakupan_e2c" readonly>
 
           </div>
@@ -630,12 +585,7 @@
           <div class="form-group">
             <label for="exampleFormControlInput1"> c. Adanya peningkatan IKS dibandingkan dengan tahun sebelumnya atau periode evaluasi sebelumnya </label>
             <br>
-            <span><strong> Penilaian</strong> </span>
-            <p style="font-size:12px;">
-              1. IKS meningkat -> skor 50% <br>
-              2. IKS tetap -> skor 25% <br>
-              3. IKS turun -> skor 0
-            </p>
+
             <input type="text" class="form-control" value="<?= $data['pispk3c']; ?>" placeholder="" name="cakupan_e3c" id="cakupan_e3c" readonly>
 
           </div>
