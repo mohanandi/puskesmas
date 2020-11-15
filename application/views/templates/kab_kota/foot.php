@@ -17,6 +17,8 @@
 <script src="<?= base_url('assets/') ?>js/tooltip.js"></script>
 <script src="<?= base_url('assets/') ?>js/para.js"></script>
 <script src="<?= base_url('assets/') ?>js/main.js"></script>
+<script src="<?= base_url('assets/') ?>js/option.js"></script>
+<script src="<?= base_url('assets/') ?>js/add.js"></script>
 
 
 
