@@ -33,7 +33,7 @@
 
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">5. Puskesmas Tidak dekat anak sungai, sungai atau badan air yang dapat mengikis pondasi)</label>
+        <label for="exampleFormControlInput1">5. Puskesmas Tidak dekat anak sungai, sungai atau badan air yang dapat mengikis pondasi</label>
         <input type="text" class="form-control" value="<?= $data['puskesmas_pondasi']; ?>" placeholder="" name="lokasi5" id="lokasi5" readonly>
 
       </div>

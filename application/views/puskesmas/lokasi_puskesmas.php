@@ -52,7 +52,7 @@
         <?= form_error('lokasi4', '<small class="text-danger pl-3">', '</small>'); ?>
       </div>
       <div class="form-group">
-        <label for="exampleFormControlInput1">5. Puskesmas Tidak dekat anak sungai, sungai atau badan air yang dapat mengikis pondasi)</label>
+        <label for="exampleFormControlInput1">5. Puskesmas Tidak dekat anak sungai, sungai atau badan air yang dapat mengikis pondasi</label>
         <select class="form-control" name="lokasi5" id="lokasi5">
           <?php is_terisi($data['puskesmas_pondasi'], set_value('lokasi5')); ?>
           <option value="Ya">Ya</option>
