@@ -172,7 +172,117 @@
               <p>Berisi tentang detail puskesmas dari berbagai aspek</p>
             </a>
           </div>
-
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <div class="container1" style="margin-top:10px !important;">
+            <table class="table table-striped table-bordered" style="width:100%; padding:20px; text-align: center; vertical-align: middle; margin-top:50px; ">
+              <thead style="background-color:#16b3ac; color:white;">
+                <tr>
+                  <th>JUDUL BAB/PARAMETER</th>
+                  <th>STATUS</th>
+                  <th>DETAIL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Identitas Puskesmas</th>
+                  <?php if ($this->db->get_where('identitas_puskesmas', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Identitas_Puskesmas'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Tim Pembina Terpadu</th>
+                  <?php if ($this->db->get_where('tim_pembina_terpadu', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Pembina_Terpadu'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Organisasi Manajemen</th>
+                  <?php if ($this->db->get_where('organisasi_manajemen', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Organisasi_Manajemen'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Lokasi Puskesmas</th>
+                  <?php if ($this->db->get_where('lokasi_puskesmas', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Lokasi_Puskesmas'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Bangunan Puskesmas</th>
+                  <?php if ($this->db->get_where('bangunan_puskesmas', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Bangunan_Puskesmas'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Prasarana Puskesmas</th>
+                  <?php if ($this->db->get_where('prasarana_puskesmas', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Prasarana_Puskesmas'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Peralatan Puskesmas</th>
+                  <?php if ($this->db->get_where('peralatan_puskesmas', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Peralatan_Puskesmas'); ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Pengisian ASPAK</th>
+                  <?php if ($this->db->get_where('pengisian_aspak', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Pengisian_Aspak') ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Sumber Daya Manusia</th>
+                  <?php if ($this->db->get_where('sumber_daya_manusia', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('SDM_Puskesmas') ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Penilaian Kinerja Puskesmas</th>
+                  <?php if ($this->db->get_where('sumber_daya_manusia', ['kode' => $user['kode']])->row_array()) : ?>
+                    <td>TERISI</td>
+                  <?php else : ?>
+                    <td>BELUM TERISI</td>
+                  <?php endif; ?>
+                  <td><a href="<?= base_url('Penilaian_Puskesmas') ?>" class="badge badge-success">Detail</a></td>
+                </tr>
+                <tr>
+                  <th>Export</th>
+                  <td colspan="2"><a class="btn btn-success" href="<?= base_url(); ?>Export/organisasi_manajemen/<?= $user['kode']; ?>" role="button">Unduh</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

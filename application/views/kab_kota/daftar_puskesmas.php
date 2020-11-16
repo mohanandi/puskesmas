@@ -76,7 +76,7 @@
                             <td>BELUM TERISI</td>
                         <?php endif; ?>
                         <td><a href="<?= base_url(); ?>Daftar_Puskesmas/penilaian/<?= $a['kode']; ?>">DETAIL</a></td>
-                        <td><a href="<?= base_url(); ?>Export/export/<?= $a['kode']; ?>">EXPORT</a></td>
+                        <td><a href="<?= base_url(); ?>Export/export_pemenuhan_sd/<?= $a['kode']; ?>">EXPORT</a></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

@@ -22,9 +22,9 @@ class IdentitasPuskesmas_Model extends CI_Model
         ];
         $this->db->insert('identitas_puskesmas', $data);
     }
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('identitas_puskesmas', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('identitas_puskesmas', ['kode' => $kode])->row_array();
     }
 
     public function ubahData()

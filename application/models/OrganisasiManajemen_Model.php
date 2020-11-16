@@ -16,9 +16,9 @@ class OrganisasiManajemen_Model extends CI_Model
         ];
         $this->db->insert('organisasi_manajemen', $data);
     }
-    public function check()
+    public function check($kode)
     {
-        return $this->db->get_where('organisasi_manajemen', ['kode' => $this->session->userdata('kode')])->row_array();
+        return $this->db->get_where('organisasi_manajemen', ['kode' => $kode])->row_array();
     }
 
     public function ubahData()

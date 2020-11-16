@@ -13,7 +13,7 @@ class Organisasi_Manajemen extends CI_Controller
     {
         $data['judul'] = 'Organisasi Manajemen';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $data['data'] = $this->OrganisasiManajemen_Model->check();
+        $data['data'] = $this->OrganisasiManajemen_Model->check($this->session->userdata('kode'));
         $this->load->view('templates/puskesmas/head', $data);
         if ($data['data'] == NULL) {
             $this->load->view('puskesmas/organisasi_manajemen', $data);
@@ -42,7 +42,7 @@ class Organisasi_Manajemen extends CI_Controller
     public function ubah()
     {
         $data['judul'] = 'Edit Organisasi Manajemen';
-        $data['data'] = $this->OrganisasiManajemen_Model->check();
+        $data['data'] = $this->OrganisasiManajemen_Model->check($this->session->userdata('kode'));
 
         $this->form_validation->set_rules('organisasi1', '', 'required');
         $this->form_validation->set_rules('organisasi2', '', 'required');

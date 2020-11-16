@@ -13,7 +13,7 @@ class Identitas_Puskesmas extends CI_Controller
     {
         $data['judul'] = 'Identitas Puskesmas';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
-        $data['data'] = $this->IdentitasPuskesmas_Model->check();
+        $data['data'] = $this->IdentitasPuskesmas_Model->check($this->session->userdata('kode'));
         $this->load->view('templates/puskesmas/head', $data);
         if ($data['data'] == NULL) {
             $this->load->view('puskesmas/identitas_puskesmas', $data);
@@ -49,7 +49,7 @@ class Identitas_Puskesmas extends CI_Controller
     public function ubah()
     {
         $data['judul'] = 'Ubah Identitas Puskesmas';
-        $data['data'] = $this->IdentitasPuskesmas_Model->check();
+        $data['data'] = $this->IdentitasPuskesmas_Model->check($this->session->userdata('kode'));
 
         $this->form_validation->set_rules('nama', 'Nama', 'required');
         $this->form_validation->set_rules('no_reg', 'No Registrasi', 'required');
