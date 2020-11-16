@@ -18,7 +18,7 @@ class Pppp extends CI_Controller
         $data['fungsi'] = 'pppp';
         $data['user'] = $this->db->get_where('user', ['kode' => $this->session->userdata('kode')])->row_array();
         $data['puskesmas'] = $this->Pppp_Model->check_puskesmas($data['user']['kab_kota']);
-        $this->load->view('templates/kab_kota/head');
+        $this->load->view('templates/kab_kota/head', $data);
         $this->load->view('kab_kota/table', $data);
         $this->load->view('templates/kab_kota/foot');
     }

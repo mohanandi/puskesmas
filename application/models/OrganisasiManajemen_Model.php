@@ -12,7 +12,8 @@ class OrganisasiManajemen_Model extends CI_Model
             "kategori" => $this->input->post('organisasi3', true),
             "kategorinon" => $this->input->post('organisasi3a', true),
             "status" => $this->input->post('organisasi4', true),
-            "pplh" => $this->input->post('organisasi5', true)
+            "pplh" => $this->input->post('organisasi5', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('organisasi_manajemen', $data);
     }

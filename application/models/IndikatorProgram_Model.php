@@ -55,7 +55,8 @@ class IndikatorProgram_Model extends CI_Model
             "pispk3a" => $this->input->post('cakupan_e3a', true),
             "pispk3b" => $this->input->post('cakupan_e3b', true),
             "pispk3c" => $this->input->post('cakupan_e3c', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
         ];
         $this->db->insert('cakupan_indikator_program', $data);
     }

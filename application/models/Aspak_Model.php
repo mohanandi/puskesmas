@@ -36,7 +36,8 @@ class Aspak_Model extends CI_model
             "nama" => $this->input->post('nama', true),
             "nrp" => $this->input->post('nrp', true),
             "email" => $this->input->post('email', true),
-            "jurusan" => $this->input->post('jurusan', true)
+            "jurusan" => $this->input->post('jurusan', true),
+            "tgl_input" => time()
         ];
 
         $this->db->where('id', $this->input->post('id'));

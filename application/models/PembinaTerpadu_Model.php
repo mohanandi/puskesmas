@@ -17,7 +17,8 @@ class PembinaTerpadu_Model extends CI_Model
             "no_pembina4" => $this->input->post('no_pembina4', true),
             "pembina5" => $this->input->post('pembina5', true),
             "no_pembina5" => $this->input->post('no_pembina5', true),
-            "tgl_pembinaan" => strtotime($this->input->post('tgl_pembinaan', true))
+            "tgl_pembinaan" => strtotime($this->input->post('tgl_pembinaan', true)),
+            "tgl_input" => time()
         ];
         $this->db->insert('tim_pembina_terpadu', $data);
     }

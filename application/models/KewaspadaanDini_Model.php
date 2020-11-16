@@ -10,7 +10,8 @@ class KewaspadaanDini_Model extends CI_Model
             "skdr" => $this->input->post('pelaksanaan1', true),
             "laporan_skdr" => $this->input->post('pelaksanaan2', true),
             "analisa_trend" => $this->input->post('pelaksanaan3', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('pelaksanaan_sistem_kewaspadaan_dini', $data);

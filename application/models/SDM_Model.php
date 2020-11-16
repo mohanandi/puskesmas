@@ -110,7 +110,8 @@ class SDM_Model extends CI_Model
             "titik4" => $this->input->post('sdmtitik4', true),
             "titik5" => $this->input->post('sdmtitik5', true),
             "titik6" => $this->input->post('sdmtitik6', true),
-            "titik7" => $this->input->post('sdmtitik7', true)
+            "titik7" => $this->input->post('sdmtitik7', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('sumber_daya_manusia', $data);
     }

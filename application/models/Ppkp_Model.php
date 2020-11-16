@@ -13,7 +13,8 @@ class Ppkp_Model extends CI_Model
             "dimonitor_kepala" => $this->input->post('penggerakkan4', true),
             "masukan_pelanggan" => $this->input->post('penggerakkan5', true),
             "pelayanan_pelanggan" => $this->input->post('penggerakkan6', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $data);

@@ -15,7 +15,8 @@ class PemenuhanSD_Model extends CI_Model
             "pemenuhan_sdm" => $this->input->post('pemenuhan6', true),
             "sisrute" => $this->input->post('pemenuhan7', true),
             "informasi_puskesmas" => $this->input->post('pemenuhan8', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
         ];
         $this->db->insert('pemenuhan_sdm_puskesmas', $data);
     }

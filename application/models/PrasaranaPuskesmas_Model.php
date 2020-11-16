@@ -73,7 +73,8 @@ class PrasaranaPuskesmas_Model extends CI_Model
             "roda_ada" => $this->input->post('prasarana11_c2', true),
             "puskesmas_keliling" => $this->input->post('prasarana11_d', true),
             "ambulan_baik" => $this->input->post('prasarana11_e', true),
-            "rujukan" => $this->input->post('prasarana11_f', true)
+            "rujukan" => $this->input->post('prasarana11_f', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('prasarana_puskesmas', $data);
     }

@@ -12,7 +12,8 @@ class Mutu_Model extends CI_Model
             "rapat_tinjauan" => $this->input->post('peningkatan3', true),
             "melaksanakan_pps" => $this->input->post('peningkatan4', true),
             "pelaporan_insiden" => $this->input->post('peningkatan5', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('peningkatan_mutu', $data);

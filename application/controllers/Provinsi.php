@@ -23,7 +23,7 @@ class Provinsi extends CI_Controller
     }
     public function index()
     {
-        $this->load->view('provinsi/home');
+        redirect('Home');
     }
 
     public function daftar_puskesmas()

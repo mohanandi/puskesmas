@@ -8,7 +8,8 @@ class PengisianAspak_Model extends CI_Model
         $data = [
             "kode" => $this->session->userdata('kode'),
             "aspak" => $this->input->post('aspak1', true),
-            "aspak_pmk" => $this->input->post('aspak2', true)
+            "aspak_pmk" => $this->input->post('aspak2', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('pengisian_aspak', $data);
     }

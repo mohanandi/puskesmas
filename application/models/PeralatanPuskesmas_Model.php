@@ -41,7 +41,8 @@ class PeralatanPuskesmas_Model extends CI_Model
             "kalibrasi" => $this->input->post('peralatan32', true),
             "ijin_edar" => $this->input->post('peralatan33', true),
             "pd_tempatnya" => $this->input->post('peralatan34', true),
-            "dlm_negri" => $this->input->post('peralatan35', true)
+            "dlm_negri" => $this->input->post('peralatan35', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('peralatan_puskesmas', $data);
     }

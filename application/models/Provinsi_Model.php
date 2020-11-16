@@ -13,10 +13,10 @@ class Provinsi_Model extends CI_Model
             "dimonitor_kepala" => $this->input->post('penggerakkan4', true),
             "masukan_pelanggan" => $this->input->post('penggerakkan5', true),
             "pelayanan_pelanggan" => $this->input->post('penggerakkan6', true),
-            "input_by" => $this->session->userdata('kode')
-
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
         ];
-        $this->db->insert('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $data);
+        $this->db->insert('penilaian_pembinaan_terpadu', $data);
     }
     public function check_puskesmas($kode)
     {
@@ -46,7 +46,7 @@ class Provinsi_Model extends CI_Model
             "input_by" => $this->session->userdata('kode')
         ];
         $this->db->where('kode', $this->input->post('kode_puskesmas'));
-        $this->db->update('penggerakan_dan_pelaksanaan_kegiatan_puskesmas', $data);
+        $this->db->update('penilaian_pembinaan_terpadu', $data);
     }
 
     public function check_penilaian_pembinaan($kode)
@@ -78,7 +78,8 @@ class Provinsi_Model extends CI_Model
             "tersusunnya_laporan" => $this->input->post('pemantauan7b', true),
             "kesehatan_kabupaten" => $this->input->post('pemantauan7c', true),
             "akhir_tahun" => $this->input->post('pemantauan7d', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('penilaian_pembinaan_terpadu', $data);

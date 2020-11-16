@@ -86,7 +86,8 @@ class BangunanPuskesmas_Model extends CI_Model
             "garasi_ambulan" => $this->input->post('bangunan43_12', true),
             "area_tabung" => $this->input->post('bangunan43_13', true),
             "selain_diatas" => $this->input->post('bangunan43_14', true),
-            "ruang_lain" => $this->input->post('bangunan43_15', true)
+            "ruang_lain" => $this->input->post('bangunan43_15', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('bangunan_puskesmas', $data);
     }

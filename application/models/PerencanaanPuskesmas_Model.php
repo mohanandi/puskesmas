@@ -36,7 +36,8 @@ class PerencanaanPuskesmas_Model extends CI_Model
             "dokumen_perencanaan" => $this->input->post('perencanaan3c_5', true),
             "alokasi_kebutuhan" => $this->input->post('perencanaan3c_6', true),
             "usulan_pengadaan" => $this->input->post('perencanaan3c_7', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
         ];
         $this->db->insert('perencanaan_puskesmas', $data);
     }

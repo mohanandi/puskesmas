@@ -22,7 +22,8 @@ class LokasiPuskesmas_Model extends CI_Model
             "puskesmas_bersih" => $this->input->post('lokasi13', true),
             "fasilitas_bersih" => $this->input->post('lokasi14', true),
             "tersedia_bersih" => $this->input->post('lokasi15', true),
-            "sutet" => $this->input->post('lokasi16', true)
+            "sutet" => $this->input->post('lokasi16', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('lokasi_puskesmas', $data);
     }

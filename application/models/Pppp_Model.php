@@ -9,7 +9,8 @@ class Pppp_Model extends CI_Model
             "kode" => $this->input->post('kode_puskesmas'),
             "penilaian_kinerja" => $this->input->post('pengawasan1', true),
             "feedback" => $this->input->post('pengawasan2', true),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('pengawasan_pengendalian_dan_penilaian_kinerja_puskesmas', $data);

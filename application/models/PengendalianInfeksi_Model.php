@@ -19,7 +19,8 @@ class PengendalianInfeksi_Model extends CI_Model
             "kewaspadaan_kontak" => $this->input->post('pencegahan1b', true),
             "kewaspadaan_droplet" => $this->input->post('pencegahan2b', true),
             "air_borne" => $this->input->post('pencegahan3b'),
-            "input_by" => $this->session->userdata('kode')
+            "input_by" => $this->session->userdata('kode'),
+            "tgl_input" => time()
         ];
         $this->db->insert('pencegahan_dan_pengendalian_infeksi', $data);
     }

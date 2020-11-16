@@ -18,7 +18,8 @@ class IdentitasPuskesmas_Model extends CI_Model
             "no_telp_gadar" => $this->input->post('telp_gadar', true),
             "no_faksimile" => $this->input->post('faks', true),
             "email" => $this->input->post('email', true),
-            "website" => $this->input->post('website', true)
+            "website" => $this->input->post('website', true),
+            "tgl_input" => time()
         ];
         $this->db->insert('identitas_puskesmas', $data);
     }

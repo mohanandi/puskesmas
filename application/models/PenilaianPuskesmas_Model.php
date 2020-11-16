@@ -19,6 +19,7 @@ class PenilaianPuskesmas_Model extends CI_Model
             "status_akreditas" => $this->input->post('penilaian10', true),
             "tahun_iks" => $this->input->post('penilaian11', true),
             "status_iks" => $this->input->post('penilaian12', true),
+            "tgl_input" => time()
 
         ];
         $this->db->insert('penilaian_kinerja_puskesmas', $data);
